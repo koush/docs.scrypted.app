@@ -11,7 +11,7 @@ export default defineConfig({
   ],
   description: 'Video Integration Platform',
   themeConfig: {
-    logo: '/img/icons/apple-icon-180.png',
+    logo: './img/icons/apple-icon-180.png',
     search: {
       provider: 'local'
     },
