@@ -71,9 +71,17 @@ If `Frame Rate` of `20` is unavailable, `10` can be used instead.
 
 ## Motion Sensor Setup
 
-Most cameras have a built in motion sensor. It may be disabled by default, or have a blank activity zone.
+Most cameras have a built in motion sensor. It may be disabled by default, or have a blank activity zone. For optimal results, it is *highly recommended* to configure the motion zones to filter extraneous activity:
+
+* Trees, bushes, or other objects that may trigger motion via wind.
+* Camera facing a busy road will trigger motion on every passing car.
+
+### Amcrest Motion Setup
 
 ![image](/img/amcrest-motion.png)
+
+### Hikvision Motion Setup
+
 ![image](/img/hikvision-motion.png)
 
 ## Other Settings
