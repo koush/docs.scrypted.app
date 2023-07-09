@@ -1,8 +1,11 @@
-## Camera Preparation
+# Camera Preparation
 
-Open your Camera's web administration panel or app to configure its codec settings. If your camera does not have a codec configuration tool (ie, cloud cameras such as Ring, Google, Arlo), continue on to [Adding the Camera](/add-camera).
+## Camera Administration
+
+Open the Camera's web admin page or app to configure its codec settings. If the camera does not have a codec configuration tool (ie, cloud cameras such as Ring, Google, Arlo) or is a Unifi camera, continue on to [Adding the Camera](/add-camera).
 
 The steps below configure the optimal settings for streaming destinations within Scrypted. Streaming destinations include HomeKit, Google Home, Alexa, Home Assistant, and [Scrypted NVR](https://demo.scrypted.app/#/demo).
+
 
 ## Enable Streams
 
@@ -21,9 +24,9 @@ Set all the stream video codecs to `H.264`. Do **NOT** use `H.264+`, `Super H.26
 
 #### Main Stream Setup
 
-If your camera only has a single main stream, configure it as `1920x1080`. Your camera may support a higher resolution, but without usable substreams, it is recommended to use balanced settings. Otherwise, use the max available resolution for the `Main Stream`.
+If the camera only has a single main stream, configure it as `1920x1080` and `2 Mbit`. The camera may support a higher resolution, but without substreams, it is recommended to use balanced settings. Otherwise, use the max available resolution for the `Main Stream`.
 
-|Max Resolution|Bitrate|
+|Main Stream Resolution|Bitrate|
 |-|-|
 |3840x2160|8 Mbit, variable|
 |2688x1520|3.5 Mbit, variable|
@@ -36,7 +39,7 @@ If your camera only has a single main stream, configure it as `1920x1080`. Your 
 |Substream 1 or 2|1280x720|1 Mbit, variable|
 |Substream 1 or 2|640x360|500 Kbit, variable|
 
-## Framerate Settings
+### Framerate Settings
 
 Configuring the camera frame rate involves changing two related settings: the `Frame Rate` and the `Frame Interval` (also sometimes referred to as `Keyframe Interval`, `I-Frame Interval`, or `Interframe Space`). Cameras will allow configuration either the `Interval` or `Space`. Use the settings guide below.
 
@@ -50,7 +53,7 @@ If `Frame Rate` of `20` is unavailable, `10` can be used instead.
 |-|-|-|
 |10|40|4 (or 2)|
 
-### Framerate Explanation
+#### Framerate Explanation
 
 * Any `Frame Rate` between 10 and 30 is fine, and the chosen `Frame Rate` will determine the `Frame Interval`.
 * A `4 (or 2) second frequency`, aka the `Interframe Space`, can be used to compute the `Frame Interval`.
@@ -66,4 +69,21 @@ If `Frame Rate` of `20` is unavailable, `10` can be used instead.
   * Opus (used for live streaming to HomeKit or web)
   * PCM-ulaw/G711u/G711mulaw (raw format suitable for web)
 
-Continue on to [Adding the Camera](/add-camera).
+## Motion Sensor Setup
+
+Most cameras have a built in motion sensor. It may be disabled by default, or have a blank activity zone.
+
+![image](/img/amcrest-motion.png)
+![image](/img/hikvision-motion.png)
+
+## Other Settings
+
+### Password
+
+Set the password to a simple alphanumeric secret. Special characters often cause authentication issues. If the camera supports both `Basic` and `Digest` Authorization, configure it for `Digest`, which is more secure.
+
+### ONVIF
+
+`ONVIF` is a standard camera communication channel for motion, snapshots, and pan/tilt/zoom.
+* Enable `ONVIF` on the camera.
+* Some cameras require entering a separate username and password for the ONVIF service. Ensure the `ONVIF` service has a user set up with the **same** username and password credentials used for the camera itself.

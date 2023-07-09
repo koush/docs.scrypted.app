@@ -1,24 +1,48 @@
 # Add a Camera
 
-Scrypted supports a variety of camera models. In the Scrypted Management console, navigate to Plugins. Then search and install the appropriate Scrypted Plugin for your camera manufacturer.
+Scrypted supports a variety of camera models. In the `Scrypted Management Console`, navigate to `Plugins` in the side bar. Then search and install the appropriate Scrypted Plugin for your camera manufacturer.
 
-# Plugins
+![image](/img/install-plugin.png)
 
-The following plugins are currently available to add the camera.
+## Plugins
 
-## Local Cameras
+Cameras fall into two categories: `Local` cameras and `Cloud` cameras. `Local` cameras stream on the local network, while `Cloud` cameras stream through the cloud, even if the camera is on the local network. 
 
-* Amcrest
-    * Amcrest Plugin also supports Dahua cameras.
-* Hikvision
-* Reolink
-* Tapo
-  * The Tapo plugin provides two way audio support for Tapo cameras. The Tapo must first be added using the ONVIF plugin.
-* ONVIF
-  * Most local cameras can be used with the ONVIF plugin, but use this only if a manufacturer plugin is not available.
-* Doorbird
-* Unifi Protect
-* RTSP
+Continue on to find a matching plugin for your camera. If the camera is a `Local` camera, and no exact plugin can be found, try using the `ONVIF` or `RTSP` plugin (in that order).
+
+## Amcrest/Dahua
+
+The `Amcrest Plugin` also supports Dahua cameras. Supports `Two Way Audio`.
+* Install the ONVIF plugin if your camera has `Pan/Tilt/Zoom` capability.
+
+## Hikvision
+
+The `Hikvision Plugin` also supports a wide variety of whitelabled cameras such as Hitosino, etc. Supports `Two Way Audio`.
+* Install the ONVIF plugin if your camera has `Pan/Tilt/Zoom` capability.
+
+## Reolink
+
+The `Reolink Plugin` supports Reolink cameras and doorbells. `Two Way Audio` is only supported on the doorbell.
+
+## Tapo
+
+The Tapo plugin *only* provides `Two Way Audio` support for Tapo cameras. The Tapo camera itself should be added using the `ONVIF Plugin`.
+
+## Doorbird
+
+Doorbird Plugin supports Doorbird devices, including `Two Way Audio`.
+
+# Unifi Protect
+
+The `Unifi Protect Plugin` supports all Unifi cameras, including `Two Way Audio`.
+
+## ONVIF
+
+Most local cameras can be used with the `ONVIF Plugin`, but using this plugin is recommended only if a manufacturer plugin is not available.
+
+## RTSP
+
+`RTSP Plugin` should be used as a last resort, as it will require a Scrypted to do video processing to detect motion events.
 
 ## Cloud Cameras
 
@@ -28,3 +52,5 @@ Cloud cameras can also be added to Scrypted, but often have limited functionalit
 * Arlo
 * Google Cameras
 * Tuya
+
+No other `Cloud` cameras are currently supported.
