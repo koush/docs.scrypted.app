@@ -25,7 +25,7 @@ features:
 
 # What is Scrypted? 
 
-[Scrypted](https://scrypted.app) is a video integration hub. Scrypted can import streams from almost every camera model and stream them to a variety of platforms (HomeKit, Google Home, Alexa, Home Assistant).
+[Scrypted](https://scrypted.app) is a video integration hub. Scrypted can import streams from a range of cameras and stream them to a various platforms (HomeKit, Google Home, Alexa, Home Assistant).
 
 [Scrypted NVR](https://demo.scrypted.app/#/demo) provides 24/7 recording and smart detections, with accompanying mobile and desktop applications.
 
