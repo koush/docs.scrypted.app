@@ -68,6 +68,14 @@ export default defineConfig({
           { text: 'Object Detection', link: '/object-detection' },
         ]
       },
+      {
+        text: 'Buyer\'s Guide',
+        items: [
+          { text: 'What Should I Buy?', link: '/buyers-guide/' },
+          { text: 'Cameras', link: '/buyers-guide/cameras' },
+          { text: 'Servers', link: '/buyers-guide/servers' },
+        ]
+      },
       // {
       //   text: 'Examples',
       //   items: [
