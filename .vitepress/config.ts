@@ -19,6 +19,7 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Scrypted NVR', link: '/scrypted-nvr/' },
+      { text: 'Installation', link: '/installation' },
       { text: 'Download', link: '/desktop-application' },
       { text: 'Camera Setup', link: '/camera-preparation' },
     ],
