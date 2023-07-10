@@ -26,7 +26,7 @@ HomeKit Secure Video (HKSV) requires cameras with motion sensors and specific co
 
 Enable `Stream and Recording` on the camera in the iOS Home app.
 
-![image](/img/hksv-enable.jpeg)
+![image](/img/hksv-enable.jpg)
 
 ## HomeKit Troubleshooting
 
