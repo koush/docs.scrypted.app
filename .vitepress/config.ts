@@ -26,6 +26,7 @@ export default defineConfig({
         text: 'Getting Started',
         items: [
           { text: 'What is Scrypted?', link: '/' },
+          { text: 'Server Hardware', link: '/server-hardware' },
           { text: 'Installation', link: '/installation' },
           { text: 'Download Desktop App', link: '/desktop-application' },
         ]
