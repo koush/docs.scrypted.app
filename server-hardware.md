@@ -10,7 +10,7 @@ Scrypted can run on low power devices such as a Raspberry Pi 4 or more powerful 
 
 Raspberry Pi 4 and low powered NUCs are not recommended for use with Scrypted NVR. Use an Intel or Mac system. The following chart is a rough idea of the capabilities of each system.
 
-|Hardware|Number of Cameras||
+|Hardware|Number of Cameras|Notes|
 |-|-|-|
 |Wyse 5070 Thin Client|5|Available cheap on eBay.|
 |Intel N100|12|New Intel NUC that has a fantastic iGPU for accelerated transcode and detection.|
