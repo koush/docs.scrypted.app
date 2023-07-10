@@ -6,9 +6,9 @@ Scrypted supports a variety of camera models. In the `Scrypted Management Consol
 
 ## Plugins
 
-Cameras fall into two categories: `Local` cameras and `Cloud` cameras. `Local` cameras stream on the local network, while `Cloud` cameras stream through the cloud, even if the camera is on the local network. 
+Cameras fall into two categories: `Local` cameras and `Cloud` cameras. `Local` cameras stream on the local network, while `Cloud` cameras stream through the cloud, even if the camera is on the local network.  Cloud cameras can also be added to Scrypted, but often have limited functionality, including: high latency streams, slow snapshots, unreliable motion detection, etc.
 
-Continue on to find a matching plugin for your camera. If the camera is a `Local` camera, and no exact plugin can be found, try using the `ONVIF` or `RTSP` plugin (in that order).
+Find a matching plugin for your camera and install it in Scrypted Management Console. If the camera is a `Local` camera, and no exact plugin can be found, try using the `ONVIF` or `RTSP` plugin (in that order).
 
 ## Amcrest/Dahua
 
@@ -48,13 +48,18 @@ Most local cameras can be used with the `ONVIF Plugin`, but using this plugin is
 * If the RTSP Camera has mail delivery of motion events, that can be used to trigger a [Dummy Motion Switch](/dummy-detection) within Scrypted, and video processing will not be necessary.
 * If there is no mail delivery of motion events, use one of the [Motion Detection Plugins](/motion-detection) to analyze video for motion.
 
-## Cloud Cameras
+## Ring
 
-Cloud cameras can also be added to Scrypted, but often have limited functionality, including: high latency streams, slow snapshots, unreliable motion detection, etc.
+The `Ring Plugin` can be used to add Ring nearly all Ring cameras, sensors, security systems, lights, and more.
 
-* Ring
-* Arlo
-* Google Cameras
-* Tuya
+## Arlo
 
-No other `Cloud` cameras are currently supported.
+The `Arlo Plugin` supports all Arlo cameras.
+
+## Google
+
+The `Google Device Access Plugin` supports Google, Nest, and Dropcam cameras, as well as Nest/Google Thermostats.
+
+## Tuya
+
+The `Tuya Plugin` supports Tuya cameras. It requires a Tuya developer account.
