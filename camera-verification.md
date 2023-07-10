@@ -19,9 +19,11 @@ onMounted(() => {
 </style>
 
 
-## Camera Verification
+# Camera Verification
 
-Navigate to the camera in the `Scrypted Management Console`.
+## Scrypted Management Console
+
+Navigate to the camera in the `Scrypted Management Console` if not there already. It can be found within `Plugin` used to add it, or be searched within `Devices`.
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
 <img src="/img/camera-console.png" width="400" data-zoomable="true" >
@@ -55,6 +57,10 @@ Stand in front of the camera to trigger the motion sensor. The motion event shou
 </div>
 
 </div>
+
+## Troubleshooting
+
+The `Console` button in the camera's page within Scrypted can be used to view the logs for the camera, in case there are errors. The camera Plugin may also have documentation troubleshoot common issues.
 
 ## Continue Setup
 
