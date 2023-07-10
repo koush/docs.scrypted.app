@@ -10,7 +10,7 @@ The [Scrypted Desktop App](/desktop-application) can utilize the discrete and in
 
 ## Google Coral
 
-Scrpted NVR supports object detection using the [Google Coral.ai](https://coral.ai) chip using the `Tensorflow-Lite Plugin`. The PCI and USB models are both supported.
+Scrypted NVR supports object detection using the [Google Coral.ai](https://coral.ai) accelerators via the `Tensorflow-Lite Plugin`. The PCI and USB models are both supported.
 
 ## Intel
 
