@@ -10,13 +10,13 @@ Cameras and recordings can be viewed remotely via a browser or the app.
     * *Optional*: Configuring port forwarding or UPNP on your router for Scrypted Cloud is recommended for optimal performance and data privacy.
 3. Your cameras can now be viewed from anywhere at [nvr.scrypted.app](https://nvr.scrypted.app).
 
-### iOS
+## iOS
 
 1. [Install the Scrypted Beta App using TestFlight](https://testflight.apple.com/join/mpXXwLk7).
 2. Login ysiung the Scrypted Cloud credentials from the previous steps.
 3. The app will prompt to login a second time. The second time, use your *local* Scrypted Server credentials.
 
-### Android and Web
+## Android and Web
 
 All platforms (including iOS) can install the Progressive Web App (PWA):
 1. On your phone/desktop launch the appropriate browser:
@@ -29,8 +29,6 @@ All platforms (including iOS) can install the Progressive Web App (PWA):
 5. Login with the Scrypted Cloud credentials used in the previous steps.
 6. The app will prompt to login a second time. The second time, use your *local* Scrypted Server credentials.
 
-### Windows, Mac, and Linux
+## Windows, Mac, and Linux
 
 Desktop platforms can install the [web app](#android-and-web) (PWA) or install the [Scrypted Desktop App](/desktop-application). The desktop app can run in `Viewer Mode`.
-
-<br/>
