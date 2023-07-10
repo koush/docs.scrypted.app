@@ -77,6 +77,15 @@ export default defineConfig({
           { text: 'Object Detection', link: '/object-detection' },
         ]
       },
+      {
+        text: 'Advanced',
+        collapsed: true,
+        items: [
+          { text: 'Backup and Restore', link: '/migration' },
+          { text: 'Lost Password', link: '/lost-password' },
+          { text: 'Uninstallation', link: '/Uninstallation' },
+        ]
+      },
       // {
       //   text: 'Examples',
       //   items: [
