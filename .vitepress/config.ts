@@ -27,7 +27,7 @@ export default defineConfig({
         items: [
           { text: 'What is Scrypted?', link: '/' },
           { text: 'Installation', link: '/installation' },
-          { text: 'Download Desktop Application', link: '/desktop-application' },
+          { text: 'Download Desktop App', link: '/desktop-application' },
         ]
       },
       {

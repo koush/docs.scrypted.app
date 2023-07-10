@@ -2,7 +2,7 @@
 
 ## Dummy Switch Plugin
 
-The `Dummy Switch Plugin` can be used to create motion sensors within Scrypted that are triggered by an external event, like the `Webhook Plugin` or `Mail Plugin`.
+The `Dummy Switch Plugin` can be used to create `Motion` and `Binary` sensors within Scrypted that are triggered by an external event, like the `Webhook Plugin` or `Mail Plugin`.
 
 ## Mail Plugin
 
