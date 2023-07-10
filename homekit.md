@@ -20,7 +20,7 @@ Navigate to the Camera within Scrypted Management Console. View the `HomeKit` Se
 
 ## HomeKit Secure Video
 
-HomeKit Secure Video (HKSV) requires cameras with motion sensors and specific codec settings. Both of these settings should have already been configured as part of the [Camera Preparation](/camera-preparation).
+HomeKit Secure Video (HKSV) requires cameras with motion sensors and specific codec settings. Both of these settings should have already been configured as part of the [Camera Configuration](/camera-preparation).
 
 Enable `Stream and Recording` on the camera in the iOS Home app.
 

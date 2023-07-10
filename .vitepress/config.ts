@@ -35,7 +35,7 @@ export default defineConfig({
       {
         text: 'Camera Setup',
         items: [
-          { text: 'Camera Preparation', link: '/camera-preparation' },
+          { text: 'Camera Configuration', link: '/camera-preparation' },
           { text: 'Add Camera to Scrypted', link: '/add-camera' },
           { text: 'Camera Verification', link: '/camera-verification' }
         ]
