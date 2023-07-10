@@ -8,26 +8,7 @@ const detectedTouch = ('ontouchstart' in window) ||
     ((navigator as any).msMaxTouchPoints > 0);
 
 const isTouchDevice = ref((detectedTouch && !isWindows));
-
-import { onMounted } from 'vue';
-import mediumZoom from 'medium-zoom';
-
-onMounted(() => {
-  mediumZoom('[data-zoomable]', { background: 'var(--vp-c-bg)' });
-});
-
 </script>
-
-<style>
-.medium-zoom-overlay {
-  z-index: 20;
-}
-
-.medium-zoom-image {
-  z-index: 21;
-}
-</style>
-
 
 # Scrypted NVR
 
@@ -48,6 +29,7 @@ This is a live interactive demo of the mobile app:
 <div style="display: flex; flex-direction: column; align-items: center;">
 <iframe style="border-style: none;" class="ma-1" width="360" height="750" src="https://demo.scrypted.app/?display=phone"></iframe>
 </div>
+<br/>
 A desktop preview is available on the <a href='https://demo.scrypted.app/#/demo'>Demo Site</a>.
 </template>
 <template v-else>

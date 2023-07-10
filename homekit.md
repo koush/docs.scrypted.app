@@ -2,9 +2,7 @@
 
 Cameras imported into Scrypted can be streamed to the iOS/macOS Home App including support for [HomeKit Secure Video](https://support.apple.com/guide/icloud/set-up-homekit-secure-video-mm7c90d21583/icloud).
 
-## Camera Preparation
-
-Complete [Camera Preparation](/camera-preparation) and [Add the Camera](/add-camera) to Scrypted continuing with HomeKit setup. **Verify the camera streams are working properly within Scrypted**. There will be less moving parts when trying to troubleshoot HomeKit issues.
+<!--@include: ./parts/camera-preparation.md-->
 
 ## HomeKit Setup
 

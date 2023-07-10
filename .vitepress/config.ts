@@ -27,19 +27,21 @@ export default defineConfig({
         items: [
           { text: 'What is Scrypted?', link: '/' },
           { text: 'Installation', link: '/installation' },
-          { text: 'Desktop Application', link: '/desktop-application' },
+          { text: 'Download Desktop Application', link: '/desktop-application' },
         ]
       },
       {
         text: 'Camera Setup',
         items: [
           { text: 'Camera Preparation', link: '/camera-preparation' },
-          { text: 'Add Camera to Scrypted', link: '/add-camera' }
+          { text: 'Add Camera to Scrypted', link: '/add-camera' },
+          { text: 'Camera Verification', link: '/camera-verification' }
         ]
       },
       {
         text: 'Platforms',
         items: [
+          { text: 'What is a Platform?', link: '/platforms' },
           { text: 'HomeKit', link: '/homekit' },
           { text: 'Google Home', link: '/google-home' },
           { text: 'Alexa', link: '/alexa' },
@@ -51,6 +53,7 @@ export default defineConfig({
         items: [
           { text: 'What is Scrypted NVR?', link: '/scrypted-nvr/' },
           { text: 'Smart Detections', link: '/scrypted-nvr/smart-detections' },
+          { text: 'Scrypted NVR App', link: '/scrypted-nvr/apps' },
         ]
       },
       {
