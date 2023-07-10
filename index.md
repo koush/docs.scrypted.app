@@ -19,7 +19,7 @@ const isTouchDevice = ref((detectedTouch && !isWindows));
 
 ## What is Scrypted NVR?
 
-[Scrypted NVR](https://demo.scrypted.app/#/demo) is a `Scrypted Plugin` that provides 24/7 recording, smart detections, notifications, and accompanying mobile and desktop applications.
+[Scrypted NVR](/scrypted-nvr/) is a `Scrypted Plugin` that provides 24/7 recording, smart detections, notifications, and accompanying mobile and desktop applications.
 
 <template v-if="!isTouchDevice">
 <div >This is a live interactive demo:</div>

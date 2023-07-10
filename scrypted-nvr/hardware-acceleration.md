@@ -4,9 +4,9 @@
 
 Scrypted NVR can leverage the neural cores on the new Apple Silicon chips using the `CoreML Plugin`. Incredible performance at low power. Installing the [Scrypted Desktop App](/desktop-application) is recommended on Mac.
 
-## WebGPU: Nvidia and AMD
+## NVIDIA and AMD
 
-The [Scrypted Desktop App](/desktop-application) can utilize the discrete and integrated GPUs for accelerated transcoding, moiton, and object detection.
+The [Scrypted Desktop App](/desktop-application) can utilize discrete and integrated GPUs for accelerated transcoding, moiton, and object detection.
 
 ## Google Coral
 
