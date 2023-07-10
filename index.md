@@ -36,19 +36,18 @@ const isTouchDevice = ref((detectedTouch && !isWindows));
 
 </script>
 
-# What is Scrypted? 
+## What is Scrypted? 
 
-[Scrypted](https://scrypted.app) is a video integration hub. Scrypted can import streams from a range of cameras and stream them to a various platforms (HomeKit, Google Home, Alexa, Home Assistant).
+[Scrypted](https://scrypted.app) is a video integration hub. Scrypted can import streams from a range of cameras and stream them to a various platforms ([HomeKit](/homekit), [Google Home](/google-home), [Alexa](/alexa), [Home Assistant](/home-assistant)).
 
-# What is Scrypted NVR?
-[Scrypted NVR](https://demo.scrypted.app/#/demo) is a `Scrypted Plugin` provides 24/7 recording and smart detections, with accompanying mobile and desktop applications.
+## What is Scrypted NVR?
 
-<div v-if="!isTouchDevice" style="display: flex; flex-direction: column; align-items: center;">
+[Scrypted NVR](https://demo.scrypted.app/#/demo) is a `Scrypted Plugin` that provides 24/7 recording and smart detections, with accompanying mobile and desktop applications.
+
+<template v-if="!isTouchDevice">
+<div >This is a live interactive demo:</div>
+<br/>
+<div style="display: flex; flex-direction: column; align-items: center;">
 <iframe style="border-style: none;" class="ma-1" width="360" height="750" src="https://demo.scrypted.app/?display=phone"></iframe>
 </div>
-
-# Installation
-
-Scrypted can be installed on Windows, Mac, or Linux as a [desktop application](https://github.com/koush/nvr.scrypted.app/releases) or as a [background service](https://github.com/koush/scrypted#installation).
-
-After Scrypted has been installed, continue on to the Camera Setup.
+</template>

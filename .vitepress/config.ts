@@ -25,7 +25,8 @@ export default defineConfig({
       {
         text: 'Getting Started',
         items: [
-          { text: 'Installation', link: '/' },
+          { text: 'What is Scrypted?', link: '/' },
+          { text: 'Installation', link: '/installation' },
         ]
       },
       {
@@ -39,6 +40,20 @@ export default defineConfig({
         text: 'Platforms',
         items: [
           { text: 'HomeKit', link: '/homekit' }
+        ]
+      },
+      {
+        text: 'Scrypted NVR',
+        items: [
+          { text: 'What is Scrypted NVR?', link: '/scrypted-nvr' },
+        ]
+      },
+      {
+        text: 'Detection Plugins',
+        items: [
+          { text: 'Dummy Detection', link: '/dummy-detection' },
+          { text: 'Motion Detection', link: '/motion-detection' },
+          { text: 'Object Detection', link: '/object-detection' },
         ]
       },
       // {
