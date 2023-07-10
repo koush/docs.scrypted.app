@@ -18,7 +18,8 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Camera Setup', link: '/camera-preparation' }
+      { text: 'Camera Setup', link: '/camera-preparation' },
+      { text: 'Scrypted NVR', link: '/scrypted-nvr/' },
     ],
 
     sidebar: [
