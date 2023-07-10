@@ -42,9 +42,9 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Platforms',
+        text: 'Plugins and Platforms',
         items: [
-          { text: 'What is a Platform?', link: '/platforms' },
+          { text: 'What are Plugins?', link: '/platforms' },
           { text: 'HomeKit', link: '/homekit' },
           { text: 'Google Home', link: '/google-home' },
           { text: 'Alexa', link: '/alexa' },
