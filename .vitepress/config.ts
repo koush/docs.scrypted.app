@@ -18,8 +18,9 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Camera Setup', link: '/camera-preparation' },
       { text: 'Scrypted NVR', link: '/scrypted-nvr/' },
+      { text: 'Download', link: '/desktop-application' },
+      { text: 'Camera Setup', link: '/camera-preparation' },
     ],
 
     sidebar: [
@@ -29,7 +30,6 @@ export default defineConfig({
           { text: 'What is Scrypted?', link: '/' },
           { text: 'Server Hardware', link: '/server-hardware' },
           { text: 'Installation', link: '/installation' },
-          { text: 'Download Desktop App', link: '/desktop-application' },
         ]
       },
       {
