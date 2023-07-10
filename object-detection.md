@@ -1,4 +1,4 @@
-# Objhect Detection
+# Object Detection
 
 Object Detection plugins analyze the camera stream for recognizable objects (people, cars, animals, packages). These plugins are only used by [Scrypted NVR](/scrypted-nvr/) for smart detections.
 
