@@ -58,4 +58,4 @@ Stand in front of the camera to trigger the motion sensor. The motion event shou
 
 ## Continue Setup
 
-If the camera should have a functional stream and motion sensor, continue on to the [Platform](/platforms.md) or [Scrypted NVR](/scrypted-nvr/) setup.
+After verifying the camera stream and motion sensor functionality, continue on to the [Platform](/platforms.md) or [Scrypted NVR](/scrypted-nvr/) setup.
