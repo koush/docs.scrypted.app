@@ -17,6 +17,10 @@ const isTouchDevice = ref((detectedTouch && !isWindows));
 
 [Scrypted](https://scrypted.app) is an open source video integration platofrm. Using various `Plugins`, Scrypted can receive streams from a range of cameras and send them to other platforms ([HomeKit](/homekit), [Google Home](/google-home), [Alexa](/alexa), [Home Assistant](/home-assistant)).
 
+::: tip
+Scrypted has active communities on [Discord](https://discord.gg/DcFzmBHYGq), [Reddit](https://reddit.com/r/scrypted), and [Github](https://github.com/koush/scrypted). Check them out if you have questions!
+:::
+
 ## What is Scrypted NVR?
 
 [Scrypted NVR](/scrypted-nvr/) is a `Plugin` that provides 24/7 recording, [smart detections](/scrypted-nvr/smart-detections), [notifications](/scrypted-nvr/smart-detections#rich-notifications), and accompanying [mobile and desktop apps](/scrypted-nvr/apps).
