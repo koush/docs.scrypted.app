@@ -11,7 +11,7 @@ export default defineConfig({
   ],
   description: 'Video Integration Platform',
   themeConfig: {
-    logo: './img/icons/apple-icon-180.png',
+    logo: './img/logo.png',
     search: {
       provider: 'local'
     },
@@ -27,6 +27,7 @@ export default defineConfig({
         items: [
           { text: 'What is Scrypted?', link: '/' },
           { text: 'Installation', link: '/installation' },
+          { text: 'Desktop Application', link: '/desktop-application' },
         ]
       },
       {
@@ -39,7 +40,10 @@ export default defineConfig({
       {
         text: 'Platforms',
         items: [
-          { text: 'HomeKit', link: '/homekit' }
+          { text: 'HomeKit', link: '/homekit' },
+          { text: 'Google Home', link: '/google-home' },
+          { text: 'Alexa', link: '/alexa' },
+          { text: 'Home Assistant', link: '/home-assistant' },
         ]
       },
       {
