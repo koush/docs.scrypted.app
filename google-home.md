@@ -15,7 +15,7 @@ The `Google Home Plugin` will automatically enable itself on all the devices cur
 The `Scrypted Cloud Plugin` should have been automatically installed. If it was not, installed it. Then click the `Login` button to register with Scrypted's cloud service.
 
 ::: tip
-Google Home connects to Scrypted's Cloud servive communicate with your server. Google Home will not function without cloud connectivity.
+Google Home connects to Scrypted's Cloud service communicate with your server. Google Home will not function without cloud connectivity.
 :::
 
 ## Google Home Setup
