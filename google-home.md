@@ -6,9 +6,9 @@ Cameras imported into Scrypted can be streamed to the Google Home devices such a
 
 ## Google Home Plugin Setup
 
-Install the `HomeKit Plugin`.
+Install the `Google Home Plugin`.
 
-The `Google Home` will automatically enable itself on all the devices currently integrated into Scrypted. In any case, Verify the `Google Home` is enabled for the camera. If it is not, enable it, then `Reload` the `Google Home Plugin`.
+The `Google Home Plugin` will automatically enable itself on all the devices currently integrated into Scrypted. In any case, Verify the `Google Home` is enabled for the camera. If it is not, enable it, then `Reload` the `Google Home Plugin`.
 
 ## Scrypted Cloud Plugin Setup
 
