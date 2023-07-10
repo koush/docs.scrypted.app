@@ -61,19 +61,20 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Detection Plugins',
-        items: [
-          { text: 'Dummy Detection', link: '/dummy-detection' },
-          { text: 'Motion Detection', link: '/motion-detection' },
-          { text: 'Object Detection', link: '/object-detection' },
-        ]
-      },
-      {
         text: 'Buyer\'s Guide',
         items: [
           { text: 'What Should I Buy?', link: '/buyers-guide/' },
           { text: 'Cameras', link: '/buyers-guide/cameras' },
           { text: 'Servers', link: '/buyers-guide/servers' },
+        ]
+      },
+      {
+        text: 'Detection Plugins',
+        collapsed: true,
+        items: [
+          { text: 'Dummy Detection', link: '/dummy-detection' },
+          { text: 'Motion Detection', link: '/motion-detection' },
+          { text: 'Object Detection', link: '/object-detection' },
         ]
       },
       // {
