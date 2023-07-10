@@ -54,3 +54,27 @@ All platforms (including iOS) can install the Progressive Web App (PWA):
 ## Windows, Mac, and Linux
 
 Desktop platforms can install the [web app](#android-and-web) (PWA) or install the [Scrypted Desktop App](/desktop-application). The desktop app can run in `Viewer Mode`.
+
+## Self Hosting
+
+Scrypted can optionally be self hosted on a personal custom domain. This setup process is for advanced users and offers no benefits over port forwarding, other than bypassing the Scrypted Cloud cloud login.
+  * Install the `Scrypted Cloud Plugin`.
+      * For `Port Forwarding Mode`, select `Custom Domain`.
+      * Enter the personal custom domain into the `Hostname` setting such as `nvr.example.com`.
+  * Set up a SSL Termination to the `Local HTTPS Port` on the Scrypted Server. This port is random and can be viewed or changed in the Scrypted Cloud Plugin settings. This can be done with nginx or a variety of other reverse proxies.
+
+::: code-group
+
+```[iOS]
+Enter nvr.example.com at:
+iOS Settings -> Scrypted -> Self Hosted -> Hostname
+```
+```md [Android and Web]
+Install using:
+https://nvr.example.com/#/install-pwa
+```
+```[Desktop App]
+In the Desktop app menu, click Reset Startup Settings.
+Choose Viewer Mode.
+Enter nvr.example.com when prompted for the optional Self Hosting domain.
+```
