@@ -49,7 +49,8 @@ export default defineConfig({
       {
         text: 'Scrypted NVR',
         items: [
-          { text: 'What is Scrypted NVR?', link: '/scrypted-nvr' },
+          { text: 'What is Scrypted NVR?', link: '/scrypted-nvr/' },
+          { text: 'Smart Detections', link: '/scrypted-nvr/smart-detections' },
         ]
       },
       {
