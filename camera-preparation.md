@@ -7,16 +7,19 @@ Open the Camera's web admin page or app to configure its codec settings. If the 
 The steps below configure the optimal settings for streaming destinations within Scrypted. Streaming destinations include HomeKit, Google Home, Alexa, Home Assistant, and [Scrypted NVR](https://demo.scrypted.app/#/demo).
 
 
-## Enable Streams
+## Stream Setup
 
-Most cameras will have one one `Main Stream` and one `Substream`. Some may only have a `Main Stream`. Cameras with one `Main Stream` and two `Substreams` are ideal.
-* Some cameras, such as Hikvision or Amcrest, allow more streams and higher fps when AI is disabled. The camera AI is not used within Scrypted, and can be disabled for better performance.
+Enable the all available streams on the camera. Scrypted will use multiple streams, if available, for different purposes (remote streaming, analysis, etc). Most cameras will have one one `Main Stream` and one `Substream`. Some may only have a `Main Stream`. Cameras with one `Main Stream` and two `Substreams` are ideal.
+
+::: tip
+All the available camera streams may not be enabled by default. Verify they are enabled.
+:::
+
+::: tip
+Some cameras, such as Hikvision or Amcrest, have more streams and higher `Framerate` when AI is disabled. The camera AI is not used within Scrypted, and may be disabled for better performance.
+:::
 
 ## Video Setup
-
-### Enable All Streams
-
-Enable the all available streams and substreams on the camera. Scrypted will use multiple streams, if available, for different purposes (remote streaming, analysis, etc).
 
 ### H.264 Video Codec
 
