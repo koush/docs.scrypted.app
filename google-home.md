@@ -25,7 +25,3 @@ Google Home connects to Scrypted's Cloud servive communicate with your server. G
 3. Link the `Scrypted Home Automation` service.
 4. Log in with the same credentials used for the `Scrypted Cloud Plugin`.
 5. Scrypted is now connected and all selected devices are available in Google Home.
-
-## Add New Devices
-
-`"Hey Google, Sync my devices."` or `Reload` the `Google Home Plugin`.
