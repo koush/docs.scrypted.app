@@ -15,7 +15,7 @@ const isTouchDevice = ref((detectedTouch && !isWindows));
 
 ## What is Scrypted? 
 
-[Scrypted](https://scrypted.app) is a video integration platform. Scrypted can import streams from a range of cameras and stream them to various destinations ([HomeKit](/homekit), [Google Home](/google-home), [Alexa](/alexa), [Home Assistant](/home-assistant)).
+[Scrypted](https://scrypted.app) is an open source video integration platofrm. Using various `Plugins`, Scrypted can receive streams from a range of cameras and send them to other platforms ([HomeKit](/homekit), [Google Home](/google-home), [Alexa](/alexa), [Home Assistant](/home-assistant)).
 
 ## What is Scrypted NVR?
 
