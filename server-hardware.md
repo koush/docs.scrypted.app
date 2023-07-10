@@ -14,7 +14,7 @@ Raspberry Pi 4 and low powered NUCs are not recommended for use with Scrypted NV
 |-|-|-|
 |Wyse 5070 Thin Client|5|Available cheap on eBay.|
 |Intel N100|12|New Intel NUC that has a fantastic iGPU for accelerated transcode and detection.|
-|Mac Mini 16GB|20|Scrypted NVR can leverage Apple Silicon's Neural Engine.|
+|Mac Mini 16GB|20|Scrypted NVR can leverage Apple Silicon's [Neural Engine](https://www.makeuseof.com/what-is-a-neural-engine-how-does-it-work/).|
 
 ### Storage
 

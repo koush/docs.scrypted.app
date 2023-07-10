@@ -2,7 +2,7 @@
 
 ## Apple Silicon
 
-Scrypted NVR can leverage the neural cores on the new Apple Silicon chips using the `CoreML Plugin`. Incredible performance at low power. Installing the [Scrypted Desktop App](/desktop-application) is recommended on Mac.
+Scrypted NVR can leverage the [Neural Engine](https://www.makeuseof.com/what-is-a-neural-engine-how-does-it-work/) on the new Apple Silicon chips using the `CoreML Plugin`. Incredible performance at low power. Installing the [Scrypted Desktop App](/desktop-application) is recommended on Mac.
 
 ## NVIDIA and AMD
 
