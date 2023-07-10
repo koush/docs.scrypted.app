@@ -1,6 +1,6 @@
 # Alexa
 
-Cameras imported into Scrypted can be streamed to the Alexa devices such as Echo and the Alexa app.
+Cameras imported into Scrypted can be streamed to the Alexa devices such as Echo Show and the Alexa mobile apps.
 
 <!--@include: ./parts/camera-preparation.md-->
 
