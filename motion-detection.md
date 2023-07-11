@@ -8,18 +8,23 @@ There are several Motion Detection Plugins available.
 
 Available only in the [Scrypted Desktop App](/desktop-application). Uses the GPU for hardware acceleration.
 
+1. Enable the `WebGL Motion Sensor` Extension on the camera.
+2. Optional: Configure motion zones to filter out windy trees or busy roads.
+
 ## OpenCV
 
-Accurate and highly customizeable motion detector.
+Accurate and customizeable motion detector.
+
+1. Install the `OpenCV Plugin`.
+2. Enable the `OpenCV Motion Sensor` Extension on the camera.
+3. Optional: Configure motion zones to filter out windy trees or busy roads.
 
 ## PAM-Diff
 
+::: danger
 Deprecated. This motion detector runs in environments without `Python`. Not recommended for use.
+:::
 
-## Motion Detection Setup
-
-Adding (or replacing) a Motion Sensor on a camera is quick:
-
-1. Install the appropriate Motion Detection Plugin for your server.
-2. Enable the Motion Sensor `Extension` on the camera.
+1. Install the `PAM-Diff Plugin`.
+2. Enable the `PAM-Diff Motion Sensor` Extension on the camera.
 3. Optional: Configure motion zones to filter out windy trees or busy roads.
