@@ -43,7 +43,14 @@ After Scrypted is stopped, the local configuration files can be found and remove
 
 ::: code-group
 
-```sh [Mac/Linux]
+```sh [Docker Compose]
+sudo rm -rf ~/.scrypted
+```
+```sh [Linux]
+sudo rm -rf ~/.scrypted
+```
+
+```sh [Mac]
 sudo rm -rf ~/.scrypted
 ```
 
