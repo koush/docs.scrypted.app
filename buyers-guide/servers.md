@@ -2,6 +2,10 @@
 
 Cameras that have good motion sensors, plugin support, and the necessary codecs dramatically reduce the server requirements: Scrypted will have no problem streaming to the various supported [Platforms](/platforms) on low power hardware like a Raspberry Pi 4 or Synology NAS.
 
+::: warning Raspberry Pi 4
+From a current price to performance standpoint, the Raspberry Pi 4b is a value buy when compared to similarly priced Intel thin clients and NUCs. A used Dell Wyse 5070 can be found on eBay for half the price of a Raspberry Pi 4b.
+:::
+
 ## Scrypted NVR Recommendations
 
 However, if motion detection is necessary, or the server will be running Scrypted NVR for 24/7 recording and [Smart Detections](/scrypted-nvr/smart-detections), running it on a more capable system than a Raspberry Pi 4 is recommended. A good CPU, GPU, and TPU (Tensor Processing Unit, aka AI chip) all contribute towards video stream detection performance.
