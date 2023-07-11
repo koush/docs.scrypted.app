@@ -55,18 +55,20 @@ This Intel 12th generation NUC contains a CPU and capable GPU in a tiny package.
 
 ## Wyse 5070 (+ Mini PCI Coral)
 
-This is readily available used on eBay for $50 USD. The Dell Wyse 5070 will great for a limited number of cameras. It can be be supercharged by placing a Mini PCI Coral accelerator into the Wifi slot.
+This is readily available used on eBay for $50 USD. The Dell Wyse 5070 will great for a limited number of cameras. Can be supercharged with a Mini PCIe Coral TPU into the Wifi slot.
 
 ## Older Intel (+ M.2 Coral TPU)
 
 Older Intel server/desktop systems (8th generation+) will perform quite well. No GPU is necessary. Adding a Coral TPU is a great upgrade.
 
+---
+
 # Storage
 
-## Internal/External Drive
+## Internal/External Storage
 
-Scrypted NVR will perform well with any direct attached storage drive (internal or USB). A surveillance rated drive is recommended, but not strictly necessary. An SSD will only marginally improve performance. Using USB Flash Storage or SD Cards are not recommended, as they are prone to corruption and failure.
+Scrypted NVR recommends using a direct attached storage drive (internal or USB). A surveillance rated drive is preferred, but not strictly necessary. SSD storage will only marginally improve performance. Flash Storage (USB Stick) and SD Cards are not recommended, as they are prone to data corruption and failure.
 
 ## Network Attached Storage
 
-Writing to a NAS is a reasonable option if it is already available, but features such as timelapse scrubbing may suffer from poor performance over the network.
+Storing video on a NAS is a reasonable option if one is available, however timelapse scrubbing may suffer from poor performance over the network.
