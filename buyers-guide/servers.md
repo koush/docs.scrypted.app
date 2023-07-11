@@ -81,10 +81,10 @@ Scrypted NVR recommends using a direct attached storage drive (internal or USB).
 |Seagate Skyhawk|
 
 ::: tip
-Macs can be quite picky about USB drive bays and may disconnect them randomly. Using a brand that advertises itself as Mac compatible, such as OWC, is recommended. Read the Amazon reviews from Mac users.
+Macs can be quite picky about USB drive bays and may disconnect them randomly. Using a brand that advertises itself as Mac compatible, such as OWC, is advised. Read the Amazon reviews from Mac users. All drive bays tend to be trouble free on Linux and Windows.
 :::
 
-|Recommedned Mac Drive Bays|
+|Mac Drive Bays|
 |-|
 |OWC miniStack|
 |OWC Drive Dock USB-C Dual Drive Bay Solution|
