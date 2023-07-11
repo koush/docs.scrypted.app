@@ -85,7 +85,7 @@ export default defineConfig({
         items: [
           { text: 'Backup and Restore', link: '/migration' },
           { text: 'Lost Password', link: '/lost-password' },
-          { text: 'Uninstallation', link: '/Uninstallation' },
+          { text: 'Uninstallation', link: '/uninstallation' },
         ]
       },
       // {
