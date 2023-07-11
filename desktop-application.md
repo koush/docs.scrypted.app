@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Scrypted"
   text: "Video Integration Platform"
-  tagline: Download Desktop Application
+  tagline: Download Desktop App (License Required)
   image:
     src: './img/logo.png'
   actions:
@@ -19,9 +19,9 @@ hero:
       text: Mac
       link: https://nuts.scrypted.app/download/osx
     - theme: alt
-      text: Linux (apt, coming soon!)
+      text: Linux (Coming Soon)
     - theme: alt
-      text: Docker + Other
+      text: Docker (Free)
       link: https://docs.scrypted.app/installation.html#background-service
 
 features:
