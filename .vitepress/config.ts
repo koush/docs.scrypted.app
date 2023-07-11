@@ -29,7 +29,7 @@ export default defineConfig({
         text: 'Getting Started',
         items: [
           { text: 'What is Scrypted?', link: '/' },
-          { text: 'Server Hardware', link: '/server-hardware' },
+          { text: 'System Requirements', link: '/server-hardware' },
           { text: 'Installation', link: '/installation' },
         ]
       },
@@ -64,8 +64,8 @@ export default defineConfig({
         text: 'Buyer\'s Guide',
         items: [
           { text: 'What Should I Buy?', link: '/buyers-guide/' },
-          { text: 'Cameras', link: '/buyers-guide/cameras' },
-          { text: 'Servers', link: '/buyers-guide/servers' },
+          { text: 'Camera Hardware', link: '/buyers-guide/cameras' },
+          { text: 'Server Hardware', link: '/buyers-guide/servers' },
         ]
       },
       {
