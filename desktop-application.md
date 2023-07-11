@@ -21,7 +21,7 @@ hero:
     - theme: alt
       text: Linux (apt, coming soon!)
     - theme: alt
-      text: Other
+      text: Docker + Other
       link: https://docs.scrypted.app/installation.html#background-service
 
 features:
