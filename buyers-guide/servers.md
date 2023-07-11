@@ -2,7 +2,7 @@
 
 Cameras that have good motion sensors, plugin support, and the necessary codecs dramatically reduce the server requirements: Scrypted will have no problem streaming to the various supported [Platforms](/platforms) on low power hardware like a Raspberry Pi 4 or Synology NAS.
 
-However, if motion detection is necessary, or the plan is to use Scrypted NVR for 24/7 recording and [Smart Detections](/scrypted-nvr//smart-detections), a more capable system will be necessary. A good CPU, GPU, and TPU (Tensor Processing Unit, aka AI chip) can all contribute to processing camera streams.
+However, if motion detection is necessary, or the plan is to use Scrypted NVR for 24/7 recording and [Smart Detections](/scrypted-nvr/smart-detections), a more capable system will be necessary. A good CPU, GPU, and TPU (Tensor Processing Unit, aka AI chip) can all contribute to processing camera streams.
 
 While a TPU can improve performance, a capable GPU can also fill the gap.
 
