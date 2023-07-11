@@ -16,14 +16,6 @@ const isTouchDevice = ref((detectedTouch && !isWindows));
 
 [Scrypted NVR](https://demo.scrypted.app/#/demo) is a `Scrypted Plugin` that provides 24/7 recording and smart detections, with accompanying mobile and desktop applications.
 
-## Adaptive Bitrate
-
-Scrypted NVR leverages all the camera substreams transcoding to provide bulletproof streams, regardless of downstream network conditions.
-
-::: tip
-Adaptive Bitrate is a [Platform](/platforms) level feature, and improves streams sent to HomeKit, Google Home, Alexa, and Home Assistant.
-:::
-
 ## 24/7 Recording
 
 Scrypted NVR records your camera 24 hours a day, 7 days a week. The the fluid user interface provides quick and easy access to all your recordings.
