@@ -16,7 +16,7 @@ Select the appropriate guide.
  * Linux
    * [Docker Compose](https://github.com/koush/scrypted/wiki/Installation:-Docker-Compose-Linux) - This is the recommended method. Local installation may interfere with other server software.
    * [Docker](https://github.com/koush/scrypted/wiki/Installation:-Docker-Linux) - Use Docker Compose. This is a reference documentation.
-   * [Local Installation](https://github.com/koush/scrypted/wiki/Installation:-Linux) - Use this if Docker scares you or whatever.
+   * [Local Installation](https://github.com/koush/scrypted/wiki/Installation:-Linux) - Not recommended. Use Docker.
  * Mac
    * [Local Installation](https://github.com/koush/scrypted/wiki/Installation:-Mac)
 <!--    * Docker Desktop is [not supported](https://github.com/koush/scrypted/wiki/Installation:-Docker-Desktop). -->
