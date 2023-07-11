@@ -2,7 +2,12 @@
 
 Motion Detection plugins analyze the camera stream for motion. This is useful if the camera does not have a motion sensor or the motion sensor is sub par. Motion Detection is also used by [Scrypted NVR](/scrypted-nvr/) for smart detections.
 
-There are several Motion Detection Plugins available.
+There are several Motion Detection Plugins available. 
+
+Adding or replacing a Motion Sensor on a camera is easy:
+1. Install the appropriate Motion Detection Plugin for your server.
+2. Enable it on the camera.
+3. Optional: Configure motion zones to filter out windy trees or busy roads.
 
 ## WebGL Motion Sensor
 
