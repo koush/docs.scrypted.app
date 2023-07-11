@@ -1,9 +1,11 @@
 # Camera Recommendations
 
+## Camera Checklist
+
 For optimal Scrypted performance in [HomeKit](/homekit), [Alexa](/alexa), [Google Home](/google-home), and [Scrypted NVR](/scrypted-nvr/), look for:
   * Local streaming via RTSP/RTMP
-  * Wired connection (power over ethernet). Use wireless sparingly.
-  * 2-3 (sub)streams. More sub streams provides Scrypted with the flexibility to provide the best stream for any connection.
+  * Wired connection (power over ethernet) is heavily recommended. Use wireless sparingly to reach areas that may not be easily serviced with PoE.
+  * 2-3 `Main` and `Substreams`. Additional `Substreams` provides Scrypted with the flexibility to provide the best stream for any connection.
   * H.264 video with configurable codec settings (`Framerate`, `Bitrate`, and `Frame Interval`).
 
 Unifi cameras are recommended, but this doc will focus on cameras that do not require adoption into the Unifi ecosystem, which can be cost prohibitive or not meet specific hardware requirements. One can generally find better cameras at lower prices and more flexibility in choices.

@@ -1,4 +1,6 @@
-# Server Recommendations
+# Server Hardware
+
+## Scrypted Recommendations
 
 Cameras that have good motion sensors, plugin support, and the necessary codecs dramatically reduce the server requirements: Scrypted will have no problem streaming to the various supported [Platforms](/platforms) on low power hardware like a Raspberry Pi 4 or Synology NAS.
 
