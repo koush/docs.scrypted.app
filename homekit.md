@@ -2,6 +2,10 @@
 
 Cameras imported into Scrypted can be streamed to the iOS/macOS Home App including support for [HomeKit Secure Video](https://support.apple.com/guide/icloud/set-up-homekit-secure-video-mm7c90d21583/icloud).
 
+::: info
+HomeKit Secure Video requires a HomePod or Apple TV. `Object Detection` is done on the Apple Home Hub and AI accelerators like Coral.ai are not used.
+:::
+
 <!--@include: ./parts/camera-preparation.md-->
 
 ## HomeKit Setup
