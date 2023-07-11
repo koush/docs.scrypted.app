@@ -75,6 +75,21 @@ Older Intel server/desktop systems (8th generation+) will perform quite well. No
 
 Scrypted NVR recommends using a direct attached storage drive (internal or USB). A surveillance rated drive is preferred, but not strictly necessary. SSD storage will only marginally improve performance. Flash Storage (USB Stick) and SD Cards are not recommended, as they are prone to data corruption and failure.
 
+|Recommended Drives|
+|-|
+|Western Digital WD Purple|
+|Seagate Skyhawk|
+
+::: tip
+Macs can be quite picky about USB drive bays and may disconnect them randomly. Using a brand that advertises itself as Mac compatible, such as OWC, is recommended. Read the Amazon reviews from Mac users.
+:::
+
+|Recommedned Mac Drive Bays|
+|-|
+|OWC miniStack|
+|OWC Drive Dock USB-C Dual Drive Bay Solution|
+
+
 ## Network Attached Storage
 
 Storing video on a NAS is a reasonable option if one is available, however timelapse scrubbing may suffer from poor performance over the network.
