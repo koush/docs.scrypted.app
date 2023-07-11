@@ -1,3 +1,24 @@
+<script setup lang="ts"> 
+import { onMounted } from 'vue';
+import mediumZoom from 'medium-zoom';
+
+onMounted(() => {
+  mediumZoom('[data-zoomable]', { background: 'var(--vp-c-bg)' });
+});
+
+</script>
+
+<style>
+.medium-zoom-overlay {
+  z-index: 20;
+}
+
+.medium-zoom-image {
+  z-index: 21;
+}
+</style>
+
+
 # Add a Camera
 
 Scrypted supports a variety of camera models. In the `Scrypted Management Console`, navigate to `Plugins` in the side bar. Then search and install the appropriate Scrypted Plugin for your camera manufacturer.
@@ -44,9 +65,24 @@ Most local cameras can be used with the `ONVIF Plugin`, but using this plugin is
 
 `RTSP Plugin` should be used as a last resort, as it will require a Scrypted to do video processing to detect motion events.
 
-* When adding the camera with the `RTSP Plugin`, add all available streams. There is typically a `Main Stream` and a `Substream`.
 * If the RTSP Camera has mail delivery of motion events, that can be used to trigger a [Dummy Motion Switch](/dummy-detection) within Scrypted, and video processing will not be necessary.
 * If there is no mail delivery of motion events, use one of the [Motion Detection Plugins](/motion-detection) to analyze video for motion.
+* When adding the camera with the `RTSP Plugin`, add and assign all available streams. There is typically a `Main Stream` and a `Substream`.
+
+<div style="width: 100%; display: flex; flex-direction: row;">
+
+<div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+Add RTSP Streams
+<img src="/img/add-streams.png" width="200" data-zoomable="true" >
+</div>
+
+
+<div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+Assign RTSP Streams
+<img src="/img/assign-streams.png" width="200" data-zoomable="true">
+</div>
+
+</div>
 
 ## Ring
 
