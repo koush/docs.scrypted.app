@@ -60,7 +60,7 @@ Older Intel server/desktop systems (8th generation+) will perform quite well. No
 
 # Storage
 
-## Storage Drive
+## Internal/External Drive
 
 Scrypted NVR will perform well with any direct attached storage drive (internal or USB). A surveillance rated drive is recommended, but not strictly necessary. An SSD will only marginally improve performance. Using USB Flash Storage or SD Cards are not recommended, as they are prone to corruption and failure.
 
