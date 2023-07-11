@@ -17,7 +17,7 @@ hero:
       link: https://nuts.scrypted.app/download/win32
     - theme: alt
       text: Mac
-      link: https://nuts.scrypted.app/download/win32
+      link: https://nuts.scrypted.app/download/osx
     - theme: alt
       text: Linux (apt, coming soon!)
     - theme: alt
