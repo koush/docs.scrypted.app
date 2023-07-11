@@ -11,7 +11,7 @@ export default defineConfig({
   ],
   description: 'Video Integration Platform',
   themeConfig: {
-    logo: './img/logo.png',
+    logo: '/img/logo.png',
     search: {
       provider: 'local'
     },
