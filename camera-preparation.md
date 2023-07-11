@@ -1,3 +1,23 @@
+<script setup lang="ts"> 
+import { onMounted } from 'vue';
+import mediumZoom from 'medium-zoom';
+
+onMounted(() => {
+  mediumZoom('[data-zoomable]', { background: 'var(--vp-c-bg)' });
+});
+
+</script>
+
+<style>
+.medium-zoom-overlay {
+  z-index: 20;
+}
+
+.medium-zoom-image {
+  z-index: 21;
+}
+</style>
+
 # Camera Configuration
 
 ## Camera Administration
@@ -81,22 +101,30 @@ Most cameras have a built in motion sensor. It may be disabled by default, or ha
 
 If the camera does not have a motion sensor, use a [Motion Detection Plugin](/motion-detection) to enable sofware motion detection.
 
-### Amcrest Motion Setup
+<div style="width: 100%; display: flex; flex-direction: row;">
 
-![image](/img/amcrest-motion.png)
+<div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+Amcrest
+<img src="/img/amcrest-motion.png" width="200" data-zoomable="true" >
+</div>
 
-### Hikvision Motion Setup
 
-![image](/img/hikvision-motion.png)
+<div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+Hikvision
+<img src="/img/hikvision-motion.png" width="200" data-zoomable="true">
+</div>
+
+</div>
+
+## Enable ONVIF
+
+`ONVIF` is a standard camera communication channel for motion, snapshots, codecs configuration. and pan/tilt/zoom. It is available on most `Local` cameras and should be enabled (even if not using the `ONVIF Plugin`).
+
+* Enable `ONVIF` on the camera.
+* Some cameras require entering a separate username and password for the ONVIF service. Ensure the `ONVIF` service has a user set up with the **same** username and password credentials used for the camera itself.
 
 ## Other Settings
 
 ### Password
 
-Set the password to a simple alphanumeric secret. Special characters often cause authentication issues. If the camera supports both `Basic` and `Digest` Authorization, configure it for `Digest`, which is more secure.
-
-### ONVIF
-
-`ONVIF` is a standard camera communication channel for motion, snapshots, and pan/tilt/zoom.
-* Enable `ONVIF` on the camera.
-* Some cameras require entering a separate username and password for the ONVIF service. Ensure the `ONVIF` service has a user set up with the **same** username and password credentials used for the camera itself.
+Set the password to a simple alphanumeric secret. Special characters often cause authentication issues. If the camera supports both `Basic` and `Digest` Authorization, configure it for `Digest` only, which is more secure.
