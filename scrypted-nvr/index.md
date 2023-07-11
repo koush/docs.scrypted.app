@@ -24,13 +24,11 @@ Scrypted NVR records your camera 24 hours a day, 7 days a week. The the fluid us
 ## Scrypted NVR Demo
 
 <template v-if="!isTouchDevice">
-This is a live interactive demo of the mobile app:
+A desktop preview is available on the <a href='https://demo.scrypted.app/#/demo'>Demo Site</a>. This is a live, interactive, demo of the mobile app:
 <br/>
 <div style="display: flex; flex-direction: column; align-items: center;">
 <iframe style="border-style: none;" class="ma-1" width="360" height="750" src="https://demo.scrypted.app/?display=phone"></iframe>
 </div>
-<br/>
-A desktop preview is available on the <a href='https://demo.scrypted.app/#/demo'>Demo Site</a>.
 </template>
 <template v-else>
 An interactive preview is available on the <a href='https://demo.scrypted.app/#/demo'>Demo Site</a>.

@@ -1,9 +1,31 @@
 # Installation
 
-Scrypted can be installed on Windows, Mac, or Linux as a [desktop app](/desktop-application) or as a [background service](https://github.com/koush/scrypted#installation).
+Scrypted can be installed on Windows, Mac, or Linux as a [desktop app](#desktop-app) or as a [background service](#background-service).
 
-After Scrypted has been installed, continue on to the Camera Setup.
+After the chosen installation method is complete, return to this page to continue with [Camera Setup](/camera-preparation.md).
 
-::: tip
-The recommended installation method for Mac and Windows is the Desktop app. It provides hardware accelerated features unavailable to the background service, inside a self contained easy install package.
-:::
+## Desktop App
+
+The recommended installation method for Mac and Windows is the [Desktop App](/desktop-application). It provides hardware accelerated features unavailable to the background service, inside a self contained, easily installable package.
+
+## Background Service
+
+Select the appropriate guide.
+
+ * [Raspberry Pi](https://github.com/koush/scrypted/wiki/Installation:-Raspberry-Pi)
+ * Linux
+   * [Docker Compose](https://github.com/koush/scrypted/wiki/Installation:-Docker-Compose-Linux) - This is the recommended method. Local installation may interfere with other server software.
+   * [Docker](https://github.com/koush/scrypted/wiki/Installation:-Docker-Linux) - Use Docker Compose. This is a reference documentation.
+   * [Local Installation](https://github.com/koush/scrypted/wiki/Installation:-Linux) - Use this if Docker scares you or whatever.
+ * Mac
+   * [Local Installation](https://github.com/koush/scrypted/wiki/Installation:-Mac)
+<!--    * Docker Desktop is [not supported](https://github.com/koush/scrypted/wiki/Installation:-Docker-Desktop). -->
+ * Windows
+   * [Local Installation](https://github.com/koush/scrypted/wiki/Installation:-Windows)
+   * [WSL2 Installation](https://github.com/koush/scrypted/wiki/Installation:-WSL2-Windows)
+ * [Home Assistant OS](https://github.com/koush/scrypted/wiki/Installation:-Home-Assistant-OS)
+<!--    * Docker Desktop is [not supported](https://github.com/koush/scrypted/wiki/Installation:-Docker-Desktop). -->
+ * [ReadyNAS: Docker](https://github.com/koush/scrypted/wiki/Installation:-Docker-ReadyNAS)
+ * [Synology: Docker](https://github.com/koush/scrypted/wiki/Installation:-Docker-Synology-NAS)
+ * [QNAP: Docker](https://github.com/koush/scrypted/wiki/Installation:-Docker-QNAP-NAS)
+ * [Unraid: Docker](https://github.com/koush/scrypted/wiki/Installation:-Docker-Unraid)
