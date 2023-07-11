@@ -14,6 +14,7 @@ While a TPU can improve performance, a capable GPU can also fill the gap.
 |TPU|❌|❌|✅|
 
 ❗ Only available in the [Scrypted Desktop App](/desktop-application.md).
+
 ❌ Not applicable.
 
 ## System Comparison
