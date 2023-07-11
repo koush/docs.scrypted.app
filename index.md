@@ -15,7 +15,7 @@ const isTouchDevice = ref((detectedTouch && !isWindows));
 
 ## What is Scrypted? 
 
-[Scrypted](https://scrypted.app) is an open source video integration platofrm. Using various [Plugins](/platforms), Scrypted can receive streams from a range of cameras and send them to other platforms ([HomeKit](/homekit), [Google Home](/google-home), [Alexa](/alexa), [Home Assistant](/home-assistant)).
+[Scrypted](https://scrypted.app) is an [open source](https://github.com/koush/scrypted) video integration platofrm. Using various [Plugins](/platforms), Scrypted can receive streams from a range of cameras and send them to other platforms ([HomeKit](/homekit), [Google Home](/google-home), [Alexa](/alexa), [Home Assistant](/home-assistant)).
 
 ::: tip
 Scrypted has active communities on [Discord](https://discord.gg/DcFzmBHYGq), [Reddit](https://reddit.com/r/scrypted), and [Github](https://github.com/koush/scrypted). Check them out if you have questions!
