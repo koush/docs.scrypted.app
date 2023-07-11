@@ -47,3 +47,12 @@ Rich Notifications are delivered instantly to iOS, Android, and Web apps with a 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
 <img src="/img/scrypted-nvr/notification.png" width="200" data-zoomable="true">
 </div>
+
+## Hardware Acceleration
+
+Scrypted NVR `Smart Detections` use one of the available [Object Detection Plugins](/object-detection) which can run on:
+
+* CPU
+* GPU
+* Apple Silicon Neural Engine 🔥
+* [Coral.ai](https://coral.ai) accelerators 🔥
