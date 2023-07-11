@@ -21,8 +21,8 @@ hero:
     - theme: alt
       text: Linux (apt, coming soon!)
     - theme: alt
-      text: Docker
-      link: https://github.com/koush/scrypted#installation
+      text: Other
+      link: https://docs.scrypted.app/installation.html#background-service
 
 features:
   - title: Scrypted Server
