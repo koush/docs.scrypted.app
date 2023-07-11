@@ -80,6 +80,10 @@ Scrypted NVR recommends using a direct attached storage drive (internal or USB).
 |Western Digital WD Purple|
 |Seagate Skyhawk|
 
+::: warning
+There are many [fake drives](https://www.youtube.com/watch?v=QOhLlvNlI20) for sale that misreport their actual storage capacity. Buy from a reputable retailer and manufacturer. If a deal seems too good to be true, it probably is.
+:::
+
 ::: tip
 Macs can be quite picky about USB drive bays and may disconnect them randomly. Using a brand that advertises itself as Mac compatible, such as OWC, is advised. Read the Amazon reviews from Mac users. All drive bays tend to be trouble free on Linux and Windows.
 :::
