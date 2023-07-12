@@ -16,10 +16,13 @@ hero:
       text: Windows
       link: https://nuts.scrypted.app/download/win32
     - theme: alt
-      text: Mac
+      text: Mac (Apple Silicon)
       link: https://nuts.scrypted.app/download/osx
     - theme: alt
-      text: Linux (Coming Soon)
+      text: Mac (Intel)
+      link: https://nuts.scrypted.app/download/osx_64
+    # - theme: alt
+    #   text: Linux (Coming Soon)
     - theme: alt
       text: Docker (Free)
       link: https://docs.scrypted.app/installation.html#background-service
