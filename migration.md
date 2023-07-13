@@ -23,7 +23,7 @@ C:\Users\USERNAME\.scrypted\volume
 ## Copy Database
 
 ::: tip
-If the Scrypted server is being upgraded to the [Desktop App](/desktop-application) or different installation method, skip the `Copy` step and simply run the installer. The existing Scrypted Database will be used in place.
+If the Scrypted server is being upgraded to the [Desktop App](/desktop-application) or a different installation method, skip the `Copy` step and simply run the installer. The existing Scrypted Database will be used in place.
 :::
 
 
