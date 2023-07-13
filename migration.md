@@ -22,7 +22,12 @@ C:\Users\USERNAME\.scrypted\volume
 
 ## Copy Database
 
-1. Copy the `volume` to your new server, and place it in the appropriate location. The volume can be restored on any other Scrypted installation, even another architecture or host OS.
+::: tip
+If the Scrypted server is being upgraded to the [Desktop App](/desktop-application) or different installation method, skip the `Copy` step and simply run the installer. The existing Scrypted Database will be used in place.
+:::
+
+
+1. `Copy` the `volume` to your new server, and place it in the appropriate location. The volume can be restored on any other Scrypted installation, even another architecture or host OS.
 2. Start Scrypted on the new server.
 3. Update the `Scrypted Server Address` setting since the new server will have a different IP address.
 
