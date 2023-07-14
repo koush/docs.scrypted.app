@@ -31,6 +31,10 @@ Cameras fall into two categories: `Local` cameras and `Cloud` cameras. `Local` c
 
 Find a matching plugin for your camera and install it in Scrypted Management Console. If the camera is a `Local` camera, and no exact plugin can be found, try using the `ONVIF` or `RTSP` plugin (in that order).
 
+::: tip
+When adding a camera using the appropriate `Local` camera plugin, it is recommended to log in with **admin** login credentials. Features such as Pan/Tilt/Zoom, codec configuration, etc, are often unavailable to a user account.
+:::
+
 ## Amcrest/Dahua
 
 The `Amcrest Plugin` also supports Dahua cameras. Supports `Two Way Audio`.
