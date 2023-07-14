@@ -20,12 +20,11 @@ onMounted(() => {
 
 # Camera Configuration
 
+Before adding a camera to Scrypted, the stream settings are configured for max compatibility with HomeKit, Google Home, Alexa, and [Scrypted NVR](https://demo.scrypted.app/#/demo). The steps below detail the optimal settings for these streaming destinations.
+
 ## Camera Administration
 
 Open the Camera's web admin page or app to configure its codec settings. If the camera does not have a codec configuration tool (ie, cloud cameras such as Ring, Google, Arlo) or is a Unifi camera, continue on to [Adding the Camera](/add-camera).
-
-The steps below configure the optimal settings for streaming destinations within Scrypted. Streaming destinations include HomeKit, Google Home, Alexa, Home Assistant, and [Scrypted NVR](https://demo.scrypted.app/#/demo).
-
 
 ## Stream Setup
 
