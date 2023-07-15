@@ -11,6 +11,9 @@ export default defineConfig({
   ],
   description: 'Video Integration Platform',
   themeConfig: {
+    editLink: {
+      pattern: 'https://github.com/koush/docs.scrypted.app/edit/main/:path'
+    },
     logo: '/img/logo.png',
     search: {
       provider: 'local'
