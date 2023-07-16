@@ -28,7 +28,7 @@ Open the Camera's web admin page or app to configure its codec settings. If the 
 
 ## Authentication Setup
 
-Ensure the password is a simple alphanumeric phrase. Special characters *often* cause issues when authenticating with RTSP, HTTP, or other camera services. If the camera supports both `Basic` and `Digest` Authorization, configure it for `Digest` only, which is more secure.
+Ensure the camera password is a simple alphanumeric phrase. Special characters *often* cause issues when authenticating with RTSP, HTTP, or other camera services. If the camera supports both `Basic` and `Digest` Authorization, configure it for `Digest` only, which is more secure.
 
 ## Stream Setup
 
