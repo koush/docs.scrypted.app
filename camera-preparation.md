@@ -26,9 +26,9 @@ Before adding a camera to Scrypted, the stream settings are configured for max c
 
 Open the Camera's web admin page or app to configure its codec settings. If the camera does not have a codec configuration tool (ie, cloud cameras such as Ring, Google, Arlo) or is a Unifi camera, continue on to [Adding the Camera](/add-camera).
 
-## Password
+## Authentication Setup
 
-Ensure the password is a simple alphanumeric phrase. Special characters *often* cause authentication issues. If the camera supports both `Basic` and `Digest` Authorization, configure it for `Digest` only, which is more secure.
+Ensure the password is a simple alphanumeric phrase. Special characters *often* cause issues when authenticating with RTSP, HTTP, or other camera services. If the camera supports both `Basic` and `Digest` Authorization, configure it for `Digest` only, which is more secure.
 
 ## Stream Setup
 
