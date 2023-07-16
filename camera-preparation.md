@@ -26,6 +26,10 @@ Before adding a camera to Scrypted, the stream settings are configured for max c
 
 Open the Camera's web admin page or app to configure its codec settings. If the camera does not have a codec configuration tool (ie, cloud cameras such as Ring, Google, Arlo) or is a Unifi camera, continue on to [Adding the Camera](/add-camera).
 
+## Password
+
+Ensure the password is a simple alphanumeric phrase. Special characters *often* cause authentication issues. If the camera supports both `Basic` and `Digest` Authorization, configure it for `Digest` only, which is more secure.
+
 ## Stream Setup
 
 Enable the all available streams on the camera. Scrypted will use multiple streams, if available, for different purposes (remote streaming, analysis, etc). Most cameras will have one one `Main Stream` and one `Substream`. Some may only have a `Main Stream`. Cameras with one `Main Stream` and two `Substreams` are ideal.
@@ -121,9 +125,3 @@ Hikvision
 
 * Enable `ONVIF` on the camera.
 * Some cameras require entering a separate username and password for the ONVIF service. Ensure the `ONVIF` service has a user set up with the **same** username and password credentials used for the camera itself.
-
-## Other Settings
-
-### Password
-
-Set the password to a simple alphanumeric secret. Special characters often cause authentication issues. If the camera supports both `Basic` and `Digest` Authorization, configure it for `Digest` only, which is more secure.
