@@ -121,7 +121,7 @@ Hikvision
 
 ## Enable ONVIF
 
-`ONVIF` is a standard camera communication channel for motion, snapshots, codecs configuration. and pan/tilt/zoom. It is available on most `Local` cameras and should be enabled (even if not using the `ONVIF Plugin`).
+`ONVIF` is a standard camera communication channel for motion, snapshots, two way audio, codecs configuration. and pan/tilt/zoom. It is available on most `Local` cameras and should be enabled (even if not using the `ONVIF Plugin`).
 
 * Enable `ONVIF` on the camera.
 * Some cameras require entering a separate username and password for the ONVIF service. Ensure the `ONVIF` service has a user set up with the **same** username and password credentials used for the camera itself.
