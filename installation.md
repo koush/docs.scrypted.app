@@ -11,7 +11,7 @@ features unavailable to the background service, inside a self contained, easily 
 
 ## Docker
 
-Linux + Docker installations should refer to the [System Requirements](/server-hardware#scrypted-host-operating-system) for host OS recommendations. Window/Mac + Docker is [not supported](https://github.com/koush/scrypted/wiki/Installation:-Docker-Desktop).
+Linux + Docker installations should refer to the [System Requirements](/server-hardware#scrypted-host-operating-system) for host OS recommendations. Window/Mac + Docker Desktop is [not supported](https://github.com/koush/scrypted/wiki/Installation:-Docker-Desktop).
 
 ## Background Service
 
