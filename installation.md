@@ -6,11 +6,14 @@ After the chosen installation method is complete, return to this page to continu
 
 ## Desktop App
 
-The recommended installation method for Mac and Windows is the [Desktop App](/desktop-application). It provides hardware accelerated features unavailable to the background service, inside a self contained, easily installable package.
+The recommended installation method for Mac and Windows is the [Desktop App](/desktop-application). It provides hardware accelerated 
+features unavailable to the background service, inside a self contained, easily installable package.
+
+## Docker
+
+Linux + Docker installations should refer to the [System Requirements](/server-hardware#scrypted-host-operating-system) for host OS recommendations. Window/Mac + Docker is [not supported](https://github.com/koush/scrypted/wiki/Installation:-Docker-Desktop).
 
 ## Background Service
-
-Select the appropriate guide.
 
  * [Raspberry Pi](https://github.com/koush/scrypted/wiki/Installation:-Raspberry-Pi)
  * Linux
