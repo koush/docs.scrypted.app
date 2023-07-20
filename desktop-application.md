@@ -20,7 +20,7 @@ hero:
       link: https://nuts.scrypted.app/download/osx
     - theme: alt
       text: Mac (Intel)
-      link: https://nuts.scrypted.app/download/osx_64
+      link: https://nuts.scrypted.app/download/osx_amd64
     # - theme: alt
     #   text: Linux (Coming Soon)
     - theme: alt
