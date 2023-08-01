@@ -31,6 +31,15 @@ If the Scrypted server is being upgraded to the [Desktop App](/desktop-applicati
 2. Start Scrypted on the new server.
 3. Update the `Scrypted Server Address` setting since the new server will have a different IP address.
 
+## Migrating to the Desktop Application
+
+When migrating to the Desktop Application, after installation is complete, delete the following plugins. These plugins are no longer necessary, as the Desktop Application has hardware accelerated equivalents:
+
+* Python Codecs
+* OpenCV
+* OpenVINO
+* TensorFlow
+
 ## Migrating to HomeAssistant
 **This requres you have followed the steps above and have a backup of your existing installation.**
 
