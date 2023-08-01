@@ -43,19 +43,22 @@ The [Scrypted Custom Component](https://github.com/koush/ha_scrypted) repository
 2. Go to `Settings > Devices & Services > Add New` and select `Scrypted`.
 3. Enter the host, username, and password for your Scrypted server, as well as a name and icon for the sidebar link in the Home Assistant menu.
 
+Scrypted can now be accessed via the sidebar.
+
 ## Home Assistant Card
 
 Scrypted NVR provides Home Assistant cards that feature low latency playback and two way audio. The NVR app is also deeply integrated into the Home Assistant UI.
 
-1. Open Scrypted NVR in a **desktop browser** and navigate to a camera.
-2. Open the the `Camera Settings`.
-3. Copy the `Scrypted NVR Card Webpage URL`.
+1. Open Scrypted NVR inside Home Assistant using a **desktop browser**.
+2. Navigate to the camera.
+3. Open the the `Camera Settings`.
+4. Copy the `Scrypted NVR Card Webpage URL`.
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
 <img src="/img/ha-card-url.png" width="200" data-zoomable="true">
 </div>
 
-4. Add the following `Webpage Card` in Home Assistant and replace/paste the previously copied `Scrypted NVR Card Webpage URL` below:
+5. Add the following `Webpage Card` in Home Assistant and replace/paste the previously copied `Scrypted NVR Card Webpage URL` below:
 
 ```yaml
 type: iframe
