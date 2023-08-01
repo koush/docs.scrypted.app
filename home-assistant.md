@@ -46,6 +46,16 @@ https://github.com/koush/ha_scrypted`
 2. Go to `Settings > Devices & Services > Add New` and select `Scrypted`.
 3. Enter the host, username, and password for your Scrypted server, as well as a name and icon for the side panel link in the Home Assistant menu.
 
+|Setting|Sample Configuration|
+|-|-|
+|Host|192.168.2.124:10443|
+|Username|admin|
+|Password|swordfish!|
+
+::: tip
+If Scrypted was installed as a Home Assistant Addon, there is no default login. A dedicated admin account will need to be created for the custom component. The `Host` will be `127.0.0.1:10443`.
+:::
+
 Scrypted can now be accessed in the Home Assistant side panel.
 
 ## Card Setup
