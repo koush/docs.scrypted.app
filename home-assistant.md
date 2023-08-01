@@ -35,17 +35,20 @@ The Scrypted Custom Component for Home Assistant adds support for managing Scryp
 
 </div>
 
-## Home Assistant Component
+## Install Custom Component
 
 The [Scrypted Custom Component](https://github.com/koush/ha_scrypted) repository can be found on github.
 
-1. Install this repository using [HACS](https://hacs.xyz) by adding  the repository as a Custom Repository: `https://github.com/koush/ha_scrypted`.
+1. Install the custom component using the [Home Assistant Community Store (HACS)](https://hacs.xyz) by adding the `Custom Repository`:
+```
+https://github.com/koush/ha_scrypted`
+```
 2. Go to `Settings > Devices & Services > Add New` and select `Scrypted`.
-3. Enter the host, username, and password for your Scrypted server, as well as a name and icon for the sidebar link in the Home Assistant menu.
+3. Enter the host, username, and password for your Scrypted server, as well as a name and icon for the side panel link in the Home Assistant menu.
 
-Scrypted can now be accessed via the sidebar.
+Scrypted can now be accessed in the Home Assistant side panel.
 
-## Home Assistant Card
+## Card Setup
 
 Scrypted NVR provides Home Assistant cards that feature low latency playback and two way audio. The NVR app is also deeply integrated into the Home Assistant UI.
 
@@ -68,7 +71,7 @@ aspect_ratio: '16:9'
 allow_open_top_navigation: true
 ```
 
-## Card Options
+## Advanced Card Options
 
 The Scrypted NVR card behavior can be configured using query string parameters on the `Webpage URL`. These parameters may be combined.
 
