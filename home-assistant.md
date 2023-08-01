@@ -73,7 +73,7 @@ allow_open_top_navigation: true
 
 ## Advanced Card Options
 
-The Scrypted NVR card behavior can be configured using query string parameters on the `Webpage URL`. These parameters may be combined.
+The Scrypted NVR card behavior can be configured using query string parameters on the `Webpage URL`.
 
 ### Auto Play
 
@@ -107,3 +107,13 @@ Open Scrypted NVR Timeline in Home Assistant when the playing video is clicked.
 url: >-
   /api/scrypted/<token>/endpoint/@scrypted/nvr/public/#/iframe/<id>?videoClick=ha
 ```
+
+### Multiple Parameters
+
+Multiple parameters may be combined using `&`.
+
+```yaml[Video Click]
+url: >-
+  /api/scrypted/<token>/endpoint/@scrypted/nvr/public/#/iframe/<id>?imageClick=ha&videoClick=ha&live=true
+```
+
