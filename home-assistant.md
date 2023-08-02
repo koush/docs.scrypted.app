@@ -30,7 +30,8 @@ The Scrypted Custom Component for Home Assistant adds support for managing Scryp
 
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
-<img src="/img/ha2.png" width="200" data-zoomable="true">
+<!-- <img src="/img/ha2.png" width="200" data-zoomable="true"> -->
+<video src="https://github.com/koush/docs.scrypted.app/assets/73924/65f6c214-2d79-43b6-9a45-23dd291a04f5" width="200" autoplay loop muted></video>
 </div>
 
 </div>
