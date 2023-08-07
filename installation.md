@@ -9,6 +9,16 @@ After the chosen installation method is complete, return to this page to continu
 The recommended installation method for Mac and Windows is the [Desktop App](/desktop-application). It provides hardware accelerated 
 features unavailable to the background service, inside a self contained, easily installable package.
 
+### Ubuntu/Debian Repository
+
+Desktop App users on Ubuntu must install the app using `apt` to receive auto updates. 
+
+```sh
+echo 'deb [trusted=yes] https://nuts.scrypted.app/apt stable main' | sudo tee /etc/apt/sources.list.d/scrypted.list
+sudo apt update
+sudo apt install scrypted-electron
+```
+
 ## Docker
 
 Linux + Docker installations should refer to the [System Requirements](/server-hardware#scrypted-host-operating-system) for host OS recommendations. Window/Mac + Docker Desktop is [not supported](https://github.com/koush/scrypted/wiki/Installation:-Docker-Desktop).

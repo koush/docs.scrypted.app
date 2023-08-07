@@ -21,8 +21,9 @@ hero:
     - theme: alt
       text: Mac (Intel)
       link: https://nuts.scrypted.app/download/osx_amd64
-    # - theme: alt
-    #   text: Linux (Coming Soon)
+    - theme: alt
+      text: Linux
+      link: /installation.html#ubuntu-debian-repository
     - theme: alt
       text: Docker (Free)
       link: https://docs.scrypted.app/installation.html#background-service
