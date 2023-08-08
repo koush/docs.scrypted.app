@@ -95,7 +95,7 @@ Configure the audio codec on all streams by manufacturer recommendation below, a
 
 |Manufacturer|Codec|Sample Rate|
 |-|-|-|
-|Amcrest|AAC|8000|
+|Amcrest/Dahua|AAC|8000|
 |Other Manufacturer|PCM-ulaw/G711u/G711mulaw|8000|
 
 ## Motion Sensor Setup
