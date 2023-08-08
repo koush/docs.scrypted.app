@@ -94,6 +94,7 @@ If `Frame Rate` of `20` is unavailable, `10` can be used instead.
 * Audio codecs, in order of preference:
   * Opus (used for live streaming to HomeKit or web)
   * PCM-ulaw/G711u/G711mulaw (raw format suitable for web)
+  * AAC (required by Amcrest for two way audio). Frequency `8000` recommended for HomeKit Secure Video intercom.
 
 ## Motion Sensor Setup
 

@@ -38,6 +38,7 @@ When adding a camera using the appropriate `Local` camera plugin, it is recommen
 ## Amcrest/Dahua
 
 The `Amcrest Plugin` also supports Dahua cameras. Supports `Two Way Audio`.
+* Two Way Audio: Leave camera audio Encode Mode set to `AAC` and set Sampling Frequency to `8000`.
 * Install the ONVIF plugin if your camera has `Pan/Tilt/Zoom` capability.
 
 ## Hikvision
