@@ -15,6 +15,10 @@ Intel 12th generation or later processors should use `Ubuntu 23.04 Lunar` on the
 
 Scrypted can run on low power devices such as a Raspberry Pi 4 or more powerful devices like an Intel NUC or Mac Mini. Most users will be just fine with a low powered device. However, if running software [Motion Sensors](/motion-detection) or [Scrypted NVR](/scrypted-nvr/), the performance requirements will increase per camera.
 
+::: warning
+The server must be connected to your network with a wired network connection.
+:::
+
 ::: tip
 When choosing cameras or a server, consult the [Buyers's Guide](/buyers-guide/) for recommendations that will work together to perform best with Scrypted.
 :::
