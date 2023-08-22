@@ -1,14 +1,5 @@
 <script setup lang="ts"> 
-import {ref} from 'vue';
-
-const isWindows = navigator.userAgent.includes('Windows');
-
-const detectedTouch = ('ontouchstart' in window) ||
-    (navigator.maxTouchPoints > 0) ||
-    ((navigator as any).msMaxTouchPoints > 0);
-
-const isTouchDevice = ref((detectedTouch && !isWindows));
-
+import { isTouchDevice } from './src/touch.ts';
 </script>
 
 # Scrypted

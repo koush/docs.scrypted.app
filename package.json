@@ -9,5 +9,6 @@
   },
   "dependencies": {
     "medium-zoom": "^1.0.8"
-  }
+  },
+  "type": "module"
 }
