@@ -5,7 +5,7 @@
     "docs:preview": "vitepress preview"
   },
   "devDependencies": {
-    "vitepress": "^1.0.0-beta.5"
+    "vitepress": "^1.0.0-rc.4"
   },
   "dependencies": {
     "medium-zoom": "^1.0.8"
