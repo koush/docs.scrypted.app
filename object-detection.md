@@ -19,3 +19,22 @@ Available on all platforms. Can use Intel CPU/GPU for hardware acceleration.
 ## Tensorflow Lite
 
 Available on all platforms. Can use [Coral.ai](https://coral.ai) TPU for hardware acceleration.
+
+To use a Coral EdgeTPU within docker:
+
+1. The docker host must install the appropriate EdgeTPU drivers:
+  * EdgeTPU USB Drivers: https://coral.ai/docs/accelerator/get-started/
+  * EdgeTPU M.2 or PCIe Drivers: https://coral.ai/docs/m2/get-started/
+2. Modify `~/.scrypted/docker-compose.yml` on the host to pass throug the appropriate USB or PCI devices.
+3.. Then recreate the docker container:
+```sh
+cd ~/.scrypted
+docker compose down
+docker compose up -d
+```
+4. Upon successful installation, the `Tensorflow Lite` Plugin will report the device in Settings and the Console log.
+```
+edge tpus [{'type': 'pci', 'path': '/dev/apex_0'}]
+model: yolov8n_full_integer_quant_320
+added tpu {'type': 'pci', 'path': '/dev/apex_0'}
+```
