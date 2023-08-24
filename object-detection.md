@@ -14,7 +14,7 @@ Available only in the [Scrypted Desktop App](/desktop-application). Uses the GPU
 
 ## OpenVINO
 
-Available on all platforms. Can use Intel CPU/GPU for hardware acceleration.
+Available on all platforms. Can use Intel CPU/GPU for hardware acceleration. The `Console` will show the available hardware.
 
 ## Tensorflow Lite
 
@@ -32,7 +32,7 @@ cd ~/.scrypted
 docker compose down
 docker compose up -d
 ```
-4. Upon successful installation, the `Tensorflow Lite` Plugin will report the device in Settings and the Console log.
+4. Upon successful installation, the `Tensorflow Lite` Plugin will report the device in Settings and the `Console` log.
 ```
 edge tpus [{'type': 'pci', 'path': '/dev/apex_0'}]
 model: yolov8n_full_integer_quant_320
