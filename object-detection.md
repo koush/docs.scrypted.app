@@ -26,7 +26,7 @@ To use a Coral EdgeTPU within docker:
   * EdgeTPU USB Drivers: https://coral.ai/docs/accelerator/get-started/
   * EdgeTPU M.2 or PCIe Drivers: https://coral.ai/docs/m2/get-started/
 2. Modify `~/.scrypted/docker-compose.yml` on the host to pass throug the appropriate USB or PCI devices.
-3.. Then recreate the docker container:
+3. Then recreate the docker container:
 ```sh
 cd ~/.scrypted
 docker compose down
