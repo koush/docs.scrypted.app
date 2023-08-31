@@ -32,6 +32,7 @@ sc.exe delete scrypted.exe
 
 Install the Desktop app, and then delete the following plugins. These plugins are no longer necessary, as the Desktop Application has hardware accelerated equivalents:
 
+* PAM-Diff
 * Python Codecs
 * OpenCV
 * OpenVINO
