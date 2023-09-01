@@ -11,6 +11,13 @@ Available only in the [Scrypted Desktop App](/desktop-application). Uses the GPU
 1. Enable the `WebGL Motion Sensor` Extension on the camera.
 2. Optional: Configure motion zones to filter out windy trees or busy roads.
 
+## WebAssembly Motion Sensor
+
+Available only to [Scrypted NVR](/scrypted-nvr) users. Uses the SIMD for hardware acceleration.
+
+1. Enable the `WebAssembly Motion Sensor` Extension on the camera.
+2. Optional: Configure motion zones to filter out windy trees or busy roads.
+
 ## OpenCV
 
 Accurate and customizeable motion detector.
@@ -24,7 +31,3 @@ Accurate and customizeable motion detector.
 ::: danger
 Deprecated. This motion detector runs in environments without `Python`. Not recommended for use.
 :::
-
-1. Install the `PAM-Diff Plugin`.
-2. Enable the `PAM-Diff Motion Sensor` Extension on the camera.
-3. Optional: Configure motion zones to filter out windy trees or busy roads.
