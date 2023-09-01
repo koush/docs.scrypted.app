@@ -31,3 +31,5 @@ Accurate and customizeable motion detector.
 ::: danger
 Deprecated. This motion detector runs in environments without `Python`. Not recommended for use.
 :::
+
+Do not install this plugin. If you were told to use this plugin by a YouTube guide, etc, it is out of date and incorrect. It is not maintained and will not function on recent versions of Scrypted.
