@@ -36,7 +36,6 @@ Install the Desktop app, and then delete the following plugins. These plugins ar
 * Python Codecs
 * OpenCV
 * OpenVINO
-* TensorFlow
 
 The Scrypted data migration is now complete.
 
