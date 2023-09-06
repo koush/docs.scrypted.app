@@ -13,7 +13,7 @@ Available only in the [Scrypted Desktop App](/desktop-application). Uses the GPU
 
 ## WebAssembly Motion Sensor
 
-Available only to [Scrypted NVR](/scrypted-nvr) users. Uses the SIMD for hardware acceleration.
+Available only to [Scrypted NVR](/scrypted-nvr/) users. Uses the SIMD for hardware acceleration.
 
 1. Enable the `WebAssembly Motion Sensor` Extension on the camera.
 2. Optional: Configure motion zones to filter out windy trees or busy roads.
