@@ -22,6 +22,8 @@ onMounted(() => {
 
 ![image](/img/scrypted-nvr/tablet.png){data-zoomable}
 
+The Scrypted NVR app can be installed after the NVR plugin is installed and configured.
+
 ## Remote Access via Apps and Browser
 
 Cameras and recordings can be viewed remotely via a browser or the app.
