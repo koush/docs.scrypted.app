@@ -73,7 +73,7 @@ services:
             - ~/.scrypted/volume:/server/volume
 ```
 
-## Additional Recording Storage
+## Multiple Storage Devices
 
 Multiple Recording Storage directories be added to Scrypted NVR.
 
