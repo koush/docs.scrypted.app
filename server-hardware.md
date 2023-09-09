@@ -36,7 +36,7 @@ The Raspberry Pi 4 and low performance NAS are not recommended for use with Scry
 |Mac Mini 16GB|20+|Scrypted NVR can leverage Apple Silicon's [Neural Engine](https://www.makeuseof.com/what-is-a-neural-engine-how-does-it-work/).|
 
 ::: tip
-Low performance hardware like the Raspberry Pi 4 or a NAS can be used with Scrypted NVR, and handle up to 10 cameras with no issues, if [Scrypted NVR Smart Detections](/scrypted-nvr/smart-detections) is disabled.
+Low performance hardware like the Raspberry Pi 4 or a NAS can be used with Scrypted NVR, and handle up to 10 cameras with no issues, if [Scrypted NVR Smart Detections](/scrypted-nvr/features#smart-detections) is disabled.
 :::
 
 ### Storage

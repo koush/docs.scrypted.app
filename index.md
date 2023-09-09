@@ -14,7 +14,7 @@ Scrypted has active communities on [Discord](https://discord.gg/DcFzmBHYGq), [Re
 
 ## What is Scrypted NVR?
 
-[Scrypted NVR](/scrypted-nvr/) is a `Plugin` that provides 24/7 recording, [smart detections](/scrypted-nvr/smart-detections), [notifications](/scrypted-nvr/smart-detections#rich-notifications), and accompanying [mobile and desktop apps](/scrypted-nvr/apps).
+[Scrypted NVR](/scrypted-nvr/) is a `Plugin` that provides 24/7 recording, [smart detections](/scrypted-nvr/features#smart-detections), [notifications](/scrypted-nvr/features#rich-notifications), and accompanying [mobile and desktop apps](/scrypted-nvr/apps).
 
 <template v-if="!isTouchDevice">
 A desktop preview is available on the <a href='https://demo.scrypted.app/#/demo'>Demo Site</a>. This is a live, interactive, demo of the mobile app:

@@ -10,7 +10,7 @@ From a current price to performance standpoint, the Raspberry Pi 4b is a poor ch
 
 ## Scrypted NVR Recommendations
 
-However, if motion detection is necessary, or the server will be running Scrypted NVR for 24/7 recording and [Smart Detections](/scrypted-nvr/smart-detections), running it on a more capable system than a Raspberry Pi 4 is recommended. A good CPU, GPU, and TPU (Tensor Processing Unit, aka AI chip) all contribute towards video stream detection performance.
+However, if motion detection is necessary, or the server will be running Scrypted NVR for 24/7 recording and [Smart Detections](/scrypted-nvr/features#smart-detections), running it on a more capable system than a Raspberry Pi 4 is recommended. A good CPU, GPU, and TPU (Tensor Processing Unit, aka AI chip) all contribute towards video stream detection performance.
 
 While a TPU can improve performance, a capable GPU can also fill the gap.
 
