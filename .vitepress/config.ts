@@ -61,7 +61,7 @@ export default defineConfig({
           { text: 'What is Scrypted NVR?', link: '/scrypted-nvr/' },
           { text: 'Features', link: '/scrypted-nvr/features' },
           { text: 'Installation', link: '/scrypted-nvr/installation' },
-          { text: 'Scrypted NVR App', link: '/scrypted-nvr/apps' },
+          { text: 'iOS nad Android App', link: '/scrypted-nvr/apps' },
         ]
       },
       {
