@@ -82,8 +82,8 @@ Storage directories added to Scrypted NVR must be designated as either `Large` o
   * Fast storage will store remote and low resolution (scrubbing, event lookup). 
   * The Default Recording Storage is designated as `Large`.
 
-Multiple Recording Storage directories is not [RAID](https://en.wikipedia.org/wiki/RAID), but it is a form of redundancy: substreams are written to separate storage devices. If there are multiple `Large` or `Fast` disks, the Storage used for a stream will be chosen to maximize disk utilization and retention time.  A Storage device going offline or failing will make the camera streams stored on that device unavailable. Other Recordings and other substreams will be available on the remaining Storage devices.
+Multiple Recording Storage directories is not the same as [RAID](https://en.wikipedia.org/wiki/RAID), but it is a form of redundancy: substreams are written to separate storage devices. If there are multiple `Large` or `Fast` disks, the Storage used for a stream will be chosen to maximize disk utilization and retention time.  if a Storage device goes offline or fails will, camera (sub)streams stored on that device will be unavailable. The other (sub)streams will be available on the remaining Storage devices.
 
-For example, if a `Large` disk fails, some high resolution stream will be lost. But the remote and low resolution recordings stored on the `Fast` disks are still available.
+For example, if a `Large` disk fails, some high resolution stream will be unavailable. But the remote and low resolution recordings stored on the `Fast` disks are still available.
 
 RAID Storage can be assigned to Recording Storage as a `Large` or `Fast` directory for servers that need full redundancy.
