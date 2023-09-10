@@ -36,9 +36,10 @@ Cameras and recordings can be viewed remotely via a browser or the app.
 
 ## iOS
 
-1. [Install the Scrypted Beta App using TestFlight](https://testflight.apple.com/join/mpXXwLk7).
-2. Login using the Scrypted Cloud credentials from the previous steps.
-3. The app will prompt to login a second time. The second time, use your *local* Scrypted Server credentials.
+1. Install [TestFlight](https://apps.apple.com/us/app/testflight/id899247664) on iOS.
+2. [Install the Scrypted Beta App using TestFlight](https://testflight.apple.com/join/mpXXwLk7).
+3. Login using the Scrypted Cloud credentials from the previous steps.
+4. The app will prompt to login a second time. The second time, use your *local* Scrypted Server credentials.
 
 ## Android and Web
 
