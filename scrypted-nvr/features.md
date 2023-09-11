@@ -48,7 +48,7 @@ Events
 
 </div>
 
-### Rich Notifications
+## Rich Notifications
 
 Rich Notifications are delivered instantly to iOS, Android, and Web apps with a thumbnail of the detection.
 
