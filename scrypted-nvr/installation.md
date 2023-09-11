@@ -13,7 +13,7 @@ Servers running in Docker will need to mount this path into the container.
 ### Docker
 
 1. Edit `~/.scrypted/docker-compose.yaml`.
-2. Make the highlighted changes in the yaml block below, adjust the storage directory as appopriate.
+2. Make the highlighted changes in the yaml block below, adjust the storage directory as appropriate.
 3. Restart the container by running the following: 
 
 ```sh
