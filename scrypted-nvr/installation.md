@@ -4,13 +4,40 @@ Install Scrypted using the one of the [Installation](/installation) options.
 
 After installation, the Scrypted NVR can be installed from the `Plugins` section of the `Scrypted Management Console`.
 
+## Purchase and Manage Subscription
+
+This Scrypted NVR Plugin is in a *paid* public beta. A [live demo server](https://demo.scrypted.app/#/demo) and free trial is available to test the product.
+
+1. Visit to the [billing portal](https://billing.scrypted.app) and login to purchase a subscription. Return to the billing portal at any time to upgrade or cancel the subscription.
+2. Login to the Scrypted NVR Plugin using the *same login account* from the billing potral. The plugin's `Login` button can be found at the top of the Scrypted NVR plugin page within the Scrypted Management Console.
+
 ## Recording Storage
 
-The recordings storage directory can be configured within the `Scrypted NVR Plugin` Settings.
+The recordings storage directory can be configured within the `Scrypted NVR Plugin` Settings. [Multiple Storage Devices](#multiple-storage-devices) can also be added.
 
-Servers running in Docker will need to mount this path into the container.
+Servers running in Docker will need to [mount this path into the container](#docker-volumes).
 
-### Docker
+## Camera Setup
+
+1. [Configure the Camera](/camera-preparation).
+2. [Add the Camera to Scrypted](/add-camera.md).
+3. [Verify the Motion Sensor](/camera-verification) is working. Scrypted waits for the camera to report motion to trigger video analysis. 
+:::warning
+If the Camera's Motion Sensor is disabled, detections will be unavailable on the NVR timeline.
+:::
+4. Enable Recording in the Camera Settings by selecting `Scrypted NVR` in the `Integrations and Extensions` list.
+
+## Cameras and Recordings
+
+After the Scrypted NVR Plugin has been installed, `Cameras and Recordings` can be viewed on your local network by visiting the address of this Scrypted server.
+
+Cloud access must be enabled for remote access via [browser, iOS, Android, and Desktop Apps](apps).
+
+![](/img/scrypted-nvr/cameras-and-recordings.png)
+
+## Advanced Storage Options
+
+### Docker Volumes
 
 1. Edit `~/.scrypted/docker-compose.yaml`.
 2. Make the highlighted changes in the yaml block below, adjust the storage directory as appopriate.
@@ -73,7 +100,7 @@ services:
             - ~/.scrypted/volume:/server/volume
 ```
 
-## Multiple Storage Devices
+### Multiple Storage Devices
 
 Multiple Recording Storage directories be added to Scrypted NVR.
 

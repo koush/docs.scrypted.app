@@ -61,7 +61,7 @@ export default defineConfig({
           { text: 'What is Scrypted NVR?', link: '/scrypted-nvr/' },
           { text: 'Features', link: '/scrypted-nvr/features' },
           { text: 'Installation', link: '/scrypted-nvr/installation' },
-          { text: 'Scrypted NVR App', link: '/scrypted-nvr/apps' },
+          { text: 'Apps and Remote Access', link: '/scrypted-nvr/apps' },
         ]
       },
       {
@@ -82,7 +82,7 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Advanced',
+        text: 'Troubleshooting',
         collapsed: true,
         items: [
           { text: 'Backup and Restore', link: '/migration' },

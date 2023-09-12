@@ -18,15 +18,11 @@ onMounted(() => {
 }
 </style>
 
-# Scrypted NVR App
+# Apps and Remote Access
 
 ![image](/img/scrypted-nvr/tablet.png){data-zoomable}
 
-The Scrypted NVR app can be installed after the NVR plugin is installed and configured.
-
-## Remote Access via Apps and Browser
-
-Cameras and recordings can be viewed remotely via a browser or the app.
+Cameras and recordings can be viewed remotely via a browser or the app by enabling cloud access.
 
 1. Install the `Scrypted Cloud Plugin`.
     * Scrypted Cloud must also be installed when self hosting. See below for self hosting instructions.
