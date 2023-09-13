@@ -119,6 +119,23 @@ url: >-
   /api/scrypted/<token>/endpoint/@scrypted/nvr/public/#/iframe/<id>?videoClick=ha
 ```
 
+### Resolution
+
+By default the Card live stream will use the `low-resolution` stream: it loads fast, uses minimal resources, is thus best suited for a small frame. The resolution can be changed with the `destination` parameter. Supported destination values include `low-resolution`, `remote`, and `local`.
+
+:::warning
+Using the high resolution stream (`local`) for a Cards is not recommended, as it can cause the Home Assistant Dashboard to become sluggish with multiple cards. 
+:::
+
+`destination=local`
+
+`destination=remote`
+
+```yaml[Resolution]
+url: >-
+  /api/scrypted/<token>/endpoint/@scrypted/nvr/public/#/iframe/<id>?destination=local
+```
+
 ### Multiple Parameters
 
 Multiple parameters may be combined using `&`.
