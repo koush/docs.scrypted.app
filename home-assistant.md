@@ -48,7 +48,7 @@ The [Scrypted Custom Component](https://github.com/koush/ha_scrypted) repository
 ```
 https://github.com/koush/ha_scrypted
 ```
-2. Go to `Settings > Devices & Services > Add New` and select `Scrypted`.
+2. Go to `Settings > Devices & Services > Add Integration` and select `Scrypted`.
 3. Enter the host, username, and password for your Scrypted server, as well as a name and icon for the side panel link in the Home Assistant menu.
 
 |Setting|Sample Configuration|
