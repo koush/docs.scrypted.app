@@ -38,13 +38,17 @@ The Scrypted Custom Component for Home Assistant adds support for managing Scryp
 
 ## Install Custom Component
 
+:::warning
+The Custom Component must be installed even if using the Scrypted Home Assistant Addon. Users of the Scrypted Addon must also remove the `Scrypted` entry item in the sidebar/drawer first.
+:::
+
 The [Scrypted Custom Component](https://github.com/koush/ha_scrypted) repository can be found on github.
 
 1. Install the custom component using the [Home Assistant Community Store (HACS)](https://hacs.xyz) by adding the `Custom Repository`:
 ```
 https://github.com/koush/ha_scrypted
 ```
-2. Go to `Settings > Devices & Services > Add New` and select `Scrypted`.
+2. Go to `Settings > Devices & Services > Add Integration` and select `Scrypted`.
 3. Enter the host, username, and password for your Scrypted server, as well as a name and icon for the side panel link in the Home Assistant menu.
 
 |Setting|Sample Configuration|

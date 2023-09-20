@@ -11,6 +11,10 @@ This Scrypted NVR Plugin is in a *paid* public beta. A [live demo server](https:
 1. Visit to the [billing portal](https://billing.scrypted.app) and login to purchase a subscription. Return to the billing portal at any time to upgrade or cancel the subscription.
 2. Login to the Scrypted NVR Plugin using the *same login account* from the billing potral. The plugin's `Login` button can be found at the top of the Scrypted NVR plugin page within the Scrypted Management Console.
 
+::: tip
+Scrypted NVR on Mac and Windows must [Install](https://docs.scrypted.app/desktop-application.html) or [Migrate](https://docs.scrypted.app/migration.html#migrating-to-the-desktop-application) to the Desktop Application.
+:::
+
 ## Recording Storage
 
 The recordings storage directory can be configured within the `Scrypted NVR Plugin` Settings. [Multiple Storage Devices](#multiple-storage-devices) can also be added.
