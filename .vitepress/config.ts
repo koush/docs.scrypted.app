@@ -1,7 +1,7 @@
-import { defineConfig } from 'vitepress'
+import { withMermaid } from "vitepress-plugin-mermaid";
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
+export default withMermaid({
   title: 'Scrypted Docs',
   head: [
     ['link', { rel: 'icon', href: '/img/icons/apple-icon-180.png' }],
@@ -62,6 +62,7 @@ export default defineConfig({
           { text: 'Features', link: '/scrypted-nvr/features' },
           { text: 'Installation', link: '/scrypted-nvr/installation' },
           { text: 'Apps and Remote Access', link: '/scrypted-nvr/apps' },
+          { text: 'Troubleshooting', link: '/scrypted-nvr/troubleshooting' },
         ]
       },
       {
@@ -82,7 +83,7 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Troubleshooting',
+        text: 'Server Maintenance',
         collapsed: true,
         items: [
           { text: 'Backup and Restore', link: '/migration' },
@@ -105,5 +106,10 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/koush/scrypted' },
       { icon: 'twitter', link: 'https://twitter.com/scryptedapp' },
     ]
-  }
+  },
+
+  mermaid: {
+    // refer https://mermaid.js.org/config/setup/modules/mermaidAPI.html#mermaidapi-configuration-defaults for options
+  },
+
 })
