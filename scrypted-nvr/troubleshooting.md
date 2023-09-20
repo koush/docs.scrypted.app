@@ -34,22 +34,35 @@ Troubleshoot:
 
 ```mermaid
 stateDiagram
-    direction LR
-    camera: Waiting for Camera Motion
-    motion: Camere Reports Motion
-    scrypted: Object Detection Running
-    detected: Object Detected
-    motionstopped: Camera Reports Motion Ended
-    detectionstopped: Object Detection Ends
-    detectionstopped --> camera
+    classDef cameraClass fill:blue
+    classDef runningClass fill:green
 
+    direction LR
+    camera: Wait for Camera Motion
+    camera2: Wait for Camera Motion
+    motion: Camera Reports Motion
+    running: Run Object Detection
+    running2: Run Object Detection
+    detected: Objects Detected
+    decode: Wait For Video Frame
+    analyze: Analyze Frame
+    motionstopped: Camera Reports Motion Stopped
+    detectionstopped: Stop Object Detection
+
+    running2 --> decode
     camera --> motion
-    motion --> scrypted
+    motion --> running
+    decode --> analyze
+    analyze --> detected
+    detected --> running2
     detected --> Notifications
     detected --> Timeline/Events
-    scrypted --> motionstopped
-    scrypted --> detected
+    running2 --> motionstopped
     motionstopped --> detectionstopped
+    detectionstopped --> camera2
+
+   class camera, camera2 cameraClass
+   class running, running2 runningClass
 ```
 
 Object Detection failure is typically due to the camera hardware not properly supplying motion events. View the camera in the NVR and verify there are motion events in the `Timeline`. Detected Motion will be denoted with a thin and solid blue line, as seen below.
