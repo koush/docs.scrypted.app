@@ -57,4 +57,4 @@ In some cases, the camera motion sensor is unreliable or non functional. Scrypte
 Recording issues typically stem from the storage directory or device not being properly configured.
 
 1. In the `Scrypted NVR Plugin` Settings, verify the storage directory is configured and is reporting the correct disk size and free space. The drive should ideally be at least 1 terabyte.
-2. Refer to the [Recording Storage](http://localhost:5173/scrypted-nvr/installation.html#recording-storage) docs to properly format the drive with the correct filesystem and, if applicable, mount it into Docker.
+2. Refer to the [Recording Storage](/scrypted-nvr/installation.html#recording-storage) docs to properly format the drive with the correct filesystem and, if applicable, mount it into Docker.
