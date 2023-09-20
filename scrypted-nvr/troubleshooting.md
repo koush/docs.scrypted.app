@@ -30,7 +30,29 @@ Troubleshoot:
 
 ## Object Detection
 
-Object Detection failure is typically due to the camera hardware not properly supplying motion events. Open the camera `Timeline`, and verify there are `Motion` events. Recorded `Motion` will be denoted with a thin solid line, as seen below.
+### Detection Flow Chart
+
+```mermaid
+stateDiagram
+    direction LR
+    camera: Waiting for Camera Motion
+    motion: Camere Reports Motion
+    scrypted: Object Detection Running
+    detected: Object Detected
+    motionstopped: Camera Reports Motion Ended
+    detectionstopped: Object Detection Ends
+    detectionstopped --> camera
+
+    camera --> motion
+    motion --> scrypted
+    detected --> Notifications
+    detected --> Timeline/Events
+    scrypted --> motionstopped
+    scrypted --> detected
+    motionstopped --> detectionstopped
+```
+
+Object Detection failure is typically due to the camera hardware not properly supplying motion events. View the camera in the NVR and verify there are motion events in the `Timeline`. Detected Motion will be denoted with a thin and solid blue line, as seen below.
 
 <div style="width: 100%; display: flex; flex-direction: row;">
 
@@ -40,7 +62,7 @@ No Motion Detected
 </div>
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
-Motion Detected
+Detected Motion
 <img src="/img/scrypted-nvr/nvr-has-motion.png" width="200" data-zoomable="true">
 </div>
 
