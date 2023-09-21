@@ -1,6 +1,6 @@
 # Motion Detection
 
-Motion Detection plugins analyze the camera stream for motion. This is useful if the camera does not have a motion sensor or the motion sensor is sub par. Motion Detection is also used by [Scrypted NVR](/scrypted-nvr/) for smart detections.
+Motion Detection plugins analyze the camera stream for motion. This is useful if the camera does not have a motion sensor or the motion sensor is sub par.
 
 There are several Motion Detection Plugins available. [Scrypted Desktop App](/desktop-application) installations should use the [WebGL Motion Sensor](#webgl-motion-sensor), all other installations should use [OpenCV](#opencv).
 
