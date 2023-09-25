@@ -46,6 +46,13 @@ Some cameras, such as Hikvision or Amcrest, expose more streams and `Framerate` 
 
 ### H.264 Video Codec
 
+::: tip
+HomeKit, Google Home, Alexa, and the web all **require** H.264 for live streaming.
+
+Cameras encoding H.265 will suffer severe picture quality degradation during playback due to transcoding (in addition to the massively increased CPU usage and latency). Thus it is highly recommended that cameras encode H.264 natively. Some cameras, such as Reolink, only output H.265 in 4k mode, but will use H.264 if the resolution is lowered to 2k. Even though the resolution is lower, the picture quality at native 2k is better than transcoded 4k.
+:::
+
+
 Set all the stream video codecs to `H.264`. Do **NOT** use `H.264+`, `Super H.264`, `H.264B`: **TURN OFF/DISABLE ALL SPECIAL VARIANTS**. Sometimes this unsupported variant setting is called `Smart Code(c)` and it should be set to `Close` or `Off`.
 
 #### Main Stream Setup
