@@ -53,7 +53,7 @@ Cameras encoding H.265 will suffer severe picture quality degradation during pla
 :::
 
 
-Set all the stream video codecs to `H.264`. Do **NOT** use `H.264+`, `Super H.264`, `H.264B`: **TURN OFF/DISABLE ALL SPECIAL VARIANTS**. Sometimes this unsupported variant setting is called `Smart Code(c)` and it should be set to `Close` or `Off`.
+Set all the stream video codecs to `H.264` (M or Main profile if specifiable). Do **NOT** use `H.264+`, `Super H.264`, etc: **TURN OFF/DISABLE ALL SPECIAL VARIANTS**. Sometimes this unsupported variant setting is called `Smart Code(c)` and it should be set to `Close` or `Off`.
 
 #### Main Stream Setup
 
@@ -61,9 +61,9 @@ If the camera only has a single main stream, configure it as `1920x1080` and `2 
 
 |Main Stream Resolution|Bitrate|
 |-|-|
-|3840x2160|8 Mbit, variable|
-|2688x1520|3.5 Mbit, variable|
-|1920x1080|2 Mbit, variable|
+|3840x2160|8 Mbit, Variable/VBR|
+|2688x1520|3.5 Mbit, Variable/VBR|
+|1920x1080|2 Mbit, Variable/VBR|
 
 #### Sub Stream(s) Setup
 
