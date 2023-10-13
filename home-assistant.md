@@ -44,7 +44,11 @@ The Custom Component must be installed even if using the Scrypted Home Assistant
 
 If Scrypted was installed via the [Home Assistant Addon](https://github.com/koush/scrypted/wiki/Installation:-Home-Assistant-OS), complete the following steps, otherwise continue on to [Install Custom Component](#install-custom-component). 
 
-1.  Remove the `Scrypted` entry item in the sidebar/drawer via the Addon configuration.
+1.  Remove the `Scrypted` sidebar item via the Addon configuration.
+
+<div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+<img src="/img/ha-sidebar.png" width="400" data-zoomable="true">
+</div>
 
 2. The Addon installation has a default `homeassistant` user for automatic login. A separate dedicated Scrypted `admin` must be created in `Users` in the sidebar menu.
 
