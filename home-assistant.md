@@ -206,7 +206,7 @@ The grid card has additional parameters that can be used to used to customize th
 |desktopMinWidth|Desktop Browser|N/A|`480` (pixels)|
 |cols|All Devices|N/A|N/A|
 
-Use `desktopMinWidth` to set the minimum width of a camera within the grid and controls the cell wrap behavior. For example, if the screen is `960` pixels, the grid will be 2 columns. If the screen is `1920` pixels, the grid will be 4 columns.
+Use `desktopMinWidth` to set the minimum width of a camera within the grid and controls the cell wrap behavior. For example, with the default value of `480`, if the screen is `960` pixels, the grid will be 2 columns. If the screen is `1920` pixels, the grid will be 4 columns.
 
 Use `cols` to set a fixed number of columns for all screen sizes and orientations.
 
