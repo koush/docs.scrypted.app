@@ -177,14 +177,14 @@ url: >-
 
 ### Multiple Cameras
 
-Multiple cameras can be configured within a single `Webpage Card` using the `ids` parameter. The `ids` parameter is a comma separated list of device ids to display in the camera grid. The grid card works best in a [Panel View](https://www.home-assistant.io/dashboards/panel/), but can be adjusted for [Masonry View](https://www.home-assistant.io/dashboards/masonry/) by using fixed column values.
-
-The iframe url is changed:
+Multiple cameras can be configured within a single `Webpage Card`. Configuration is similar to the single camera card, albeit a slightly different url format. The iframe url is:
 
 |Card Type|URL Fragment|
 |-|-|
 |Single Camera|`...#/iframe/<id>`|
 |Camera Grid|`...#/iframegrid?ids=<id1>,<id2>`|
+
+ The `ids` parameter is a comma separated list of device ids to display in the camera grid. The grid card works best in a [Panel View](https://www.home-assistant.io/dashboards/panel/), but can be adjusted for [Masonry View](https://www.home-assistant.io/dashboards/masonry/) by using fixed column values.
 
 For example:
 
