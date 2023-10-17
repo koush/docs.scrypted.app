@@ -104,6 +104,14 @@ aspect_ratio: '16:9'
 allow_open_top_navigation: true
 ```
 
+### Multiple Camera Card Setup
+
+Alternatively (and preferably), [multiple cameras](#multiple-cameras) can be configured in a single `Webpage Card`. 
+
+:::tip
+Configuring multiple cameras within a single card dramatically improves performance and load times.
+:::
+
 ## Advanced Card Options
 
 The Scrypted NVR card behavior can be configured using query string parameters on the `Webpage URL`.
@@ -166,6 +174,38 @@ Multiple parameters may be combined using `&`.
 url: >-
   /api/scrypted/<token>/endpoint/@scrypted/nvr/public/#/iframe/<id>?imageClick=ha&videoClick=ha&live=true
 ```
+
+### Multiple Cameras
+
+Multiple cameras can be configured within a single `Webpage Card` using the `ids` parameter. The `ids` parameter is a comma separate list of device ids to display in the camera grid. The grid card works best in a [Panel View](https://www.home-assistant.io/dashboards/panel/).
+
+The iframe url is changed:
+
+|Card Type|URL Fragment|
+|-|-|
+|Single Camera|`...#/iframe/<id>`|
+|Camera Grid|`...#/iframegrid?ids=<id1>,<id2>`|
+
+For example:
+
+```yaml
+type: iframe
+url: >-
+  /api/scrypted/<token>/endpoint/@scrypted/nvr/public/#/iframegrid?ids=<id1>,<id2>
+allow_open_top_navigation: true
+```
+
+The grid card has additional parameters that can be used to used to customize the layout based on the device type and screen orientation:
+
+|Name|Device Type|Screen Orientation|Default Value|
+|-|-|-|-|
+|phonePortraitCols|Phone|Portrait|`1`|
+|phoneLandscapeCols|Phone|Landscape|`2`|
+|tabletPortraitCols|Tablet|Portrait|`2`|
+|tabletLandscapeCols|Tablet|Landscape|`3`|
+|desktopMinWidth|Desktop Browser|N/A|`480` (pixels)|
+
+The `desktopMinWidth` sets the minimum width of a camera within the grid and controls the cell wrap behavior. For example, if the screen is `960` pixels, the grid will be 2 columns. If the screen is `1920` pixels, the grid will be 4 columns.
 
 ## Notifications
 
