@@ -177,7 +177,7 @@ url: >-
 
 ### Multiple Cameras
 
-Multiple cameras can be configured within a single `Webpage Card` using the `ids` parameter. The `ids` parameter is a comma separate list of device ids to display in the camera grid. The grid card works best in a [Panel View](https://www.home-assistant.io/dashboards/panel/).
+Multiple cameras can be configured within a single `Webpage Card` using the `ids` parameter. The `ids` parameter is a comma separated list of device ids to display in the camera grid. The grid card works best in a [Panel View](https://www.home-assistant.io/dashboards/panel/), but can be adjusted for [Masonry View](https://www.home-assistant.io/dashboards/masonry/) by using fixed column values.
 
 The iframe url is changed:
 
@@ -204,8 +204,11 @@ The grid card has additional parameters that can be used to used to customize th
 |tabletPortraitCols|Tablet|Portrait|`2`|
 |tabletLandscapeCols|Tablet|Landscape|`3`|
 |desktopMinWidth|Desktop Browser|N/A|`480` (pixels)|
+|cols|All Devices|N/A|N/A|
 
-The `desktopMinWidth` sets the minimum width of a camera within the grid and controls the cell wrap behavior. For example, if the screen is `960` pixels, the grid will be 2 columns. If the screen is `1920` pixels, the grid will be 4 columns.
+Use `desktopMinWidth` to set the minimum width of a camera within the grid and controls the cell wrap behavior. For example, if the screen is `960` pixels, the grid will be 2 columns. If the screen is `1920` pixels, the grid will be 4 columns.
+
+Use `cols` to set a fixed number of columns for all screen sizes and orientations.
 
 ## Notifications
 
