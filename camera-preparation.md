@@ -30,6 +30,10 @@ Open the Camera's web admin page or app to configure its codec settings. If the 
 
 Ensure the camera password is a simple alphanumeric phrase. Special characters *often* cause issues when authenticating with RTSP, HTTP, or other camera services. If the camera supports both `Basic` and `Digest` Authorization, configure it for `Digest` only, which is more secure.
 
+::: warning
+Reolink cameras must use simple alphanumeric passwords or the stream will fail to load.
+:::
+
 ## Stream Setup
 
 Enable the all available streams on the camera. Scrypted will use multiple streams, if available, for different purposes (remote streaming, analysis, etc). Most cameras will have one one `Main Stream` and one `Substream`. Some may only have a `Main Stream`. Cameras with one `Main Stream` and two `Substreams` are ideal.
