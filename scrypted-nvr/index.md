@@ -10,7 +10,7 @@ import { isTouchDevice } from '../src/touch';
 
 ## 24/7 Recording
 
-Scrypted NVR records your camera 24 hours a day, 7 days a week. The the fluid user interface provides quick and easy access to all your recordings.
+Scrypted NVR records your camera 24 hours a day, 7 days a week. The fluid user interface provides quick and easy access to all your recordings.
 
 
 ## Scrypted NVR Demo
