@@ -26,18 +26,12 @@ Linux + Docker installations should refer to the [System Requirements](/server-h
 ## Background Service
 
  * [Raspberry Pi](https://github.com/koush/scrypted/wiki/Installation:-Raspberry-Pi)
- * Linux
-   * [Docker Compose](https://github.com/koush/scrypted/wiki/Installation:-Docker-Compose-Linux) - This is the recommended method. Local installation may interfere with other server software.
-   * [Docker](https://github.com/koush/scrypted/wiki/Installation:-Docker-Linux) - Use Docker Compose. This is a reference documentation.
-   * [Local Installation](https://github.com/koush/scrypted/wiki/Installation:-Linux) - Not recommended. Use Docker.
- * Mac
-   * [Local Installation](https://github.com/koush/scrypted/wiki/Installation:-Mac)
-<!--    * Docker Desktop is [not supported](https://github.com/koush/scrypted/wiki/Installation:-Docker-Desktop). -->
+ * [Linux - Docker Compose](https://github.com/koush/scrypted/wiki/Installation:-Docker-Compose-Linux)
+ * [Mac - Terminal Installation](https://github.com/koush/scrypted/wiki/Installation:-Mac)
  * Windows
-   * [Local Installation](https://github.com/koush/scrypted/wiki/Installation:-Windows)
+   * [Terminal Installation](https://github.com/koush/scrypted/wiki/Installation:-Windows)
    * [WSL2 Installation](https://github.com/koush/scrypted/wiki/Installation:-WSL2-Windows)
  * [Home Assistant OS](https://github.com/koush/scrypted/wiki/Installation:-Home-Assistant-OS)
-<!--    * Docker Desktop is [not supported](https://github.com/koush/scrypted/wiki/Installation:-Docker-Desktop). -->
  * [ReadyNAS: Docker](https://github.com/koush/scrypted/wiki/Installation:-Docker-ReadyNAS)
  * [Synology: Docker](https://github.com/koush/scrypted/wiki/Installation:-Docker-Synology-NAS)
  * [QNAP: Docker](https://github.com/koush/scrypted/wiki/Installation:-Docker-QNAP-NAS)
