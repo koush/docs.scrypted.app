@@ -36,6 +36,10 @@ A two way audio camera can be combined with a smart button to create a doorbell 
 It is not recommended to buy a 4K wireless cameras, as the stream bitrate will be problematic on a wireless network, resulting in dropped frames and connections.
 :::
 
+::: warning
+Reolink 4K cameras *only* supports H.265 in 4K mode. Dropping the resolution to 2K mode allows H.264 usage, but the image is cropped, and has a narrower field of view. Reolink 4K cameras are not recommended.
+:::
+
 ## 4MP/2K Cameras
 
   * PoE
