@@ -85,10 +85,23 @@ Scrypted can now be accessed in the Home Assistant side panel.
 
 Scrypted NVR provides Home Assistant cards that feature low latency playback and two way audio. The NVR app is also deeply integrated into the Home Assistant UI.
 
+There are several types of cards available:
+
+* Single Camera Card
+* Camera Grid Card
+* Event Reel Card
+
+:::tip
+Configuring multiple cameras within a single card dramatically improves performance and load times.
+:::
+
+Follow the instructions below, and then substitute the card URL appopriately.
+
+
 1. Open Scrypted NVR inside Home Assistant using a **desktop browser**.
 2. Navigate to the camera.
 3. Open the the `Camera Settings`.
-4. Copy the `Scrypted NVR Card Webpage URL`.
+4. Copy the `Scrypted NVR Card Webpage URL`. (Substitute this with [Camera Grid](#camera-grid-card) or [Event Reel](#event-reel-card) URL if desired.)
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
 <img src="/img/ha-card-url.png" width="200" data-zoomable="true">
@@ -104,15 +117,7 @@ aspect_ratio: '16:9'
 allow_open_top_navigation: true
 ```
 
-### Multiple Camera Card Setup
-
-Alternatively (and preferably), [multiple cameras](#multiple-cameras) can be configured in a single `Webpage Card`. 
-
-:::tip
-Configuring multiple cameras within a single card dramatically improves performance and load times.
-:::
-
-## Advanced Card Options
+## Camera Card Options
 
 The Scrypted NVR card behavior can be configured using query string parameters on the `Webpage URL`.
 
@@ -175,7 +180,7 @@ url: >-
   /api/scrypted/<token>/endpoint/@scrypted/nvr/public/#/iframe/<id>?imageClick=ha&videoClick=ha&live=true
 ```
 
-### Multiple Cameras
+## Camera Grid Card
 
 Multiple cameras can be configured within a single `Webpage Card`. Configuration is similar to the single camera card, albeit a slightly different url format. The iframe url is:
 
@@ -195,7 +200,7 @@ url: >-
 allow_open_top_navigation: true
 ```
 
-The grid card has additional parameters that can be used to used to customize the layout based on the device type and screen orientation:
+The Camera Grid card has additional parameters that can be used to used to customize the layout based on the device type and screen orientation:
 
 |Name|Device Type|Screen Orientation|Default Value|
 |-|-|-|-|
@@ -209,6 +214,35 @@ The grid card has additional parameters that can be used to used to customize th
 Use `desktopMinWidth` to set the minimum width of a camera within the grid and controls the cell wrap behavior. For example, with the default value of `480`, if the screen is `960` pixels, the grid will be 2 columns. If the screen is `1920` pixels, the grid will be 4 columns.
 
 Use `cols` to set a fixed number of columns for all screen sizes and orientations.
+
+## Event Reel Card
+
+The Event Reel shows the recent highlighted events in a scrollable reel. Configuration is similar to the single camera card, albeit a slightly different url format. The iframe url is:
+
+|Card Type|URL Fragment|
+|-|-|
+|Single Camera|`...#/iframe/<id>`|
+|Event Reel|`...#/iframeevents`|
+
+The Event Reel card has additional parameters that can be used to used to customize the cameras and events shown:
+
+
+|Name|Default Value|Description|
+|-|-|-|
+|ids|`undefined`|The camera ids shown in the reel. All are shown by default.|
+|hiddenDetections|`undefined`|The detection types to hide in the reel. `Person`, `Vehicle`, `Animal`, etc. All are shown by default.|
+
+
+ The `ids` parameter is a comma separated list of device ids to display in the camera grid. The grid card works best in a [Panel View](https://www.home-assistant.io/dashboards/panel/), but can be adjusted for [Masonry View](https://www.home-assistant.io/dashboards/masonry/) by using fixed column values.
+
+For example:
+
+```yaml
+type: iframe
+url: >-
+  /api/scrypted/<token>/endpoint/@scrypted/nvr/public/#/iframeevents?ids=<id1>,<id2>
+allow_open_top_navigation: true
+```
 
 ## Notifications
 
