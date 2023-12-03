@@ -106,7 +106,7 @@ services:
 
 ### Multiple Storage Devices
 
-Multiple Recording Storage directories be added to Scrypted NVR.
+Multiple Recording Storage directories can be added to Scrypted NVR. This can be used to improve loading performance, especially when recording a large number of cameras or recording primarily to a NAS.
 
 Storage directories added to Scrypted NVR must be designated as either `Large` or `Fast`.
   * Large storage will store the local resolution recording (high quality).
