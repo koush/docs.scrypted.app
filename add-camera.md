@@ -73,6 +73,11 @@ Most local cameras can be used with the `ONVIF Plugin`, but using this plugin is
 * If there is no mail delivery of motion events, use one of the [Motion Detection Plugins](/motion-detection) to analyze video for motion.
 * When adding the camera with the `RTSP Plugin`, add and assign all available streams. There is typically a `Main Stream` and a `Substream`.
 
+::: tip
+For optimal system performance, it is extremely important to add and assign both the main stream and the sub stream. Motion analysis on a high resolution main stream may cause system instability.
+:::
+
+
 <div style="width: 100%; display: flex; flex-direction: row;">
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
