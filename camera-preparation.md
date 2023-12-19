@@ -116,7 +116,7 @@ Most cameras have a built in motion sensor. It may be disabled by default, or ha
 * Trees, bushes, or other objects that may trigger motion via wind.
 * Camera facing a busy road will trigger motion on every passing car.
 
-If the camera does not have a motion sensor, use a [Motion Detection Plugin](/motion-detection) to enable sofware motion detection.
+If the camera does not have a motion sensor, use a [Motion Detection Plugin](/detection/motion-detection) to enable sofware motion detection.
 
 <div style="width: 100%; display: flex; flex-direction: row;">
 

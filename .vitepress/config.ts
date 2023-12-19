@@ -77,9 +77,10 @@ export default withMermaid({
         text: 'Detection Plugins',
         collapsed: true,
         items: [
-          { text: 'Dummy Detection', link: '/dummy-detection' },
-          { text: 'Motion Detection', link: '/motion-detection' },
-          { text: 'Object Detection', link: '/object-detection' },
+          { text: 'Dummy Detection', link: '/detection/dummy-detection' },
+          { text: 'Motion Detection', link: '/detection/motion-detection' },
+          { text: 'Object Detection', link: '/detection/object-detection' },
+          { text: 'Smart Motion Sensor', link: '/detection/smart-motion-sensor' },
         ]
       },
       {

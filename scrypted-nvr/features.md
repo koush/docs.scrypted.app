@@ -58,7 +58,7 @@ Rich Notifications are delivered instantly to iOS, Android, and Web apps with a 
 
 ## Hardware Accelerated AI
 
-Scrypted NVR `Smart Detections` use one of the available [Object Detection Plugins](/object-detection) which can run on:
+Scrypted NVR `Smart Detections` use one of the available [Object Detection Plugins](/detection/object-detection) which can run on:
 
 * CPU
 * GPU
