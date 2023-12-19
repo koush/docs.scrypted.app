@@ -42,5 +42,3 @@ Low performance hardware like the Raspberry Pi 4 or a NAS can be used with Scryp
 ### Storage
 
 Any hard drive will work, surveillance hard drives are recommended. Flash drives and SD cards should not be used, as they will corrupt quickly due to the high write volume.
-
-The storage drive **must not be MS-DOS/FAT** formatted. Use an appropriate filesystem for your OS.
