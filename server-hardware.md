@@ -53,7 +53,7 @@ The storage drive **must not be MS-DOS/FAT** formatted. Use an appropriate files
 
 ::: warning
 When the storage device is a NAS Share, ensure that the NAS `Recycle Bin` feature is disabled, or the old recordings can not be properly deleted by Scrypted NVR and the disk will fill up.
-::
+:::
 
 :: warning
 Scrypted NVR will not work with filesystem quota features. Use a separate filesystem partition to restrict how much space is available.
