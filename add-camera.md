@@ -108,3 +108,10 @@ The `Google Device Access Plugin` supports Google, Nest, and Dropcam cameras, as
 ## Tuya
 
 The `Tuya Plugin` supports Tuya cameras. It requires a Tuya developer account.
+
+## Wyze
+
+The `Wyze Plugin` supports Wyze cameras. It requires a Wyze email account (not Google or Apple Sign In) and [API Key](https://developer-api-console.wyze.com/#/apikey/view).
+
+Wyze cameras do not have a built in motion sensor. Use one of the [Motion Detection Plugins](/detection/motion-detection) to analyze video for motion for HomeKit Secure Video and NVR Object Detection support.
+
