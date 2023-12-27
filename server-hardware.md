@@ -6,11 +6,6 @@ Scrypted can run on Mac, Windows, and Linux (and Docker).
 
 Linux + Docker installations should use `Ubuntu 64bit 22.04 LTS Jammy` as the host, including Raspberry Pi.
 
-::: tip
-Intel 12th generation or later processors should use `Ubuntu 23.04 Lunar` on the Docker host, for full iGPU support.
-:::
-
-
 ## Scrypted System Requirements
 
 Scrypted can run on low power devices such as a Raspberry Pi 4 or more powerful devices like an Intel NUC or Mac Mini. Most users will be just fine with a low powered device. However, if running software [Motion Sensors](/detection/motion-detection) or [Scrypted NVR](/scrypted-nvr/), the performance requirements will increase per camera.
