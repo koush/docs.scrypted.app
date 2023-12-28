@@ -5,12 +5,12 @@
     "docs:preview": "vitepress preview"
   },
   "devDependencies": {
-    "mermaid": "^10.4.0",
-    "vitepress": "^1.0.0-rc.4",
-    "vitepress-plugin-mermaid": "^2.0.14"
+    "mermaid": "^10.6.1",
+    "vitepress": "^1.0.0-rc.33",
+    "vitepress-plugin-mermaid": "^2.0.16"
   },
   "dependencies": {
-    "medium-zoom": "^1.0.8"
+    "medium-zoom": "^1.1.0"
   },
   "type": "module"
 }

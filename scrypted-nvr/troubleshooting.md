@@ -86,6 +86,23 @@ If there is no motion visible on the timeline, the camera is misconfigured and n
 
 In some cases, the camera motion sensor may be unreliable or non functional. Scrypted NVR provides software motion detection options to fill this gap. [Enable the WebGL or WebAssembly Motion Detection Extension](/detection/motion-detection) on the camera.
 
+If the motion sensor is functional, the Object Detection itself can be tested by dropping an image into it. Save the following image and dropping it into `Scrypted NVR Object Detection`:
+
+
+<div style="width: 100%; display: flex; flex-direction: row;">
+
+<div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+No Motion Detected
+<img src="/img/scrypted-nvr/troubleshooting/zidane.jpg" width="200" data-zoomable="true" >
+</div>
+
+<div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+Detected Motion
+<img src="/img/scrypted-nvr/troubleshooting/zidane-results.jpg" width="200" data-zoomable="true">
+</div>
+
+</div>
+
 
 ## Recording
 
