@@ -49,7 +49,7 @@ The [docker-compose.yml](https://github.com/koush/scrypted/blob/main/install/doc
 
 ## Mac - Terminal
 
-Scrypted NVR on Mac must install the [Install](/desktop-application) or [Migrate](/migration.md#migrating-to-the-desktop-application) to the [Desktop Application](#desktop-app). The Desktop App has GPU acceleration, is fully self contained with zero dependencies, and requires a license. The free version of Scrypted may be installed using the Command Line Installation below.
+Scrypted NVR on Mac must install the [Install](/desktop-application) or [Migrate](/migration.md#migrating-to-the-desktop-application) to the [Desktop Application](#desktop-app). The Desktop App has GPU acceleration, is fully self contained with zero dependencies, and requires a license. The free version of Scrypted may be installed using the Terminal Installation below.
 
 This [script](https://github.com/koush/scrypted/blob/main/install/local/install-scrypted-dependencies-mac.sh) will download all the dependencies, including node, python, and install Scrypted as a service.
 
