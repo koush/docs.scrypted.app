@@ -62,7 +62,7 @@ bash ~/.scrypted/install-scrypted-dependencies-mac.sh
 
 ## Windows - PowerShell
 
-Scrypted NVR on Windows must install the [Install](/desktop-application) or [Migrate](/migration.md#migrating-to-the-desktop-application) to the [Desktop Application](#desktop-app). The Desktop App has GPU acceleration, is fully self contained with zero dependencies, and requires a license. The free version of Scrypted may be installed using the Terminal Installation below.
+Scrypted NVR on Windows must install the [Install](/desktop-application) or [Migrate](/migration.md#migrating-to-the-desktop-application) to the [Desktop Application](#desktop-app). The Desktop App has GPU acceleration, is fully self contained with zero dependencies, and requires a license. The free version of Scrypted may be installed using the PowerShell Installation below.
 
 ## All Installation Options
 
@@ -70,7 +70,7 @@ Scrypted NVR on Windows must install the [Install](/desktop-application) or [Mig
  * [Linux - Docker Compose](https://github.com/koush/scrypted/wiki/Installation:-Docker-Compose-Linux)
  * [Mac - Terminal Installation](https://github.com/koush/scrypted/wiki/Installation:-Mac)
  * Windows
-   * [Terminal Installation](https://github.com/koush/scrypted/wiki/Installation:-Windows)
+   * [PowerShell Installation](https://github.com/koush/scrypted/wiki/Installation:-Windows)
    * [WSL2 Installation](https://github.com/koush/scrypted/wiki/Installation:-WSL2-Windows)
  * [Home Assistant OS](https://github.com/koush/scrypted/wiki/Installation:-Home-Assistant-OS)
  * [ReadyNAS: Docker](https://github.com/koush/scrypted/wiki/Installation:-Docker-ReadyNAS)
