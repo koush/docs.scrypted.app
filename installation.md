@@ -25,7 +25,7 @@ sudo apt install scrypted-electron
 
 ## Docker
 
-Linux + Docker installations should refer to the [System Requirements](/server-hardware#scrypted-host-operating-system) for host OS recommendations. Window/Mac + Docker Desktop is [not supported](https://github.com/koush/scrypted/wiki/Installation:-Docker-Desktop).
+Linux + Docker installations should refer to the [System Requirements](/server-hardware#scrypted-host-operating-system) for host OS recommendations. Docker Desktop on Windows/Mac is [not supported](https://github.com/koush/scrypted/wiki/Installation:-Docker-Desktop).
 
 This [script](https://github.com/koush/scrypted/blob/main/install/docker/install-scrypted-docker-compose.sh) will download and configure the the docker-compose.yml and install Scrypted as a service.
 
