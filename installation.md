@@ -43,7 +43,7 @@ There will be a prompt to install Docker and set up external storage for Scrypte
 The [docker-compose.yml](https://github.com/koush/scrypted/blob/main/install/docker/docker-compose.yml) is stored at `~/.scrypted/docker-compose.yml`.
 
 
-## Mac
+## Mac - Terminal
 
 Scrypted NVR on Mac must install the [Install](/desktop-application) or [Migrate](/migration.md#migrating-to-the-desktop-application) to the [Desktop Application](#desktop-app). The Desktop App has GPU acceleration, is fully self contained with zero dependencies, and requires a license. The free version of Scrypted may be installed using the Command Line Installation below.
 
@@ -60,7 +60,7 @@ bash ~/.scrypted/install-scrypted-dependencies-mac.sh
 
 <!--@include: ./server-port.md-->
 
-## Windows
+## Windows - Terminal
 
 Scrypted NVR on Windows must install the [Install](/desktop-application) or [Migrate](/migration.md#migrating-to-the-desktop-application) to the [Desktop Application](#desktop-app). The Desktop App has GPU acceleration, is fully self contained with zero dependencies, and requires a license. The free version of Scrypted may be installed using the Terminal Installation below.
 
