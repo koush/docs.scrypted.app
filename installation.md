@@ -68,6 +68,44 @@ bash ~/.scrypted/install-scrypted-dependencies-mac.sh
 
 Scrypted NVR on Windows must install the [Install](/desktop-application) or [Migrate](/migration.md#migrating-to-the-desktop-application) to the [Desktop Application](#desktop-app). The Desktop App has GPU acceleration, is fully self contained with zero dependencies, and requires a license. The free version of Scrypted may be installed using the PowerShell Installation below.
 
+
+## Proxmox VE
+
+Scrypted can be installed on Proxmox VE with the following script, which downloads and restores a backup:
+
+```sh
+cd /tmp
+curl -O -L https://github.com/koush/scrypted/releases/download/v0.72.0/scrypted.tar.zst^C
+pct restore 10443 scrypted.tar.zst
+```
+
+The following will add the udev rules should be used to give Scrypted access to GPU devices:
+
+```sh
+sh -c "echo 'SUBSYSTEM==\"apex\", MODE=\"0660\"' > /etc/udev/rules.d/65-scrypted.rules"
+sh -c "echo 'KERNEL==\"renderD128\", MODE=\"0666\"' >> /etc/udev/rules.d/65-scrypted.rules"
+sh -c "echo 'KERNEL==\"card0\", MODE=\"0666\"' >> /etc/udev/rules.d/65-scrypted.rules"
+udevadm control --reload-rules && udevadm trigger
+```
+
+## Coral Drivers
+
+Proxmox VE requires building the gasket-dkms driver from source. First ensure that the `pve-no-subscription`/`No Subscription` Proxmox apt repository has been added to your host. Then run the following to build and install the gasket-dms driver:
+
+```sh
+apt install pve-headers-$(uname -r)
+apt remove gasket-dkms
+apt install git
+apt install devscripts
+apt install dh-dkms
+apt install dkms 
+cd /tmp
+git clone https://github.com/google/gasket-driver.git
+cd gasket-driver/
+debuild -us -uc -tc -b
+dpkg -i ../gasket-dkms_1.0-18_all.deb 
+```
+
 ## All Installation Options
 
  * [Raspberry Pi](https://github.com/koush/scrypted/wiki/Installation:-Raspberry-Pi)
