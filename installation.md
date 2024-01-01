@@ -79,7 +79,7 @@ curl -O -L https://github.com/koush/scrypted/releases/download/v0.72.0/scrypted.
 pct restore 10443 scrypted.tar.zst
 ```
 
-The following will add the udev rules should be used to give Scrypted access to GPU devices:
+The following will add the udev rules should be used to give Scrypted access to GPU and TPU (Coral) devices:
 
 ```sh
 sh -c "echo 'SUBSYSTEM==\"apex\", MODE=\"0666\"' > /etc/udev/rules.d/65-scrypted.rules"
