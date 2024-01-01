@@ -79,6 +79,8 @@ curl -s https://raw.githubusercontent.com/koush/scrypted/main/install/local/inst
 bash install-scrypted-proxmox.sh
 ```
 
+The Scrypted container uses low end specs by default. Configure the `Resources` tab to suit the server specs and workload. `Scrypted NVR` servers should assign 8-16 cores and at least 16GB of memory. After configuration has been completed, start the container.
+
 <!--@include: ./server-port.md-->
 
 
