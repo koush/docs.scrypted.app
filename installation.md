@@ -79,6 +79,8 @@ curl -O -L https://github.com/koush/scrypted/releases/download/v0.72.0/scrypted.
 pct restore 10443 scrypted.tar.zst
 ```
 
+The default container uses low end specs, which can be tailored to better suit the server enviroment and workload.
+
 ### Hardware Acceleration Access
 
 The hardware acceleration access step is optional and intended for servers running Scrypted NVR.
