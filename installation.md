@@ -82,7 +82,7 @@ pct restore 10443 scrypted.tar.zst
 The following will add the udev rules should be used to give Scrypted access to GPU devices:
 
 ```sh
-sh -c "echo 'SUBSYSTEM==\"apex\", MODE=\"0660\"' > /etc/udev/rules.d/65-scrypted.rules"
+sh -c "echo 'SUBSYSTEM==\"apex\", MODE=\"0666\"' > /etc/udev/rules.d/65-scrypted.rules"
 sh -c "echo 'KERNEL==\"renderD128\", MODE=\"0666\"' >> /etc/udev/rules.d/65-scrypted.rules"
 sh -c "echo 'KERNEL==\"card0\", MODE=\"0666\"' >> /etc/udev/rules.d/65-scrypted.rules"
 udevadm control --reload-rules && udevadm trigger
