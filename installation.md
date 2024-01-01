@@ -71,28 +71,7 @@ Scrypted NVR on Windows must install the [Install](/desktop-application) or [Mig
 
 ## Proxmox VE
 
-Scrypted can be installed on a Proxmox VE host by running the following script which downloads and restores a backup:
-
-```sh
-cd /tmp
-curl -O -L https://github.com/koush/scrypted/releases/download/v0.72.0/scrypted.tar.zst
-pct restore 10443 scrypted.tar.zst
-```
-
-The default container uses low end specs, which can be tailored to better suit the server environment and workload.
-
-### Hardware Acceleration Access
-
-The hardware acceleration access step is optional and intended for servers running Scrypted NVR.
-
-The following script should also be run on the host to add the udev rules that will provide Scrypted access to GPU and TPU (Coral) devices:
-
-```sh
-sh -c "echo 'SUBSYSTEM==\"apex\", MODE=\"0666\"' > /etc/udev/rules.d/65-scrypted.rules"
-sh -c "echo 'KERNEL==\"renderD128\", MODE=\"0666\"' >> /etc/udev/rules.d/65-scrypted.rules"
-sh -c "echo 'KERNEL==\"card0\", MODE=\"0666\"' >> /etc/udev/rules.d/65-scrypted.rules"
-udevadm control --reload-rules && udevadm trigger
-```
+Scrypted can be installed on a Proxmox VE host by running the following [script](https://github.com/koush/scrypted/blob/main/install/local/install-scrypted-proxmox.sh) which downloads and restores a Scrypted container backup. The script prompts to pass through GPUs and Coral Edge TPUs. Servers with Coral Edge TPUs must also install the driver using the steps below.
 
 ### Coral Drivers
 
