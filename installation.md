@@ -88,7 +88,7 @@ sh -c "echo 'KERNEL==\"card0\", MODE=\"0666\"' >> /etc/udev/rules.d/65-scrypted.
 udevadm control --reload-rules && udevadm trigger
 ```
 
-## Coral Drivers
+### Coral Drivers
 
 Proxmox VE requires building the gasket-dkms driver from source. First ensure that the `pve-no-subscription`/`No Subscription` Proxmox apt repository has been added to your host. Then run the following to build and install the gasket-dms driver:
 
