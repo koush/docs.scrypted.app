@@ -81,7 +81,7 @@ pct restore 10443 scrypted.tar.zst
 
 ### Hardware Acceleration
 
-The hardware acceleration passthrough step is optional, and intended for servers running Scrypted NVR.
+The hardware acceleration passthrough step is optional and intended for servers running Scrypted NVR.
 
 The following script should also be run on the host to add the udev rules that will provide Scrypted access to GPU and TPU (Coral) devices:
 
@@ -94,9 +94,9 @@ udevadm control --reload-rules && udevadm trigger
 
 ### Coral Drivers
 
-The Coral Edge TPU driver build step is optional, and intended for servers running Scrypted NVR.
+The Coral Edge TPU driver build step is optional and intended for servers running Scrypted NVR.
 
-Proxmox VE requires building the gasket-dkms driver from source. First ensure that the `pve-no-subscription`/`No Subscription` Proxmox apt repository has been added to your host. Then run the following to build and install the gasket-dms driver:
+Proxmox VE requires building the `gasket-dkms` driver from source. First ensure that the `pve-no-subscription`/`No Subscription` Proxmox apt repository has been added to your host. Then run the following to build and install the `gasket-dmks` driver:
 
 ```sh
 apt remove -y gasket-dkms
