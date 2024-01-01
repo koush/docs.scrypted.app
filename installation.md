@@ -75,7 +75,7 @@ Scrypted can be installed on Proxmox VE with the following script, which downloa
 
 ```sh
 cd /tmp
-curl -O -L https://github.com/koush/scrypted/releases/download/v0.72.0/scrypted.tar.zst^C
+curl -O -L https://github.com/koush/scrypted/releases/download/v0.72.0/scrypted.tar.zst
 pct restore 10443 scrypted.tar.zst
 ```
 
