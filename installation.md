@@ -93,12 +93,9 @@ udevadm control --reload-rules && udevadm trigger
 Proxmox VE requires building the gasket-dkms driver from source. First ensure that the `pve-no-subscription`/`No Subscription` Proxmox apt repository has been added to your host. Then run the following to build and install the gasket-dms driver:
 
 ```sh
-apt install pve-headers-$(uname -r)
-apt remove gasket-dkms
-apt install git
-apt install devscripts
-apt install dh-dkms
-apt install dkms 
+apt install 0y pve-headers-$(uname -r)
+apt remove -y gasket-dkms
+apt install -y git devscripts dh-dkms dkms 
 cd /tmp
 git clone https://github.com/google/gasket-driver.git
 cd gasket-driver/
