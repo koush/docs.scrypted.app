@@ -79,9 +79,9 @@ curl -O -L https://github.com/koush/scrypted/releases/download/v0.72.0/scrypted.
 pct restore 10443 scrypted.tar.zst
 ```
 
-### Hardware Acceleration
+### Hardware Acceleration Access
 
-The hardware acceleration passthrough step is optional and intended for servers running Scrypted NVR.
+The hardware acceleration access step is optional and intended for servers running Scrypted NVR.
 
 The following script should also be run on the host to add the udev rules that will provide Scrypted access to GPU and TPU (Coral) devices:
 
