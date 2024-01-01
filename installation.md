@@ -79,6 +79,10 @@ curl -s https://raw.githubusercontent.com/koush/scrypted/main/install/local/inst
 bash install-scrypted-proxmox.sh
 ```
 
+<!--@include: ./server-port.md-->
+
+
+
 ### Coral Drivers
 
 The Coral Edge TPU driver build step is optional and intended for servers running Scrypted NVR.
