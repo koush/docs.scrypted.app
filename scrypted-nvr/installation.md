@@ -69,7 +69,7 @@ Cloud access must be enabled for remote access via [browser, iOS, Android, and D
 3. Restart the container by running the following: 
 
 ```sh
-cd ~/.scrypted && docker compose down && docker compose up -d.
+cd ~/.scrypted && docker compose down && docker compose up -d
 ```
 
 #### docker-compose.yaml
