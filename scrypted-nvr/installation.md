@@ -74,17 +74,19 @@ cd ~/.scrypted && docker compose down && docker compose up -d
 
 #### docker-compose.yaml
 
-```yaml{11,32}
+```yaml{13,36}
 services:
   scrypted:
     environment:
       # Scrypted NVR Storage (Part 2 of 3)
 
-      # Uncomment the next line to configure the NVR plugin to store recordings
-      # use the /nvr directory within the container. This can also be configured
-      # within the plugin manually.
-      # The drive or network share will ALSO need to be configured in the volumes
-      # section below.
+      # Uncomment this line to configure the NVR plugin to store
+      # recordings within the /nvr directory inside the container.
+      # DO NOT MODIFY /nvr.
+      # The Recordings Directory in the NVR Plugin will autopopulate
+      # with /nvr (unless it was manually changed earlier).
+      # The drive or network share will ALSO need to be configured in
+      # Part 3.
       - SCRYPTED_NVR_VOLUME=/nvr
 
       - SCRYPTED_WEBHOOK_UPDATE_AUTHORIZATION=Bearer SET_THIS_TO_SOME_RANDOM_TEXT
@@ -103,9 +105,11 @@ services:
     volumes:
       # Scrypted NVR Storage (Part 3 of 3)
 
-      # Modify to add the additional volume for Scrypted NVR.
-      # The following example would mount the /mnt/media/video path on the host
-      # to the /nvr path inside the docker container.
+      # Modify to add the add a Recordings Directory for Scrypted NVR.
+      # The following example would mount the /mnt/media/video path on
+      # the host to the /nvr path inside the docker container.
+      # Modify /mnt/media/video according to the server path.
+      # DO NOT MODIFY /nvr.
       - /mnt/media/video:/nvr
 
       # Or use a network mount from one of the CIFS/NFS examples at the top of this file.
