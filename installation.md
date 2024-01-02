@@ -95,8 +95,8 @@ Proxmox VE requires building the `gasket-dkms` driver from source. First ensure 
 apt remove -y gasket-dkms
 apt install -y git devscripts dh-dkms dkms pve-headers-$(uname -r)
 cd /tmp
-git clone https://github.com/google/gasket-driver.git
 rm -rf gasket-driver
+git clone https://github.com/google/gasket-driver.git
 cd gasket-driver/
 debuild -us -uc -tc -b
 dpkg -i ../gasket-dkms_1.0-18_all.deb 
