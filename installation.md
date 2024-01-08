@@ -89,9 +89,9 @@ The Scrypted container uses low end specs by default. Configure the `Resources` 
 
 The Coral Edge TPU driver build step is optional and intended for servers running Scrypted NVR.
 
-#### Coral PCI Drivers
+#### Coral M.2/PCI Drivers
 
-Proxmox VE requires building the `gasket-dkms` driver from source. First ensure that the `pve-no-subscription`/`No Subscription` Proxmox apt repository has been added to your host. Then run the following on the Proxmox VE host to build and install the `gasket-dmks` driver:
+The Proxmox VE host requires building the `gasket-dkms` driver from source. First ensure that the `pve-no-subscription`/`No Subscription` Proxmox apt repository has been added to your host. Then run the following on the Proxmox VE host to build and install the `gasket-dmks` M.2/PCI driver:
 
 ```sh
 apt remove -y gasket-dkms
@@ -105,6 +105,8 @@ dpkg -i ../gasket-dkms_1.0-18_all.deb
 ```
 
 #### Coral USB Drivers
+
+The Proxmox VE hots can use the USB driver provided by Google. Run the following on the Proxmox VE host to install the USB driver:
 
 ```sh
 echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main" | tee /etc/apt/sources.list.d/coral-edgetpu.list
