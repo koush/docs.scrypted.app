@@ -71,7 +71,7 @@ Scrypted NVR on Windows must install the [Install](/desktop-application) or [Mig
 
 ## Proxmox VE
 
-Scrypted can be installed on a Proxmox VE by running the following [script](https://github.com/koush/scrypted/blob/main/install/local/install-scrypted-proxmox.sh) on the Proxmox VE host. This script will download and restores a Scrypted container backup. The script prompts to pass through GPUs and Coral Edge TPUs. Hosts with Coral Edge TPUs must also install the driver using the steps below.
+Scrypted can be installed on a Proxmox VE by running the following [script](https://github.com/koush/scrypted/blob/main/install/local/install-scrypted-proxmox.sh) on the Proxmox VE host. This script will download and restore a Scrypted container backup. The script prompts to pass through GPUs and Coral Edge TPUs. Hosts with Coral Edge TPUs must also install the driver using the steps below.
 
 ```sh
 cd /tmp
