@@ -71,7 +71,7 @@ Scrypted NVR on Windows must install the [Install](/desktop-application) or [Mig
 
 ## Proxmox VE
 
-Scrypted can be installed on a Proxmox VE host by running the following [script](https://github.com/koush/scrypted/blob/main/install/local/install-scrypted-proxmox.sh) which downloads and restores a Scrypted container backup. The script prompts to pass through GPUs and Coral Edge TPUs. Servers with Coral Edge TPUs must also install the driver using the steps below.
+Scrypted can be installed on a Proxmox VE by running the following [script](https://github.com/koush/scrypted/blob/main/install/local/install-scrypted-proxmox.sh) on the Proxmox VE host. This script will download and restores a Scrypted container backup. The script prompts to pass through GPUs and Coral Edge TPUs. Hosts with Coral Edge TPUs must also install the driver using the steps below.
 
 ```sh
 cd /tmp
@@ -89,7 +89,7 @@ The Scrypted container uses low end specs by default. Configure the `Resources` 
 
 The Coral Edge TPU driver build step is optional and intended for servers running Scrypted NVR.
 
-Proxmox VE requires building the `gasket-dkms` driver from source. First ensure that the `pve-no-subscription`/`No Subscription` Proxmox apt repository has been added to your host. Then run the following to build and install the `gasket-dmks` driver:
+Proxmox VE requires building the `gasket-dkms` driver from source. First ensure that the `pve-no-subscription`/`No Subscription` Proxmox apt repository has been added to your host. Then run the following on the Proxmox VE host to build and install the `gasket-dmks` driver:
 
 ```sh
 apt remove -y gasket-dkms
