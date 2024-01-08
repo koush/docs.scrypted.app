@@ -110,7 +110,7 @@ dpkg -i ../gasket-dkms_1.0-18_all.deb
 echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main" | tee /etc/apt/sources.list.d/coral-edgetpu.list
 curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
 apt-get -y update
-apt-get -y install libedgetpu1-std
+apt-get -y install libedgetpu1-max
 ```
 
 ## All Installation Options
