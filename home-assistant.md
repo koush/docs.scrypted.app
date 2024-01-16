@@ -222,14 +222,14 @@ The Event Reel shows the recent highlighted events in a scrollable reel. Configu
 |Card Type|URL Fragment|
 |-|-|
 |Single Camera|`...#/iframe/<id>`|
-|Event Reel|`...#/iframeevents`|
+|Event Reel|`...#/iframeevents?ids=<id1>,<id2>`|
 
 The Event Reel card has additional parameters that can be used to used to customize the cameras and events shown:
 
 
 |Name|Default Value|Description|
 |-|-|-|
-|ids|`undefined`|The camera ids shown in the reel. All are shown by default.|
+|ids|`undefined`|The camera ids shown in the reel. If this parameter is ommitted, all are shown by default.|
 |hiddenDetections|`undefined`|The detection types to hide in the reel. `Person`, `Vehicle`, `Animal`, etc. All are shown by default.|
 
 
