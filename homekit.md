@@ -18,7 +18,7 @@ The `HomeKit Plugin` will automatically enable itself on all the devices current
 
 ## HomeKit Pairing
 
-Navigate to the Camera within Scrypted Management Console. View the `HomeKit` Settings and open the `Pairing` section. The pairing QR Code and manual codes can be found there. Each Camera will have its own QR Code. Use your iOS app to scan the QR Code and add it to the Home app.
+Navigate to the Camera within Scrypted Management Console. View the `HomeKit` Settings and open the `Pairing` section. The pairing QR Code and manual codes can be found there. Each Camera will have [its own QR Code](#homekit-bridge-vs-accessory-mode). Use your iOS app to scan the QR Code and add it to the Home app.
 
 ![image](/img/homekit-qr.png)
 
