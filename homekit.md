@@ -36,7 +36,7 @@ The [HomeKit Troubleshooting Guide](https://github.com/koush/scrypted/blob/main/
 
 ## HomeKit Bridge vs Accessory Mode
 
-HomeKit can connect to two different types of devices: `Accessories` and `Bridges`. `Bridges` host multiple devices, while `Accessories` only host one. By default, cameras in Scrypted are paired in `Accessory Mode`. Each Camera in Scrypted will have its own QR Code. While this can be tedious to set up compared to Home Assistant and Homebridge, which `Bridge` their cameras, `Accessory Mode` results in better performance:
+HomeKit can connect to two different types of devices: `Accessories` and `Bridges`. `Bridges` host multiple devices, while `Accessories` only host one. By default, cameras in Scrypted are paired in `Accessory Mode`. Each Camera in Scrypted will have its own QR Code. While this can be tedious to set up compared to Home Assistant and Homebridge which `Bridge` their cameras, `Accessory Mode` results in better performance:
 
 When HomeKit connects to a `Bridge`, it can only send and receive one request and response at a time. That means if any device on that `Bridge`, requests to all other devices on that Bridge are delayed until the slow device sends a response. This delay can be particularly troublesome when the camera is slow to respond to snapshot requests.
 
