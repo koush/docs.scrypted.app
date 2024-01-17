@@ -40,6 +40,6 @@ HomeKit can connect to two different types of devices: `Accessories` and `Bridge
 
 When HomeKit connects to a `Bridge`, it can only send and receive one request and response at a time. That means if any device on that `Bridge`, requests to all other devices on that Bridge are delayed until the slow device sends a response. This delay can be particularly troublesome when the camera is slow to respond to snapshot requests.
 
-For example, suppose a server has 10 cameras. When the Home app is opened on iOS, each camera is sent a snapshot request, one by one. If each camera takes 500 milliseconds to respond to the snapshot request to load the image, the server may take up to 5 seconds to process further requests, open viewing a stream or turning on a light.
+For example, suppose a server has 10 cameras. When the Home app is opened on iOS, each camera is sent a snapshot request, one by one. If each camera takes 500 milliseconds to respond to the snapshot request to load the image, the server may take up to 5 seconds to process further requests, like viewing a camera stream or turning on a light.
 
 This is a architectural limitation in HomeKit that will likely never be resolved (as there are no official camera `Bridges`), so the Scrypted recommendation to use Accessory Mode,  like real HomeKit Cameras.
