@@ -36,10 +36,10 @@ The [HomeKit Troubleshooting Guide](https://github.com/koush/scrypted/blob/main/
 
 ## HomeKit Bridge vs Accessory Mode
 
-HomeKit can connect to two different types of devices: `Accessories` and `Bridges`. `Bridges` host multiple devices, while `Accessories` only host one. By default, cameras in Scrypted are paired in `Accessory Mode`. Each Camera in Scrypted will have its own QR Code. While this can be tedious to set up compared to Home Assistant and Homebridge which `Bridge` their cameras, `Accessory Mode` results in better performance:
+HomeKit can connect to two different types of devices: `Accessories` and `Bridges`. `Bridges` host multiple devices, while `Accessories` only host one. By default, cameras in Scrypted are paired in `Accessory Mode`. Each Camera in Scrypted will have its own QR Code. While this can be tedious to set up compared to Home Assistant and Homebridge which Bridge their cameras, Accessory Mode results in better performance:
 
-When HomeKit connects to a `Bridge`, it can only send and receive one request and response at a time. That means if any device on that `Bridge`, requests to all other devices on that Bridge are delayed until the slow device sends a response. This delay can be particularly troublesome when the camera is slow to respond to snapshot requests.
+When HomeKit connects to a Bridge, it can only send and receive one request and response at a time. That means if any device on that Bridge, requests to all other devices on that Bridge are delayed until the slow device sends a response. This delay can be particularly troublesome when the camera is slow to respond to snapshot requests.
 
-For example, suppose a server has 10 cameras on a `Bridge`. When the Home app is opened on iOS, each camera is sent a snapshot request, one by one. If each camera takes 500 milliseconds to respond to the snapshot request to load the image, the Bridge may take up to 5 seconds to process further requests, like viewing a camera stream or turning on a light.
+For example, suppose a server has 10 cameras on a Bridge. When the Home app is opened on iOS, each camera is sent a snapshot request, one by one. If each camera takes 500 milliseconds to respond to the snapshot request to load the image, the Bridge may take up to 5 seconds to process further requests, like viewing a camera stream or turning on a light.
 
-This is a architectural limitation in HomeKit that will likely never be resolved (as there are no official camera `Bridges`), so the Scrypted recommendation to use Accessory Mode,  like real HomeKit Cameras.
+This is a architectural limitation in HomeKit that will likely never be resolved (as there are no official camera Bridges), so the Scrypted recommendation to use Accessory Mode,  like real HomeKit Cameras.
