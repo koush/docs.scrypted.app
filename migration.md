@@ -1,6 +1,6 @@
 # Backup and Restore
 
-When migrating to the `Desktop Application` on the same server, continue with the [Desktop Migration](#migrating-to-the-desktop-application) steps below. Otherwise follow the steps to [Copy the Database](#locate-database) to another server.
+When migrating to the `Desktop Application` **on the same server**, continue with the [Desktop Migration](#migrating-to-the-desktop-application) steps below. Otherwise follow the steps to [Create A Backup](#create-a-backup) and [Restore A Backup](#restore-a-backup) to another server.
 
 ## Migrating to the Desktop Application
 
@@ -39,7 +39,28 @@ Install the Desktop app, and then delete the following plugins. These plugins ar
 
 The Scrypted data migration is now complete.
 
-## Locate Database
+## Create a Backup
+
+1. Click Settings in the sidebar of the Management Console.
+2. Click Backup to download the backup file.
+  * The backup does **not** include NVR recordings.
+
+![](/img/create-backup.png)
+
+## Restore a Backup
+
+1. Click Settings in the sidebar of the Management Console.
+2. Click Restore and select the backup file.
+  * Restoring the backup will restart the server.
+  * All users, settings, and plugins will be restored to the state of the backup.
+  * The restore will trigger plugins to redownload additional data like Object Detection Models.
+
+
+## Manual Backup and Restore
+
+The Manual Backup and Restore steps below must be performed on a Scrypted server that is shutdown/stopped.
+
+### Locate Database
 The Scrypted database can be copied to another server by copying the `volume` directory. The `volume` path depends on your current installation host platform:
 
 ::: code-group
@@ -59,7 +80,7 @@ C:\Users\USERNAME\.scrypted\volume
 
 :::
 
-## Copy Database
+### Copy Database
 
 ::: tip
 If the Scrypted server is being upgraded to the [Desktop App](/desktop-application) or a different installation method, skip the `Copy` step and simply run the installer. The existing Scrypted Database will be used in place.
@@ -69,16 +90,3 @@ If the Scrypted server is being upgraded to the [Desktop App](/desktop-applicati
 1. `Copy` the `volume` to your new server, and place it in the appropriate location. The volume can be restored on any other Scrypted installation, even another architecture or host OS.
 2. Start Scrypted on the new server.
 3. Update the `Scrypted Server Address` setting since the new server will have a different IP address.
-
-## Migrating to HomeAssistant
-**This requres you have followed the steps above and have a backup of your existing installation.**
-
-1. Create a partial backup of the Scrypted Addon
-  * `Settings -> System -> Backups`
-2. Open the archive with 7zip (this can be done via SMB or locally)
-  * The backup will be named "nonsense".tar sort by date and select the latest one.
-3. Navigate through the backup by double clicking
-  * `. -> *.tar -> *.tar -> data -> scrypted_data`
-4. drag your "plugins" and "scrypted.db" folders into the 7zip window, clicking yes to confirm 
-5. Close 7zip and click "ok" to update the homeassistant compatible backup with your content. (this may take a moment)
-5. In Home assistant go back to your backups and restore your scrypted backup.
