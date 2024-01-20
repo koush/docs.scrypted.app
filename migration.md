@@ -66,6 +66,30 @@ Backups can be automated using other tools (curl, wget, etc) by using this URL:
 
 The Manual Backup and Restore steps below must be performed on a Scrypted server that is shutdown/stopped.
 
+::: code-group
+
+```sh [Docker Compose]
+cd ~/.scrypted
+docker compose down
+```
+
+```sh [Linux]
+sudo systemctl stop scrypted.service
+sudo rm /etc/systemd/system/scrypted.service
+```
+
+```sh [Mac]
+launchctl unload ~/Library/LaunchAgents/app.scrypted.server.plist 
+rm ~/Library/LaunchAgents/app.scrypted.server.plist
+```
+
+```powershell [Windows]
+sc.exe stop scrypted.exe
+sc.exe delete scrypted.exe
+```
+
+:::
+
 ### Locate Database
 The Scrypted database can be copied to another server by copying the `volume` directory. The `volume` path depends on your current installation host platform:
 
