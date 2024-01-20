@@ -47,6 +47,11 @@ The Scrypted data migration is now complete.
 
 ![](/img/create-backup.png)
 
+::: tip
+Backups can be automated using other tools (curl, wget, etc) by using this URL:
+`https://[scrypted-server-ip]:10443/web/component/backup`
+:::
+
 ## Restore a Backup
 
 1. Click Settings in the sidebar of the Management Console.
