@@ -41,11 +41,12 @@ The Scrypted data migration is now complete.
 
 ## Create a Backup
 
+![](/img/create-backup.png)
+
 1. Click Settings in the sidebar of the Management Console.
 2. Click Backup to download the backup file.
   * The backup does **not** include NVR recordings.
 
-![](/img/create-backup.png)
 
 ::: tip
 Backups can be automated using other tools (curl, wget, etc) by using this URL:
