@@ -233,21 +233,20 @@ The Event Reel card has additional parameters that can be used to used to custom
 
 |Name|Default Value|Description|
 |-|-|-|
-|ids|`undefined`|The camera ids shown in the reel. If this parameter is ommitted, all are shown by default.|
+|ids|`undefined`|The camera `ids` shown in the reel. The `ids` parameter is a comma separated list of device ids to display in the camera grid. If this parameter is ommitted, all are shown by default.|
 |hiddenDetections|`Motion`|The detection types to hide in the reel. `Person`, `Vehicle`, `Animal`, etc. All except generic `Motion` are shown by default.|
 |cols|`undefined`|The number of columns in the event reel.|
 |count|`undefined`|The total number of items to show in an event reel page. Can be combined with `cols` to create a reel with multiple rows.
 |aspectRatio|`1/1`|The aspect ratio of a detection thumbnail.|
 
- The `ids` parameter is a comma separated list of device ids to display in the camera grid. The grid card works best in a [Panel View](https://www.home-assistant.io/dashboards/panel/), but can be adjusted for [Masonry View](https://www.home-assistant.io/dashboards/masonry/) by using fixed column values.
-
-For example:
+For example, for a 4x1 grid of events:
 
 ```yaml
 type: iframe
 url: >-
-  /api/scrypted/<token>/endpoint/@scrypted/nvr/public/#/iframeevents?ids=<id1>,<id2>
+  /api/scrypted/<token>/endpoint/@scrypted/nvr/public/#/iframeevents?ids=<id1>,<id2>&cols=4
 allow_open_top_navigation: true
+aspect_ratio: 4:1
 ```
 
 ## Notifications
