@@ -75,7 +75,7 @@ curl -s https://raw.githubusercontent.com/koush/scrypted/main/install/docker/set
 
 #### Existing Storage Directory
 
-If the recording directory is already formatted and mounted, run (otherwise continue on to formatting a [New Disk](#new-disk)):
+If the recording directory is already formatted and mounted, run the following. Otherwise continue on to formatting a [New Disk](#new-disk):
 
 ```sh
 sudo SERVICE_USER=$USER bash ~/.scrypted/setup-scrypted-nvr-volume.sh /path/to/existing/directory
