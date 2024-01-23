@@ -27,7 +27,7 @@ The Raspberry Pi 4 and low performance NAS are not recommended for use with Scry
 |Hardware|Operating System|Number of Cameras|Notes|
 |-|-|-|-|
 |Dell Wyse 5070|Ubuntu|5|Available cheap on eBay.|
-|Intel N100|12|Ubuntu|New Intel NUC that has a fantastic iGPU for accelerated transcode and detection.|
+|Intel N100|Ubuntu|12|New Intel NUC that has a fantastic iGPU for accelerated transcode and detection.|
 |Mac Mini 16GB|macOS|20+|Scrypted NVR can leverage Apple Silicon's [Neural Engine](https://www.makeuseof.com/what-is-a-neural-engine-how-does-it-work/).|
 
 ::: tip
