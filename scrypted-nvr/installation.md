@@ -60,9 +60,58 @@ Cloud access must be enabled for remote access via [browser, iOS, Android, and D
 
 ![](/img/scrypted-nvr/cameras-and-recordings.png)
 
+## Docker Volume
+
+Use the [Quick Setup](#quick-setup) script to format a drive or use an existing directory in Scrypted NVR. [Manual Docker Setup](#manual-docker-setup) steps are also available.
+
+### Quick Setup
+
+Run the following to download the script:
+
+```sh
+mkdir -p ~/.scrypted
+curl -s https://raw.githubusercontent.com/koush/scrypted/main/install/docker/setup-scrypted-nvr-volume.sh > ~/.scrypted/setup-scrypted-nvr-volume.sh
+```
+
+To use an existing recording storage directory, run:
+
+```sh
+sudo SERVICE_USER=$USER bash ~/.scrypted/setup-scrypted-nvr-volume.sh /path/to/existing/directory
+```
+
+To format and use an existing `disk` device, run:
+
+```sh
+lsblk
+```
+
+Running the script will output your available disks:
+
+```
+NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0    7:0    0  63.4M  1 loop /snap/core20/1974
+loop1    7:1    0  63.9M  1 loop /snap/core20/2105
+loop2    7:2    0 111.9M  1 loop /snap/lxd/24322
+loop3    7:3    0  53.3M  1 loop /snap/snapd/19457
+loop4    7:4    0  40.4M  1 loop /snap/snapd/20671
+sda      8:0    0   128G  0 disk 
+├─sda1   8:1    0     1M  0 part 
+└─sda2   8:2    0   128G  0 part /
+sdx      8:16   0  4096G  0 disk 
+sr0     11:0    1  1024M  0 rom  
+```
+
+In the example above the 4TB storage disk is listed as `sdx`. To format and use `sdx`, run:
+
+```sh
+sudo SERVICE_USER=$USER bash ~/.scrypted/setup-scrypted-nvr-volume.sh sdx
+```
+
+The docker container will be updated and restarted with the new disk or directory.
+
 ## Advanced Storage Options
 
-### Docker Volumes
+### Manual Docker Setup
 
 1. Edit `~/.scrypted/docker-compose.yaml`.
 2. Make the highlighted changes in the yaml block below, adjust the storage directory as appropriate.

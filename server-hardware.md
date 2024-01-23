@@ -2,9 +2,13 @@
 
 ## Scrypted Host Operating System
 
-Scrypted can run on Mac, Windows, and Linux (and Docker).
+Scrypted can run on Mac, Windows, and Linux (via Docker or Proxmox).
 
 Linux + Docker installations should use `Ubuntu 64bit 22.04 LTS Jammy` as the host, including Raspberry Pi.
+
+::: tip
+[Docker](/installation.md#docker) is the recommended installation type for dedicated Mini PCs.
+:::
 
 ## Scrypted System Requirements
 
@@ -26,13 +30,9 @@ The Raspberry Pi 4 and low performance NAS are not recommended for use with Scry
 
 |Hardware|Operating System|Number of Cameras|Notes|
 |-|-|-|-|
-|Dell Wyse 5070|Ubuntu|5|Available cheap on eBay.|
-|Intel N100|Ubuntu|12|New Intel NUC that has a fantastic iGPU for accelerated transcode and detection.|
+|Dell Wyse 5070|Ubuntu + Docker|5|Available cheap on eBay.|
+|Intel N100|Ubuntu + Docker|12|New Intel NUC that has a fantastic iGPU for accelerated transcode and detection.|
 |Mac Mini 16GB|macOS|20+|Scrypted NVR can leverage Apple Silicon's [Neural Engine](https://www.makeuseof.com/what-is-a-neural-engine-how-does-it-work/).|
-
-::: tip
-Low performance hardware like the Raspberry Pi 4 or a NAS can be used with Scrypted NVR, and handle up to 10 cameras with no issues, if [Scrypted NVR Smart Detections](/scrypted-nvr/features#smart-detections) is disabled.
-:::
 
 ### Storage
 

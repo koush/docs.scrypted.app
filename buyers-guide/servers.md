@@ -51,6 +51,10 @@ While a TPU can improve performance, a capable GPU can also fill the gap.
 
 All servers are recommended to have at least 8GB of RAM, 16GB preferred.
 
+::: tip
+[Docker](/installation.md#docker) is the recommended installation type for dedicated Mini PCs.
+:::
+
 ## Apple Mac Mini M1/M2
 
 This system contains a CPU, GPU, and a TPU (neural cores). An Apple Silicon Mac Mini is the most capable Scrypted NVR system available.
