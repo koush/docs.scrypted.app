@@ -91,7 +91,7 @@ Run the following to list available disks:
 lsblk
 ```
 
-The output will look something as shown below:
+The output will be similar to below:
 
 ```
 NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
