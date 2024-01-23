@@ -83,7 +83,9 @@ The Scrypted container uses low end specs by default. Configure the `Resources` 
 
 <!--@include: ./server-port.md-->
 
-
+::: tip
+The default `root` password on the LXC is `scrypted` and there will be a prompt to change it on first login.
+:::
 
 ### Coral Drivers
 
