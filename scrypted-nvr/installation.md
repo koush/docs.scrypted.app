@@ -40,7 +40,7 @@ Scrypted NVR will not work with filesystem quota features. Use a separate filesy
 
 The recordings storage directory can be configured within the `Scrypted NVR Plugin` Settings. [Multiple Storage Devices](#multiple-storage-devices) can also be added.
 
-Servers running in Docker will need to [mount this path into the container](#docker-volumes).
+Servers running in Docker will need to [mount this path into the container](#docker-volume).
 
 ## Camera Setup
 
