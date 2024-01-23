@@ -66,7 +66,7 @@ Use the [Quick Setup](#quick-setup) script to format a drive or use an existing 
 
 ### Quick Setup
 
-Run the following to download the script:
+Run the following to download the [script](https://github.com/koush/scrypted/blob/main/install/docker/setup-scrypted-nvr-volume.sh):
 
 ```sh
 mkdir -p ~/.scrypted
