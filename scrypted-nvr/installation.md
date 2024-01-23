@@ -73,11 +73,17 @@ mkdir -p ~/.scrypted
 curl -s https://raw.githubusercontent.com/koush/scrypted/main/install/docker/setup-scrypted-nvr-volume.sh > ~/.scrypted/setup-scrypted-nvr-volume.sh
 ```
 
-To use an existing recording storage directory, run:
+#### Existing Storage Directory
+
+If the recording directory is already formatted and mounted, run (otherwise continue on to formatting a [New Disk](#new-disk)):
 
 ```sh
 sudo SERVICE_USER=$USER bash ~/.scrypted/setup-scrypted-nvr-volume.sh /path/to/existing/directory
 ```
+
+The docker container will be updated and restarted with the new Recording Directory.
+
+#### New Disk
 
 To format and use an existing `disk` device, run:
 
@@ -107,7 +113,7 @@ In the example above the 4TB storage disk is listed as `sdx`. To format and use 
 sudo SERVICE_USER=$USER bash ~/.scrypted/setup-scrypted-nvr-volume.sh sdx
 ```
 
-The docker container will be updated and restarted with the new disk or directory.
+The docker container will be updated and restarted with the new disk.
 
 ## Advanced Storage Options
 
