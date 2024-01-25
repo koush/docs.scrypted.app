@@ -92,12 +92,12 @@ If the motion sensor is functional, the Object Detection itself can be tested by
 <div style="width: 100%; display: flex; flex-direction: row;">
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
-No Motion Detected
+Sample Image
 <img src="/img/scrypted-nvr/troubleshooting/zidane.jpg" width="200" data-zoomable="true" >
 </div>
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
-Detected Motion
+Detected Objects
 <img src="/img/scrypted-nvr/troubleshooting/zidane-results.jpg" width="200" data-zoomable="true">
 </div>
 
