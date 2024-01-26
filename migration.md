@@ -35,7 +35,6 @@ Install the Desktop app, and then delete the following plugins. These plugins ar
 * PAM-Diff
 * Python Codecs
 * OpenCV
-* OpenVINO
 
 The Scrypted data migration is now complete.
 
