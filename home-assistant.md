@@ -20,7 +20,7 @@ onMounted(() => {
 
 # Home Assistant
 
-The Scrypted Custom Component for Home Assistant adds support for managing Scrypted from your Home Assistant Dashboard, and creation of Scrypted NVR cards.
+The Scrypted Custom Component for Home Assistant adds support for managing Scrypted from your Home Assistant Dashboard, and creation of Scrypted NVR cards. A demo of the cards is available on the [Scrypted NVR Home Assistant Demo Site](https://ha-demo.scrypted.app).
 
 <div style="width: 100%; display: flex; flex-direction: row;">
 
