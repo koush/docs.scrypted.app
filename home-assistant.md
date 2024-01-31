@@ -134,7 +134,15 @@ url: >-
 
 ### Image Click
 
-Open Scrypted NVR Timeline in Home Assistant when the still image is clicked.
+The parameter `imageClick` can be used to customize how click events are handled when the snapshot is clicked.
+
+|Value|Description|
+|-|-|
+|`ha`|Open the Home Assistant companion app when clicked.|
+|`app`|Open the Scrypte NVR app when clicked.|
+
+
+Example: Open Scrypted NVR Timeline in Home Assistant when the still image is clicked.
 
 `imageClick=ha`
 
@@ -145,7 +153,14 @@ url: >-
 
 ### Video Click
 
-Open Scrypted NVR Timeline in Home Assistant when the playing video is clicked.
+The parameter `videoClick` can be used to customize how click events are handled when the live video is clicked.
+
+|Value|Description|
+|-|-|
+|`ha`|Open the Home Assistant companion app when clicked.|
+|`app`|Open the Scrypte NVR app when clicked.|
+
+Example: Open Scrypted NVR Timeline in Home Assistant when the playing video is clicked.
 
 `videoClick=ha`
 
@@ -238,6 +253,7 @@ The Event Reel card has additional parameters that can be used to used to custom
 |cols|`Responsive`|The number of columns in the event reel.|
 |count|`cols`|The total number of items to show in an event reel page. Can be combined with `cols` to create a reel with multiple rows.
 |aspectRatio|`1/1`|The aspect ratio of a detection thumbnail.|
+|click|`ha`|The app that will be opened when clicked. Valid values include `ha` (Home Assistant) and `app` (Scrypted NVR App)|
 
 For example, for a 4x1 grid of events:
 
