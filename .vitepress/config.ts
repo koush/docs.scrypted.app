@@ -63,6 +63,7 @@ export default withMermaid({
           { text: 'Installation', link: '/scrypted-nvr/installation' },
           { text: 'Apps and Remote Access', link: '/scrypted-nvr/apps' },
           { text: 'Troubleshooting', link: '/scrypted-nvr/troubleshooting' },
+          { text: 'Onboard Camera AI', link: '/scrypted-nvr/camera-ai' },
         ]
       },
       {

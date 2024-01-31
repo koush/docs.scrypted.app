@@ -139,7 +139,7 @@ The parameter `imageClick` can be used to customize how click events are handled
 |Value|Description|
 |-|-|
 |`ha`|Open the Home Assistant companion app when clicked.|
-|`app`|Open the Scrypte NVR app when clicked.|
+|`app`|Open the Scrypted NVR app when clicked.|
 
 
 Example: Open Scrypted NVR Timeline in Home Assistant when the still image is clicked.
@@ -158,7 +158,7 @@ The parameter `videoClick` can be used to customize how click events are handled
 |Value|Description|
 |-|-|
 |`ha`|Open the Home Assistant companion app when clicked.|
-|`app`|Open the Scrypte NVR app when clicked.|
+|`app`|Open the Scrypted NVR app when clicked.|
 
 Example: Open Scrypted NVR Timeline in Home Assistant when the playing video is clicked.
 
