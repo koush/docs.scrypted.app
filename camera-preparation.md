@@ -43,7 +43,7 @@ All the available camera streams may not be enabled by default. Verify they are 
 :::
 
 ::: tip
-Some cameras, such as Hikvision or Amcrest, expose more streams and `Framerate` options when AI is disabled. The camera AI is not used within Scrypted, and may be disabled for better performance.
+Some cameras, such as Hikvision or Amcrest, expose more streams and `Framerate` options when AI is disabled. The camera AI is not used within Scrypted, and may be disabled for better streaming performance.
 :::
 
 ## Video Setup
