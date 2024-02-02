@@ -39,7 +39,7 @@ Cameras and recordings can be viewed remotely via a browser or the app by enabli
 
 ## Android
 
-1. Install the [Scrypted Android App (Early Access)](https://play.google.com/store/apps/details?id=app.scrypted.nvr) from the Google Play Store.
+1. [Install the Scrypted Android App (Early Access)](https://play.google.com/store/apps/details?id=app.scrypted.nvr) from the Google Play Store.
 2. Login using the Scrypted Cloud credentials from the previous steps.
 3. The app will prompt to login a second time. The second time, use your *local* Scrypted Server credentials.
 
