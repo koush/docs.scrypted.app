@@ -37,9 +37,22 @@ Cameras and recordings can be viewed remotely via a browser or the app by enabli
 3. Login using the Scrypted Cloud credentials from the previous steps.
 4. The app will prompt to login a second time. The second time, use your *local* Scrypted Server credentials.
 
-## Android and Web
+## Android
 
-All platforms (including iOS) can install the Progressive Web App (PWA):
+1. Open the [Scrypted Android App (Early Access)](https://play.google.com/store/apps/details?id=app.scrypted.nvr) from the Google Play Store.
+2. Login using the Scrypted Cloud credentials from the previous steps.
+3. The app will prompt to login a second time. The second time, use your *local* Scrypted Server credentials.
+
+## Windows, Mac, and Linux
+
+1. Download the [Desktop Application](/desktop-application.md).
+2. Enter the sign in code.
+3. Select `Viewer` mode.
+
+## Universal Web App
+
+All platforms of the above platforms can install the Progressive Web App (PWA):
+
 1. On your phone/desktop launch the appropriate browser:
     * iOS: Install with Safari
     * Android: Install with Chrome
@@ -50,10 +63,7 @@ All platforms (including iOS) can install the Progressive Web App (PWA):
 5. Login with the Scrypted Cloud credentials used in the previous steps.
 6. The app will prompt to login a second time. The second time, use your *local* Scrypted Server credentials.
 
-## Windows, Mac, and Linux
-
-Desktop platforms can install the [web app](#android-and-web) (PWA) or install the [Scrypted Desktop App](/desktop-application). The desktop app can run in `Viewer Mode`.
-
+<!-- 
 ## Self Hosting
 
 Scrypted can optionally be self hosted on a personal custom domain. This setup process is for advanced users and offers no benefits over port forwarding, other than bypassing the Scrypted Cloud cloud login.
@@ -68,7 +78,11 @@ Scrypted can optionally be self hosted on a personal custom domain. This setup p
 Enter nvr.example.com at:
 iOS Settings -> Scrypted -> Self Hosted -> Hostname
 ```
-```md [Android and Web]
+```md [Android]
+Install using:
+https://play.google.com/store/apps/details?id=app.scrypted.nvr
+```
+```md [Web]
 Install using:
 https://nvr.example.com/#/install-pwa
 ```
@@ -76,4 +90,4 @@ https://nvr.example.com/#/install-pwa
 In the Desktop app menu, click Reset Startup Settings.
 Choose Viewer Mode.
 Enter nvr.example.com when prompted for the optional Self Hosting domain.
-```
+``` -->
