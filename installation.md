@@ -32,9 +32,9 @@ This [script](https://github.com/koush/scrypted/blob/main/install/docker/install
 Use the Copy button in the snippet below to copy the entire script, and then paste the contents into Terminal to install Scrypted.
 
 ```sh
-mkdir -p ~/.scrypted
-curl -s https://raw.githubusercontent.com/koush/scrypted/main/install/docker/install-scrypted-docker-compose.sh > ~/.scrypted/install-scrypted-docker-compose.sh 
-sudo SERVICE_USER=$USER bash ~/.scrypted/install-scrypted-docker-compose.sh
+curl -s https://raw.githubusercontent.com/koush/scrypted/main/install/docker/install-scrypted-docker-compose.sh > ~/install-scrypted-docker-compose.sh 
+sudo SERVICE_USER=$USER bash ~/install-scrypted-docker-compose.sh
+rm ~/install-scrypted-docker-compose.sh
 ```
 
 There will be a prompt to install Docker and set up external storage for Scrypted NVR. External storage is completely optional and can be set up later.
@@ -57,9 +57,9 @@ This [script](https://github.com/koush/scrypted/blob/main/install/local/install-
 2. Use the Copy button in the snippet below to copy the entire script, and then paste the contents into Terminal to install Scrypted.
 
 ```sh
-mkdir -p ~/.scrypted
-curl -s https://raw.githubusercontent.com/koush/scrypted/main/install/local/install-scrypted-dependencies-mac.sh > ~/.scrypted/install-scrypted-dependencies-mac.sh 
-bash ~/.scrypted/install-scrypted-dependencies-mac.sh
+curl -s https://raw.githubusercontent.com/koush/scrypted/main/install/local/install-scrypted-dependencies-mac.sh > ~/install-scrypted-dependencies-mac.sh 
+bash ~/install-scrypted-dependencies-mac.sh
+rm ~/install-scrypted-dependencies-mac.sh
 ```
 
 <!--@include: ./server-port.md-->
