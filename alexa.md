@@ -12,7 +12,7 @@ The `Alexa Plugin` will automatically enable itself on all the devices currently
 
 ## Scrypted Cloud Plugin Setup
 
-The `Scrypted Cloud Plugin` should have been automatically installed. If it was not, installed it. Then click the `Login` button to register with Scrypted's cloud service.
+The `Scrypted Cloud Plugin` should have been automatically installed. If it was not, install it. Then click the `Login` button to register with Scrypted's cloud service.
 
 ::: tip
 Alexa connects to Scrypted's Cloud service communicate with your server. Alexa will not function without cloud connectivity.
