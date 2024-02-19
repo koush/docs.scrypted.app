@@ -193,6 +193,11 @@ Storage directories added to Scrypted NVR must be designated as either `Large` o
   * Fast storage will store remote and low resolution (scrubbing, event lookup). 
   * The Default Recording Storage is designated as `Large`.
 
+::: warning
+The `Fast` storage should only be used when the `Large` storage is a Network Attached Storage (NAS) device. Direct Attach only storage configurations should only add `Large` storage directories.
+:::
+
+
 Multiple Recording Storage directories is not the same as [RAID](https://en.wikipedia.org/wiki/RAID), but it is a form of redundancy: substreams are written to separate storage devices. If there are multiple `Large` or `Fast` disks, the Storage used for a stream will be chosen to maximize disk utilization and retention time.  if a Storage device goes offline or fails will, camera (sub)streams stored on that device will be unavailable. The other (sub)streams will be available on the remaining Storage devices.
 
 For example, if a `Large` disk fails, some high resolution stream will be unavailable. But the remote and low resolution recordings stored on the `Fast` disks are still available.
