@@ -84,6 +84,10 @@ Scrypted can now be accessed in the Home Assistant side panel.
 
 ## Card Setup
 
+::: warning
+The [Custom Component](#install-custom-component) (and [Addon setup](#addon-setup), if applicable) **must** be completed prior to setting up the cards. Otherwise the `Integration` menu will not be available.
+:::
+
 Scrypted NVR provides Home Assistant cards that feature low latency playback and two way audio. The NVR app is also deeply integrated into the Home Assistant UI.
 
 There are several types of cards available:
