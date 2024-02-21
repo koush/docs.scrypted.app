@@ -84,10 +84,6 @@ Scrypted can now be accessed in the Home Assistant side panel.
 
 ## Card Setup
 
-::: warning
-The [Custom Component](#install-custom-component) (and [Addon setup](#addon-setup), if applicable) **must** be completed prior to setting up the cards. Otherwise the `Integration` menu will not be available.
-:::
-
 Scrypted NVR provides Home Assistant cards that feature low latency playback and two way audio. The NVR app is also deeply integrated into the Home Assistant UI.
 
 There are several types of cards available:
@@ -107,6 +103,10 @@ Follow the instructions below, and then substitute the card URL appopriately.
 2. Navigate to the camera.
 3. Open the the `Camera Settings`.
 4. Copy the `Scrypted NVR Card Webpage URL`. (Substitute this with [Camera Grid](#camera-grid-card) or [Event Reel](#event-reel-card) URL if desired.)
+
+::: warning
+The [Custom Component](#install-custom-component) (and [Addon setup](#addon-setup), if applicable) **must** be completed prior to setting up the cards. Otherwise the `Integration` menu will not be available.
+:::
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
 <img src="/img/ha-card-url.png" width="200" data-zoomable="true">
