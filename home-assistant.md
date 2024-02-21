@@ -105,7 +105,7 @@ Follow the instructions below, and then substitute the card URL appopriately.
 4. Copy the `Scrypted NVR Card Webpage URL`. (Substitute this with [Camera Grid](#camera-grid-card) or [Event Reel](#event-reel-card) URL if desired.)
 
 ::: warning
-The [Custom Component](#install-custom-component) (and [Addon setup](#addon-setup), if applicable) **must** be completed prior to setting up the cards. Otherwise the `Integration` menu will not be available.
+The [Custom Component](#install-custom-component) (and [Addon setup](#addon-setup), if applicable) **must** be completed prior to setting up the cards. Otherwise the `Integrate` menu will not be available.
 :::
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
