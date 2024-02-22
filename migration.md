@@ -8,16 +8,6 @@ When migrating to the Desktop Application on the same server, first stop the exi
 
 ::: code-group
 
-```sh [Docker Compose]
-cd ~/.scrypted
-docker compose down
-```
-
-```sh [Linux]
-sudo systemctl stop scrypted.service
-sudo rm /etc/systemd/system/scrypted.service
-```
-
 ```sh [Mac]
 launchctl unload ~/Library/LaunchAgents/app.scrypted.server.plist 
 rm ~/Library/LaunchAgents/app.scrypted.server.plist
@@ -28,9 +18,19 @@ sc.exe stop scrypted.exe
 sc.exe delete scrypted.exe
 ```
 
+```sh [Linux]
+sudo systemctl stop scrypted.service
+sudo rm /etc/systemd/system/scrypted.service
+```
+
+```sh [Docker Compose]
+cd ~/.scrypted
+docker compose down
+```
+
 :::
 
-Install the Desktop app, and then delete the following plugins. These plugins are no longer necessary, as the Desktop Application has hardware accelerated equivalents:
+Install the Desktop app, and then delete the following plugins if they are installed. These plugins are no longer necessary, as the Desktop Application has hardware accelerated equivalents:
 
 * PAM-Diff
 * Python Codecs

@@ -32,9 +32,9 @@ This [script](https://github.com/koush/scrypted/blob/main/install/docker/install
 Use the Copy button in the snippet below to copy the entire script, and then paste the contents into Terminal to install Scrypted.
 
 ```sh
-mkdir -p ~/.scrypted
-curl -s https://raw.githubusercontent.com/koush/scrypted/main/install/docker/install-scrypted-docker-compose.sh > ~/.scrypted/install-scrypted-docker-compose.sh 
-sudo SERVICE_USER=$USER bash ~/.scrypted/install-scrypted-docker-compose.sh
+curl -s https://raw.githubusercontent.com/koush/scrypted/main/install/docker/install-scrypted-docker-compose.sh > ~/install-scrypted-docker-compose.sh 
+sudo SERVICE_USER=$USER bash ~/install-scrypted-docker-compose.sh
+rm ~/install-scrypted-docker-compose.sh
 ```
 
 There will be a prompt to install Docker and set up external storage for Scrypted NVR. External storage is completely optional and can be set up later.
@@ -57,9 +57,9 @@ This [script](https://github.com/koush/scrypted/blob/main/install/local/install-
 2. Use the Copy button in the snippet below to copy the entire script, and then paste the contents into Terminal to install Scrypted.
 
 ```sh
-mkdir -p ~/.scrypted
-curl -s https://raw.githubusercontent.com/koush/scrypted/main/install/local/install-scrypted-dependencies-mac.sh > ~/.scrypted/install-scrypted-dependencies-mac.sh 
-bash ~/.scrypted/install-scrypted-dependencies-mac.sh
+curl -s https://raw.githubusercontent.com/koush/scrypted/main/install/local/install-scrypted-dependencies-mac.sh > ~/install-scrypted-dependencies-mac.sh 
+bash ~/install-scrypted-dependencies-mac.sh
+rm ~/install-scrypted-dependencies-mac.sh
 ```
 
 <!--@include: ./server-port.md-->
@@ -93,7 +93,7 @@ The Coral Edge TPU driver build step is optional and intended for servers runnin
 
 #### Coral M.2/PCI Drivers
 
-The Proxmox VE host requires building the `gasket-dkms` driver from source. First ensure that the `pve-no-subscription`/`No Subscription` Proxmox apt repository has been added to your host. Then run the following on the Proxmox VE host to build and install the `gasket-dmks` M.2/PCI driver:
+The Proxmox VE host requires building the [gasket-dkms](https://github.com/google/gasket-driver.git) driver from source. First ensure that the `pve-no-subscription`/`No Subscription` Proxmox apt repository has been added to your host. Then run the following on the Proxmox VE host to build and install the `gasket-dmks` M.2/PCI driver:
 
 ```sh
 apt remove -y gasket-dkms
@@ -108,7 +108,7 @@ dpkg -i ../gasket-dkms_1.0-18_all.deb
 
 #### Coral USB Drivers
 
-The Proxmox VE hots can use the USB driver provided by Google. Run the following on the Proxmox VE host to install the USB driver:
+The Proxmox VE host can use the USB driver provided by Google. Run the following on the Proxmox VE host to install the USB driver:
 
 ```sh
 echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main" | tee /etc/apt/sources.list.d/coral-edgetpu.list

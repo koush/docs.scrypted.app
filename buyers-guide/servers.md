@@ -42,7 +42,7 @@ While a TPU can improve performance, a capable GPU can also fill the gap.
 |-|-|-|
 |TPU: M.2/PCI Coral|🥇|The M.2 dual TPU model is preferred.|
 |TPU: Apple Mac Mini M1/M2|🥇|Low power consumption, fast, and expensive. A single package off the shelf solution for a large number of cameras.|
-|GPU: AMD 6900XT or NVIDIA 3800|🥈|The Scrypted Desktop App running on systems using these GPU for Object Detection perform great, though at a much higher performance per watt.|
+|GPU: AMD 6900XT or NVIDIA 3080|🥈|The Scrypted Desktop App running on systems using these GPU for Object Detection perform great, though at a much higher performance per watt.|
 |GPU: Intel N100|🥈|Fantastic Object Detection Performance in a tiny package. Highly recommended.|
 |TPU: USB Coral|🥉|High latency and crash prone. Not recommended if purchasing.|
 |TPU: Intel NCS|🥉||

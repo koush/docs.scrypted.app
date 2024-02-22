@@ -66,8 +66,9 @@ The [Scrypted Custom Component](https://github.com/koush/ha_scrypted) repository
 ```
 https://github.com/koush/ha_scrypted
 ```
-2. Go to `Settings > Devices & Services > Add Integration` and select `Scrypted`.
-3. Enter the host, username, and password for your Scrypted server, as well as a name and icon for the side panel link in the Home Assistant menu.
+2. In the HACS panel, select `Scrypted` from the repository list and select the `INSTALL` button.
+3. Go to `Settings > Devices & Services > Add Integration` and select `Scrypted`.
+4. Enter the host, username, and password for your Scrypted server, as well as a name and icon for the side panel link in the Home Assistant menu.
 
 |Setting|Sample Configuration|
 |-|-|
@@ -102,6 +103,10 @@ Follow the instructions below, and then substitute the card URL appopriately.
 2. Navigate to the camera.
 3. Open the the `Camera Settings`.
 4. Copy the `Scrypted NVR Card Webpage URL`. (Substitute this with [Camera Grid](#camera-grid-card) or [Event Reel](#event-reel-card) URL if desired.)
+
+::: warning
+The [Custom Component](#install-custom-component) (and [Addon setup](#addon-setup), if applicable) **must** be completed prior to setting up the cards. Otherwise the `Integrate` menu will not be available.
+:::
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
 <img src="/img/ha-card-url.png" width="200" data-zoomable="true">
