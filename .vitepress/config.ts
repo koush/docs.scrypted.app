@@ -93,6 +93,14 @@ export default withMermaid({
           { text: 'Uninstallation', link: '/uninstallation' },
         ]
       },
+      {
+        text: "Policies",
+        collapsed: true,
+        items: [
+          { text: 'Purchase Policy', link: '/scrypted-nvr/policies/fulfillment' },
+          { text: 'Privacy Policy', link: '/scrypted-nvr/policies/privacy' },
+        ]
+      }
       // {
       //   text: 'Examples',
       //   items: [
