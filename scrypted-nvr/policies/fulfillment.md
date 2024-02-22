@@ -13,6 +13,8 @@ The Scrypted NVR subscription can be managed at the [billing portal](https://bil
 All sales are final and non-refundable. The free version and free trial are available to thoroughly test the product.
 
 Scrypted NVR subscribers will be sent a payment reminder email one week prior to being billed to provide a lead time for cancellations. Cancelled subscriptions will end on the next renewal date; they will not be prorated. The subscription benefits will be available until the renewal date. The subscription will not be billed further.
+
+
 Additional billing questions (such as lost email access) can be directed to [billing@scrypted.app](mailto:billing@scrypted.app) or raised in the [Scrypted Discord](https://discord.gg/DcFzmBHYGq) to the server administrator.
 
 ## Support
