@@ -18,4 +18,4 @@ Additional Billing questions can be directed to [billing@scrypted.app](mailto:bi
 
 ## Support
 
-Support issues related to the Scrypted NVR product can be raised in the Discord, Reddit, or Github communities above.
+Support issues related to the Scrypted NVR product can be raised in the Discord, Reddit, or Github communities linked above.
