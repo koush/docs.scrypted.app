@@ -8,7 +8,7 @@ Scrypted NVR's has a free trial that can be used to test drive the product. Set 
 
 All sales are final and non-refundable. The free version and free trial are available to thoroughly test the product.
 
-Scrypted NVR subscribers will be sent a payment reminder email one week prior to being billed to provide a lead time for cancellations. Cancelled subscriptions will end on the next renewal date; they will not be prorated. The subscription benefits will be available until the renewal date, at which point the subscription will be fully terminated.
+Scrypted NVR subscribers will be sent a payment reminder email one week prior to being billed to provide a lead time for cancellations. Cancelled subscriptions will end on the next renewal date; they will not be prorated. The subscription benefits will be available until the renewal date. The subscription will not be billed further.
 
 ## Manage or Cancel Subscriptions
 
