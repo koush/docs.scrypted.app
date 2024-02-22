@@ -4,7 +4,7 @@
 
 Scrypted NVR's has a free trial that can be used to test drive the product. Set the subscription to cancel to avoid being billed when the trial ends. It is highly recommended to set up and verify the cameras in the free version of Scrypted prior to starting the Scrypted NVR trial.
 
-## Refunds
+## Cancellation Policy
 
 All sales are final and non-refundable. The free version and free trial are available to thoroughly test the product.
 
