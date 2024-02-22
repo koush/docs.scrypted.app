@@ -1,4 +1,4 @@
-# Purchase Policies
+# Purchase Policy
 
 ## Free Trial
 
