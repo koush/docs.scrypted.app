@@ -25,7 +25,7 @@ For the purposes of this Privacy Policy:
     
 *   **Application** refers to Scrypted, the software program provided by the Company.
     
-*   **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Vysor, Inc., 1517 4th Ave W 98119.
+*   **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Vysor, Inc.
     
 *   **Cookies** are small files that are placed on Your computer, mobile device or any other device by a website, containing the details of Your browsing history on that website among its many uses.
     
