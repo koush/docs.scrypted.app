@@ -14,7 +14,7 @@ Scrypted NVR subscribers will be sent a payment reminder email one week prior to
 
 The Scrypted NVR subscription can be managed at the [billing portal](https://billing.scrypted.app). This includes adding or removing licenses from an account, or cancelling the subscription.
 
-Additional Billing questions can be directed to [billing@scrypted.app](mailto:billing@scrypted.app) or raised in the [Scrypted Discord](https://discord.gg/DcFzmBHYGq) to the server administrator.
+Additional billing questions (such as lost email access) can be directed to [billing@scrypted.app](mailto:billing@scrypted.app) or raised in the [Scrypted Discord](https://discord.gg/DcFzmBHYGq) to the server administrator.
 
 ## Support
 
