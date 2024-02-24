@@ -20,7 +20,7 @@ Scrypted NVR on Mac and Windows must [Install](https://docs.scrypted.app/desktop
 
 ### Drive Setup
 
-Use an appropriate filesystem for your OS. The storage drive **must not be MS-DOS/FAT** formatted.
+Use an appropriate filesystem for your OS. The storage drive **must not be MS-DOS/FAT** formatted. For best performance, provide an entire disk or partition to Scrypted NVR. Volumes that share disk space other is not recommended as it may cause issues with recording retention periods.
 
 |OS|Filesystem|
 |-|-|
@@ -203,3 +203,7 @@ Multiple Recording Storage directories is not the same as [RAID](https://en.wiki
 For example, if a `Large` disk fails, some high resolution stream will be unavailable. But the remote and low resolution recordings stored on the `Fast` disks are still available.
 
 RAID Storage can be assigned to Recording Storage as a `Large` or `Fast` directory for servers that need full redundancy.
+
+## Storage Utilization
+
+Scrypted NVR will delete recordings and potentially stop recording if the disk reaches 10% free space or only has 10GB free space remaining. This is to ensure there is sufficient space avaolable for OS updates and optimal filesystem performance (defragmentation/realloction). The system may become unresponsive if disk is filled completely, potentially by other programs writing to the disk. For best performance, provide an entire disk or partition to Scrypted NVR. Volumes that share disk space other is not recommended as it may cause issues with recording retention periods.
