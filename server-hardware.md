@@ -4,7 +4,7 @@
 
 Scrypted can run on Mac, Windows, and Linux (via Docker or Proxmox).
 
-Linux + Docker installations should use `Ubuntu 64bit 22.04 LTS Jammy` as the host, including Raspberry Pi.
+Linux + Docker installations should use `Ubuntu Server 64bit 22.04 LTS Jammy` as the host, including Raspberry Pi.
 
 ::: tip
 [Docker](/installation.md#docker) is the recommended installation type for dedicated Mini PCs.
