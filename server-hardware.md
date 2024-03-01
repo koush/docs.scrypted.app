@@ -1,16 +1,14 @@
 # System Requirements
 
-## Scrypted Host Operating System
+## Host Operating System
 
-Scrypted can run on Mac, Windows, and Linux (via Docker or Proxmox).
+Scrypted can run on Mac, Windows, and Linux (via Proxmox or Docker).
+
+<!--@include: ./parts/proxmox-tip.md-->
 
 Linux + Docker installations should use `Ubuntu Server 64bit 22.04 LTS Jammy` as the host, including Raspberry Pi.
 
-::: tip
-[Docker](/installation.md#docker) is the recommended installation type for dedicated Mini PCs.
-:::
-
-## Scrypted System Requirements
+## Base System Requirements
 
 Scrypted can run on low power devices such as a Raspberry Pi 4 or more powerful devices like an Intel NUC or Mac Mini. Most users will be just fine with a low powered device. However, if running software [Motion Sensors](/detection/motion-detection) or [Scrypted NVR](/scrypted-nvr/), the performance requirements will increase per camera.
 
@@ -22,7 +20,7 @@ The server must be connected to the network with a wired network connection. If 
 When choosing cameras or a server, consult the [Buyers's Guide](/buyers-guide/) for recommendations that will work together to perform best with Scrypted.
 :::
 
-## Scrypted NVR System Requirements
+## NVR System Requirements
 
 ### Server
 

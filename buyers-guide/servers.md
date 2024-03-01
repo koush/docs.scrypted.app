@@ -1,6 +1,6 @@
 # Server Hardware
 
-## Scrypted Recommendations
+## Base Recommendations
 
 Cameras that have good motion sensors, plugin support, and the necessary codecs dramatically reduce the server requirements: Scrypted will have no problem streaming to the various supported [Platforms](/platforms) on low power hardware like a Raspberry Pi 4 or Synology NAS.
 
@@ -8,7 +8,7 @@ Cameras that have good motion sensors, plugin support, and the necessary codecs 
 From a current price to performance standpoint, the Raspberry Pi 4b is a poor choice compared to similarly priced Intel thin clients and NUCs. A used Dell Wyse 5070 can be found on eBay for half the price of a Raspberry Pi 4b.
 :::
 
-## Scrypted NVR Recommendations
+## NVR Recommendations
 
 However, if motion detection is necessary, or the server will be running Scrypted NVR for 24/7 recording and [Smart Detections](/scrypted-nvr/features#smart-detections), running it on a more capable system than a Raspberry Pi 4 is recommended. A good CPU, GPU, and TPU (Tensor Processing Unit, aka AI chip) all contribute towards video stream detection performance.
 
@@ -51,9 +51,7 @@ While a TPU can improve performance, a capable GPU can also fill the gap.
 
 All servers are recommended to have at least 8GB of RAM, 16GB preferred.
 
-::: tip
-[Docker](/installation.md#docker) is the recommended installation type for dedicated Mini PCs.
-:::
+<!--@include: ../parts/proxmox-tip.md-->
 
 ## Apple Mac Mini M1/M2
 

@@ -1,6 +1,9 @@
 # Installation
 
-Scrypted can be installed on Windows, Mac, or Linux as a [desktop app](#desktop-app) or as a [background service](#background-service).
+Scrypted can be installed on Windows, Mac, or Linux as a [desktop app](#desktop-app) or as a background service ([Mac](#mac-terminal), [Windows](#windows-powershell), [Proxmox VE](#proxmox-ve), [Linux](#linux-docker)).
+
+
+<!--@include: ./parts/proxmox-tip.md-->
 
 After the chosen installation method is complete, return to this page to continue with [Camera Setup](/camera-preparation.md).
 
@@ -12,7 +15,7 @@ features unavailable to the background service inside a self contained, easily i
 ### Ubuntu/Debian Repository
 
 ::: tip
-Scrypted servers running on Linux should typically use the [Docker](#docker) installation. 
+Scrypted servers running on Linux should typically use the [Docker](#linux-docker) installation. 
 :::
 
 The Desktop App can be installed and updated via `apt`: 
@@ -23,7 +26,65 @@ sudo apt update
 sudo apt install scrypted-electron
 ```
 
-## Docker
+## Proxmox VE
+
+<!--@include: ./parts/proxmox-tip.md-->
+
+Scrypted can be installed on a Proxmox VE by running the following [script](https://github.com/koush/scrypted/blob/main/install/local/install-scrypted-proxmox.sh) on the Proxmox VE host. This script will download and restore a Scrypted container backup. The script prompts to pass through GPUs and Coral Edge TPUs. Hosts with Coral Edge TPUs must also install the driver using the steps below.
+
+```sh
+cd /tmp
+curl -s https://raw.githubusercontent.com/koush/scrypted/main/install/local/install-scrypted-proxmox.sh > install-scrypted-proxmox.sh
+bash install-scrypted-proxmox.sh
+```
+
+The Scrypted container uses low end specs by default. Configure the `Resources` tab to suit the server specs and workload. `Scrypted NVR` servers should assign at least 4 cores adn 16GB of memory (the more the better). After configuration has been completed, start the container.
+
+<!--@include: ./server-port.md-->
+
+::: tip
+The default `root` password on the LXC is `scrypted` and there will be a prompt to change it on first login.
+:::
+
+### Coral Drivers
+
+The Coral Edge TPU driver build step is optional and intended for servers running Scrypted NVR.
+
+#### Coral M.2/PCI Drivers
+
+The Proxmox VE host requires building the [gasket-dkms](https://github.com/google/gasket-driver.git) driver from source. First ensure that the `pve-no-subscription`/`No Subscription` Proxmox apt repository has been added to your host. Then run the following on the Proxmox VE host to build and install the `gasket-dmks` M.2/PCI driver:
+
+```sh
+apt remove -y gasket-dkms
+apt install -y git devscripts dh-dkms dkms pve-headers-$(uname -r)
+cd /tmp
+rm -rf gasket-driver
+git clone https://github.com/google/gasket-driver.git
+cd gasket-driver/
+debuild -us -uc -tc -b
+dpkg -i ../gasket-dkms_1.0-18_all.deb 
+```
+
+#### Coral USB Drivers
+
+The Proxmox VE host can use the USB driver provided by Google. Run the following on the Proxmox VE host to install the USB driver:
+
+```sh
+echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main" | tee /etc/apt/sources.list.d/coral-edgetpu.list
+curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+apt-get -y update
+apt-get -y install libedgetpu1-max
+```
+
+### Proxmox VE vs Docker
+
+[Proxmox VE](https://www.proxmox.com) is preferred for Scrypted over Docker for several reasons:
+* Superior networking capabilities. The Scrypted installation on Proxmox will have a dedicated IP on the local network. Scrypted requires host networking on Docker, **which cause conflicts when running alongside other host networking services like Pi-hole or Homebridge.**
+* Simple storage setup with Scrypted NVR. Proxmox provides a web interface for formatting new drives and adding them to containers like Scrypted.
+* Automatic iGPU passthrough for hardware accelerated decoding and detection when using the installation script.
+* Proxmox provides a web interface by default, which is great for headless/dedicated services. The OS is lightweight and designed for running containers and VMs.
+
+## Linux - Docker
 
 Linux + Docker installations should refer to the [System Requirements](/server-hardware#scrypted-host-operating-system) for host OS recommendations. Docker Desktop on Windows/Mac is [not supported](https://github.com/koush/scrypted/wiki/Installation:-Docker-Desktop).
 
@@ -68,54 +129,6 @@ rm ~/install-scrypted-dependencies-mac.sh
 
 Scrypted NVR on Windows must install the [Install](/desktop-application) or [Migrate](/migration.md#migrating-to-the-desktop-application) to the [Desktop Application](#desktop-app). The Desktop App has GPU acceleration, is fully self contained with zero dependencies, and requires a license. The free version of Scrypted may be installed using the PowerShell Installation below.
 
-
-## Proxmox VE
-
-Scrypted can be installed on a Proxmox VE by running the following [script](https://github.com/koush/scrypted/blob/main/install/local/install-scrypted-proxmox.sh) on the Proxmox VE host. This script will download and restore a Scrypted container backup. The script prompts to pass through GPUs and Coral Edge TPUs. Hosts with Coral Edge TPUs must also install the driver using the steps below.
-
-```sh
-cd /tmp
-curl -s https://raw.githubusercontent.com/koush/scrypted/main/install/local/install-scrypted-proxmox.sh > install-scrypted-proxmox.sh
-bash install-scrypted-proxmox.sh
-```
-
-The Scrypted container uses low end specs by default. Configure the `Resources` tab to suit the server specs and workload. `Scrypted NVR` servers should assign 8-16 cores and at least 16GB of memory. After configuration has been completed, start the container.
-
-<!--@include: ./server-port.md-->
-
-::: tip
-The default `root` password on the LXC is `scrypted` and there will be a prompt to change it on first login.
-:::
-
-### Coral Drivers
-
-The Coral Edge TPU driver build step is optional and intended for servers running Scrypted NVR.
-
-#### Coral M.2/PCI Drivers
-
-The Proxmox VE host requires building the [gasket-dkms](https://github.com/google/gasket-driver.git) driver from source. First ensure that the `pve-no-subscription`/`No Subscription` Proxmox apt repository has been added to your host. Then run the following on the Proxmox VE host to build and install the `gasket-dmks` M.2/PCI driver:
-
-```sh
-apt remove -y gasket-dkms
-apt install -y git devscripts dh-dkms dkms pve-headers-$(uname -r)
-cd /tmp
-rm -rf gasket-driver
-git clone https://github.com/google/gasket-driver.git
-cd gasket-driver/
-debuild -us -uc -tc -b
-dpkg -i ../gasket-dkms_1.0-18_all.deb 
-```
-
-#### Coral USB Drivers
-
-The Proxmox VE host can use the USB driver provided by Google. Run the following on the Proxmox VE host to install the USB driver:
-
-```sh
-echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main" | tee /etc/apt/sources.list.d/coral-edgetpu.list
-curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
-apt-get -y update
-apt-get -y install libedgetpu1-max
-```
 
 ## All Installation Options
 
