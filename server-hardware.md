@@ -2,7 +2,7 @@
 
 ## Host Operating System
 
-Scrypted can run on Mac, Windows, and Linux (via Proxmox or Docker).
+Scrypted can run on Mac, Windows, Proxmox VE, and Linux (via Docker).
 
 <!--@include: ./parts/proxmox-tip.md-->
 
