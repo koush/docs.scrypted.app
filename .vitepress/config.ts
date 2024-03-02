@@ -20,12 +20,13 @@ export default withMermaid({
     },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Scrypted', link: '/' },
+      // { text: 'Scrypted', link: '/' },
       { text: 'Scrypted NVR', link: '/scrypted-nvr/' },
       { text: 'Installation', link: '/installation' },
       { text: 'Download', link: '/desktop-application' },
       { text: 'Camera Setup', link: '/camera-preparation' },
       { text: 'Buyer\'s Guide', link: '/buyers-guide/' },
+      { text: 'Scripts', link: 'https://scripts.scrypted.app' },
     ],
 
     sidebar: [
