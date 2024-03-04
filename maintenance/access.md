@@ -48,3 +48,39 @@ For turnkey remote access, install the `Scrypted Cloud` plugin and click `Login`
 ::: info
 The email account linked with Scrypted Cloud can not be used for Single Sign-On (SSO). Requiring a local account login is a mandatory security measure and by design. Any compromise or defect in any service providing authentication (ie, Scrypted Cloud, Gmail, lost email password, etc) could provide other parties the ability to view to cameras or modify server settings.
 :::
+
+## Share Server
+
+First, create an [additional local user account](#additional-user-accounts) and grant access to the desired cameras in `Scrypted NVR`.
+
+
+1. Open [home.scrypted.app](https://home.scrypted.app) and log in with the [Remote Access](#remote-access) configured above.
+2. Click the `Share` icon.
+3. Add the user email to the list that can access the server.
+4. Copy the `Invite Code`.
+5. Save.
+6. Send the user the following information:
+    * The previously copied `Invite Code`.
+    * The local user account credentials.
+
+::: tip
+The user will not be automatically notified by email they have access to the server.
+:::
+
+<div style="width: 100%; display: flex; flex-direction: row;">
+
+<div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+Grant Account Access
+<img src="/img/maintenance/share-server.png" width="200" data-zoomable="true" >
+</div>
+
+</div>
+
+
+## Link Shared Server
+
+1. Open [home.scrypted.app](https://home.scrypted.app) and log in with your email.
+2. Provide that email to the admin of the server if not done already.
+3. Enter the invite code provided by the admin.
+4. Click the newly added server.
+5. Log in with the local account credentials provided by the admin. **This is not the email you used to sign in from the cloud.**
