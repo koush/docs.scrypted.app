@@ -89,9 +89,10 @@ export default withMermaid({
         text: 'Server Maintenance',
         collapsed: true,
         items: [
-          { text: 'Backup and Restore', link: '/migration' },
-          { text: 'Lost Password', link: '/lost-password' },
-          { text: 'Uninstallation', link: '/uninstallation' },
+          { text: 'Users and Remote Access', link: '/maintenance/access' },
+          { text: 'Backup and Restore', link: '/maintenance/migration' },
+          { text: 'Lost Password', link: '/maintenance/lost-password' },
+          { text: 'Uninstallation', link: '/maintenance/uninstallation' },
         ]
       },
       {
