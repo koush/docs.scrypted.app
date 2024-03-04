@@ -46,7 +46,7 @@ Grant Access to Cameras
 For turnkey remote access, install the `Scrypted Cloud` plugin and click `Login` to link an email account. The email account linked with `Scrypted Cloud` can only be used to *reach* the server. A local account, as provisioned above, can then be used to log into the server.
 
 ::: info
-The email account linked with Scrypted Cloud can not be used for Single Sign-On (SSO). Requiring a local account login is a mandatory security measure and by design. Any compromise or defect in any service providing authentication (ie, Scrypted Cloud, Gmail, lost email password, etc) could provide other parties the ability to view to cameras or modify server settings.
+The email account linked with Scrypted Cloud can not be used for Single Sign-On (SSO). Requiring a local account login is a mandatory security measure and by design. A compromise or defect in any service providing authentication (ie, Scrypted Cloud, Gmail, lost email password, etc) could provide other parties the ability to view to cameras or modify server settings.
 :::
 
 ## Share Server
