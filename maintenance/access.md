@@ -80,7 +80,7 @@ Grant Account Access
 ## Link Shared Server
 
 1. Open [home.scrypted.app](https://home.scrypted.app) and log in with your email.
-2. Provide that email to the admin of the server if not done already.
+2. Provide the above email to the admin of the server.
 3. Enter the invite code provided by the admin.
-4. Click the newly added server.
-5. Log in with the local account credentials provided by the admin. **This is not the email you used to sign in from the cloud.**
+4. The browser will continue to the local login for the newly added server.
+5. Log in with the local account credentials that was also provided by the admin. **This is not the email you used to sign in from the cloud.**
