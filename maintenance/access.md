@@ -77,7 +77,7 @@ Grant Account Access
 </div>
 
 
-## Link Shared Server
+## Join Server
 
 1. Open [home.scrypted.app](https://home.scrypted.app) and log in with your email.
 2. Provide the above email to the admin of the server.
