@@ -1,16 +1,3 @@
-<script setup lang="ts">
-import { computed, ref } from 'vue'
-
-const cameraCount = ref<string>();
-
-const spaceNeeded = computed(() => {
-  const count = parseInt(cameraCount.value);
-  if (!count)
-    return '';
-  return `${Math.ceil(count * 756 / 1024)}TB`;
-});
-</script>
-
 # Installation
 
 Install Scrypted using the one of the [Installation](/installation) options.
@@ -30,9 +17,13 @@ Scrypted NVR on Mac and Windows must [Install](https://docs.scrypted.app/desktop
 
 ## Recording Storage
 
-Scrypted NVR requires a drive that can store at least 3 days of video for the cameras in the system. The storage requirement will vary based on the camera count and camera resolution. The following calculator provides a rough estimate for one week retention with the provided count of 4K cameras.
+Scrypted NVR requires a drive that can store at least 3 days of video for the cameras in the system. The storage requirement will vary based on the camera count and camera resolution. The following table provides a rough estimate for one week retention with a given number of cameras.
 
-<input v-model="cameraCount" type="number" style="padding: 10px; border: 1px solid #ccc; box-shadow: inset 0 1px 3px #ddd; border-radius: 4px;" placeholder="Number of Cameras"> {{ spaceNeeded }}
+| Resolution | 4 Cameras | 6 Cameras | 10 Cameras | 16 Cameras |
+|------------|-----------|-----------|------------|------------|
+| 1080P      | 1TB       | 1TB       | 1.5TB      | 2.4TB      |
+| 2K         | 1.2TB     | 1.8TB     | 3TB        | 4.8TB      |
+| 4K         | 2.4TB     | 3.6TB     | 6TB        | 9.6TB      |
 
 
 ### Drive Setup
