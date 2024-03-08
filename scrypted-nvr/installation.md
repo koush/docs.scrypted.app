@@ -30,7 +30,7 @@ Scrypted NVR on Mac and Windows must [Install](https://docs.scrypted.app/desktop
 
 ## Recording Storage
 
-Scrypted NVR requires a storage drive for at least 3 days of video. The space needed will vary based on the camera count and camera resolution. The following can provide a rough estimate for one week retention given a number of 4K cameras.
+Scrypted NVR requires a drive that can store at least 3 days of video for the cameras in the system. The storage requirement will vary based on the camera count and camera resolution. The following calculator provides a rough estimate for one week retention with the provided count of 4K cameras.
 
 <input v-model="cameraCount" type="number" style="padding: 10px; border: 1px solid #ccc; box-shadow: inset 0 1px 3px #ddd; border-radius: 4px;" placeholder="Number of Cameras"> {{ spaceNeeded }}
 
