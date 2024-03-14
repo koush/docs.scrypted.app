@@ -29,8 +29,8 @@ While a TPU can improve performance, a capable GPU can also fill the gap.
 
 |Name|CPU|GPU|TPU|Cameras|
 |-|-|-|-|-|
-|Intel N100 with M.2 Coral|🥈|🥈|🥇|20+|
-|Apple Mac Mini M1/M2|🥇|🥇|🥈|20+|
+|Apple Mac Mini M1/M2|🥇|🥇|🥇|20+|
+|Intel N100 with M.2 Coral|🥈|🥈|🥈|20+|
 |Intel N100|🥈|🥈|❌|12|
 |Dell Wyse 5070 (eBay)|🥉|🥉|❌|5|
 
@@ -40,8 +40,8 @@ While a TPU can improve performance, a capable GPU can also fill the gap.
 
 |Name|Rating|Notes|
 |-|-|-|
-|TPU: M.2/PCI Coral|🥇|The M.2 dual TPU model is preferred.|
 |TPU: Apple Mac Mini M1/M2|🥇|Low power consumption, fast, and expensive. A single package off the shelf solution for a large number of cameras.|
+|TPU: M.2/PCI Coral|🥇|The M.2 dual TPU model is is not supported by many systems.|
 |GPU: AMD 6900XT or NVIDIA 3080|🥈|The Scrypted Desktop App running on systems using these GPU for Object Detection perform great, though at a much higher performance per watt.|
 |GPU: Intel N100|🥈|Fantastic Object Detection Performance in a tiny package. Highly recommended.|
 |TPU: USB Coral|🥉|High latency and crash prone. Not recommended if purchasing.|
