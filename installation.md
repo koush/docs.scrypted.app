@@ -12,6 +12,10 @@ After the chosen installation method is complete, return to this page to continu
 The recommended installation method for Mac and Windows is the [Desktop App](/desktop-application). The app provides hardware accelerated 
 features unavailable to the background service inside a self contained, easily installable, package. The app can also serve as a viewer for an existing Scrypted server installation.
 
+Install the Desktop App from the above link.
+
+<!--@include: ./server-port.md-->
+
 ### Ubuntu/Debian Repository
 
 ::: tip
