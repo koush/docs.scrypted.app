@@ -274,10 +274,11 @@ aspect_ratio: 4:1
 
 Scrypted NVR Notifications can be delivered to the Home Assistant Companion app.
 
-1. Install the Home Assistant Plugin for Scrypted.
-2. Configure the Home Assistant Long Lived Access Token (this is not the same token used in the previous steps) and Address in the Plugin Settings.
-3. The Home Assistant `notify` entities should sync.
-4. Find the companion app `notify` entity.
+1. Install and configure the Scrypted Cloud plugin. This is necessary to receive notification images.
+2. Install the Home Assistant Plugin for Scrypted.
+3. Configure the Home Assistant Long Lived Access Token (this is not the same token used in the previous steps) and Address in the Plugin Settings.
+4. The Home Assistant `notify` entities should sync.
+5. Find the companion app `notify` entity.
   * Enable the `Scrypted NVR Users` extension.
   * Assign the `notify` entity to a `Scrypted User`. Provide the `Scrypted Token` used by the Home Assistant Custom Component.
   * Configure the detection options.
