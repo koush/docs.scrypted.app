@@ -24,7 +24,7 @@ Before adding a camera to Scrypted, the stream settings are configured for max c
 
 ## Camera Administration
 
-Open the Camera's web admin page or app to configure its codecs, motion sensor, and other various settings. Some cameras may not have a configuration tool. These cameras include most cloud cameras like Ring, Google, Arlo. In this case, , continue on to [Adding the Camera](/add-camera). Unifi cameras should skip to [Motion Sensor Setup](#motion-sensor-setup).
+Open the Camera's web admin page or app to configure its codecs, motion sensor, and other various settings. Some cameras may not have a configuration tool. Cloud cameras like Ring, Google, and Arlo should continue on to [Adding the Camera](/add-camera). Unifi cameras and other local cameras without a codec configuration tool should skip to [Motion Sensor Setup](#motion-sensor-setup).
 
 ## Authentication Setup
 
