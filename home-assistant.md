@@ -281,7 +281,9 @@ Scrypted NVR Notifications can be delivered to the Home Assistant Companion app.
 5. Find the companion app `notify` entity.
   * Enable the `Scrypted NVR Users` extension.
   * Assign the `notify` entity to a `Scrypted User`. Provide the `Scrypted Token` used by the Home Assistant Custom Component.
-  * Configure the detection options.
+  * **Click Save**.
+  * Click the Link Companion App button. A notification will be sent to the companion app. Click it to complete linking and allow customization of notifications from the companion app.
+  * The Notification options can also be configured in the Scrypted Management Console.
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
 <img src="/img/ha-notifications.png" width="200" data-zoomable="true">
