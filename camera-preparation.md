@@ -24,7 +24,7 @@ Before adding a camera to Scrypted, the stream settings are configured for max c
 
 ## Camera Administration
 
-Open the Camera's web admin page or app to configure its codec settings. If the camera does not have a codec configuration tool (ie, cloud cameras such as Ring, Google, Arlo) or is a Unifi camera, continue on to [Adding the Camera](/add-camera).
+Open the Camera's web admin page or app to configure its various settings. If the camera does not have a configuration tool (ie, cloud cameras such as Ring, Google, Arlo) or is a Unifi camera, continue on to [Adding the Camera](/add-camera).
 
 ## Authentication Setup
 
