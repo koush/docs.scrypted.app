@@ -272,6 +272,10 @@ aspect_ratio: 4:1
 
 ## Notifications
 
+::: warning
+The [Custom Component](#install-custom-component) (and [Addon setup](#addon-setup), if applicable) **must correctly be completed** prior to setting up notifications.
+:::
+
 Scrypted NVR Notifications can be delivered to the Home Assistant Companion app.
 
 1. Install and configure the Scrypted Cloud plugin. This is necessary to receive notification images.
