@@ -297,3 +297,5 @@ Scrypted NVR Notifications can be delivered to the Home Assistant Companion app.
 <!-- <img src="/img/ha2.png" width="200" data-zoomable="true"> -->
 <img src="/img/ha-notifications-settings.png" width="200" data-zoomable="true" >
 </div>
+
+</div>
