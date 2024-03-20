@@ -35,7 +35,7 @@ Install the Desktop App from the above instructions. The management console can 
 
 <!--@include: ./parts/proxmox-tip.md-->
 
-Scrypted can be installed on a Proxmox VE pasting the following script on the Proxmox VE host. This script will download and restore a Scrypted container backup. The script prompts to pass through GPUs and Coral Edge TPUs. Hosts with Coral Edge TPUs must also install the driver using the steps below.
+Scrypted can be installed on a Proxmox VE by pasting the following script on the Proxmox VE **host**. This script will download and restore a Scrypted container backup. The script prompts to pass through GPUs and Coral Edge TPUs. Hosts with Coral Edge TPUs must also install the driver using the steps below.
 
 ```sh
 cd /tmp
