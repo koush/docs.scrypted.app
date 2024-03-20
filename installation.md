@@ -35,7 +35,7 @@ Install the Desktop App from the above instructions. The management console can 
 
 <!--@include: ./parts/proxmox-tip.md-->
 
-Scrypted can be installed on a Proxmox VE by running the following [script](https://github.com/koush/scrypted/blob/main/install/local/install-scrypted-proxmox.sh) on the Proxmox VE host. This script will download and restore a Scrypted container backup. The script prompts to pass through GPUs and Coral Edge TPUs. Hosts with Coral Edge TPUs must also install the driver using the steps below.
+Scrypted can be installed on a Proxmox VE pasting the following script on the Proxmox VE host. This script will download and restore a Scrypted container backup. The script prompts to pass through GPUs and Coral Edge TPUs. Hosts with Coral Edge TPUs must also install the driver using the steps below.
 
 ```sh
 cd /tmp
@@ -93,7 +93,7 @@ apt-get -y install libedgetpu1-max
 
 Linux + Docker installations should refer to the [System Requirements](/server-hardware#scrypted-host-operating-system) for host OS recommendations. Docker Desktop on Windows/Mac is [not supported](https://github.com/koush/scrypted/wiki/Installation:-Docker-Desktop).
 
-This [script](https://github.com/koush/scrypted/blob/main/install/docker/install-scrypted-docker-compose.sh) will download and configure the the docker-compose.yml and install Scrypted as a service.
+This script below will download and configure the the docker-compose.yml and install Scrypted as a service.
 
 Use the Copy button in the snippet below to copy the entire script, and then paste the contents into Terminal to install Scrypted.
 
@@ -117,7 +117,7 @@ The [docker-compose.yml](https://github.com/koush/scrypted/blob/main/install/doc
 
 Scrypted NVR on Mac must install the [Install](/desktop-application) or [Migrate](/maintenance/migration.md#migrating-to-the-desktop-application) to the [Desktop Application](#desktop-app). The Desktop App has GPU acceleration, is fully self contained with zero dependencies, and requires a license. The free version of Scrypted may be installed using the Terminal Installation below.
 
-This [script](https://github.com/koush/scrypted/blob/main/install/local/install-scrypted-dependencies-mac.sh) will download all the dependencies, including node, python, and install Scrypted as a service.
+This script below will download all the dependencies, including node, python, and install Scrypted as a service.
 
 1. Install [Homebrew](https://brew.sh).
 2. Use the Copy button in the snippet below to copy the entire script, and then paste the contents into Terminal to install Scrypted.
