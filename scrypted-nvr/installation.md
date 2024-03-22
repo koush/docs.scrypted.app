@@ -68,6 +68,44 @@ Cloud access must be enabled for remote access via [browser, iOS, Android, and D
 
 ![](/img/scrypted-nvr/cameras-and-recordings.png)
 
+## Proxmox VE Volume
+
+Proxmox VE can add a storage device to Scrypted through the Proxmox VE web interface. There are a few steps: adding the storage to Proxmox VE, assigning storage to the Scrypted container in Proxmox VE, and then configuring Scrypted NVR Plugin to use that storage.
+
+## Add Storage to Proxmox
+
+1. Open the Proxmox VE web interface.
+2. Select the server (aka `node`) from the `Datacenter` drawer on the left.
+3. Select the `Disks` section in the secondary drawer.
+4. Find the Device in the list. The disk's Device will typically be something like `/dev/sda` or `/dev/sdb`.
+5. Click `Wipe Disk`.
+6. Select the `LVM` section in the secondary drawer.
+7. Click `Create: Volume Group`.
+  * Use all available storage when creating this LVM/partition.
+  * Name the new storage something recognizable like `nvr-storage`.
+
+
+## Add Storage to Scrypted
+
+1. Select the `scrypted` container from the drawer on the left.
+  * `Shutdown` the container.
+2. Click the `Resources` section in the secondary drawer.
+3. Click `Add -> Mount Point`.
+4. Change the `Storage` setting to the previously named device (`nvr-storage`).
+5. Set the `Path` to `/nvr`.
+6. Uncheck `Backup`.
+7. Set the `Disk Size` to the full size of the disk.
+8. Click `Create`.
+  * `Start` the container.
+
+## Configure the Scrypted NVR Plugin
+
+1. Open the `Scrypted Management Console`.
+2. Navigate to the `Scrypted NVR Plugin`.
+3. Set the `NVR Recordings Directory` to `/nvr`.
+
+Storage setup is now complete.
+
 ## Docker Volume
 
 Use the [Quick Setup](#quick-setup) script to format a drive or use an existing directory in Scrypted NVR. [Manual Docker Setup](#manual-docker-setup) steps are also available.
