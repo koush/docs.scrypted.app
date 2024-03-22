@@ -72,7 +72,7 @@ Cloud access must be enabled for remote access via [browser, iOS, Android, and D
 
 Proxmox VE can add a storage device to Scrypted through the Proxmox VE web interface. There are a few steps: adding the storage to Proxmox VE, assigning storage to the Scrypted container in Proxmox VE, and then configuring Scrypted NVR Plugin to use that storage.
 
-## Add Storage to Proxmox
+### Add Storage to Proxmox
 
 1. Open the Proxmox VE web interface.
 2. Select the server (aka `node`) from the `Datacenter` drawer on the left.
@@ -85,7 +85,7 @@ Proxmox VE can add a storage device to Scrypted through the Proxmox VE web inter
   * Name the new storage something recognizable like `nvr-storage`.
 
 
-## Add Storage to Scrypted
+### Add Storage to Scrypted
 
 1. Select the `scrypted` container from the drawer on the left.
   * `Shutdown` the container.
@@ -98,7 +98,7 @@ Proxmox VE can add a storage device to Scrypted through the Proxmox VE web inter
 8. Click `Create`.
   * `Start` the container.
 
-## Configure the Scrypted NVR Plugin
+### Configure the Scrypted NVR Plugin
 
 1. Open the `Scrypted Management Console`.
 2. Navigate to the `Scrypted NVR Plugin`.
