@@ -191,6 +191,23 @@ url: >-
   /api/scrypted/<token>/endpoint/@scrypted/nvr/public/#/iframe/<id>?destination=local
 ```
 
+### Audio
+
+By default the Card live stream will mute both the microphone and the speaker (two way audio).
+
+::: warning
+Browsers may prevent audio playback and microphone access prior to user interaction via a click event.
+:::
+
+`microphone=on`
+
+`speaker=on`
+
+```yaml[Audio]
+url: >-
+  /api/scrypted/<token>/endpoint/@scrypted/nvr/public/#/iframe/<id>?speaker=on&microphone=on
+```
+
 ### Multiple Parameters
 
 Multiple parameters may be combined using `&`.
