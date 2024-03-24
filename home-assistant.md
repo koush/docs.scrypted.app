@@ -196,7 +196,7 @@ url: >-
 By default the Card live stream will mute both the microphone and the speaker (two way audio).
 
 ::: warning
-Browsers will prevent autoplay with audio playback and microphone access prior to user interaction via a click event. The dashboard must be set to Allow on [Chrome](https://championcr.com/topic/enable-auto-play/#:~:text=Mac%2C%20and%20Firefox.-,Google%20Chrome,)%E2%80%9D%20to%20%E2%80%9CAllow%E2%80%9C) and [Safari](https://help.mixlr.com/en/articles/1665450-enabling-auto-play-in-safari).
+Browsers will prevent autoplay with audio playback and microphone access prior to user interaction via a click event. The dashboard must be set to Allow on [Chrome](https://championcr.com/topic/enable-auto-play/) and [Safari](https://help.mixlr.com/en/articles/1665450-enabling-auto-play-in-safari).
 :::
 
 `microphone=on`
