@@ -64,17 +64,13 @@ All servers are recommended to have at least 8GB of RAM, 16GB preferred.
 
 This system contains a CPU, GPU, and a TPU (neural cores). An Apple Silicon Mac Mini is the most capable Scrypted NVR system available.
 
+## Intel 13500H
+
+This Intel 12th generation NUC contains a CPU and laptop class GPU in a tiny package. The H series chip has 80 GPU cores compared to the 24 on the Intel N100.
+
 ## Intel N100
 
-This Intel 12th generation NUC contains a CPU and capable GPU in a tiny package. A TPU is not necessary with this setup, but it has the expansion slot available.
-
-## Wyse 5070 (+ Mini PCI Coral)
-
-This is readily available used on eBay for $50 USD. The Dell Wyse 5070 will great for a limited number of cameras. Can be supercharged with a Mini PCIe Coral TPU into the Wifi slot.
-
-## Older Intel (+ M.2 Coral TPU)
-
-Older Intel server/desktop systems (8th generation+) will perform quite well. No GPU is necessary. Adding a Coral TPU is a great upgrade.
+This Intel 12th generation NUC contains a CPU and capable GPU in a tiny package.
 
 ---
 
