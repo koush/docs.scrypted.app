@@ -30,22 +30,29 @@ While a TPU can improve performance, a capable GPU can also fill the gap.
 |Name|CPU|GPU|TPU|Cameras|
 |-|-|-|-|-|
 |Apple Mac Mini M1/M2|🥇|🥇|🥇|20+|
-|Intel N100 with M.2 Coral|🥈|🥈|🥈|20+|
-|Intel N100|🥈|🥈|❌|12|
-|Dell Wyse 5070 (eBay)|🥉|🥉|❌|5|
+|Intel 13500H|🥈|🥈|❌|20+|
+|Intel N100|🥈|🥉|❌|12|
 
 ❌ Not applicable.
 
 ## Object Detection Comparison
 
+::: warning
+Coral EdgeTPU devices are not recommended. While these TPUs were fast on initial release in 2020, they are now outclassed by both modern Intel and Apple Silicon chips. Furthermore, the aging chips have not seen a single hardware or software refresh. The software (Tensorflow) is no longer in use at Google. For all intents and purposes, the Coral EdgeTPU is now Google abandonware.
+:::
+
+::: tip
+The [Object Detection Benchmark](https://scripts.scrypted.app/object-detection-benchmark.html#reference-times) script has collected results from many common systems.
+:::
+
 |Name|Rating|Notes|
 |-|-|-|
 |TPU: Apple Mac Mini M1/M2|🥇|Low power consumption, fast, and expensive. A single package off the shelf solution for a large number of cameras.|
-|TPU: M.2/PCI Coral|🥇|The M.2 dual TPU model is is not supported by many systems.|
+|GPU: Intel 13500H|🥈|The GPU on the H series Intel chips have 2-3x the typical number of cores. They are blazing fast at low power. Highly recommended.|
 |GPU: AMD 6900XT or NVIDIA 3080|🥈|The Scrypted Desktop App running on systems using these GPU for Object Detection perform great, though at a much higher performance per watt.|
-|GPU: Intel N100|🥈|Fantastic Object Detection Performance in a tiny package. Highly recommended.|
-|TPU: USB Coral|🥉|High latency and crash prone. Not recommended if purchasing.|
-|TPU: Intel NCS|🥉||
+|GPU: Intel N100|🥉|Fantastic Object Detection Performance in a tiny package. Highly recommended.|
+|TPU: M.2/PCI Coral|🥉|The M.2 dual TPU model is is not supported by many systems. **Google Abandonware. Do not buy if purchasing new hardware**.|
+|TPU: USB Coral|🥉|High latency and crash prone. Google Abandonware. **Google Abandonware. Do not buy if purchasing new hardware**.|
 
 # Server Recommendations
 
