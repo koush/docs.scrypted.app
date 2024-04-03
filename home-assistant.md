@@ -208,6 +208,19 @@ url: >-
   /api/scrypted/<token>/endpoint/@scrypted/nvr/public/#/iframe/<id>?speaker=on&microphone=on
 ```
 
+### Scrollable
+
+By default the Camera Grid is not scrollable. Use the following to make it scrollable:
+
+`scrollable=true`
+
+```yaml
+type: iframe
+url: >-
+  /api/scrypted/<token>/endpoint/@scrypted/nvr/public/#/iframegrid?ids=1,2,3&scrollable=true
+allow_open_top_navigation: true
+```
+
 ### Multiple Parameters
 
 Multiple parameters may be combined using `&`.
