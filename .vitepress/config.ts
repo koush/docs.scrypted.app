@@ -93,6 +93,7 @@ export default withMermaid({
           { text: 'Backup and Restore', link: '/maintenance/migration' },
           { text: 'Lost Password', link: '/maintenance/lost-password' },
           { text: 'Uninstallation', link: '/maintenance/uninstallation' },
+          { text: 'Service Status', link: 'https://stats.uptimerobot.com/0ajzGx8GSe' },
         ]
       },
       {
