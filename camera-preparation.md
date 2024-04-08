@@ -36,15 +36,36 @@ Reolink cameras must use simple alphanumeric passwords or the stream will fail t
 
 ## Stream Setup
 
+Streams must be set up to enable all available video and audio streams and configuring the codecs for compatibility with HomeKit, Scrypted NVR, etc.
+
+### Disable on Camera AI
+
+Some cameras, such as Hikvision or Amcrest, expose more streams and `Framerate` options when on camera AI is disabled. This feature is not used by Scrypted NVR or HomeKit, and should be disabled for improved streaming performance. Hikvision's `VCA Resource`, for example, should be set to `Monitoring`.
+
+<div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+<img src="/img/disable-ai.png" width="400" data-zoomable="true" >
+</div>
+
+### Enable all Streams
+
 Enable the all available streams on the camera. Scrypted will use multiple streams, if available, for different purposes (remote streaming, analysis, etc). Most cameras will have one one `Main Stream` and one `Substream`. Some may only have a `Main Stream`. Cameras with one `Main Stream` and two `Substreams` are ideal.
 
-::: tip
-All the available camera streams may not be enabled by default. Verify they are enabled.
-:::
+If there are multiple substreams, check the substreams in the dropdown or list to ensure they are all enabled. Ensure audio is also enabled on all the streams. 4K Hikvision and Amcrest, for example, have 1 main stream and 2 substreams. Note that the Hikvision is set to `Video&Audio` to ensure audio playback:
 
-::: tip
-Some cameras, such as Hikvision or Amcrest, expose more streams and `Framerate` options when AI is disabled. The camera AI is not used within Scrypted, and may be disabled for better streaming performance.
-:::
+<div style="width: 100%; display: flex; flex-direction: row;">
+
+<div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+Amcrest
+<img src="/img/hikvision-streams.png" width="200" data-zoomable="true" >
+</div>
+
+
+<div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+Hikvision
+<img src="/img/amcrest-streams.png" width="200" data-zoomable="true">
+</div>
+
+</div>
 
 ## Video Setup
 
