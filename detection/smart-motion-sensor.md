@@ -16,6 +16,17 @@ Scrypted can create a `Smart Motion Sensor` to report when a object is detected 
 
 Scrypted can create a `Smart Motion Sensor` that triggers on specific license plates. This feature requires camera hardware with native LPR support (Unifi AI Cameras) or via software with Scrypted NVR Object Detection. License Plate Recognition is *highly* dependent on lighting conditions, vehicle speed, camera angle, and video quality. Refer to the manufacturers documentation for optimal setup.
 
+### Scrypted NVR Setup
+
+When using Scrypted NVR, license plate detection must first be enabled on the camera:
+
+1. Navigate to the camera in the Scrypted Management Console.
+2. Click the Object Detection Settings.
+3. Add `plate` to the detection list.
+4. Click `Save`.
+
+### LPR Sensor Setup
+
 1. Set up a smart motion sensor as described in the steps above.
 2. In the Detection dropdown, select `plate` (Scrypted NVR) or `licensePlate` (Unifi). The `vehicle` or `car` detection type will not work, as that detects the entire vehicle and not specfically the license plate.
 3. Navigate to the `Recognition` tab.
