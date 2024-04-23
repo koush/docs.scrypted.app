@@ -18,7 +18,7 @@ Scrypted can create a `Smart Motion Sensor` that triggers on specific license pl
 
 ### Scrypted NVR Setup
 
-When using Scrypted NVR, license plate detection must first be enabled on the camera:
+When using Scrypted NVR, license plate recognition must first be enabled on the camera. Be aware that this will use reduce the camera's overall detection performance to also accomodate license plate recognition:
 
 1. Navigate to the camera in the Scrypted Management Console.
 2. Click the Object Detection Settings.
