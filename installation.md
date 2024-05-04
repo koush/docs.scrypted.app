@@ -108,10 +108,17 @@ There will be a prompt to install Docker and set up external storage for Scrypte
 <!--@include: ./server-port.md-->
 
 
-### docker-compose.yml location
+### docker-compose.yml
 
-The [docker-compose.yml](https://github.com/koush/scrypted/blob/main/install/docker/docker-compose.yml) is stored at `~/.scrypted/docker-compose.yml`.
+The `docker-compose.yml` , though this is not typically necessary.
 
+The [docker-compose.yml](https://github.com/koush/scrypted/blob/main/install/docker/docker-compose.yml) that contains the Scrypted configuration can be found at `~/.scrypted/docker-compose.yml`. This is typically not necessary. Alternate docker images are available:
+
+|Label|Description|
+|-|-|
+|`ghcr.io/koush/scrypted`|The default image. Recommended for most users. 800MB.|
+|`ghcr.io/koush/scrypted:lite`|Smaller image. Does not include motion and object detection support. 300MB.|
+|`ghcr.io/koush/scrypted:nvidia`|Image that includes full NVIDIA CUDA support for hardware accelerated transcoding and detection. 4GB.|
 
 ## Mac - Terminal
 
