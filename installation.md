@@ -114,7 +114,7 @@ The `docker-compose.yml` , though this is not typically necessary.
 
 The [docker-compose.yml](https://github.com/koush/scrypted/blob/main/install/docker/docker-compose.yml) that contains the Scrypted configuration can be found at `~/.scrypted/docker-compose.yml`. This is typically not necessary. Alternate docker images are available:
 
-|Label|Description|
+|Image|Description|
 |-|-|
 |`ghcr.io/koush/scrypted`|The default image.|
 |`ghcr.io/koush/scrypted:nvidia`|Image that includes full NVIDIA CUDA support for hardware accelerated transcoding and detection.|
