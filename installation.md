@@ -116,9 +116,8 @@ The [docker-compose.yml](https://github.com/koush/scrypted/blob/main/install/doc
 
 |Label|Description|
 |-|-|
-|`ghcr.io/koush/scrypted`|The default image. Recommended for most users. 800MB.|
-|`ghcr.io/koush/scrypted:lite`|Smaller image. Does not include motion and object detection support. 300MB.|
-|`ghcr.io/koush/scrypted:nvidia`|Image that includes full NVIDIA CUDA support for hardware accelerated transcoding and detection. 4GB.|
+|`ghcr.io/koush/scrypted`|The default image.|
+|`ghcr.io/koush/scrypted:nvidia`|Image that includes full NVIDIA CUDA support for hardware accelerated transcoding and detection.|
 
 ## Mac - Terminal
 
