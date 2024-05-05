@@ -112,7 +112,7 @@ There will be a prompt to install Docker and set up external storage for Scrypte
 
 The `docker-compose.yml` , though this is not typically necessary.
 
-The [docker-compose.yml](https://github.com/koush/scrypted/blob/main/install/docker/docker-compose.yml) that contains the Scrypted configuration can be found at `~/.scrypted/docker-compose.yml`. This is typically not necessary. Alternate docker images are available:
+The [docker-compose.yml](https://github.com/koush/scrypted/blob/main/install/docker/docker-compose.yml) that contains the Scrypted configuration can be found at `~/.scrypted/docker-compose.yml`. Modification is typically not necessary. Alternate docker images are available:
 
 |Image|Description|
 |-|-|
