@@ -8,9 +8,11 @@ Scrypted NVR's has a free trial that can be used to test drive the product. Set 
 
 Only local RTSP Cameras are offiiclaly supported by Scrypted NVR. This is typically any camera that implements the `ONVIF` and `RTSP` protocol.
 
-Unsupported hardware includes:
-  * Cloud cameras like Ring, Google/Nest, Arlo, are not supported.
-  * Non-native RTSP Cameras like Wyze are not supported.
+Unsupported hardware (which may work to varying degrees) includes:
+  * Cloud cameras like Ring, Google/Nest, and Arlo.
+  * Non-native RTSP Cameras like Wyze.
+
+**Subscriptions intended for unsupported hardware are not eligible for technical assistance or refunds.**
 
 See the [Buyer's Guide](/buyers-guide/cameras) for recommended camera hardware.
 
@@ -29,4 +31,4 @@ Additional billing questions (such as lost email access) can be directed to [bil
 
 ## Support
 
-Support issues related to the Scrypted NVR product can be raised in the Discord, Reddit, or Github communities linked above.
+Support issues related to the Scrypted NVR product can be raised in the Discord, Reddit, or Github communities linked above. **Unsupported hardware is not eligible for technical assistance**.
