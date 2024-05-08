@@ -2,7 +2,17 @@
 
 ## Free Trial
 
-Scrypted NVR's has a free trial that can be used to test drive the product. Set the subscription to cancel to avoid being billed when the trial ends. It is highly recommended to set up and verify the cameras in the free version of Scrypted prior to starting the Scrypted NVR trial.
+Scrypted NVR's has a free trial that can be used to test drive the product. Set the subscription to cancel to avoid being billed when the trial ends. It is highly recommended to set up and verify the cameras in the free version of Scrypted prior to starting the Scrypted NVR trial. 
+
+## Supported Hardware 
+
+Only local RTSP Cameras are offiiclaly supported by Scrypted NVR. This is typically any camera that implements the `ONVIF` and `RTSP` protocol.
+
+Unsupported hardware includes:
+  * Cloud cameras like Ring, Google/Nest, Arlo, are not supported.
+  * Non-native RTSP Cameras like Wyze are not supported.
+
+See the [Buyer's Guide](/buyers-guide/cameras) for recommended camera hardware.
 
 ## Manage or Cancel Subscriptions
 
