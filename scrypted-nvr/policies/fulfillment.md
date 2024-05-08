@@ -31,4 +31,4 @@ Additional billing questions (such as lost email access) can be directed to [bil
 
 ## Support
 
-Support issues related to the Scrypted NVR product can be raised in the Discord, Reddit, or Github communities linked above. **Unsupported hardware is not eligible for technical assistance**.
+Support issues related to the Scrypted NVR product can be raised in the Discord, Reddit, or Github communities linked above.
