@@ -78,7 +78,7 @@ Cameras encoding H.265 will suffer severe picture quality degradation during pla
 
 Reolink cameras only output H.265 in 4k mode, but will use H.264 if the resolution is lowered to 2k. Even though the resolution is lower, the picture quality at native 2k is better than transcoded 4k.
 
-Unifi Protect's `Enhanced Mode` changes the codec to H.265 and should not be enabled.
+Unifi Protect's `Enhanced Mode` changes the codec to H.265 and should be disabled.
 :::
 
 
