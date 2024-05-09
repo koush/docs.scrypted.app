@@ -61,6 +61,10 @@ Doorbird Plugin supports Doorbird devices, including `Two Way Audio`.
 
 The `Unifi Protect Plugin` supports all Unifi cameras, including `Two Way Audio`.
 
+::: warning
+Unifi Protect's `Enhanced Mode` camera configuration changes the codec to H.265 and should be disabled.
+:::
+
 ## ONVIF
 
 Most local cameras can be used with the `ONVIF Plugin`, but using this plugin is recommended only if a manufacturer plugin is not available.
