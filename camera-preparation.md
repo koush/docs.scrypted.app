@@ -74,7 +74,11 @@ Hikvision
 ::: tip
 HomeKit, Google Home, Alexa, and the web all **require** H.264 for live streaming.
 
-Cameras encoding H.265 will suffer severe picture quality degradation during playback due to transcoding (in addition to the massively increased CPU usage and latency). Thus it is highly recommended that cameras encode H.264 natively. Some cameras, such as Reolink, only output H.265 in 4k mode, but will use H.264 if the resolution is lowered to 2k. Even though the resolution is lower, the picture quality at native 2k is better than transcoded 4k.
+Cameras encoding H.265 will suffer severe picture quality degradation during playback due to transcoding (in addition to the massively increased CPU usage and latency). Thus it is highly recommended that cameras encode H.264 natively. 
+
+Reolink cameras only output H.265 in 4k mode, but will use H.264 if the resolution is lowered to 2k. Even though the resolution is lower, the picture quality at native 2k is better than transcoded 4k.
+
+Unifi Protect's `Enhanced Mode` changes the codec to H.265 and should not be enabled.
 :::
 
 
