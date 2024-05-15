@@ -15,6 +15,13 @@ This Scrypted NVR Plugin is in a *paid* public beta. A [live demo server](https:
 Scrypted NVR on Mac and Windows must [Install](https://docs.scrypted.app/desktop-application.html) or [Migrate](https://docs.scrypted.app/migration.html#migrating-to-the-desktop-application) to the Desktop Application.
 :::
 
+## Remove Defunct Plugins
+
+Scrypted NVR contains improved motion sensor and video decoder components. The following plugins can be removed, if they are installed:
+* Python Codecs
+* OpenCV
+* PAM-Diff
+
 ## Recording Storage
 
 Scrypted NVR requires a drive that can store at least 3 days of video for the cameras in the system. The storage requirement will vary based on the camera count and camera resolution. The following table provides a rough estimate for one week retention with a given number of cameras.
