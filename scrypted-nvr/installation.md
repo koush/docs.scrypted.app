@@ -92,6 +92,9 @@ Proxmox VE can add a storage device to Scrypted through the Proxmox VE web inter
 2. Click the `Resources` section in the secondary drawer.
 3. Click `Add -> Mount Point`.
 4. Change the `Storage` setting to the previously named device (`nvr-storage`).
+::: warning
+Ensure the appropriate storage device is selected. By default Proxmox will select the OS drive, which is not correct.
+:::
 5. Set the `Path` to `/nvr`.
 6. Uncheck `Backup`.
 7. Set the `Disk Size` to the full size of the disk.
