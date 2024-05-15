@@ -110,3 +110,21 @@ Recording issues typically stem from the storage directory or device not being p
 
 1. In the `Scrypted NVR Plugin` Settings, verify the storage directory is configured and is reporting the correct disk size and free space. The drive should ideally be at least 1 terabyte.
 2. Refer to the [Recording Storage](/scrypted-nvr/installation.html#recording-storage) docs to properly format the drive with the correct filesystem and, if applicable, mount it into Docker.
+
+
+## Proxmox VE Container Service Failure
+
+This issue may occur if an update was interrupted while in progress, leaving the container in a bad state. The following steps should resolve this.
+
+1. Log into the Proxmox VE web admin select the Scrypted LXC, typically listed as `(10443) scrypted`.
+2. Click `Console` in the sidebar under the Scrypted LXC and log into the terminal.
+::: tip
+The default terminal username and password for the Scrypted LXC is `root/scrypted`. The credentials must be changed upon first login.
+:::
+3. Run:
+```sh
+dpkg --configure -a
+apt update && apt upgrade
+reboot
+```
+4. These commands should run without any errors. If there are any errors, resolve them with the on screen instructions, and continue to the next command.
