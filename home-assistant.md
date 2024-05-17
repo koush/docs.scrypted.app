@@ -105,7 +105,7 @@ Follow the instructions below, and then substitute the card URL appopriately.
 4. Copy the `Scrypted NVR Card Webpage URL`. (Substitute this with [Camera Grid](#camera-grid-card) or [Event Reel](#event-reel-card) URL if desired.)
 
 ::: warning
-If the `Integrate` menu is unavailable, verify the following:
+If the Home Assistant `Integrate` configuration is unavailable, verify the following:
 1. Scrypted must be opened from **inside** Home Assistant. The Home Assistant integration configuration is only available from inside Home Assistant.
 2. The [Custom Component](#install-custom-component) (and [Addon setup](#addon-setup), if applicable) **must correctly be completed** prior to setting up the cards. 
 :::
