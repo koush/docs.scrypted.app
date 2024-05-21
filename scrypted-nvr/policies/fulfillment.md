@@ -1,8 +1,8 @@
 # Purchase Policy
 
-## Subscription Management
+## Manage or Cancel Subscriptions
 
-The Scrypted NVR subscription can be managed at the billing portal: [https://billing.scrypted.app](https://billing.scrypted.app).
+The Scrypted NVR subscription can be managed at the [billing portal](https://billing.scrypted.app). This includes adding or removing licenses from an account, or cancelling the subscription.
 
 ## Free Trial
 
@@ -19,10 +19,6 @@ Unsupported hardware (which may work to varying degrees) includes:
 **Subscriptions intended for unsupported hardware are not eligible for technical assistance or refunds.**
 
 See the [Buyer's Guide](/buyers-guide/cameras) for recommended camera hardware.
-
-## Manage or Cancel Subscriptions
-
-The Scrypted NVR subscription can be managed at the [billing portal](https://billing.scrypted.app). This includes adding or removing licenses from an account, or cancelling the subscription.
 
 ## Cancellation Policy
 
