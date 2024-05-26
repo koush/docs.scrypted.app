@@ -26,7 +26,7 @@ The [Camera Configuration](/camera-preparation) steps should be completed prior 
 :::
 
 
-Scrypted supports a variety of camera models. In the `Scrypted Management Console`, navigate to `Plugins` in the side bar. Then search and install the appropriate Scrypted Plugin for your camera manufacturer.
+Scrypted supports a variety of camera plugins, some of which are listed on this page. In the `Scrypted Management Console`, navigate to `Plugins` in the side bar. Then search and install the appropriate Scrypted Plugin for your camera manufacturer.
 
 ![image](/img/install-plugin.png)
 
