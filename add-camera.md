@@ -21,6 +21,11 @@ onMounted(() => {
 
 # Add a Camera
 
+::: warning
+The [Camera Configuration](/camera-preparation) steps should be completed prior to adding the camera to Scrypted.
+:::
+
+
 Scrypted supports a variety of camera models. In the `Scrypted Management Console`, navigate to `Plugins` in the side bar. Then search and install the appropriate Scrypted Plugin for your camera manufacturer.
 
 ![image](/img/install-plugin.png)
