@@ -171,8 +171,6 @@ sudo SERVICE_USER=$USER bash ~/.scrypted/setup-scrypted-nvr-volume.sh sdx
 
 The docker container will be updated and restarted with the new disk.
 
-## Advanced Storage Options
-
 ### Manual Docker Setup
 
 1. Edit `~/.scrypted/docker-compose.yaml`.
@@ -240,7 +238,7 @@ services:
       - ~/.scrypted/volume:/server/volume
 ```
 
-### Multiple Storage Devices
+## Multiple Storage Devices
 
 Multiple Recording Storage directories can be added to Scrypted NVR. This can be used to improve loading performance, especially when recording a large number of cameras or recording primarily to a NAS.
 
