@@ -93,7 +93,7 @@ There are several types of cards available:
 * Event Reel Card
 
 :::tip
-Configuring multiple cameras within a single card dramatically improves performance and load times.
+Configuring multiple cameras within a single `Camera Grid Card` dramatically improves performance and load times.
 :::
 
 Follow the instructions below, and then substitute the card URL appopriately.
