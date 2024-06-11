@@ -34,15 +34,17 @@ Scrypted supports a variety of camera plugins, some of which are listed on this 
 
 Cameras fall into two categories: `Local` cameras and `Cloud` cameras. `Local` cameras stream on the local network, while `Cloud` cameras stream through the cloud, even if the camera is on the local network.  Cloud cameras can also be added to Scrypted, but often have limited functionality, including: high latency streams, slow snapshots, unreliable motion detection, etc.
 
-Find a matching plugin for your camera and install it in Scrypted Management Console. If the camera is a `Local` camera, and no exact plugin can be found, try using the `ONVIF` or `RTSP` plugin (in that order).
+Find the matching plugin for your camera and install it in Scrypted Management Console. Multiple brands may be supported by a plugin, so check the list carefully. For example, Amcrest supports Dahua and some Lorex cameras. Hikvision supports many white labeled cameras.
+
+If the camera is a `Local` camera, and no compatible plugin can be found, try using the `ONVIF` or `RTSP` plugin (in that order).
 
 ::: tip
 When adding a camera using the appropriate `Local` camera plugin, it is recommended to log in with **admin** login credentials. Features such as Pan/Tilt/Zoom, codec configuration, etc, are often unavailable to a user account.
 :::
 
-## Amcrest/Dahua
+## Amcrest
 
-The `Amcrest Plugin` also supports Dahua cameras. Supports `Two Way Audio`.
+The `Amcrest Plugin` also supports Dahua and some Lorex cameras. Supports `Two Way Audio`.
 * Install the ONVIF plugin if your camera has `Pan/Tilt/Zoom` capability.
 
 ## Hikvision
