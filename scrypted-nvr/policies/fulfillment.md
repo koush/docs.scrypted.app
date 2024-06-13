@@ -10,11 +10,12 @@ Scrypted NVR's has a free trial that can be used to test drive the product. Set 
 
 ## Supported Hardware 
 
-Only local RTSP Cameras are offiiclaly supported by Scrypted NVR. This is typically any camera that implements the `ONVIF` and `RTSP` protocol and uses the `H.264` video codec.
+Only local RTSP Cameras are officially supported by Scrypted NVR. This is typically any camera that implements the `ONVIF` and `RTSP` protocol and uses the `H.264` video codec.
 
 Unsupported hardware (which may work to varying degrees) includes:
   * Cloud cameras like Ring, Google/Nest, and Arlo.
   * Non-native RTSP Cameras like Wyze.
+  * Battery powered cameras.
 
 **Subscriptions intended for unsupported hardware are not eligible for technical assistance or refunds.**
 
