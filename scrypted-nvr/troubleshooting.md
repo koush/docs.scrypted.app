@@ -123,6 +123,7 @@ The default terminal username and password for the Scrypted LXC is `root/scrypte
 :::
 3. Run:
 ```sh
+apt --fix-broken install
 dpkg --configure -a
 apt update && apt upgrade
 reboot
