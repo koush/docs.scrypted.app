@@ -1,8 +1,7 @@
 # Camera Report Card
 
 This report card is intended to help guide your purchasing decisions.
-* **Do not buy cloud cameras if you want smooth streaming or NVR support.**
-* Cameras with a C Codec rating or lower are incompatible and non-configurable, and thus not recommended.
+* **Do not buy cloud cameras.**
 * Notes per plugin are included after the report card.
 
 ### Local Cameras
