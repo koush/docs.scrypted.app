@@ -73,6 +73,7 @@ export default withMermaid({
           { text: 'What Should I Buy?', link: '/buyers-guide/' },
           { text: 'Camera Hardware', link: '/buyers-guide/cameras' },
           { text: 'Server Hardware', link: '/buyers-guide/servers' },
+          { text: 'Camera Report Card', link: '/buyers-guide/report-card' },
         ]
       },
       {
