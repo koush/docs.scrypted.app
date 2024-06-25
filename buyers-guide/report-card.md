@@ -7,26 +7,26 @@ This report card is intended to help guide your purchasing decisions.
 ### Local Cameras
 
 |Manufacturer|Codecs|Motion|Talkback|Snapshots|Doorbell|
-|------------|------|------|-------------|---------|--------|
-|Hikvision   |     A|     A|            A|        A|       N|
-|Amcrest     |     A|     A|            A|        A|       Y|
-|ONVIF       |     A|     A|            A|        A|       Y|
-|Unifi       |    B+|     A|           B*|       D*|       Y|
-|Reolink     |     B|     C|           A*|        A|       Y|
-|Tapo        |    B-|     C|           C*|        F|       Y|
+|------------|------|------|--------|---------|--------|
+|Hikvision   |     A|     A|       A|        A|       N|
+|Amcrest     |     A|     A|       A|        A|       Y|
+|ONVIF       |     A|     A|       A|        A|       Y|
+|Unifi       |    B+|     A|      B*|       D*|       Y|
+|Reolink     |     B|     C|      A*|        A|       Y|
+|Tapo        |    B-|     C|      C*|        F|       Y|
 
 
 ### Cloud Cameras
 
 **DO NOT BUY**. These are all cloud cameras and should not be purchased.
 
-|Manufacturer|Codecs|Motion|Two Way Audio|Snapshots|Doorbell|
-|------------|------|------|-------------|---------|--------|
-|Ring        |     D|     D|            A|        F|       Y|
-|Tuya        |     C|     B|            F|        F|       N|
-|Arlo        |     C|     D|            F|        F|       N|
-|Google Gen 2|     C|     F|            F|        F|       Y|
-|Nest        |     F|     D|            F|        F|       Y|
+|Manufacturer|Codecs|Motion|Talkback|Snapshots|Doorbell|
+|------------|------|------|--------|---------|--------|
+|Ring        |     D|     D|       A|        F|       Y|
+|Tuya        |     C|     B|       F|        F|       N|
+|Arlo        |     C|     D|       F|        F|       N|
+|Google Gen 2|     C|     F|       F|        F|       Y|
+|Nest        |     F|     D|       F|        F|       Y|
 
 ## Hikvision
 
