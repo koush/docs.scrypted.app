@@ -6,27 +6,27 @@ This report card is intended to help guide your purchasing decisions.
 
 ### Local Cameras
 
-|Manufacturer|Codecs|Bitrate|Motion|Talkback|Snapshots|Doorbell|
-|------------|------|-------|------|-------------|---------|--------|
-|Hikvision   |     A|      A|     A|            A|        A|       N|
-|Amcrest     |     A|      A|     A|            A|        A|       Y|
-|ONVIF       |     A|      A|     A|            A|        A|       Y|
-|Unifi       |     A|      B|     A|            A|       D*|       Y|
-|Reolink     |    A-|      B|     C|           A*|        A|       Y|
-|Tapo        |    A-|      B|     C|           C*|        F|       Y|
+|Manufacturer|Codecs|Motion|Talkback|Snapshots|Doorbell|
+|------------|------|------|-------------|---------|--------|
+|Hikvision   |     A|     A|            A|        A|       N|
+|Amcrest     |     A|     A|            A|        A|       Y|
+|ONVIF       |     A|     A|            A|        A|       Y|
+|Unifi       |    B+|     A|           B*|       D*|       Y|
+|Reolink     |     B|     C|           A*|        A|       Y|
+|Tapo        |    B-|     C|           C*|        F|       Y|
 
 
 ### Cloud Cameras
 
-**DO NOT BUY**. These cameras are all cloud cameras and should not be purchased.
+**DO NOT BUY**. These are all cloud cameras and should not be purchased.
 
-|Manufacturer|Codecs|Bitrate|Motion|Two Way Audio|Snapshots|Doorbell|
-|------------|------|-------|------|-------------|---------|--------|
-|Ring        |     D|      F|     D|            A|        F|       Y|
-|Tuya        |     C|      F|     B|            F|        F|       N|
-|Arlo        |     C|      F|     D|            F|        F|       N|
-|Google Gen 2|     C|      F|     F|            F|        F|       Y|
-|Nest        |     F|      F|     D|            F|        F|       Y|
+|Manufacturer|Codecs|Motion|Two Way Audio|Snapshots|Doorbell|
+|------------|------|------|-------------|---------|--------|
+|Ring        |     D|     D|            A|        F|       Y|
+|Tuya        |     C|     B|            F|        F|       N|
+|Arlo        |     C|     D|            F|        F|       N|
+|Google Gen 2|     C|     F|            F|        F|       Y|
+|Nest        |     F|     D|            F|        F|       Y|
 
 ## Hikvision
 
@@ -43,6 +43,8 @@ Not all ONVIF cameras support motion events and two way audio. For example, Hikv
 ## Unifi
 
 This is the only local camera known to support the Opus audio codec, which is the ideal codec for streaming. Offers 3 streams. Unifi does not allow codec configuration. This has caused issues, such as breaking HomeKit Secure Video, in the past. Do not enable `Enhanced Mode` as that changes the camera codec to H.265 which is not compatible with most other platforms.
+
+Unifi Two Way Audio is a proprietary protocol that may break without notice.
 
 Unifi snapshots are only refreshed every 10 seconds. Snapshots are also very low resolution and look pixelated in the Home app and elsewhere. Using Prebuffer Snapshots resolves this at the cost of significant CPU usage, however, those are on a 5 second refresh.
 
