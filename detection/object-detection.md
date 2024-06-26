@@ -16,6 +16,10 @@ Available only in the [Scrypted Desktop App](/desktop-application). Uses the GPU
 
 Available on all platforms. Can use Intel CPU/GPU for hardware acceleration. The `Console` will show the available hardware.
 
+## ONNX
+
+Available on all platforms. Can use NVIDIA and AMD GPU for hardware acceleration. The `Console` will show the available hardware.
+
 ## Tensorflow Lite
 
 Available on all platforms. Can use [Coral.ai](https://coral.ai) TPU for hardware acceleration.
