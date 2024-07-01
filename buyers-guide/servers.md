@@ -76,7 +76,7 @@ This Intel 12th generation NUC contains a CPU and capable GPU in a tiny package.
 
 # Storage
 
-## Internal/External Storage
+## Storage Drive
 
 Scrypted NVR recommends using a direct attached storage drive (internal or USB). A surveillance rated drive is preferred, but not strictly necessary. SSD storage will only marginally improve performance. Flash Storage (USB Stick) and SD Cards are not recommended, as they are prone to data corruption and failure.
 
@@ -88,6 +88,10 @@ Scrypted NVR recommends using a direct attached storage drive (internal or USB).
 ::: warning
 There are many [fake drives](https://www.youtube.com/watch?v=QOhLlvNlI20) for sale that misreport their actual storage capacity. Buy from a reputable retailer and manufacturer. If a deal seems too good to be true, it probably is.
 :::
+
+## External Storage Bays
+
+When using an external enclosure, it is recommended to connect a dedicated enclosure directly to the server. Multifunction enclosures (which have additional USB ports, network ports, or card readers) have been known to cause issues. Daisy chaining the USB connection through a secondary USB hub can cause connectivity issues as well.
 
 ::: tip
 Macs can be quite picky about USB drive bays and may disconnect them randomly. Using a brand that advertises itself as Mac compatible, such as OWC, is advised. Read the Amazon reviews from Mac users. All drive bays tend to be trouble free on Linux and Windows.
