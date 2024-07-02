@@ -52,7 +52,7 @@ The [Object Detection Benchmark](https://scripts.scrypted.app/object-detection-b
 |GPU: Intel 13500H|🥈|The GPU on the H series Intel chips have 2-3x the typical number of cores. They are blazing fast at low power. Highly recommended.|
 |GPU: AMD 6900XT or NVIDIA 3080|🥈|The Scrypted Desktop App running on systems using these GPU for Object Detection perform great, though at a much higher performance per watt.|
 |GPU: Intel N100|🥉|Fantastic Object Detection Performance in a tiny package. Highly recommended.|
-|GPU: NVIDIA 4XXX|🥇|The NVIDIA 4XXX series has incredible decode and detect performance at the cost of high price and power usage. Generally not recommended for purchase, great if on hand.|
+|GPU: NVIDIA 4XXX|🥇|The NVIDIA 4XXX series has incredible decode and detect performance at the but at a high price and power usage. Generally not recommended for purchase, great if on hand.|
 |TPU: M.2/PCI Coral|🥉|The M.2 dual TPU model is is not supported by many systems. **Google Abandonware. Do not buy if purchasing new hardware**.|
 |TPU: USB Coral|🥉|High latency and crash prone. Google Abandonware. **Google Abandonware. Do not buy if purchasing new hardware**.|
 
