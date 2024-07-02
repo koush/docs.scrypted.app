@@ -26,12 +26,12 @@ While a TPU can improve performance, a capable GPU can also fill the gap.
 
 ## System Comparison
 
-|Name|CPU|GPU|TPU|Cameras|
+|Name|General Compute|Video Decode|Object Detection|Cameras|
 |-|-|-|-|-|
 |Apple Mac Mini M1/M2|🥇|🥇|🥇|20+|
 |NVIDIA 4XXX|❌|🥇|🥇|20+|
-|Intel 13500H|🥈|🥈|❌|20+|
-|Intel N100|🥈|🥉|❌|12|
+|Intel 13500H|🥈|🥈|🥈|20+|
+|Intel N100|🥉|🥉|🥉|12|
 
 ❌ Not applicable.
 
