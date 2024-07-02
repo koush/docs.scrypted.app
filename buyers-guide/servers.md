@@ -30,7 +30,7 @@ While a TPU can improve performance, a capable GPU can also fill the gap.
 |Name|CPU|GPU|TPU|Cameras|
 |-|-|-|-|-|
 |Apple Mac Mini M1/M2|🥇|🥇|🥇|20+|
-|NVIDIA 4090|🥇|🥇|🥇|20+|
+|NVIDIA 4090|🥇|🥇|❌|20+|
 |Intel 13500H|🥈|🥈|❌|20+|
 |Intel N100|🥈|🥉|❌|12|
 
