@@ -17,8 +17,7 @@ While a TPU can improve performance, a capable GPU can also fill the gap.
 |Processor|Video Decode|Motion Detection|Object Detection|
 |-|-|-|-|
 |CPU|✅|✅|✅|
-|Intel iGPU|✅|❗|✅|
-|NVIDIA GPU|✅|❗|✅|
+|dGPU/iGPU|✅|❗|✅|
 |TPU|❌|❌|✅|
 
 ❗ Only available in the [Scrypted Desktop App](/desktop-application.md).
