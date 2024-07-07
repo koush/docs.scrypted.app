@@ -103,8 +103,7 @@ The Scrypted database can be copied to another server by copying the `volume` di
 ```
 
 ```[Windows]
-Replace `USERNAME` with your username.
-C:\Users\USERNAME\.scrypted\volume
+%USERPROFILE%\.scrypted\volume
 ```
 
 :::
