@@ -19,8 +19,7 @@ touch ~/.scrypted/volume/reset-login
 ```
 
 ```[Windows]
-Replace `USERNAME` with your username.
-type nul > C:\Users\USERNAME\.scrypted\volume\reset-login
+type nul > %USERPROFILE%\.scrypted\volume\reset-login
 ```
 
 :::
