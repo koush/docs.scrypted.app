@@ -129,3 +129,16 @@ Detected Motion
 </div>
 
 </div>
+
+
+## High CPU Usage
+
+Scrypted NVR will use considerable CPU and GPU while performing object detection on [cameras that have reported motion](#object-detection). The following will help diagnoes unusual system activity.
+
+### Verify GPU
+
+Improperly configured systems may not be able to access the GPU when performing object detection. The official install scripts will typically set up the system correctly. The GPU availability can be verified by checking the `OpenVINO` or `ONNX` plugins.
+
+### Camera Activity
+
+Cameras that are actively performing object detection can be viewed in the `Video Analysis Plugin`. If the high cpu usage is persistent, it may be due to cameras that are constantly reporting motion and never going idle. For example, trees blowing in the wind will trigger object detection. To resolve this issue, use motion zones *on the camera* to reduce unimportant motion that is reported to Scrypted. For example, zoning the camera to only perform motion detection on walkways and driveways, rather than on landscaping features.
