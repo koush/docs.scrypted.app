@@ -133,7 +133,7 @@ Detected Motion
 
 ## High CPU Usage
 
-Scrypted NVR will use considerable CPU and GPU while performing object detection on [cameras that have reported motion](#object-detection). The following will help diagnoes unusual system activity.
+Scrypted NVR will use considerable CPU and GPU while performing object detection on [cameras that have reported motion](#object-detection). The following will help diagnose unusual system activity.
 
 ### Verify GPU
 
