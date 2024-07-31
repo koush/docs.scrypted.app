@@ -147,6 +147,6 @@ Cameras that are actively performing object detection can be viewed in the `Vide
 
 There should generally not be any cameras that are using software motion detection. All cameras that are officially supported by Scrypted NVR have functional hardware motion sensors. If there are cameras listed in this section, please review the [motion sensor setup](/camera-preparation#motion-sensor-setup) to confirm that [enabling software motion detection](/detection/motion-detection) was necessary. The software motion sensor should be disabled.
 
-* Active Object Detection
+#### Active Object Detection
 
 There may be multiple cameras listed in this seciton if the high cpu usage is persistent. This may be due to cameras that are constantly reporting motion and never going idle. For example, trees blowing in the wind will trigger object detection. To resolve this issue, use [motion zones on the camera](/camera-preparation#motion-sensor-setup) to reduce unimportant motion that is reported to Scrypted. For example, zoning the camera to only perform motion detection on walkways and driveways, rather than on landscaping features.
