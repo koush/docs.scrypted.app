@@ -155,7 +155,7 @@ There may be multiple cameras listed in this seciton if the high cpu usage is pe
 
 ## Notification Delivery Failures
 
-## Complete Notification Failure
+### Complete Notification Failure
 
 If notifications are not being delivered at all, this is likely due to an issue with the device itself. Perform the following steps:
 
@@ -164,7 +164,7 @@ If notifications are not being delivered at all, this is likely due to an issue 
 3. Search for the notification device in `Scrypted Management Console` and send it a test notification.
 4. Observe any errors in the `Console`.
 
-## No Images in Notifications
+### No Images in Notifications
 
 If notifications are working, but there are no images in notifications, this is likely due to a `Scrypted Cloud` plugin misconfiguration. Perform the following steps:
 
