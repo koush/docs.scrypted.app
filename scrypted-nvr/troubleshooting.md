@@ -28,6 +28,8 @@ Troubleshoot:
 * [Object Detection](#object-detection)
 * [Recording](#recording)
 * [Event Debug Tool](#event-debug-tool)
+* [High CPU Usage](#high-cpu-usage)
+* [Notification Delivery Failures](#notification-delivery-failures)
 
 ## Object Detection
 
@@ -150,3 +152,25 @@ There should generally not be any cameras that are using software motion detecti
 #### Active Object Detection
 
 There may be multiple cameras listed in this seciton if the high cpu usage is persistent. This may be due to cameras that are constantly reporting motion and never going idle. For example, trees blowing in the wind will trigger object detection. To resolve this issue, use [motion zones on the camera](/camera-preparation#motion-sensor-setup) to reduce unimportant motion that is reported to Scrypted. For example, zoning the camera to only perform motion detection on walkways and driveways, rather than on landscaping features.
+
+## Notification Delivery Failures
+
+## Complete Notification Failure
+
+If notifications are not being delivered at all, this is likely due to an issue with the device itself. Perform the following steps:
+
+1. If the device is Android or iOS, **reboot the device**.
+2. Completely quit (swipe close, close tray, etc) and reopen the Scrypted NVR app to trigger a device reregistration.
+3. Search for the notification device in `Scrypted Management Console` and send it a test notification.
+4. Observe any errors in the `Console`.
+
+## No Images in Notifications
+
+If notifications are working, but there are no images in notifications, this is likely due to a `Scrypted Cloud` plugin misconfiguration. Perform the following steps:
+
+1. Ensure the Scrypted Cloud plugin is installed.
+2. Log into the Scrypted Cloud plugin again.
+
+This should resolve most notification image failures.
+
+If the issue persists, and the server is behind a custom domain. The error is probably due to improper SSL termination or reverse proxy. To diagnose, delete and reinstall the Scrypted Cloud plugin to verify notification image delivery works on the Default settings.
