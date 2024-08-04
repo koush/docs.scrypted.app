@@ -70,6 +70,27 @@ debuild -us -uc -tc -b
 dpkg -i ../gasket-dkms_1.0-18_all.deb 
 ```
 
+#### Coral USB Drivers
+
+The Proxmox VE host can use the USB driver provided by Google. Run the following on the Proxmox VE host to install the USB driver:
+
+```sh
+echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main" | tee /etc/apt/sources.list.d/coral-edgetpu.list
+curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+apt-get -y update
+apt-get -y install libedgetpu1-max
+```
+
+### Intel NPU
+
+The Proxmox VE host can use the NPU driver for Core Ultra processors provided by Intel. Run the following on the Proxmox VE host to install the NPU driver:
+
+```sh
+cd /tmp
+curl -s https://raw.githubusercontent.com/koush/scrypted/main/install/docker/install-intel-npu.sh > install-intel-npu.sh
+INTEL_FW_NPU=true bash install-intel-npu.sh
+```
+
 ### Proxmox VE Container Service Failure
 
 This issue may occur if an update was interrupted while in progress, leaving the container in a bad state. The following steps should resolve this.
@@ -88,16 +109,6 @@ reboot
 ```
 4. These commands should run without any errors. If there are any errors, resolve them with the on screen instructions, and continue to the next command.
 
-#### Coral USB Drivers
-
-The Proxmox VE host can use the USB driver provided by Google. Run the following on the Proxmox VE host to install the USB driver:
-
-```sh
-echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main" | tee /etc/apt/sources.list.d/coral-edgetpu.list
-curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
-apt-get -y update
-apt-get -y install libedgetpu1-max
-```
 
 ### Proxmox VE vs Docker
 
