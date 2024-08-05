@@ -1,5 +1,5 @@
 <template>
-    <img :src="src" @click="click" :style="style">
+    <img :src="src" @click="click" :style="style" style="cursor: pointer">
 </template>
 <script setup lang="ts">
 import { ref, computed } from 'vue';
