@@ -16,7 +16,7 @@ Older `RTSP Cameras` that do not support `ONVIF` may support mail delivery of mo
 4. Enable the `Custom Motion Sensor` Extension.
 5. Select the `Dummy Switch` that was created and `Save`.
 
-![image](/img/camera-dummy-switch.png)
+<ImagePopup src="/img/camera-dummy-switch.png"></ImagePopup>
 
 
 ## Mail Plugin Setup
@@ -25,7 +25,7 @@ Older `RTSP Cameras` that do not support `ONVIF` may support mail delivery of mo
 2. Enable the `Mail` Extension on the `Dummy Switch` that was previously configured.
 3. Enter a unique mail address (any username and domain is valid, it won't actually be sent there) and `Save`.
 
-![image](/img/mail-setup.png)
+<ImagePopup src="/img/mail-setup.png"></ImagePopup>
 
 ### Camera Setup
 
@@ -38,5 +38,5 @@ Older `RTSP Cameras` that do not support `ONVIF` may support mail delivery of mo
 7. Navigate to Event or Motion Settings.
 8. Enable Send SMTP/Mail on the motion event.
 
-![image](/img/amcrest-motion-setup.png)
-![image](/img/amcrest-motion-event.png)
+<ImagePopup src="/img/amcrest-motion-setup.png"></ImagePopup>
+<ImagePopup src="/img/amcrest-motion-event.png"></ImagePopup>

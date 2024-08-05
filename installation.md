@@ -1,3 +1,8 @@
+<script setup lang="ts"> 
+import { onMounted } from 'vue';
+import ImagePopup from './src/ImagePopup.vue';
+</script>
+
 # Installation
 
 Scrypted can be installed on Windows, Mac, or Linux as a [desktop app](#desktop-app) or as a background service ([Mac](#mac-terminal), [Windows](#windows-powershell), [Proxmox VE](#proxmox-ve), [Linux](#linux-docker)).
@@ -168,6 +173,40 @@ rm ~/install-scrypted-dependencies-mac.sh
 Scrypted NVR on Windows must install the [Install](/desktop-application) or [Migrate](/maintenance/migration.md#migrating-to-the-desktop-application) to the [Desktop Application](#desktop-app). The Desktop App has GPU acceleration, is fully self contained with zero dependencies, and requires a license. The free version of Scrypted may be installed using the PowerShell Installation below.
 
 
+## Unraid - Docker
+
+1. Install `Scrypted` from `Unraid Apps`.
+2. Configure `Appdata`. This path will contain the Scrypted database.
+3. Optional: Configure `Recordings` Storage if also using `Scrypted NVR`. This path contains the recordings for Scrypted NVR and needs to be at least 1TB in size.
+
+::: warning
+Paths shown in screenshots are examples and should be configured specific to your system preferences and drive setup.
+:::
+
+<div style="width: 100%; display: flex; flex-direction: row;">
+
+<div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+Install App
+<ImagePopup src="/img/unraid/unraid-app.png" width="200" ></ImagePopup>
+</div>
+
+
+<div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+Configure Appdata
+<ImagePopup src="/img/unraid/unraid-settings.png" width="200"></ImagePopup>
+</div>
+
+</div>
+
+<div style="width: 100%; display: flex; flex-direction: row;">
+
+
+<div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+Configure Recordings (optional)
+<ImagePopup src="/img/unraid/unraid-recordings.png" width="200"></ImagePopup>
+</div>
+
+</div>
 ## All Installation Options
 
  * [Raspberry Pi](https://github.com/koush/scrypted/wiki/Installation:-Raspberry-Pi)
@@ -180,4 +219,3 @@ Scrypted NVR on Windows must install the [Install](/desktop-application) or [Mig
  * [ReadyNAS: Docker](https://github.com/koush/scrypted/wiki/Installation:-Docker-ReadyNAS)
  * [Synology: Docker](https://github.com/koush/scrypted/wiki/Installation:-Docker-Synology-NAS)
  * [QNAP: Docker](https://github.com/koush/scrypted/wiki/Installation:-Docker-QNAP-NAS)
- * [Unraid: Docker](https://github.com/koush/scrypted/wiki/Installation:-Docker-Unraid)

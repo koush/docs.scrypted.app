@@ -1,22 +1,7 @@
 <script setup lang="ts"> 
 import { onMounted } from 'vue';
-import mediumZoom from 'medium-zoom';
-
-onMounted(() => {
-  mediumZoom('[data-zoomable]', { background: 'var(--vp-c-bg)' });
-});
-
+import ImagePopup from './src/ImagePopup.vue';
 </script>
-
-<style>
-.medium-zoom-overlay {
-  z-index: 20;
-}
-
-.medium-zoom-image {
-  z-index: 21;
-}
-</style>
 
 # Home Assistant
 
@@ -25,12 +10,12 @@ The Scrypted Custom Component for Home Assistant adds support for managing Scryp
 <div style="width: 100%; display: flex; flex-direction: row;">
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
-<img src="/img/ha1.png" width="200" data-zoomable="true" >
+<ImagePopup src="/img/ha1.png" width="200" ></ImagePopup>
 </div>
 
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
-<!-- <img src="/img/ha2.png" width="200" data-zoomable="true"> -->
+<!-- <ImagePopup src="/img/ha2.png" width="200"></ImagePopup> -->
 <video src="https://github.com/koush/docs.scrypted.app/assets/73924/65f6c214-2d79-43b6-9a45-23dd291a04f5" width="200" autoplay loop muted></video>
 </div>
 
@@ -47,13 +32,13 @@ If Scrypted was installed via the [Home Assistant Addon](https://github.com/kous
 1.  Remove the `Scrypted` sidebar item via the Addon configuration.
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
-<img src="/img/ha-sidebar.png" width="400" data-zoomable="true">
+<ImagePopup src="/img/ha-sidebar.png" width="400"></ImagePopup>
 </div>
 
 2. The Addon installation has a default `homeassistant` user for automatic login. A separate dedicated Scrypted `admin` must be created in `Users` in the sidebar menu.
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
-<img src="/img/ha-users.png" width="400" data-zoomable="true">
+<ImagePopup src="/img/ha-users.png" width="400"></ImagePopup>
 </div>
 
 
@@ -111,7 +96,7 @@ If the Home Assistant `Integrate` configuration is unavailable, verify the follo
 :::
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
-<img src="/img/ha-card-url.png" width="200" data-zoomable="true">
+<ImagePopup src="/img/ha-card-url.png" width="200"></ImagePopup>
 </div>
 
 5. Add the following `Webpage Card` in Home Assistant and replace/paste the previously copied `Scrypted NVR Card Webpage URL` below:
@@ -270,7 +255,7 @@ Use `cols` to set a fixed number of columns for all screen sizes and orientation
 ## Event Reel Card
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
-<img src="/img/ha-event-reel.png" width="400" data-zoomable="true">
+<ImagePopup src="/img/ha-event-reel.png" width="400"></ImagePopup>
 </div>
 
 The Event Reel shows the recent highlighted events in a scrollable reel. Configuration is similar to the single camera card, albeit a slightly different url format. The iframe url is:
@@ -328,13 +313,13 @@ Scrypted NVR Notifications can be delivered to the Home Assistant Companion app.
 <div style="width: 100%; display: flex; flex-direction: row;">
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
-<img src="/img/ha-notifications.png" width="200" data-zoomable="true" >
+<ImagePopup src="/img/ha-notifications.png" width="200" ></ImagePopup>
 </div>
 
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
-<!-- <img src="/img/ha2.png" width="200" data-zoomable="true"> -->
-<img src="/img/ha-notifications-settings.png" width="200" data-zoomable="true" >
+<!-- <ImagePopup src="/img/ha2.png" width="200"></ImagePopup> -->
+<ImagePopup src="/img/ha-notifications-settings.png" width="200" ></ImagePopup>
 </div>
 
 </div>

@@ -10,7 +10,7 @@ Scrypted can create a `Smart Motion Sensor` to report when a object is detected 
 4. Select the desired detections to report.
 5. This sensor can be synced to other platforms to be used within automations.
 
-![image](/img/smart-motion-sensor.png)
+<ImagePopup src="/img/smart-motion-sensor.png"></ImagePopup>
 
 ## License Plate Recognition
 
@@ -33,7 +33,7 @@ When using Scrypted NVR, license plate recognition must first be enabled on the 
 4. Type the license plate to detect. Press enter to add it to the list. Multiple license plates may be provided, repeat this process for as many plates are desired.
 5. Click `Save`.
 
-![image](/img/lpr.png)
+<ImagePopup src="/img/lpr.png"></ImagePopup>
 
 ::: tip
 License plate character recognition can be inaccurate depending on conditions. Changing the `Label Distance` setting will configure the detector to allow a number of missing or incorrect characters when attempting to match a specific plate.  Ie, a distance of 1 will match `ABCDE` to `ABCBE` or `ABCD`.
@@ -56,4 +56,4 @@ When using Scrypted NVR, label some faces in the Detections overview tab to star
 5. Set the `Label Distance` to `0` so the name must exactly match.
 6. Click `Save`.
 
-![image](/img/face.png)
+<ImagePopup src="/img/face.png"></ImagePopup>

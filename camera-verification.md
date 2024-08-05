@@ -1,22 +1,7 @@
 <script setup lang="ts"> 
 import { onMounted } from 'vue';
-import mediumZoom from 'medium-zoom';
-
-onMounted(() => {
-  mediumZoom('[data-zoomable]', { background: 'var(--vp-c-bg)' });
-});
-
+import ImagePopup from './src/ImagePopup.vue';
 </script>
-
-<style>
-.medium-zoom-overlay {
-  z-index: 20;
-}
-
-.medium-zoom-image {
-  z-index: 21;
-}
-</style>
 
 
 # Camera Verification
@@ -26,7 +11,7 @@ onMounted(() => {
 Navigate to the camera in the `Scrypted Management Console` if not there already. It can be found within `Plugin` used to add it, or be searched within `Devices`.
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
-<img src="/img/camera-console.png" width="400" data-zoomable="true" >
+<ImagePopup src="/img/camera-console.png" width="400" ></ImagePopup>
 </div>
 
 
@@ -47,13 +32,13 @@ Stand in front of the camera to trigger the motion sensor. The motion event shou
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
 
-<img src="/img/events-button.png" width="200" data-zoomable="true" >
+<ImagePopup src="/img/events-button.png" width="200" ></ImagePopup>
 </div>
 
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
 
-<img src="/img/events-card.png" width="200" data-zoomable="true">
+<ImagePopup src="/img/events-card.png" width="200"></ImagePopup>
 </div>
 
 </div>

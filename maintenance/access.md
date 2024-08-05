@@ -1,22 +1,7 @@
 <script setup lang="ts"> 
 import { onMounted } from 'vue';
-import mediumZoom from 'medium-zoom';
-
-onMounted(() => {
-  mediumZoom('[data-zoomable]', { background: 'var(--vp-c-bg)' });
-});
-
+import ImagePopup from '../src/ImagePopup.vue';
 </script>
-
-<style>
-.medium-zoom-overlay {
-  z-index: 20;
-}
-
-.medium-zoom-image {
-  z-index: 21;
-}
-</style>
 
 # Users and Remote Access
 
@@ -30,13 +15,13 @@ By default, non-admin users can not to view/edit any devices, install plugins, o
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
 Enable NVR Users Extension
-<img src="/img/maintenance/nvr-users.png" width="200" data-zoomable="true" >
+<ImagePopup src="/img/maintenance/nvr-users.png" width="200" ></ImagePopup>
 </div>
 
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
 Grant Access to Cameras
-<img src="/img/maintenance/nvr-permissions.png" width="200" data-zoomable="true">
+<ImagePopup src="/img/maintenance/nvr-permissions.png" width="200"></ImagePopup>
 </div>
 
 </div>
@@ -71,7 +56,7 @@ The user will not be automatically notified by email they have access to the ser
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
 Grant Account Access
-<img src="/img/maintenance/share-server.png" width="200" data-zoomable="true" >
+<ImagePopup src="/img/maintenance/share-server.png" width="200" ></ImagePopup>
 </div>
 
 </div>

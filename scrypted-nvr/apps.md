@@ -1,26 +1,11 @@
 <script setup lang="ts"> 
 import { onMounted } from 'vue';
-import mediumZoom from 'medium-zoom';
-
-onMounted(() => {
-  mediumZoom('[data-zoomable]', { background: 'var(--vp-c-bg)' });
-});
-
+import ImagePopup from '../src/ImagePopup.vue';
 </script>
-
-<style>
-.medium-zoom-overlay {
-  z-index: 20;
-}
-
-.medium-zoom-image {
-  z-index: 21;
-}
-</style>
 
 # Apps and Remote Access
 
-![image](/img/scrypted-nvr/tablet.png){data-zoomable}
+<ImagePopup src="/img/scrypted-nvr/tablet.png"></ImagePopup>
 
 Cameras and recordings can be viewed remotely via a browser or the app by enabling cloud access.
 

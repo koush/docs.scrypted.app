@@ -1,11 +1,6 @@
 <script setup lang="ts"> 
 import { onMounted } from 'vue';
-import mediumZoom from 'medium-zoom';
-
-onMounted(() => {
-  mediumZoom('[data-zoomable]', { background: 'var(--vp-c-bg)' });
-});
-
+import ImagePopup from '../src/ImagePopup.vue';
 </script>
 
 <style>
@@ -74,12 +69,12 @@ Object Detection failure is typically due to the camera hardware not properly su
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
 No Motion Detected
-<img src="/img/scrypted-nvr/nvr-no-motion.png" width="200" data-zoomable="true" >
+<ImagePopup src="/img/scrypted-nvr/nvr-no-motion.png" width="200" ></ImagePopup>
 </div>
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
 Detected Motion
-<img src="/img/scrypted-nvr/nvr-has-motion.png" width="200" data-zoomable="true">
+<ImagePopup src="/img/scrypted-nvr/nvr-has-motion.png" width="200"></ImagePopup>
 </div>
 
 </div>
@@ -96,12 +91,12 @@ If the motion sensor is functional, the Object Detection itself can be tested by
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
 Sample Image
-<img src="/img/scrypted-nvr/troubleshooting/zidane.jpg" width="200" data-zoomable="true" >
+<ImagePopup src="/img/scrypted-nvr/troubleshooting/zidane.jpg" width="200" ></ImagePopup>
 </div>
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
 Detected Objects
-<img src="/img/scrypted-nvr/troubleshooting/zidane-results.jpg" width="200" data-zoomable="true">
+<ImagePopup src="/img/scrypted-nvr/troubleshooting/zidane-results.jpg" width="200"></ImagePopup>
 </div>
 
 </div>
@@ -122,12 +117,12 @@ The event debug tool provides insight into what objects and motion was detected 
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
 No Motion Detected
-<img src="/img/scrypted-nvr/troubleshooting/debug-tool-label.png" width="200" data-zoomable="true" >
+<ImagePopup src="/img/scrypted-nvr/troubleshooting/debug-tool-label.png" width="200" ></ImagePopup>
 </div>
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
 Detected Motion
-<img src="/img/scrypted-nvr/troubleshooting/debug-tool.png" width="200" data-zoomable="true">
+<ImagePopup src="/img/scrypted-nvr/troubleshooting/debug-tool.png" width="200"></ImagePopup>
 </div>
 
 </div>

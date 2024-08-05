@@ -1,22 +1,7 @@
 <script setup lang="ts"> 
 import { onMounted } from 'vue';
-import mediumZoom from 'medium-zoom';
-
-onMounted(() => {
-  mediumZoom('[data-zoomable]', { background: 'var(--vp-c-bg)' });
-});
-
+import ImagePopup from './src/ImagePopup.vue';
 </script>
-
-<style>
-.medium-zoom-overlay {
-  z-index: 20;
-}
-
-.medium-zoom-image {
-  z-index: 21;
-}
-</style>
 
 # Camera Configuration
 
@@ -43,7 +28,7 @@ Streams must be set up to enable all available video and audio streams and confi
 Some cameras, such as Hikvision or Amcrest, expose more streams and `Framerate` options when on camera AI is disabled. This feature is not used by Scrypted NVR or HomeKit, and should be disabled for improved streaming performance. Hikvision's `VCA Resource`, for example, should be set to `Monitoring`.
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
-<img src="/img/disable-ai.png" width="400" data-zoomable="true" >
+<ImagePopup src="/img/disable-ai.png" width="400" ></ImagePopup>
 </div>
 
 ### Enable all Streams
@@ -56,13 +41,13 @@ If there are multiple substreams, check the substreams in the dropdown or list t
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
 Amcrest
-<img src="/img/hikvision-streams.png" width="200" data-zoomable="true" >
+<ImagePopup src="/img/hikvision-streams.png" width="200" ></ImagePopup>
 </div>
 
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
 Hikvision
-<img src="/img/amcrest-streams.png" width="200" data-zoomable="true">
+<ImagePopup src="/img/amcrest-streams.png" width="200"></ImagePopup>
 </div>
 
 </div>
@@ -147,13 +132,13 @@ If the camera does not have a motion sensor, use a [Motion Detection Plugin](/de
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
 Amcrest
-<img src="/img/amcrest-motion.png" width="200" data-zoomable="true" >
+<ImagePopup src="/img/amcrest-motion.png" width="200" ></ImagePopup>
 </div>
 
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
 Hikvision
-<img src="/img/hikvision-motion.png" width="200" data-zoomable="true">
+<ImagePopup src="/img/hikvision-motion.png" width="200"></ImagePopup>
 </div>
 
 </div>

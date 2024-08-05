@@ -1,22 +1,8 @@
 <script setup lang="ts"> 
 import { onMounted } from 'vue';
-import mediumZoom from 'medium-zoom';
-
-onMounted(() => {
-  mediumZoom('[data-zoomable]', { background: 'var(--vp-c-bg)' });
-});
-
+import ImagePopup from '../src/ImagePopup.vue';
 </script>
 
-<style>
-.medium-zoom-overlay {
-  z-index: 20;
-}
-
-.medium-zoom-image {
-  z-index: 21;
-}
-</style>
 # Features
 
 ## Adaptive Bitrate
@@ -37,13 +23,13 @@ The Timeline and Events views are powered by `Smart Detections` that highlight k
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
 Timeline
-<img src="/img/scrypted-nvr/timeline.png" width="200" data-zoomable="true" >
+<ImagePopup src="/img/scrypted-nvr/timeline.png" width="200" ></ImagePopup>
 </div>
 
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
 Events
-<img src="/img/scrypted-nvr/events.png" width="200" data-zoomable="true">
+<ImagePopup src="/img/scrypted-nvr/events.png" width="200"></ImagePopup>
 </div>
 
 </div>
@@ -53,7 +39,7 @@ Events
 Rich Notifications are delivered instantly to iOS, Android, and Web apps with a thumbnail of the detection.
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
-<img src="/img/scrypted-nvr/notification.png" width="200" data-zoomable="true">
+<ImagePopup src="/img/scrypted-nvr/notification.png" width="200"></ImagePopup>
 </div>
 
 ## Hardware Accelerated AI

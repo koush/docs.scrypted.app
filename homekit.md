@@ -14,13 +14,13 @@ Install the `HomeKit Plugin`.
 
 The `HomeKit Plugin` will automatically enable itself on all the devices currently integrated into Scrypted. In any case, Verify the `HomeKit Plugin` is enabled for the camera. If it is not, enable it, then `Reload` the `HomeKit Plugin`.
 
-![image](/img/homekit-plugin.png)
+<ImagePopup src="/img/homekit-plugin.png"></ImagePopup>
 
 ## HomeKit Pairing
 
 Navigate to the Camera within Scrypted Management Console. View the `HomeKit` Settings and open the `Pairing` section. The pairing QR Code and manual codes can be found there. Each Camera will have [its own QR Code](#homekit-bridge-vs-accessory-mode). Use your iOS app to scan the QR Code and add it to the Home app.
 
-![image](/img/homekit-qr.png)
+<ImagePopup src="/img/homekit-qr.png"></ImagePopup>
 
 ## HomeKit Secure Video
 
@@ -28,7 +28,7 @@ HomeKit Secure Video (HKSV) requires cameras with motion sensors and specific co
 
 Enable `Stream and Recording` on the camera in the iOS Home app.
 
-![image](/img/hksv-enable.jpg)
+<ImagePopup src="/img/hksv-enable.jpg"></ImagePopup>
 
 ## HomeKit Troubleshooting
 

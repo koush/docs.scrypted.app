@@ -1,23 +1,7 @@
 <script setup lang="ts"> 
 import { onMounted } from 'vue';
-import mediumZoom from 'medium-zoom';
-
-onMounted(() => {
-  mediumZoom('[data-zoomable]', { background: 'var(--vp-c-bg)' });
-});
-
+import ImagePopup from './src/ImagePopup.vue';
 </script>
-
-<style>
-.medium-zoom-overlay {
-  z-index: 20;
-}
-
-.medium-zoom-image {
-  z-index: 21;
-}
-</style>
-
 
 # Add a Camera
 
@@ -28,7 +12,7 @@ The [Camera Configuration](/camera-preparation) steps should be completed prior 
 
 Scrypted supports a variety of camera plugins, some of which are listed on this page. In the `Scrypted Management Console`, navigate to `Plugins` in the side bar. Then search and install the appropriate Scrypted Plugin for your camera manufacturer.
 
-![image](/img/install-plugin.png)
+<ImagePopup src="/img/install-plugin.png"></ImagePopup>
 
 ## Plugins
 
@@ -93,13 +77,13 @@ For optimal system performance, it is extremely important to add and assign both
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
 Add RTSP Streams
-<img src="/img/add-streams.png" width="200" data-zoomable="true" >
+<ImagePopup src="/img/add-streams.png" width="200" ></ImagePopup>
 </div>
 
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
 Assign RTSP Streams
-<img src="/img/assign-streams.png" width="200" data-zoomable="true">
+<ImagePopup src="/img/assign-streams.png" width="200"></ImagePopup>
 </div>
 
 </div>
