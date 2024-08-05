@@ -177,7 +177,9 @@ Scrypted NVR on Windows must install the [Install](/desktop-application) or [Mig
 
 1. Install `Scrypted` from `Unraid Apps`.
 2. Configure `Appdata`. This path will contain the Scrypted database.
-3. Optional: Configure `Recordings` Storage if also using `Scrypted NVR`. This path contains the recordings for Scrypted NVR and needs to be at least 1TB in size.
+3. Optional: Scrypted NVR Setup
+  * Click `Add Another Path`
+  * Configure `Recordings` Storage if also using `Scrypted NVR`. This path contains the recordings for Scrypted NVR and needs to be at least 1TB in size.
 
 ::: warning
 Paths shown in screenshots are examples and should be configured specific to your system preferences and drive setup.
