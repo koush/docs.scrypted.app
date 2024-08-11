@@ -61,7 +61,7 @@ Scrypted NVR supports Intel iGPUs and accelerator cards for blazing fast detecti
 
 ### NVIDIA
 
-Scrypted NVR supports object detection on NVIDIA GPUs via the `ONNX Plugin`. NVIDIA object detection requires CUDA, which is only provided in the docker installation when using the `koush/scrypted:nvidia` image.
+Scrypted NVR supports object detection on NVIDIA GPUs via the `ONNX Plugin`. NVIDIA object detection requires CUDA, which is only provided in [Scrypted's NVIDIA Docker image](/installation.html#docker-compose-yml) when using the `koush/scrypted:nvidia` image.
 
 ### Google Coral EdgeTPU
 
