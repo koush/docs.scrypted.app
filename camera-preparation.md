@@ -13,6 +13,10 @@ Open the Camera's web admin page or app to configure its codecs, motion sensor, 
 
 ## Authentication Setup
 
+::: warning
+The camera login must have administrator level access. Motion event reporting and camera auto configuration is only available to administrator accounts.
+:::
+
 Ensure the camera password is a simple alphanumeric phrase. Special characters *often* cause issues when authenticating with RTSP, HTTP, or other camera services. If the camera supports both `Basic` and `Digest` Authorization, configure it for `Digest` only, which is more secure.
 
 ::: warning
