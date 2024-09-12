@@ -8,10 +8,6 @@ There are several Object Detection Plugins available. Choose the best one for yo
 
 Uses the [Neural Engine](https://www.makeuseof.com/what-is-a-neural-engine-how-does-it-work/) only available on Apple Silicon.
 
-## Tensorflow.js
-
-Available only in the [Scrypted Desktop App](/desktop-application). Uses the GPU for hardware acceleration.
-
 ## OpenVINO
 
 Available on all platforms. Can use Intel CPU/GPU for hardware acceleration. The `Console` will show the available hardware.
