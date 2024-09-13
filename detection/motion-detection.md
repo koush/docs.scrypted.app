@@ -4,13 +4,6 @@ Motion Detection plugins analyze the camera stream for motion. This is useful if
 
 There are several Motion Detection Plugins available. Use the recommended Plugin for a given installation.
 
-## WebGL Motion Sensor
-
-Available only in the [Scrypted Desktop App](/desktop-application). Uses the GPU for hardware acceleration.
-
-1. Enable the `WebGL Motion Sensor` Extension on the camera.
-2. Optional: Configure motion zones to filter out windy trees or busy roads.
-
 ## WebAssembly Motion Sensor
 
 Available only to [Scrypted NVR](/scrypted-nvr/) users. Uses SIMD for hardware acceleration.
