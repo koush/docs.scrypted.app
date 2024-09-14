@@ -44,7 +44,7 @@ Scrypted can be installed on a Proxmox VE by pasting the following script on the
 
 ```sh
 cd /tmp
-curl -s https://raw.githubusercontent.com/koush/scrypted/main/install/local/install-scrypted-proxmox.sh > install-scrypted-proxmox.sh
+curl -s https://raw.githubusercontent.com/koush/scrypted/main/install/proxmox/install-scrypted-proxmox.sh > install-scrypted-proxmox.sh
 bash install-scrypted-proxmox.sh
 ```
 
