@@ -86,35 +86,52 @@ Proxmox VE can add a storage device to Scrypted through the Proxmox VE web inter
 3. Select the `Disks` section in the secondary drawer.
 4. Find the Device in the list. The disk's Device will typically be something like `/dev/sda` or `/dev/sdb`.
 5. Click `Wipe Disk`.
-6. Select the `LVM` section in the secondary drawer.
-7. Click `Create: Volume Group`.
-  * Use all available storage when creating this LVM/partition.
+6. Select the `Directory` section in the secondary drawer.
+7. Click `Create: Directory`.
+  * For `Filesystem` select `ext4`.
   * Name the new storage something recognizable like `nvr-storage`.
 
 
 ### Add Storage to Scrypted
 
-1. Select the `scrypted` container from the drawer on the left.
-  * `Shutdown` the container.
-2. Click the `Resources` section in the secondary drawer.
-3. Click `Add -> Mount Point`.
-4. Change the `Storage` setting to the previously named device (`nvr-storage`).
+1. Select the server (aka `node`) from the `Datacenter` drawer on the left.
+2. Select the `Shell` section in the secondary drawer.
+3. Enter the following to download the storage setup script:
+
+```sh
+cd /tmp
+curl -s https://raw.githubusercontent.com/koush/scrypted/main/install/proxmox/setup-scrypted-nvr-volume.sh > setup-scrypted-nvr-volume.sh
+```
+
+Adjust the the previously named `nvr-storage` if necessary, and run the script:
+
+```sh
+bash setup-scrypted-nvr-volume.sh nvr-storage
+```
+
+This command will stop Scrypted, add the storage, and start the Scrypted.
+
+### Proxmox VE Volume Notes
+
+The disk setup adds the drive as a directory on the host system. The setup script modifies the lxc conf file (`/etc/pve/lxc/10443.conf`) to mount the directory into the container. It also creates a hidden `.nvr` file to the storage folder to earmark it for NVR usage. This method allows for fast snapshots, replications, and backups. 
+
+Environment variables can be set to change the setup script behavior:
+
 ::: warning
-Ensure the appropriate storage device is selected. By default Proxmox will select the OS drive, which is not correct.
+Read more about [Multiple Storage Devices](#multiple-storage-devices) before running these advanced commands.
 :::
-5. Set the `Path` to `/nvr`.
-6. Uncheck `Backup`.
-7. Set the `Disk Size` to the full size of the disk.
-8. Click `Create`.
-  * `Start` the container.
 
-### Configure the Scrypted NVR Plugin
+Additional disks can be added by setting the `ADD_DISK=1` environment variable:
 
-1. Open the `Scrypted Management Console`.
-2. Navigate to the `Scrypted NVR Plugin`.
-3. Set the `NVR Recordings Directory` to `/nvr`.
+```sh
+ADD_DISK=1 bash setup-scrypted-nvr-volume.sh another-nvr-storage
+```
 
-Storage setup is now complete.
+A `Fast Disk` can be added by setting the `FAST_DISK=1` environment variable:
+
+```sh
+FAST_DISK=1 bash setup-scrypted-nvr-volume.sh fast-nvr-storage
+```
 
 ## Docker Volume
 
