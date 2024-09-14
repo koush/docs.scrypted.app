@@ -89,7 +89,7 @@ Proxmox VE can add a storage device to Scrypted through the Proxmox VE web inter
 6. Select the `Directory` section in the secondary drawer.
 7. Click `Create: Directory`.
   * For `Filesystem` select `ext4`.
-  * Name the new storage something recognizable like `nvr-storage`.
+  * Name the new storage something recognizable like `nvr-storage` (remember this for later).
 
 
 ### Add Storage to Scrypted
