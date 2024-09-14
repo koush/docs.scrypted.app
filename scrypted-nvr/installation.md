@@ -282,6 +282,6 @@ RAID Storage can be assigned to Recording Storage as a `Large` or `Fast` directo
 
 ## Storage Utilization
 
-Scrypted NVR will delete recordings and potentially stop recording if the disk reaches 10% free space or only has 10GB free space remaining. This is to ensure there is sufficient space avaolable for OS updates and optimal filesystem performance (defragmentation/realloction). The system may become unresponsive if disk is filled completely, potentially by other programs writing to the disk.
+Scrypted NVR will delete recordings and potentially stop recording if the disk reaches 10% free space or only has 10GB free space remaining. This is to ensure there is sufficient space available for OS updates and optimal filesystem performance (defragmentation/reallocation). The system may become unresponsive if disk is filled completely, potentially by other programs writing to the disk.
 
 For best performance, provide an entire disk or partition to Scrypted NVR. Volumes that share disk space other is not recommended as it may cause issues with recording retention periods.
