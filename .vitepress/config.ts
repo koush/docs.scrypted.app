@@ -43,7 +43,8 @@ export default withMermaid({
         items: [
           { text: 'Camera Configuration', link: '/camera-preparation' },
           { text: 'Add Camera to Scrypted', link: '/add-camera' },
-          { text: 'Camera Verification', link: '/camera-verification' }
+          { text: 'Camera Verification', link: '/camera-verification' },
+          { text: 'Diagnostics', link: '/diagnostics' }
         ]
       },
       {
@@ -65,8 +66,8 @@ export default withMermaid({
           { text: 'Storage Setup', link: '/scrypted-nvr/recording-storage' },
           { text: 'Record Cameras', link: '/scrypted-nvr/camera-recording' },
           { text: 'Apps and Remote Access', link: '/scrypted-nvr/apps' },
-          { text: 'Troubleshooting', link: '/scrypted-nvr/troubleshooting' },
           { text: 'Onboard Camera AI', link: '/scrypted-nvr/camera-ai' },
+          { text: 'Troubleshooting', link: '/scrypted-nvr/troubleshooting' },
         ]
       },
       {
