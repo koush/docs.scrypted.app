@@ -35,7 +35,7 @@ export default withMermaid({
         items: [
           { text: 'What is Scrypted?', link: '/' },
           { text: 'System Requirements', link: '/server-hardware' },
-          { text: 'Installation', link: '/installation' },
+          { text: 'Server Installation', link: '/installation' },
         ]
       },
       {
@@ -62,6 +62,8 @@ export default withMermaid({
           { text: 'What is Scrypted NVR?', link: '/scrypted-nvr/' },
           { text: 'Features', link: '/scrypted-nvr/features' },
           { text: 'Installation', link: '/scrypted-nvr/installation' },
+          { text: 'Storage Setup', link: '/scrypted-nvr/recording-storage' },
+          { text: 'Record Cameras', link: '/scrypted-nvr/camera-recording' },
           { text: 'Apps and Remote Access', link: '/scrypted-nvr/apps' },
           { text: 'Troubleshooting', link: '/scrypted-nvr/troubleshooting' },
           { text: 'Onboard Camera AI', link: '/scrypted-nvr/camera-ai' },
