@@ -238,6 +238,10 @@ type: iframe
 url: >-
   /api/scrypted/<token>/endpoint/@scrypted/nvr/public/#/iframegrid?ids=<id1>,<id2>
 allow_open_top_navigation: true
+layout_options:
+  grid_columns: full
+  grid_rows: 9.5 # 4.25 * number of rows that will be shown
+
 ```
 
 The Camera Grid card has additional parameters that can be used to used to customize the layout based on the device type and screen orientation:
