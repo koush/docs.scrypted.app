@@ -106,8 +106,10 @@ If the Home Assistant `Integrate` configuration is unavailable, verify the follo
 type: iframe
 url: >-
   /api/scrypted/<token>/endpoint/@scrypted/nvr/public/#/iframe/<id>
-aspect_ratio: '16:9'
 allow_open_top_navigation: true
+layout_options:
+  grid_columns: full
+  grid_rows: 4.25
 ```
 
 ## Camera Card Options
@@ -285,7 +287,13 @@ type: iframe
 url: >-
   /api/scrypted/<token>/endpoint/@scrypted/nvr/public/#/iframeevents?ids=<id1>,<id2>&cols=4
 allow_open_top_navigation: true
-aspect_ratio: 4:1
+type: iframe
+url: >-
+  /api/scrypted/3713673acab4bdd3214e673700fe48d4/endpoint/@scrypted/nvr/public/#/iframe/41?cols=1&videoClick=ha&live=true
+allow_open_top_navigation: true
+layout_options:
+  grid_columns: full
+  grid_rows: 2.3
 ```
 
 ## Notifications
