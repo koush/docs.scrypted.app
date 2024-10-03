@@ -97,9 +97,29 @@ This command will stop Scrypted, add the storage, and start the Scrypted.
 
 Continue on to [Enable Camera Recording](/scrypted-nvr/camera-recording).
 
-### Proxmox VE Volume Notes
+<br/>
+<br/>
+<br/>
 
-The disk setup adds the drive as a directory on the host system. The setup script modifies the lxc conf file (`/etc/pve/lxc/10443.conf`) to mount the directory into the container. It also creates a hidden `.nvr` file to the storage folder to earmark it for NVR usage. This method allows for fast snapshots, replications, and backups. 
+::: info
+Reference: [Proxmox VE Disk Setup Notes](#proxmox-ve-disk-setup-notes) has information about the script.
+
+Reference: [Proxmove VE Mount Point](#proxmox-ve-mount-point) has information about using standard Proxmox Mount points, which are not recommended due to issues with backup and snapshots.
+:::
+
+---
+
+#### Proxmox VE Mount Point
+
+Proxmox VE Mount Points **MUST** place the mount point inside `/mnt` in the container:
+
+![](/img/scrypted-nvr/proxmox-mount-point.png)
+
+The `/mnt/crucial` path can then be provided to the NVR Plugin after restarting the container.
+
+#### Proxmox VE Disk Setup Notes
+
+The disk setup adds the drive as a directory on the host system. The setup script modifies the lxc conf file (`/etc/pve/lxc/10443.conf`) to mount the directory into the container. It also creates a hidden `.nvr` file to the storage folder to earmark it for NVR usage. This method allows for fast snapshots, replications, and backups.
 
 Environment variables can be set to change the setup script behavior:
 
