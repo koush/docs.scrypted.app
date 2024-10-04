@@ -52,6 +52,7 @@ export default withMermaid({
         items: [
           { text: 'What are Plugins?', link: '/platforms' },
           { text: 'HomeKit', link: '/homekit' },
+          { text: 'HomeKit Troubleshooting', link: '/homekit-troubleshooting' },
           { text: 'Google Home', link: '/google-home' },
           { text: 'Alexa', link: '/alexa' },
           { text: 'Home Assistant', link: '/home-assistant' },

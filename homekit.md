@@ -30,10 +30,6 @@ Enable `Stream and Recording` on the camera in the iOS Home app.
 
 <ImagePopup src="/img/hksv-enable.jpg"></ImagePopup>
 
-## HomeKit Troubleshooting
-
-The [HomeKit Troubleshooting Guide](https://github.com/koush/scrypted/blob/main/plugins/homekit/README.md) can be found in the plugin or on Github.
-
 ## HomeKit Bridge vs Accessory Mode
 
 HomeKit can connect to two different types of devices: `Accessories` and `Bridges`. `Bridges` host multiple devices, while `Accessories` only host one. By default, cameras in Scrypted are paired in `Accessory Mode`. Each Camera in Scrypted will have its own QR Code. While this can be tedious to set up compared to Home Assistant and Homebridge which Bridge their cameras, Accessory Mode results in better performance:
@@ -43,3 +39,4 @@ When HomeKit connects to a Bridge, it can only send and receive one request and 
 For example, suppose a server has 10 cameras on a Bridge. When the Home app is opened on iOS, each camera is sent a snapshot request, one by one. If each camera takes 500 milliseconds to respond to the snapshot request to load the image, the Bridge may take up to 5 seconds to process further requests, like viewing a camera stream or turning on a light.
 
 This is a architectural limitation in HomeKit that will likely never be resolved (as there are no official camera Bridges), so the Scrypted recommendation to use Accessory Mode,  like real HomeKit Cameras.
+
