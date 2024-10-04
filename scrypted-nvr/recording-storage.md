@@ -127,16 +127,16 @@ Environment variables can be set to change the setup script behavior:
 Read more about [Multiple Storage Devices](#multiple-storage-devices) before running these advanced commands.
 :::
 
-Additional disks can be added by setting the `ADD_DISK=1` environment variable:
+Additional disks can be added by setting the `ADD_DISK=true` environment variable:
 
 ```sh
-ADD_DISK=1 bash setup-scrypted-nvr-volume.sh another-nvr-storage
+ADD_DISK=true bash setup-scrypted-nvr-volume.sh another-nvr-storage
 ```
 
-A `Fast Disk` can be added by setting the `FAST_DISK=1` environment variable:
+A `Fast Disk` can be added by setting the `FAST_DISK=true` environment variable:
 
 ```sh
-FAST_DISK=1 bash setup-scrypted-nvr-volume.sh fast-nvr-storage
+FAST_DISK=true bash setup-scrypted-nvr-volume.sh fast-nvr-storage
 ```
 
 ## Docker Volume
