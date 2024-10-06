@@ -36,6 +36,7 @@ export default withMermaid({
           { text: 'What is Scrypted?', link: '/' },
           { text: 'System Requirements', link: '/server-hardware' },
           { text: 'Install Scrypted', link: '/installation' },
+          { text: 'System Validation', link: '/system-validation' },
         ]
       },
       {
@@ -43,8 +44,7 @@ export default withMermaid({
         items: [
           { text: 'Camera Configuration', link: '/camera-preparation' },
           { text: 'Add Camera to Scrypted', link: '/add-camera' },
-          { text: 'Camera Verification', link: '/camera-verification' },
-          { text: 'Diagnostics', link: '/diagnostics' }
+          { text: 'Camera Validation', link: '/camera-validation' },
         ]
       },
       {

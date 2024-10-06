@@ -4,7 +4,7 @@
 
 1. [Configure the Camera](/camera-preparation).
 2. [Add the Camera to Scrypted](/add-camera.md).
-3. [Verify the Motion Sensor](/camera-verification) is working. Scrypted waits for the camera to report motion to trigger video analysis. 
+3. [Verify the Motion Sensor](/camera-validation) is working. Scrypted waits for the camera to report motion to trigger video analysis. 
 :::warning
 If the Camera's Motion Sensor is disabled, detections will be unavailable on the NVR timeline.
 :::
