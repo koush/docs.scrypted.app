@@ -22,7 +22,7 @@ export default withMermaid({
     nav: [
       // { text: 'Scrypted', link: '/' },
       { text: 'Scrypted NVR', link: '/scrypted-nvr/' },
-      { text: 'Installation', link: '/installation' },
+      { text: 'Install', link: '/installation' },
       { text: 'Download', link: '/desktop-application' },
       { text: 'Camera Setup', link: '/camera-preparation' },
       { text: 'Buyer\'s Guide', link: '/buyers-guide/' },
@@ -35,7 +35,7 @@ export default withMermaid({
         items: [
           { text: 'What is Scrypted?', link: '/' },
           { text: 'System Requirements', link: '/server-hardware' },
-          { text: 'Server Installation', link: '/installation' },
+          { text: 'Install Scrypted', link: '/installation' },
         ]
       },
       {
@@ -63,7 +63,7 @@ export default withMermaid({
         items: [
           { text: 'What is Scrypted NVR?', link: '/scrypted-nvr/' },
           { text: 'Features', link: '/scrypted-nvr/features' },
-          { text: 'Installation', link: '/scrypted-nvr/installation' },
+          { text: 'Install Scrypted NVR', link: '/scrypted-nvr/installation' },
           { text: 'Storage Setup', link: '/scrypted-nvr/recording-storage' },
           { text: 'Record Cameras', link: '/scrypted-nvr/camera-recording' },
           { text: 'Apps and Remote Access', link: '/scrypted-nvr/apps' },

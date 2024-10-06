@@ -1,6 +1,6 @@
-# Installation
+# Install Scrypted NVR
 
-Install Scrypted using the one of the [Installation](/installation) options.
+Install Scrypted using the one of the [installation options](/installation).
 
 After installation, the Scrypted NVR can be installed from the `Plugins` section of the `Scrypted Management Console`.
 

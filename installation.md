@@ -3,7 +3,7 @@ import { onMounted } from 'vue';
 import ImagePopup from './src/ImagePopup.vue';
 </script>
 
-# Installation
+# Install Scrypted
 
 Scrypted can be installed on Windows, Mac, or Linux as a [desktop app](#desktop-app) or as a background service ([Mac](#mac-terminal), [Windows](#windows-powershell), [Proxmox VE](#proxmox-ve), [Linux](#linux-docker)).
 
