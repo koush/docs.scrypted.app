@@ -39,3 +39,17 @@ Deprecated Plugins       Running
 System Validation Complete
 ============================================
 ```
+
+## Validation Resolutions
+
+### IPv6
+
+IPv6 on the network and Scrypted server is recommended for optimal performance when streaming from cellular networks.
+
+### Scrypted Server Address
+
+Specifying the `Scrypted Server Address` will affect how Scrypted advertises devices via the `HomeKit` plugin and how it communicates with other devices on th local network. Selecting a pair of wired ethernet addresses (one IPv4 and one IPv6) is recommended.
+
+### GPU Passthrough and GPU Decode
+
+If this fails, it is usually due to the system not properly passing through GPU due to installation via an unsupported method. Or the system may not have a GPU at all. Resolving this is recommended for `Scrypted NVR` systems.
