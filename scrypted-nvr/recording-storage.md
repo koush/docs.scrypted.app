@@ -273,7 +273,7 @@ Some Scrypted NVR setups may be recording to a Network Attached Storage (NAS) wh
 ::: danger
 Do not use `Fast` storage unless using the Scrypted NVR server is primarily recording to a NAS.
 
-The `Fast` drive must be a locally attached drive at least 1TB in size. The ideal ratio for `Fast` and `Large` drives is **1 to 6**. 
+The `Fast` drive must be a direct attached drive (SATA or USB) and at least 1TB in size. The ideal ratio for `Fast` and `Large` drives is **1 to 6**. 
 
 E.g.: If the `Large` storage is located on a NAS with 18TB available, the `Fast` drive must be at least 3TB.
 :::
