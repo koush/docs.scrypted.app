@@ -266,8 +266,7 @@ services:
 
 ## Multiple Storage Devices
 
-
-Multiple Recording Storage directories can be added to Scrypted NVR (aka `Large`). This can be used to improve loading performance, particularly when recording a large number of cameras. Multiple Recording Storage directories is not the same as [RAID](https://en.wikipedia.org/wiki/RAID), but it is a form of redundancy: main and sub streams are written to different storage devices. If a Storage device goes offline or fails will, camera stream stored on that device will be unavailable. The other streams will be available on the other Storage device.
+Multiple Recording Storage directories can be added to Scrypted NVR (`Large Disks`). This can be used to improve loading performance, particularly when recording a large number of cameras. Multiple Recording Storage directories is not the same as [RAID](https://en.wikipedia.org/wiki/RAID), but it is a form of redundancy: main and sub streams are distributed across all storage devices. If a Storage disk goes offline or fails, the specific camera stream stored on that disk will be unavailable. The other streams will be available on other Storage disk(s).
 
 Some Scrypted NVR setups may be recording to a Network Attached Storage (NAS) which results in reduced performance due to network latency. If the Scrypted NVR can utilize a direct attach drive (aka `Fast`). The NAS storage (`Large`) will store the main stream while `Fast` storage will store remote and low resolution (scrubbing, event lookup).
 
