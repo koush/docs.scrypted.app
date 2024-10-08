@@ -1,6 +1,6 @@
 # Storage Setup
 
-Scrypted NVR requires a drive that can store at least 3 days of video for the cameras in the system. The storage requirement will vary based on the camera count and camera resolution. The following table provides a rough estimate for one week retention with a given number of cameras.
+Scrypted NVR requires a disk that can store at least 3 days of video for the cameras in the system. The storage requirement will vary based on the camera count and camera resolution. The following table provides a rough estimate for one week retention with a given number of cameras.
 
 | Resolution | 4 Cameras | 6 Cameras | 10 Cameras | 16 Cameras |
 |------------|-----------|-----------|------------|------------|
@@ -9,7 +9,7 @@ Scrypted NVR requires a drive that can store at least 3 days of video for the ca
 | 4K         | 2.4TB     | 3.6TB     | 6TB        | 9.6TB      |
 
 ::: warning
-All storage drives 1TB minimum size.
+All storage disks nyst be 1TB minimum in size.
 :::
 
 ::: warning
@@ -21,9 +21,9 @@ Scrypted NVR will not work with filesystem quota features. Use a separate filesy
 :::
 
 
-## Drive Setup
+## Disk Setup
 
-Use an appropriate filesystem for your OS. The storage drive **must not be MS-DOS/FAT** formatted. For best performance, provide an entire disk or partition to Scrypted NVR. Volumes that share disk space other is not recommended as it may cause issues with recording retention periods.
+Use an appropriate filesystem for your OS. The storage disk **must not be MS-DOS/FAT** formatted. For best performance, provide an entire disk or partition to Scrypted NVR. Volumes that share disk space other is not recommended as it may cause issues with recording retention periods.
 
 |OS|Filesystem|
 |-|-|
@@ -50,13 +50,13 @@ To configure storage, select the server installation platform below:
 
 ## Mac Storage
 
-1. The storage drive must be formatted as `HFS` or `AFPS`.
+1. The storage disk must be formatted as `HFS` or `AFPS`.
 2. The recordings storage directory can be configured within the `Scrypted NVR Plugin` Settings. [Multiple Storage Devices](#multiple-storage-devices) can also be added.
 3. Continue on to [Enable Camera Recording](/scrypted-nvr/camera-recording).
 
 ## Windows Storage
 
-1. The storage drive must be formatted as `NTFS`.
+1. The storage disk must be formatted as `NTFS`.
 2. The recordings storage directory can be configured within the `Scrypted NVR Plugin` Settings. [Multiple Storage Devices](#multiple-storage-devices) can also be added.
 
 ## Proxmox VE Volume
@@ -119,7 +119,7 @@ The `/mnt/crucial` path can then be provided to the NVR Plugin after restarting 
 
 #### Proxmox VE Disk Setup Notes
 
-The disk setup adds the drive as a directory on the host system. The setup script modifies the lxc conf file (`/etc/pve/lxc/10443.conf`) to mount the directory into the container. It also creates a hidden `.nvr` file to the storage folder to earmark it for NVR usage. This method allows for fast snapshots, replications, and backups.
+The disk setup adds the disk as a directory on the host system. The setup script modifies the lxc conf file (`/etc/pve/lxc/10443.conf`) to mount the directory into the container. It also creates a hidden `.nvr` file to the storage folder to earmark it for NVR usage. This method allows for fast snapshots, replications, and backups.
 
 Environment variables can be set to change the setup script behavior:
 
@@ -141,7 +141,7 @@ FAST_DISK=true bash setup-scrypted-nvr-volume.sh fast-nvr-storage
 
 ## Docker Volume
 
-Use the [Quick Setup](#quick-setup) script to format a drive or use an existing directory in Scrypted NVR. [Manual Docker Setup](#manual-docker-setup) steps are also available.
+Use the [Quick Setup](#quick-setup) script to format a disk or use an existing directory in Scrypted NVR. [Manual Docker Setup](#manual-docker-setup) steps are also available.
 
 ### Quick Setup
 
@@ -198,7 +198,7 @@ Continue on to [Enable Camera Recording](/scrypted-nvr/camera-recording).
 
 ### Manual Docker Setup
 
-1. The storage drive must be formatted as `ext4` or `xfs`.
+1. The storage disk must be formatted as `ext4` or `xfs`.
 1. Edit `~/.scrypted/docker-compose.yaml`.
 2. Make the highlighted changes in the yaml block below, adjust the storage directory as appropriate.
 3. Restart the container by running the following: 
@@ -220,7 +220,7 @@ services:
       # DO NOT MODIFY /nvr.
       # The Recordings Directory in the NVR Plugin will autopopulate
       # with /nvr (unless it was manually changed earlier).
-      # The drive or network share will ALSO need to be configured in
+      # The disk or network share will ALSO need to be configured in
       # Part 3.
       - SCRYPTED_NVR_VOLUME=/nvr
 
@@ -268,19 +268,19 @@ services:
 
 Multiple Recording Storage directories can be added to Scrypted NVR (`Large Disks`). This can be used to improve loading performance, particularly when recording a large number of cameras. Multiple Recording Storage directories is not the same as [RAID](https://en.wikipedia.org/wiki/RAID), but it is a form of redundancy: main and sub streams are distributed across all storage devices. If a Storage disk goes offline or fails, the specific camera stream stored on that disk will be unavailable. The other streams will be available on other Storage disk(s).
 
-Some Scrypted NVR setups may be recording to a Network Attached Storage (NAS) which results in reduced performance due to network latency. If the Scrypted NVR can utilize a direct attach drive (aka `Fast`). The NAS storage (`Large`) will store the main stream while `Fast` storage will store remote and low resolution (scrubbing, event lookup).
+Some Scrypted NVR setups may be recording to a Network Attached Storage (NAS) which results in reduced performance due to network latency. If the Scrypted NVR can utilize a direct attach disk (aka `Fast`). The NAS storage (`Large`) will store the main stream while `Fast` storage will store remote and low resolution (scrubbing, event lookup).
 
 ::: danger
 Do not use `Fast` storage unless using the Scrypted NVR server is primarily recording to a NAS.
 
-The `Fast` drive must be a direct attached drive (SATA or USB) and at least 1TB in size. The ideal ratio for `Fast` and `Large` drives is **1 to 6**. 
+The `Fast` disk must be a direct attached disk (SATA or USB) and at least 1TB in size. The ideal ratio for `Fast` and `Large` disks is **1 to 6**. 
 
-E.g.: If the `Large` storage is located on a NAS with 18TB available, the `Fast` drive must be at least 3TB.
+E.g.: If the `Large` storage is located on a NAS with 18TB available, the `Fast` disk must be at least 3TB.
 :::
 
 The Default Recording Storage is designated as `Large`.
 
-RAID drives can be assigned to Recording Storage as a storage directory for servers that need true redundancy.
+RAID disks can be assigned to Recording Storage as a storage directory for servers that need true redundancy.
 
 ## Storage Utilization
 
