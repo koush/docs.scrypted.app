@@ -117,6 +117,10 @@ reboot
 
 ### Proxmox VE Container Reset
 
+::: tip
+Older Proxmox VE Scrypted installations ran as a systemd service in the container. The new installation process moves the service into a docker container inside the LXC. Legacy installations must update the LXC by using the reset script.
+:::
+
 Modifying the Proxmox VE Container can lead to unexpected behavior. The container can be reset by running the installation script with the `SCRYPTED_RESTORE=true` environment variable. All data (and NVR recordings if applicable) will be preserved, but creating a backup from within Scrypted is highly recommended.
 
 ```sh
