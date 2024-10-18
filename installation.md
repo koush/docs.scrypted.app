@@ -115,6 +115,16 @@ reboot
 4. These commands should run without any errors. If there are any errors, resolve them with the on screen instructions, and continue to the next command.
 
 
+### Proxmox VE Container Reset
+
+Modifying the Proxmox VE Container can lead to unexpected behavior. The container can be reset by running the installation script with the `SCRYPTED_RESTORE=true` environment variable. All data (and NVR recordings if applicable) will be preserved, but creating a backup from within Scrypted is highly recommended.
+
+```sh
+cd /tmp
+curl -s https://raw.githubusercontent.com/koush/scrypted/main/install/proxmox/install-scrypted-proxmox.sh > install-scrypted-proxmox.sh
+SCRYPTED_RESTORE=true bash install-scrypted-proxmox.sh
+```
+
 ### Proxmox VE vs Docker
 
 [Proxmox VE](https://www.proxmox.com) is preferred for Scrypted over Docker for several reasons:
