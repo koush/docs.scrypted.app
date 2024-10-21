@@ -10,6 +10,10 @@ Scrypted can create a `Smart Motion Sensor` to report when a object is detected 
 4. Select the desired detections to report.
 5. This sensor can be synced to other platforms to be used within automations.
 
+::: tip
+When using Smart Motion Sensor with detections from Scrypted NVR (and supported camera plugins like Unifi), the sensor can also provide a snapshot of the most recent event.
+:::
+
 <ImagePopup src="/img/smart-motion-sensor.png"></ImagePopup>
 
 ## License Plate Recognition
