@@ -9,7 +9,7 @@ Scrypted NVR requires a disk that can store at least 3 days of video for the cam
 | 4K         | 2.4TB     | 3.6TB     | 6TB        | 9.6TB      |
 
 ::: warning
-All storage disks nyst be 1TB minimum in size.
+All storage disks must be 1TB minimum in size.
 :::
 
 ::: warning
