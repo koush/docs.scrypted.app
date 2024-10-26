@@ -17,8 +17,7 @@ Cameras and recordings can be viewed remotely via a browser or the app by enabli
 
 ## iOS
 
-1. Install [TestFlight](https://apps.apple.com/us/app/testflight/id899247664) on iOS.
-2. [Install the Scrypted Beta App using TestFlight](https://testflight.apple.com/join/mpXXwLk7). This link must be opened on the iOS device.
+2. [Install Scryped from the App Store]([https://testflight.apple.com/join/mpXXwLk7](https://apps.apple.com/us/app/scrypted/id1658171214)). This link must be opened on the iOS device or search for Scrypted on the App Store.
 3. Login using the Scrypted Cloud credentials from the previous steps.
 4. The app will prompt to login a second time. The second time, use your *local* Scrypted Server credentials.
 
