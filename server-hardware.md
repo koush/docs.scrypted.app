@@ -26,7 +26,7 @@ When choosing cameras or a server, consult the [Buyers's Guide](/buyers-guide/) 
 
 The Raspberry Pi 4 and low performance NAS are not recommended for use with Scrypted NVR. Here are the baseline hardware recommendations:
 
-|Processor|Generation|
+|Operating System|CPU Generation|
 |-|-|
 |Windows|9th Generation (or equivalent for AMD)|
 |Linux|6th Generation (or equivalent for AMD)|
