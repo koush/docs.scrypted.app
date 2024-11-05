@@ -52,6 +52,11 @@ Doorbird Plugin supports Doorbird devices, including `Two Way Audio`.
 
 The `Unifi Protect Plugin` supports all Unifi cameras, including `Two Way Audio`.
 
+Create a dedicated Protect user account with ` permissions.
+
+* Two Factor Authentication will not work.
+* A local account is recommended in case the Ubiquiti SSO service goes down.
+
 ::: warning
 Unifi Protect's `Enhanced Mode` camera configuration changes the codec to H.265 and should be disabled.
 :::
