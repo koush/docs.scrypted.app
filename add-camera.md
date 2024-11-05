@@ -54,8 +54,7 @@ The `Unifi Protect Plugin` supports all Unifi cameras, including `Two Way Audio`
 
 Create a dedicated Protect user account with `Local Administrator` permissions.
 
-* Two Factor Authentication will not work.
-* A local account is recommended in case the Ubiquiti SSO service goes down.
+* A local account is required. SSO accounts are not supported.
 
 ::: warning
 Unifi Protect's `Enhanced Mode` camera configuration changes the codec to H.265 and should be disabled.
