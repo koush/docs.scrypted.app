@@ -111,7 +111,7 @@ Reference: [Proxmove VE Mount Point](#proxmox-ve-mount-point) has information ab
 
 #### Proxmox VE Mount Point
 
-Proxmox VE Mount Points **MUST** place the mount point inside `/mnt` in the container. For example, to add a new 1000GB mount point "crucial":
+Proxmox VE Mount Points **MUST** place the mount point inside `/mnt` in the container. For example, in the screenshot below. Go to `Resources` and `Add` a new 1000GB `Mount Point` named "crucial".
 
 ![](/img/scrypted-nvr/proxmox-mount-point.png)
 
