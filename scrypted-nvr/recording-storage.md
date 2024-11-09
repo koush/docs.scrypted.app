@@ -116,14 +116,13 @@ For example, as seen in the screenshot below, inside the container `Resources`:
 1. Click `Add` and select `Mount Point`.
 2. Set the size to 1000GB (adjust accordingly).
 3. Set the mount to `/mnt/crucial` (the name can be any preference in place of "crucial").
+4. The `/mnt/crucial` path can then be provided to the NVR Plugin after restarting the container.
 
 ::: warning
 The Proxmox VE Mount Points **MUST** set the path to be inside `/mnt` in the container.
 :::
 
 ![](/img/scrypted-nvr/proxmox-mount-point.png)
-
-The `/mnt/crucial` path can then be provided to the NVR Plugin after restarting the container.
 
 #### Proxmox VE Disk Setup Notes
 
