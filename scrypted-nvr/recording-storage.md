@@ -114,8 +114,8 @@ Reference: [Proxmove VE Mount Point](#proxmox-ve-mount-point) has information ab
 For example, as seen in the screenshot below, inside the container `Resources`:
 
 1. Click `Add` and select `Mount Point`.
-2. Set the size to 1000GB (or whatever preference.
-3. Set the mount to `/mnt/crucial` (or whatever name you prefer in place of "crucial"). Proxmox VE Mount Points **MUST** place the mount point inside `/mnt` in the container.
+2. Set the size to 1000GB (adjust accordingly).
+3. Set the mount to `/mnt/crucial` (the name can be any preference in place of "crucial"). Importantly, the Proxmox VE Mount Points **MUST** set the path to be inside `/mnt` in the container.
 
 ![](/img/scrypted-nvr/proxmox-mount-point.png)
 
