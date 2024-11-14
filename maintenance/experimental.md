@@ -29,7 +29,7 @@ Create and edit `~/.scrypted/volume/.env`:
 SCRYPTED_CLUSTER_MODE=client
 # this is the IP of this machine.
 SCRYPTED_CLUSTER_ADDRESS=192.168.2.131
-# this is the IP of the server machine.
+# this is the IP of the server machine, maching the SCRYPTED_CLUSTER_ADDRESS in the prior section.
 SCRYPTED_SERVER_ADDRESS=192.168.2.130
 SCRYPTED_CLUSTER_SECRET=swordfish
 SCRYPTED_CLUSTER_LABELS=compute
