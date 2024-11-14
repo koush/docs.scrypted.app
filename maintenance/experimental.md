@@ -27,9 +27,9 @@ Restart the server.
 
 ### Cluster Client Setup
 
-A Cluster client will perform motion and object detection 
+A Cluster client will perform video decoding and detection.
 
-Create and edit `~/.scrypted/volume/.env`:
+When adding a client, install Scrypted as usual (and switch to the beta tag). Account creation is not necessary. Once the server is running, create and edit `~/.scrypted/volume/.env`:
 
 ```sh
 SCRYPTED_CLUSTER_MODE=client
@@ -40,3 +40,5 @@ SCRYPTED_SERVER_ADDRESS=192.168.2.130
 SCRYPTED_CLUSTER_SECRET=swordfish
 SCRYPTED_CLUSTER_LABELS=compute
 ```
+
+Restart the client.
