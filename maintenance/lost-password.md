@@ -10,6 +10,10 @@ Using the terminal, create an empty file depending on your platform:
 touch ~/.scrypted/volume/reset-login
 ```
 
+```[Proxmox]
+touch ~/.scrypted/volume/reset-login
+```
+
 ```[Linux]
 touch ~/.scrypted/volume/reset-login
 ```
@@ -18,7 +22,7 @@ touch ~/.scrypted/volume/reset-login
 touch ~/.scrypted/volume/reset-login
 ```
 
-```[Windows]
+```[Windows Command Prompt]
 type nul > %USERPROFILE%\.scrypted\volume\reset-login
 ```
 

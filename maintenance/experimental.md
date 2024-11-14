@@ -14,7 +14,32 @@ A machine can operate in either `server` or `client` mode. There can only be one
 
 The Cluster server will ingest the camera streams and save them to the NVR storage.
 
-Create and edit `~/.scrypted/volume/.env`:
+Create and edit Scrypted `.env` configuration file:
+
+::: code-group
+
+```[Docker Compose]
+nano ~/.scrypted/volume/.env
+```
+
+```[Proxmox]
+nano ~/.scrypted/volume/.env
+```
+
+```[Linux]
+nano ~/.scrypted/volume/.env
+```
+
+```[Mac]
+nano ~/.scrypted/volume/.env
+```
+
+```[Windows Command Prompt]
+notepad %USERPROFILE%\.scrypted\volume\.env
+```
+
+:::
+
 
 ```sh
 SCRYPTED_CLUSTER_MODE=server
