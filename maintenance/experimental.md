@@ -25,6 +25,10 @@ SCRYPTED_CLUSTER_SECRET=swordfish
 
 Restart the server.
 
+::: warning
+Compute plugins like OpenVINO will fail to load until a Cluster Client is set up and connected in the next section.
+:::
+
 ### Cluster Client Setup
 
 A Cluster client will perform video decoding and detection.
