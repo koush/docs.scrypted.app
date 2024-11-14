@@ -2,7 +2,11 @@
 
 ## Cluster Mode
 
-Cluster mode enables distributed computing. Plugin, detection, decode, and encode will automatically be assigned to the best suitable machine in a cluster.
+::: warning
+`Cluster Mode` currently requires the beta server image.
+:::
+
+`Cluster Mode` enables distributed computing. Plugin, detection, decode, and encode will automatically be assigned to the best suitable machine in a cluster.
 
 A machine can operate in either `server` or `client` mode. There can only be one `server` machine but there may be multiple `client` machines. The `server` machine will ingest the camera streams, while `client` machines will perform detection. Machines in a cluster can be a mix or operating systems and architectures. For example, you can use a NAS saving video Unraid (`server`) with a Mac Mini performing detection (`client`).
 
@@ -18,6 +22,8 @@ SCRYPTED_CLUSTER_MODE=server
 SCRYPTED_CLUSTER_ADDRESS=192.168.2.130
 SCRYPTED_CLUSTER_SECRET=swordfish
 ```
+
+Restart the server.
 
 ### Cluster Client Setup
 
