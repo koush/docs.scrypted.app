@@ -58,7 +58,34 @@ Compute plugins like OpenVINO will fail to load until a Cluster Client is set up
 
 A Cluster client will perform video decoding and detection.
 
-When adding a client, install Scrypted as usual (and switch to the beta tag). Account creation is not necessary. Once the server is running, create and edit `~/.scrypted/volume/.env`:
+When adding a client, install Scrypted as usual (and switch to the beta tag). Account creation is not necessary. Once the server is running, create and edit Scrypted `.env` configuration file:
+
+
+Create and edit Scrypted `.env` configuration file:
+
+::: code-group
+
+```[Docker Compose]
+nano ~/.scrypted/volume/.env
+```
+
+```[Proxmox]
+nano ~/.scrypted/volume/.env
+```
+
+```[Linux]
+nano ~/.scrypted/volume/.env
+```
+
+```[Mac]
+nano ~/.scrypted/volume/.env
+```
+
+```[Windows Command Prompt]
+notepad %USERPROFILE%\.scrypted\volume\.env
+```
+
+:::
 
 ```sh
 SCRYPTED_CLUSTER_MODE=client
