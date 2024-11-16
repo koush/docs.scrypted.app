@@ -5,7 +5,7 @@ import ImagePopup from './src/ImagePopup.vue';
 
 # Install Scrypted
 
-Scrypted can be installed on Windows, Mac, or Linux as a [desktop app](#desktop-app) or as a background service ([Mac](#mac-terminal), [Windows](#windows-powershell), [Proxmox VE](#proxmox-ve), [Linux](#linux-docker)).
+Scrypted can be installed on Windows, Mac, or Linux as a [desktop app](#desktop-app) or as a background service ([Mac](#mac-terminal), [Windows](#windows-powershell), [Proxmox VE](#proxmox-ve), [Linux - Docker](#linux-docker)).
 
 
 <!--@include: ./parts/proxmox-tip.md-->
@@ -41,7 +41,7 @@ Install the Desktop App from the above instructions. The management console can 
 <!--@include: ./parts/proxmox-tip.md-->
 
 ::: warning
-Scrypted NVR servers with NVIDIA GPUs must create an Ubuntu 22.04 VM inside Proxmox VE and then continue with the [](#linux-docker) installation. NVIDIA hardware is not supported inside the Scrypted Proxmox VE LXC.
+Scrypted NVR servers with NVIDIA GPUs must create an Ubuntu 22.04 VM inside Proxmox VE and then continue with the [Linux - Docker](#linux-docker) installation. NVIDIA hardware is not supported inside the Scrypted Proxmox VE LXC.
 :::
 
 Scrypted can be installed on a Proxmox VE by pasting the following script on the Proxmox VE **host**. This script will download and restore a Scrypted container backup. The script prompts to pass through GPUs and Coral Edge TPUs. Hosts with Coral Edge TPUs must also install the driver using the steps below.
