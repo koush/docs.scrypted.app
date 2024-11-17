@@ -93,6 +93,7 @@ SCRYPTED_CLUSTER_MODE=client
 # matching the SCRYPTED_CLUSTER_ADDRESS in the prior section.
 SCRYPTED_CLUSTER_SERVER=192.168.2.130
 SCRYPTED_CLUSTER_SECRET=swordfish
+# designate this server as available for decode and detection workloads
 SCRYPTED_CLUSTER_LABELS=compute
 ```
 
