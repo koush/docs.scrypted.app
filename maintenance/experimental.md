@@ -42,8 +42,11 @@ notepad %USERPROFILE%\.scrypted\volume\.env
 
 
 ```sh
+#Set node type.
 SCRYPTED_CLUSTER_MODE=server
-# this is the IP of this machine.
+#Set node name.
+SCRYPTED_CLUSTER_CLIENT_NAME=scrypted-server
+# This is the IP of this machine.
 SCRYPTED_CLUSTER_ADDRESS=192.168.2.130
 SCRYPTED_CLUSTER_SECRET=swordfish
 ```
@@ -88,7 +91,10 @@ notepad %USERPROFILE%\.scrypted\volume\.env
 :::
 
 ```sh
+#Set node type.
 SCRYPTED_CLUSTER_MODE=client
+#Set node name.
+SCRYPTED_CLUSTER_CLIENT_NAME=scrypted-node1
 # this is the IP of the server machine,
 # matching the SCRYPTED_CLUSTER_ADDRESS in the prior section.
 SCRYPTED_CLUSTER_SERVER=192.168.2.130
