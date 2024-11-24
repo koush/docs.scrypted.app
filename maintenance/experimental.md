@@ -108,5 +108,5 @@ Restart the client.
 
 ```sh
 # Custom name for the worker
-SCRYPTED_CLUSTER_CLIENT_NAME=my-worker-name
+SCRYPTED_CLUSTER_WORKER_NAME=my-worker-name
 ```
