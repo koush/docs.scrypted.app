@@ -42,10 +42,8 @@ notepad %USERPROFILE%\.scrypted\volume\.env
 
 
 ```sh
-#Set node type.
+# Set worker type. There can only be one server.
 SCRYPTED_CLUSTER_MODE=server
-#Set node name.
-SCRYPTED_CLUSTER_CLIENT_NAME=scrypted-server
 # This is the IP of this machine.
 SCRYPTED_CLUSTER_ADDRESS=192.168.2.130
 SCRYPTED_CLUSTER_SECRET=swordfish
@@ -91,16 +89,24 @@ notepad %USERPROFILE%\.scrypted\volume\.env
 :::
 
 ```sh
-#Set node type.
+# Set worker type. There can be multiple clients.
 SCRYPTED_CLUSTER_MODE=client
-#Set node name.
-SCRYPTED_CLUSTER_CLIENT_NAME=scrypted-node1
 # this is the IP of the server machine,
 # matching the SCRYPTED_CLUSTER_ADDRESS in the prior section.
 SCRYPTED_CLUSTER_SERVER=192.168.2.130
 SCRYPTED_CLUSTER_SECRET=swordfish
 # designate this server as available for decode and detection workloads
-SCRYPTED_CLUSTER_LABELS=compute
+SCRYPTED_CLUSTER_LABELS=compute,@scrypted/openvino
+# if this is a mac, delete the previous line and
+# use @scrypted/coreml label instead
+# SCRYPTED_CLUSTER_LABELS=compute,@scrypted/coreml
 ```
 
 Restart the client.
+
+### Optional Properties
+
+```sh
+# Custom name for the worker
+SCRYPTED_CLUSTER_CLIENT_NAME=my-worker-name
+```
