@@ -4,11 +4,11 @@ Motion Detection plugins analyze the camera stream for motion. This is useful if
 
 There are several Motion Detection Plugins available. Use the recommended Plugin for a given installation.
 
-## WebAssembly Motion Sensor
+## Accelerated Motion Detection
 
-Available only to [Scrypted NVR](/scrypted-nvr/) users. Uses SIMD for hardware acceleration.
+Available only to [Scrypted NVR](/scrypted-nvr/) users. Uses OpenCL or SIMD for hardware acceleration.
 
-1. Enable the `WebAssembly Motion Sensor` Extension on the camera.
+1. Enable the `Accelerated Motion Sensor` Extension on the camera.
 2. Optional: Configure motion zones to filter out windy trees or busy roads.
 
 ## OpenCV
