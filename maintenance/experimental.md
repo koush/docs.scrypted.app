@@ -18,21 +18,21 @@ Create and edit Scrypted `.env` configuration file:
 
 ::: code-group
 
-```[Docker Compose]
+```sh[Docker Compose]
 nano ~/.scrypted/volume/.env
 ```
 
-```[Proxmox]
+```sh[Proxmox]
 nano ~/.scrypted/volume/.env
 ```
 
-```[Linux]
+```sh[Linux]
 nano ~/.scrypted/volume/.env
 ```
 
-```[Mac]
+```sh[Mac]
 touch ~/.scrypted/volume/.env
-open -a TextEdit  ~/.scrypted/volume/.env
+open -a TextEdit ~/.scrypted/volume/.env
 ```
 
 ```[Windows Command Prompt]
@@ -68,21 +68,21 @@ Create and edit Scrypted `.env` configuration file:
 
 ::: code-group
 
-```[Docker Compose]
+```sh[Docker Compose]
 nano ~/.scrypted/volume/.env
 ```
 
-```[Proxmox]
+```sh[Proxmox]
 nano ~/.scrypted/volume/.env
 ```
 
-```[Linux]
+```sh[Linux]
 nano ~/.scrypted/volume/.env
 ```
 
-```[Mac]
+```sh[Mac]
 touch ~/.scrypted/volume/.env
-open -a TextEdit  ~/.scrypted/volume/.env
+open -a TextEdit ~/.scrypted/volume/.env
 ```
 
 ```[Windows Command Prompt]
