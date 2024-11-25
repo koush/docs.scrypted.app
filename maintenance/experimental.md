@@ -31,7 +31,8 @@ nano ~/.scrypted/volume/.env
 ```
 
 ```[Mac]
-nano ~/.scrypted/volume/.env
+touch ~/.scrypted/volume/.env
+open -a TextEdit  ~/.scrypted/volume/.env
 ```
 
 ```[Windows Command Prompt]
