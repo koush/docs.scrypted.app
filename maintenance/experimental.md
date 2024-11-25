@@ -41,6 +41,7 @@ notepad %USERPROFILE%\.scrypted\volume\.env
 
 :::
 
+Paste the following into the editor, and make the necessary changes.
 
 ```sh
 # Set worker type. There can only be one server.
@@ -80,7 +81,8 @@ nano ~/.scrypted/volume/.env
 ```
 
 ```[Mac]
-nano ~/.scrypted/volume/.env
+touch ~/.scrypted/volume/.env
+open -a TextEdit  ~/.scrypted/volume/.env
 ```
 
 ```[Windows Command Prompt]
@@ -88,6 +90,8 @@ notepad %USERPROFILE%\.scrypted\volume\.env
 ```
 
 :::
+
+Paste the following into the editor, and make the necessary changes.
 
 ```sh
 # Set worker type. There can be multiple clients.
