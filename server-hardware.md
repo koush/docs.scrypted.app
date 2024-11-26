@@ -40,6 +40,10 @@ The following chart is a rough idea of the capabilities of a few such systems.
 |Intel N100|Ubuntu + Docker|12|New Intel NUC that has a fantastic iGPU for accelerated transcode and detection.|
 |Mac Mini 16GB|macOS|20+|Scrypted NVR can leverage Apple Silicon's [Neural Engine](https://www.makeuseof.com/what-is-a-neural-engine-how-does-it-work/).|
 
+### Cameras 
+
+<!--@include: ./scrypted-nvr/parts/nvr-camera-requirements.md-->
+
 ### Storage
 
 Any hard drive will work, surveillance hard drives are recommended. Flash drives and SD cards should not be used, as they will corrupt quickly due to the high write volume.

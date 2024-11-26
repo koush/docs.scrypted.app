@@ -14,34 +14,7 @@ A machine can operate in either `server` or `client` mode. There can only be one
 
 The Cluster server will ingest the camera streams and save them to the NVR storage.
 
-Create and edit Scrypted `.env` configuration file:
-
-::: code-group
-
-```sh[Docker Compose]
-nano ~/.scrypted/volume/.env
-```
-
-```sh[Proxmox]
-nano ~/.scrypted/volume/.env
-```
-
-```sh[Linux]
-nano ~/.scrypted/volume/.env
-```
-
-```sh[Mac]
-touch ~/.scrypted/volume/.env
-open -a TextEdit ~/.scrypted/volume/.env
-```
-
-```[Windows Command Prompt]
-notepad %USERPROFILE%\.scrypted\volume\.env
-```
-
-:::
-
-Paste the following into the editor, and make the necessary changes.
+<!--@include: ../parts/cluster-setup-env.md-->
 
 ```sh
 # Set worker type. There can only be one server.
@@ -63,35 +36,7 @@ A Cluster client will perform video decoding and detection.
 
 When adding a client, install Scrypted as usual (and switch to the beta tag). Account creation is not necessary. Once the server is running, create and edit Scrypted `.env` configuration file:
 
-
-Create and edit Scrypted `.env` configuration file:
-
-::: code-group
-
-```sh[Docker Compose]
-nano ~/.scrypted/volume/.env
-```
-
-```sh[Proxmox]
-nano ~/.scrypted/volume/.env
-```
-
-```sh[Linux]
-nano ~/.scrypted/volume/.env
-```
-
-```sh[Mac]
-touch ~/.scrypted/volume/.env
-open -a TextEdit ~/.scrypted/volume/.env
-```
-
-```[Windows Command Prompt]
-notepad %USERPROFILE%\.scrypted\volume\.env
-```
-
-:::
-
-Paste the following into the editor, and make the necessary changes.
+<!--@include: ../parts/cluster-setup-env.md-->
 
 ```sh
 # Set worker type. There can be multiple clients.
