@@ -22,6 +22,7 @@ SCRYPTED_CLUSTER_MODE=server
 # This is the IP of this machine.
 SCRYPTED_CLUSTER_ADDRESS=192.168.2.130
 SCRYPTED_CLUSTER_SECRET=swordfish
+SCRYPTED_CLUSTER_LABELS=nvr-storage
 ```
 
 Restart the server.
