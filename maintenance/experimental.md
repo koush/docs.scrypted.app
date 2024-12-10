@@ -57,6 +57,8 @@ Restart the client.
 
 ::: info
 Cluster clients are not accessible at https port 10443 like the server. All connected clients can be viewed and managed from the primary server.
+
+`Plugins` in the sidebar will show connected workers and their running processes. `Server Settings` in the sidebar will show `Cluster Settings`.
 :::
 
 ### Optional Properties
