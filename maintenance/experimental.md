@@ -55,6 +55,10 @@ SCRYPTED_CLUSTER_LABELS=compute,@scrypted/openvino
 
 Restart the client.
 
+::: info
+Cluster clients are not accessible at https port 10443 like the server. All connected clients can be viewed and managed from the primary server.
+:::
+
 ### Optional Properties
 
 ```sh
