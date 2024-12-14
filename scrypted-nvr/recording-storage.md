@@ -63,6 +63,14 @@ To configure storage, select the server installation platform below:
 
 Proxmox VE can add a storage device to Scrypted through the Proxmox VE web interface. There are a few steps: adding the storage to Proxmox VE and passing the storage through to Scrypted.
 
+::: tip
+The Recordings Directory should **not** be manually configured in the NVR plugin when using the process described below. Clear any manual Recordings Directory configuration inside the NVR plugin prior to usage of this script.
+:::
+
+::: warning
+If adding multiple storage devices beyond the first, see the [Proxmox VE Disk Setup Notes](#proxmox-ve-disk-setup-notes) for additional notes on the script.
+:::
+
 ### Add Storage to Proxmox
 
 1. Open the Proxmox VE web interface.
