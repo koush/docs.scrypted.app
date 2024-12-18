@@ -3,7 +3,7 @@
 ## Cluster Mode
 
 ::: warning
-`Cluster Mode` currently requires the beta server image and the beta NVR plugin.
+`Cluster Mode` currently requires the beta server image or [prerelease](https://github.com/koush/nvr.scrypted.app/releases) Desktop app.
 :::
 
 `Cluster Mode` enables distributed computing. Plugin, detection, decode, and encode will automatically be assigned to the best suitable machine in a cluster.
