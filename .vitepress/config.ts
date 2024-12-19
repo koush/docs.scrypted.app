@@ -35,7 +35,19 @@ export default withMermaid({
         items: [
           { text: 'What is Scrypted?', link: '/' },
           { text: 'System Requirements', link: '/server-hardware' },
-          { text: 'Install Scrypted', link: '/installation' },
+          {
+            text: 'Install Scrypted', link: '/installation',
+            collapsed: true,
+            items: [
+              { text: 'Mac/Windows Desktop', link: '/install/desktop-app' },
+              { text: 'Proxmox VE', link: '/install/proxmox-ve' },
+              { text: 'Linux - Docker', link: '/install/linux-docker' },
+              { text: 'Unraid - Docker', link: '/install/unraid-dicker' },
+              { text: 'Mac - Terminal', link: '/install/mac-terminal' },
+              { text: 'Windows - PowerShell', link: '/install/windows-powershell' },
+              { text: 'All Installation Options', link: '/installation#all-installation-options' },
+            ]
+          },
           { text: 'System Validation', link: '/system-validation' },
         ]
       },
