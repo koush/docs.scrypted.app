@@ -105,6 +105,7 @@ export default withMermaid({
           { text: 'Motion Detection', link: '/detection/motion-detection' },
           { text: 'Object Detection', link: '/detection/object-detection' },
           { text: 'Smart Motion Sensor', link: '/detection/smart-motion-sensor' },
+          { text: 'Smart Occupancy Sensor', link: '/detection/smart-occupancy-sensor' },
         ]
       },
       {
