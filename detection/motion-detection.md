@@ -2,8 +2,6 @@
 
 Motion Detection plugins analyze the camera stream for motion. This is useful if the camera does not have a motion sensor or the motion sensor is sub par.
 
-There are several Motion Detection Plugins available. Use the recommended Plugin for a given installation.
-
 ## Accelerated Motion Detection
 
 Available only to [Scrypted NVR](/scrypted-nvr/) users. Uses OpenCL or SIMD for hardware acceleration.
