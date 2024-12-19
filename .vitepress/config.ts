@@ -42,7 +42,7 @@ export default withMermaid({
               { text: 'Mac/Windows Desktop', link: '/install/desktop-app' },
               { text: 'Proxmox VE', link: '/install/proxmox-ve' },
               { text: 'Linux - Docker', link: '/install/linux-docker' },
-              { text: 'Unraid - Docker', link: '/install/unraid-dicker' },
+              { text: 'Unraid - Docker', link: '/install/unraid-docker' },
               { text: 'Mac - Terminal', link: '/install/mac-terminal' },
               { text: 'Windows - PowerShell', link: '/install/windows-powershell' },
               { text: 'All Installation Options', link: '/installation#all-installation-options' },
