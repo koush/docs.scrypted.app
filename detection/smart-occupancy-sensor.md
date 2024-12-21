@@ -7,7 +7,9 @@ import ImagePopup from '../src/ImagePopup.vue';
 
 ## Setup
 
-Scrypted can create a `Smart Occupancy Sensor` that remains active while a specific object is detected on a camera. This requires [Scrypted NVR Object Detection](/scrypted-nvr/) or any of the other object detection plugins like CoreML, OpenVINO, ONNX, or TensorFlow-lite.
+Scrypted can create a `Smart Occupancy Sensor` that remains active while a specific object is detected on a camera. For example, the sensor can determine if a parking spot is utilized or a baby's crib is empty, and trigger automations.
+
+Smart Occupancy Sensor requires [Scrypted NVR Object Detection](/scrypted-nvr/) or any of the other object detection plugins like CoreML, OpenVINO, ONNX, or TensorFlow-lite.
 
 1. Install the `Video Analysis Plugin`.
 2. Click `Add New`.
