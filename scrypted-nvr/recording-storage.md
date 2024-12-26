@@ -30,6 +30,8 @@ To configure storage, select the server installation platform below:
 * [Mac](/scrypted-nvr/storage/mac.md)
 * [Docker](/scrypted-nvr/storage/docker.md)
 
+After configuring storage, continue on to [Enable Camera Recording](/scrypted-nvr/camera-recording).
+
 ## Multiple Storage Devices
 
 Multiple Recording Storage directories can be added to Scrypted NVR (`Large Disks`). This can be used to improve loading performance, particularly when recording a large number of cameras. Multiple Recording Storage directories is not the same as [RAID](https://en.wikipedia.org/wiki/RAID), but it is a form of redundancy: main and sub streams are distributed across all storage devices. If a Storage disk goes offline or fails, the specific camera stream stored on that disk will be unavailable. The other streams will be available on other Storage disk(s).
