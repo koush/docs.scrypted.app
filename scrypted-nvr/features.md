@@ -34,6 +34,22 @@ Events
 
 </div>
 
+## Face Recognition
+
+Tag and recognize faces for use in automations.
+
+<div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+<ImagePopup src="/img/scrypted-nvr/face-recognition.png" width="400"></ImagePopup>
+</div>
+
+## License Place Recognition
+
+Recognize and search vehicle plates.
+
+<div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+<ImagePopup src="/img/scrypted-nvr/lpr.png" width="400"></ImagePopup>
+</div>
+
 ## Rich Notifications
 
 Rich Notifications are delivered instantly to iOS, Android, and Web apps with a thumbnail of the detection.
