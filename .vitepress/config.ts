@@ -39,11 +39,11 @@ export default withMermaid({
             text: 'Install Scrypted', link: '/installation',
             collapsed: true,
             items: [
-              { text: 'Mac/Windows Desktop', link: '/install/desktop-app' },
+              { text: 'macOS/Windows Desktop', link: '/install/desktop-app' },
               { text: 'Proxmox VE', link: '/install/proxmox-ve' },
               { text: 'Linux - Docker', link: '/install/linux-docker' },
               { text: 'Unraid - Docker', link: '/install/unraid-docker' },
-              { text: 'Mac - Terminal', link: '/install/mac-terminal' },
+              { text: 'macOS - Terminal', link: '/install/mac-terminal' },
               { text: 'Windows - PowerShell', link: '/install/windows-powershell' },
               { text: 'All Installation Options', link: '/installation#all-installation-options' },
             ]
@@ -81,7 +81,17 @@ export default withMermaid({
           { text: 'What is Scrypted NVR?', link: '/scrypted-nvr/' },
           { text: 'Features', link: '/scrypted-nvr/features' },
           { text: 'Install Scrypted NVR', link: '/scrypted-nvr/installation' },
-          { text: 'Storage Setup', link: '/scrypted-nvr/recording-storage' },
+          { 
+            text: 'Storage Setup', 
+            link: '/scrypted-nvr/recording-storage',
+            collapsed: true,
+            items: [
+              { text: 'Proxmox VE', link: '/scrypted-nvr/storage/proxmox' },
+              { text: 'Windows', link: '/scrypted-nvr/storage/windows' },
+              { text: 'macOS', link: '/scrypted-nvr/storage/mac' },
+              { text: 'Docker', link: '/scrypted-nvr/storage/docker' },
+            ]
+           },
           { text: 'Record Cameras', link: '/scrypted-nvr/camera-recording' },
           { text: 'Apps and Remote Access', link: '/scrypted-nvr/apps' },
           { text: 'Onboard Camera AI', link: '/scrypted-nvr/camera-ai' },
