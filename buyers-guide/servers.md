@@ -16,11 +16,9 @@ While a TPU/NPU can improve performance, a capable GPU can also fill the gap.
 
 |Processor|Video Decode|Motion Detection|Object Detection|
 |-|-|-|-|
-|CPU|✅|✅|✅|
-|GPU|✅|❗|✅|
-|TPU/NPU|❌|❌|✅|
-
-❗ Only available in the [Scrypted Desktop App](/desktop-application.md).
+|CPU|🥈|🥈|🥉|
+|GPU|🥇|🥇|🥈|
+|TPU/NPU|❌|❌|🥇|
 
 ❌ Not applicable.
 
