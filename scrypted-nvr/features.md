@@ -65,7 +65,8 @@ Scrypted NVR `Smart Detections` use one of the available [Object Detection Plugi
 * CPU
 * GPU
 * Apple Silicon Neural Engine 🔥
-* [Coral.ai](https://coral.ai) accelerators 🔥
+* Intel Core Ultra NPU 🔥
+* [Coral.ai](https://coral.ai) accelerators
 
 ### Apple Silicon
 
@@ -74,6 +75,8 @@ Scrypted NVR can leverage the [Neural Engine](https://www.makeuseof.com/what-is-
 ### Intel
 
 Scrypted NVR supports Intel iGPUs and accelerator cards for blazing fast detection performance using the `OpenVINO Plugin`. 12th Generation Intel processors like the N100 have great performance at a low power and price point.
+
+Intel Core Ultra chips with the built in NPU are also supported and provide state of the art performance.
 
 ### NVIDIA
 

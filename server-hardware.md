@@ -36,9 +36,10 @@ The following chart is a rough idea of the capabilities of a few such systems.
 
 |Hardware|Operating System|Number of Cameras|Notes|
 |-|-|-|-|
-|Dell Wyse 5070|Ubuntu + Docker|5|Available cheap on eBay.|
-|Intel N100|Ubuntu + Docker|12|New Intel NUC that has a fantastic iGPU for accelerated transcode and detection.|
+|Dell Wyse 5070|Proxmox/Docker|5|Available cheap on eBay.|
+|Intel N100|Proxmox/Docker|12|New Intel NUC that has a fantastic iGPU for accelerated transcode and detection.|
 |Mac Mini 16GB|macOS|20+|Scrypted NVR can leverage Apple Silicon's [Neural Engine](https://www.makeuseof.com/what-is-a-neural-engine-how-does-it-work/).|
+|Intel Core Ultra 125h|Proxmox/Docker|20+|Scrypted NVR can leverage Intel's [NPU](https://www.intel.com/content/www/us/en/products/details/embedded-processors/core-ultra.html).|
 
 ### Cameras 
 
