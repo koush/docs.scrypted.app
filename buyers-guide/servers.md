@@ -18,7 +18,7 @@ While a TPU can improve performance, a capable GPU can also fill the gap.
 |-|-|-|-|
 |CPU|✅|✅|✅|
 |dGPU/iGPU|✅|❗|✅|
-|TPU|❌|❌|✅|
+|TPU/NPU|❌|❌|✅|
 
 ❗ Only available in the [Scrypted Desktop App](/desktop-application.md).
 
