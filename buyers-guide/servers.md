@@ -47,11 +47,11 @@ The [Object Detection Benchmark](https://scripts.scrypted.app/object-detection-b
 
 |Name|Rating|Notes|
 |-|-|-|
-|TPU: Apple Mac Mini M1/M2|🥇|Low power consumption, fast, and expensive. A single package off the shelf solution for a large number of cameras.|
-|GPU: Intel 13500H|🥈|The GPU on the H series Intel chips have 2-3x the typical number of cores. They are blazing fast at low power. Highly recommended.|
-|GPU: AMD 6900XT or NVIDIA 3080|🥈|The Scrypted Desktop App running on systems using these GPU for Object Detection perform great, though at a much higher performance per watt.|
+|NPU: Apple Mac Mini M1/M2|🥇|Low power consumption, fast, and expensive. Can easily handle a large number of cameras.|
+|NPU: Intel Core Ultra 125H|🥇|The GPU on the H series Intel chips have 2-3x the typical number of cores. The Core Ultra series includes Intel's new NPU. Low power consumption, fast, and moderately priced. Can easily handle a large number of cameras.|
+|GPU: Intel 12600H|🥈|The GPU on the H series Intel chips have 2-3x the typical number of cores. They are blazing fast at low power. Highly recommended.|
 |GPU: Intel N100|🥉|Fantastic Object Detection Performance in a tiny package. Highly recommended.|
-|GPU: NVIDIA 4XXX|🥇|The NVIDIA 4XXX series has incredible decode and detect performance at the but at a high price and power usage. Generally not recommended for purchase, great if on hand.|
+|GPU: NVIDIA|🥇|The NVIDIA 3000 and 4000 series has incredible decode and detect performance but at a high price and power consumption. Generally not recommended for purchase, great if on hand.|
 |TPU: M.2/PCI Coral|🥉|The M.2 dual TPU model is is not supported by many systems. **Google Abandonware. Do not buy if purchasing new hardware**.|
 |TPU: USB Coral|🥉|High latency and crash prone. Google Abandonware. **Google Abandonware. Do not buy if purchasing new hardware**.|
 
@@ -63,9 +63,13 @@ All servers are recommended to have at least 8GB of RAM, 16GB preferred.
 
 ## Apple Mac Mini M1/M2
 
-This system contains a CPU, GPU, and a TPU (neural cores). An Apple Silicon Mac Mini is the most capable Scrypted NVR system available.
+This system contains a CPU, GPU, and a TPU (neural cores).
 
-## Intel 13500H
+## Intel Core Ultra 125H
+
+This Intel 12th generation NUC contains a CPU and laptop class GPU and  NPU in a tiny package. The H series chip has 80 GPU cores compared to the 24 on the Intel N100. The Intel Core Ultra 125H is the top recommendation for large scale deployments.
+
+## Intel 12600H
 
 This Intel 12th generation NUC contains a CPU and laptop class GPU in a tiny package. The H series chip has 80 GPU cores compared to the 24 on the Intel N100.
 
