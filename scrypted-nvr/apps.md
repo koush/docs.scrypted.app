@@ -12,7 +12,6 @@ Cameras and recordings can be viewed remotely via a browser or the app by enabli
 1. Install the `Scrypted Cloud Plugin`.
     * Scrypted Cloud must also be installed when self hosting. See below for self hosting instructions.
 2. Login on the `Scrypted Cloud Plugin`.
-    * *Optional*: Configuring port forwarding or UPNP on your router for Scrypted Cloud is recommended for optimal performance and data privacy.
 3. Your cameras can now be viewed from anywhere at [nvr.scrypted.app](https://nvr.scrypted.app).
 
 ## iOS
