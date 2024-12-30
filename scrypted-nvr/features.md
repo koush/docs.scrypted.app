@@ -36,7 +36,7 @@ Events
 
 ## Face Recognition
 
-Tag and recognize faces for use in automations.
+Tag and recognize faces for use in [automations](/detection/smart-motion-sensor.md).
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
 <ImagePopup src="/img/scrypted-nvr/face-recognition.png" width="400"></ImagePopup>
