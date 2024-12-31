@@ -127,7 +127,7 @@ export default withMermaid({
           { text: 'Lost Password', link: '/maintenance/lost-password' },
           { text: 'Uninstallation', link: '/maintenance/uninstallation' },
           { text: 'Service Status', link: 'https://stats.uptimerobot.com/0ajzGx8GSe' },
-          { text: "Experimental", link: "/maintenance/experimental" },
+          { text: "Cluster Mode", link: "/maintenance/cluster" },
         ]
       },
       {
