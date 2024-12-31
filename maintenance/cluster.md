@@ -48,7 +48,7 @@ SCRYPTED_CLUSTER_SECRET=swordfish
 SCRYPTED_CLUSTER_LABELS=compute,transcode,@scrypted/openvino
 # if this is a mac, delete the previous line and
 # use @scrypted/coreml label instead
-# SCRYPTED_CLUSTER_LABELS=compute,@scrypted/coreml
+# SCRYPTED_CLUSTER_LABELS=compute,transcode,@scrypted/coreml
 ```
 
 Restart the client.
