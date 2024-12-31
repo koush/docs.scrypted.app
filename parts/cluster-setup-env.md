@@ -4,10 +4,12 @@ Create and edit Scrypted `.env` configuration file:
 ::: code-group
 
 ```sh[Docker Compose]
+# open this file in the Docker host shell
 nano ~/.scrypted/volume/.env
 ```
 
 ```sh[Proxmox]
+# open this file in the LXC Console
 nano ~/.scrypted/volume/.env
 ```
 
