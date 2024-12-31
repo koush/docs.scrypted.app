@@ -23,6 +23,8 @@ SCRYPTED_CLUSTER_LABELS=storage
 
 Restart the server.
 
+Upon successful configuration, Cluster workers, including the server itself, will be listed within the `Plugins` page in the Scrypted Management Console sidebar.
+
 ::: warning
 Compute plugins like OpenVINO will fail to load until a Cluster Client is set up and connected in the next section.
 :::
