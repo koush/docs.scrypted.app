@@ -2,11 +2,9 @@
 
 `Cluster Mode` enables distributed computing. Plugin, detection, decode, and encode will automatically be assigned to the best suitable machine in a cluster.
 
-::: tip
-Scrypted NVR users recording to NAS storage are encouraged to use `Cluster Mode` instead, for recording reliability. The `server` should be migrated to the NAS and the current server would migrate to `client` mode to handle detections and transcoding.
-:::
+<!--@include: ../scrypted-nvr/parts/nas-tip.md-->
 
-A machine can operate in either `server` or `client` mode. There can only be one `server` machine but there may be multiple `client` machines. The `server` machine will ingest the camera streams, while `client` machines will perform detection. Machines in a cluster can be a mix of operating systems and architectures. For example, you can use a NAS saving video Unraid (`server`) with a Mac Mini performing detection (`client`).
+A Scrypted installation can operate in either `server` or `client` mode. There can only be one `server` machine but there may be multiple `client` machines. The `server` machine will ingest the camera streams, while `client` machines will perform detection. Machines in a cluster can be a mix of operating systems and architectures. For example, you can use a NAS saving video Unraid (`server`) with a Mac Mini performing detection (`client`).
 
 ## Cluster Server Setup
 

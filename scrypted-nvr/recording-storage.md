@@ -3,15 +3,12 @@
 Scrypted NVR requires a disk that can store at least 3 days of video for the cameras in the system. The storage requirement will vary based on the camera count and camera resolution. The following table provides a rough estimate for one week retention with a given number of cameras.
 
 ::: warning
-All storage disks must be 1TB minimum in size.
+* All storage disks must be 1TB minimum in size.
+* Scrypted NVR will not work with filesystem quota features. Use a separate filesystem partition to restrict how much space is available.
 :::
 
 ::: warning
-When the storage device is a NAS Share, ensure that the NAS `Recycle Bin` feature is disabled, or the old recordings can not be properly deleted by Scrypted NVR and the disk will fill up.
-:::
-
-::: warning
-Scrypted NVR will not work with filesystem quota features. Use a separate filesystem partition to restrict how much space is available.
+NAS storage should also refer to the [NAS notes](#nas).
 :::
 
 | Resolution | 4 Cameras | 6 Cameras | 10 Cameras | 16 Cameras |
@@ -21,7 +18,7 @@ Scrypted NVR will not work with filesystem quota features. Use a separate filesy
 | 4K         | 2.4TB     | 3.6TB     | 6TB        | 9.6TB      |
 
 
-## Storage Setup
+## Host Setup
 
 To configure storage, select the server installation platform below:
 
@@ -55,3 +52,12 @@ RAID disks can be assigned to Recording Storage as a storage directory for serve
 Scrypted NVR will delete recordings and potentially stop recording if the disk reaches 10% free space or only has 10GB free space remaining. This is to ensure there is sufficient space available for OS updates and optimal filesystem performance (defragmentation/reallocation). Disk performance decreases as the utilization approaches 90%. The system may become unresponsive if disk is filled completely, potentially by other programs writing to the disk.
 
 For best performance, provide an entire disk or partition to Scrypted NVR. Volumes that share disk space other is not recommended as it may cause issues with recording retention periods.
+
+## NAS
+
+<!--@include: ./parts/nas-tip.md-->
+
+::: warning
+* When the storage device is a NAS Share, ensure that the NAS `Recycle Bin` feature is disabled, or the old recordings can not be properly deleted by Scrypted NVR and the disk will fill up.
+* Storing video on a NAS is a reasonable option if one is available, however timelapse scrubbing may suffer from poor performance over the network.
+:::

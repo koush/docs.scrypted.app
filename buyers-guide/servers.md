@@ -109,4 +109,8 @@ Macs can be quite picky about USB drive bays and may disconnect them randomly. U
 
 ## Network Attached Storage
 
+::: tip
+Using [Cluster Mode](/maintenance/cluster.md) is recommended when storing Recordings on a NAS.
+:::
+
 Storing video on a NAS is a reasonable option if one is available, however timelapse scrubbing may suffer from poor performance over the network.
