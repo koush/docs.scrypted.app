@@ -8,7 +8,7 @@ import ImagePopup from '../src/ImagePopup.vue';
 <!--@include: ./parts/proxmox-tip.md-->
 
 ::: warning
-Scrypted NVR servers with NVIDIA GPUs must create an Ubuntu 22.04 VM inside Proxmox VE and pass through the GPU. Then continue with the [Linux - Docker](#linux-docker) installation. NVIDIA hardware is not supported inside the Scrypted Proxmox VE LXC.
+Scrypted NVR servers with NVIDIA GPUs must create an Ubuntu 24.04 VM inside Proxmox VE and pass through the GPU. Then continue with the [Linux - Docker](#linux-docker) installation. NVIDIA hardware is not supported inside the Scrypted Proxmox VE LXC.
 :::
 
 Scrypted can be installed on a Proxmox VE by pasting the following script on the Proxmox VE **host**. This script will download and restore a Scrypted container backup. The script prompts to pass through GPUs and Coral Edge TPUs. Hosts with Coral Edge TPUs must also install the driver using the steps below.
