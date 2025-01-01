@@ -134,7 +134,9 @@ Scrypted NVR will use considerable CPU and GPU while performing object detection
 
 ### Verify GPU
 
-Improperly configured systems may not be able to access the GPU when performing object detection. The official install scripts will typically set up the system correctly. The GPU availability can be verified by checking the `OpenVINO` or `ONNX` plugins.
+Improperly configured systems may not be able to access the GPU when performing object detection. The official install scripts will typically set up the system correctly. 
+* GPU usage for decoding can be verified by installing the `Diagnostics Plugin` and running `System Validation`.
+* GPU usage for detection can be verified by checking the `OpenVINO` or `ONNX` plugins.
 
 ### Camera Activity
 
