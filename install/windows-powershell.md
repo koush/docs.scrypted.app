@@ -5,7 +5,7 @@ import ImagePopup from '../src/ImagePopup.vue';
 
 # Windows - PowerShell
 
-Scrypted NVR on Windows must install the [Install](/desktop-application) or [Migrate](/maintenance/migration.md#migrating-to-the-desktop-application) to the [Desktop Application](#desktop-app). The Desktop App has GPU acceleration, is fully self contained with zero dependencies, and requires a license. The free version of Scrypted may be installed using the PowerShell Installation below.
+Scrypted NVR on Windows must install the [Install](/desktop-application) or [Migrate](/maintenance/migration.md#migrating-to-the-desktop-application) to the [Desktop Application](/install/desktop-app.md). The Desktop App has GPU acceleration, is fully self contained with zero dependencies, and requires a license. The free version of Scrypted may be installed using the PowerShell Installation below.
 
 
 
