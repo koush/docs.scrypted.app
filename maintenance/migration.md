@@ -60,6 +60,9 @@ Backups can be automated using other tools (curl, wget, etc) by using this URL:
   * All users, settings, and plugins will be restored to the state of the backup.
   * The restore will trigger plugins to redownload additional data like Object Detection Models.
 
+::: warning
+Restoring a backup from a *different* system will also restore that system's `Scrypted Server Address`. These addresses can be found within the Scrypted Management Console sidebar Settings. The old addresses must be removed and updated with the addreses of the new system.
+:::
 
 ## Manual Backup and Restore
 
