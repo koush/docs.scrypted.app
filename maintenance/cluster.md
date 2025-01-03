@@ -6,6 +6,10 @@
 
 A Scrypted installation can operate in either `server` or `client` mode. There can only be one `server` machine but there may be multiple `client` machines. The `server` machine will ingest the camera streams, while `client` machines will perform detection. Machines in a cluster can be a mix of operating systems and architectures. For example, you can use a NAS saving video Unraid (`server`) with a Mac Mini performing detection (`client`).
 
+## Cluster Mode Networking
+
+Cluster servers and clients must be on the same network with no NAT or firewall between them.
+
 ## Cluster Server Setup
 
 The Cluster server will ingest the camera streams and save them to the NVR storage.
@@ -33,7 +37,7 @@ Compute plugins like OpenVINO will fail to load until a Cluster Client is set up
 
 A Cluster client will perform video decoding and detection.
 
-When adding a client, install Scrypted as usual (and switch to the beta tag). Account creation is not necessary. Once the server is running, create and edit Scrypted `.env` configuration file:
+When adding a client, install Scrypted as usual. Account creation is not necessary. Once the server is running, create and edit Scrypted `.env` configuration file:
 
 <!--@include: ../parts/cluster-setup-env.md-->
 
