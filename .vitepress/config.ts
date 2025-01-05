@@ -100,6 +100,7 @@ export default withMermaid({
       },
       {
         text: 'Buyer\'s Guide',
+        collapsed: true,
         items: [
           { text: 'What Should I Buy?', link: '/buyers-guide/' },
           { text: 'Camera Hardware', link: '/buyers-guide/cameras' },
