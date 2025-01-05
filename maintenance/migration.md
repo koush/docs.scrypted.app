@@ -11,21 +11,25 @@ When migrating to the Desktop Application on the same server, first stop the exi
 ```sh [Mac]
 launchctl unload ~/Library/LaunchAgents/app.scrypted.server.plist 
 rm ~/Library/LaunchAgents/app.scrypted.server.plist
+rm -rf ~/.scrypted/node_modules
 ```
 
 ```powershell [Windows]
 sc.exe stop scrypted.exe
 sc.exe delete scrypted.exe
+Remove-Item -Recurse -Force $env:USERPROFILE\.scrypted\node_modules
 ```
 
 ```sh [Linux]
 sudo systemctl stop scrypted.service
 sudo rm /etc/systemd/system/scrypted.service
+rm -rf ~/.scrypted/node_modules
 ```
 
 ```sh [Docker Compose]
 cd ~/.scrypted
 docker compose down
+rm -rf ~/.scrypted/node_modules
 ```
 
 :::
