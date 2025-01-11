@@ -4,6 +4,10 @@ Use the [Quick Setup](#quick-setup) script to format a disk or use an existing d
 
 ## Quick Setup
 
+::: tip
+Before using the following Quick Setup script, remove any existing `NVR Storage Directory` setting from the `NVR Plugin Settings`. Manual configuration is not necessary with this script, the container will be automatically configured if no configuration is provided.
+:::
+
 Run the following to download the [script](https://github.com/koush/scrypted/blob/main/install/docker/setup-scrypted-nvr-volume.sh):
 
 ```sh
