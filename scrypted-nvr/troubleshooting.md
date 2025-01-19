@@ -133,7 +133,7 @@ Object detection zones on the camera can be used to reduce false positives or re
 
 <div style="width: 100%; display: flex; flex-direction: row;"> <div style="display: flex; flex-direction: column; align-items: center; flex: 1;"> <ImagePopup src="/img/scrypted-nvr/troubleshooting/detection-box.png" width="400"></ImagePopup> </div> </div>
 
-Although the car is fully on the street, if a zone ends at the edge of the lawn, that bounding box is still be **in** the lawn.
+Although the car is fully on the street, if a zone ends at the edge of the lawn, the car's bounding box would **intersect** the lawn.
 
 An `intersect` zone will filter only detections that intersect (even a single pixel) the zone. A `contain` zone will filter detections that are completely encompassed by the zone.
 
