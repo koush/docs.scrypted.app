@@ -107,9 +107,9 @@ Using the same method described above, drop in an image from a zone or camera yo
 
 For example, here’s a car parked on the street in front of a house:
 
-<div style="width: 100%; display: flex; flex-direction: row;"> <div style="display: flex; flex-direction: column; align-items: center; flex: 1;"> <ImagePopup src="../assets/detection_box.png" width="400"></ImagePopup> </div> </div>
+<div style="width: 100%; display: flex; flex-direction: row;"> <div style="display: flex; flex-direction: column; align-items: center; flex: 1;"> <ImagePopup src="/img/scrypted-nvr/troubleshooting/detection-box.png" width="400"></ImagePopup> </div> </div>
 
-Although the car is fully on the street, if a zone ends at the edge of the lawn, that bounding box is still be “in” the lawn. To avoid those partial overlaps, you can set the zone to `contain` instead of `intersect`. In `contain` mode, the entire object must be inside the zone for it to register.
+Although the car is fully on the street, if a zone ends at the edge of the lawn, that bounding box is still be **in** the lawn. To avoid those partial overlaps, you can set the zone to `contain` instead of `intersect`. In `contain` mode, the entire object must be inside the zone for it to register.
 
 To further reduce detection of stationary objects, set a zone to `exclude` and `contain` in an area where you have a parked car, a troublesome tree branch, etc. 
 
