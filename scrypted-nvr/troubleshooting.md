@@ -101,20 +101,6 @@ Detected Objects
 
 </div>
 
-## Reducing False Positives
-
-Using the same method described above, drop in an image from a zone or camera you are getting inconsistent detections from (you can also use the `Event Debug Tool` for this, which is described below).  Note that the bounding box itself doesn’t need to be entirely within the zone—if it intersects the zone, the system will trigger a detection.
-
-For example, here’s a car parked on the street in front of a house:
-
-<div style="width: 100%; display: flex; flex-direction: row;"> <div style="display: flex; flex-direction: column; align-items: center; flex: 1;"> <ImagePopup src="/img/scrypted-nvr/troubleshooting/detection-box.png" width="400"></ImagePopup> </div> </div>
-
-Although the car is fully on the street, if a zone ends at the edge of the lawn, that bounding box is still be **in** the lawn. To avoid those partial overlaps, you can set the zone to `contain` instead of `intersect`. In `contain` mode, the entire object must be inside the zone for it to register.
-
-To further reduce detection of stationary objects, set a zone to `exclude` and `contain` in an area where you have a parked car, a troublesome tree branch, etc. 
-
-
-
 ## Recording
 
 Recording issues typically stem from the storage directory or device not being properly configured.
@@ -139,6 +125,19 @@ Detected Motion
 </div>
 
 </div>
+
+
+## Reducing False Positives
+
+Object detection zones on the camera can be used to reduce false positives or remove uninteresting detections. Create a zone in the Object Detection Settings for the camera. The zone should accomodate the bounding box that may spill into the zone. E.g., the zone may need to be set back further than would seem intuitive since the bounding box for an object may be larger than may seem obvious:
+
+<div style="width: 100%; display: flex; flex-direction: row;"> <div style="display: flex; flex-direction: column; align-items: center; flex: 1;"> <ImagePopup src="/img/scrypted-nvr/troubleshooting/detection-box.png" width="400"></ImagePopup> </div> </div>
+
+Although the car is fully on the street, if a zone ends at the edge of the lawn, that bounding box is still be **in** the lawn.
+
+An `intersect` zone will filter only detections that intersect (even a single pixel) the zone. A `contain` zone will filter detections that are completely encompassed by the zone.
+
+The default zone type is `include`; a zone can be set to `exclude` to remove all detections of the matching type from being detected (such as problematic stationary cars).
 
 
 ## High CPU Usage
