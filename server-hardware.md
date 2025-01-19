@@ -47,4 +47,8 @@ The following chart is a rough idea of the capabilities of a few such systems.
 
 ### Storage
 
+::: warning
+A drive of at least 1TB is required for NVR to function properly. 
+:::
+
 Any hard drive will work, surveillance hard drives are recommended. Flash drives and SD cards should not be used, as they will corrupt quickly due to the high write volume.
