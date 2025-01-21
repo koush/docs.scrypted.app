@@ -10,7 +10,7 @@ import ImagePopup from '../src/ImagePopup.vue';
 Cameras and recordings can be viewed remotely via a browser or the app by enabling cloud access.
 
 1. Install the `Scrypted Cloud Plugin`.
-    * Scrypted Cloud must also be installed when self hosting. See below for self hosting instructions.
+    * Scrypted Cloud must also be installed even if self hosting on a custom domain.
 2. Login on the `Scrypted Cloud Plugin`.
 3. Your cameras can now be viewed from anywhere at [nvr.scrypted.app](https://nvr.scrypted.app).
 
