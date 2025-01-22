@@ -5,7 +5,7 @@ import ImagePopup from '../src/ImagePopup.vue';
 
 # Nearby Devices
 
-Scrypted NVR can integrate with sensors to add events to the NVR timeline or control them from the camera viewer.
+Scrypted NVR can link cameras to smart home devices to add sensor events to the NVR timeline or control them from the camera view.
 
 ## Linked Sensors
 
