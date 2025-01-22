@@ -81,8 +81,8 @@ export default withMermaid({
           { text: 'What is Scrypted NVR?', link: '/scrypted-nvr/' },
           { text: 'Features', link: '/scrypted-nvr/features' },
           { text: 'Install Scrypted NVR', link: '/scrypted-nvr/installation' },
-          { 
-            text: 'Storage Setup', 
+          {
+            text: 'Storage Setup',
             link: '/scrypted-nvr/recording-storage',
             collapsed: true,
             items: [
@@ -91,10 +91,17 @@ export default withMermaid({
               { text: 'macOS', link: '/scrypted-nvr/storage/mac' },
               { text: 'Docker', link: '/scrypted-nvr/storage/docker' },
             ]
-           },
+          },
           { text: 'Record Cameras', link: '/scrypted-nvr/camera-recording' },
           { text: 'Apps and Remote Access', link: '/scrypted-nvr/apps' },
-          { text: 'Onboard Camera AI', link: '/scrypted-nvr/camera-ai' },
+          {
+            text: 'More Features',
+            collapsed: true,
+            items: [
+              { text: 'Nearby Devices', link: '/scrypted-nvr/nearby-devices' },
+              { text: 'Onboard Camera AI', link: '/scrypted-nvr/camera-ai' },
+            ]
+          },
           { text: 'Troubleshooting', link: '/scrypted-nvr/troubleshooting' },
         ]
       },
