@@ -63,7 +63,9 @@ stateDiagram
    class running, running2 runningClass
 ```
 
-Object Detection failure is typically due to the camera hardware not properly supplying motion events. View the camera in the NVR and verify there are motion events in the `Timeline`. Detected Motion will be denoted with a thin and solid blue line, as seen below.
+Object Detection failure is typically due to the camera hardware not properly supplying motion events. The camera's hardware motion sensor will trigger the object detection process when motion is detected, allowing the system to remain idle.
+
+View the camera in the NVR and verify there are motion events in the `Timeline`. Detected Motion will be denoted with a thin and solid blue line, as seen below.
 
 <div style="width: 100%; display: flex; flex-direction: row;">
 
