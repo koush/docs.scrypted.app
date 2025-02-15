@@ -23,7 +23,7 @@ The Scrypted container uses 16GB memory and all CPU cores by default. Configure 
 
 Scrypted is now running at: `https://scrypted:10443/`
 
-Note that it is `https` and that you'll be asked to approve/ignore the website certificate. Replace `localhost` with your server/container IP.
+Note that it is `https` and that you'll be asked to approve/ignore the website certificate.
 
 ::: tip
 The default `root` password on the LXC is `scrypted` and there will be a prompt to change it on first login.
