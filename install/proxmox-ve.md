@@ -19,9 +19,11 @@ curl -s https://raw.githubusercontent.com/koush/scrypted/main/install/proxmox/in
 bash install-scrypted-proxmox.sh
 ```
 
-The Scrypted container uses low end specs by default. Configure the `Resources` tab to suit the server specs and workload. `Scrypted NVR` servers should assign at least 4 cores and 16GB of memory (the more the better). After configuration has been completed, start the container.
+The Scrypted container uses 16GB memory and all CPU cores by default. Configure the `Resources` tab to suit the server specs and workload. `Scrypted NVR` servers should assign at least 4 cores and 16GB of memory (the more the better). After configuration has been completed, start the container.
 
-<!--@include: ./server-port.md-->
+Scrypted is now running at: `https://scrypted:10443/`
+
+Note that it is `https` and that you'll be asked to approve/ignore the website certificate. Replace `localhost` with your server/container IP.
 
 ::: tip
 The default `root` password on the LXC is `scrypted` and there will be a prompt to change it on first login.
@@ -84,5 +86,3 @@ cd /tmp
 curl -s https://raw.githubusercontent.com/koush/scrypted/main/install/proxmox/install-scrypted-proxmox.sh > install-scrypted-proxmox.sh
 SCRYPTED_RESTORE=true bash install-scrypted-proxmox.sh
 ```
-
-<!--@include: ../server-port.md-->
