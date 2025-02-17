@@ -56,6 +56,10 @@ Hikvision
 
 </div>
 
+::: tip
+Hikvision and other camera models require that the `Report to Surveillance Center` Option is checked.
+:::
+
 ## Video Setup
 
 ### H.264 Video Codec
