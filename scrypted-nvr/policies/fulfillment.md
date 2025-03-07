@@ -28,3 +28,5 @@ Additional billing questions (such as lost email access) can be directed to [bil
 ## Support
 
 Support issues related to the Scrypted NVR product can be raised in the Discord, Reddit, or Github communities linked above.
+
+Support issues related to unrelated to the NVR product (HomeKit, Google Home, etc) will only receive community support. Support for subscribers is only for the Scrypted NVR product.
