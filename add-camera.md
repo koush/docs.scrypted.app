@@ -54,6 +54,8 @@ The `Unifi Protect Plugin` supports all Unifi cameras, including `Two Way Audio`
 
 Create a dedicated Protect user account with `Local Administrator` permissions.
 
+Unifi cameras must enable regular motion events/recordings. This is not the same thing as smart detections.
+
 ::: warning
 A local account is required. Ubiquiti SSO accounts are not supported as they will fail to authorize if the internet is down or 2FA is required. A local account can be created in the Unifi Protect Settings on the UDM/UNVR.
 :::
