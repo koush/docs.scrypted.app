@@ -57,7 +57,7 @@ If using Scrypted through `docker compose`, be sure to uncomment the volume moun
 
 If recordings dont work, it's generally because of a few reasons, **follow the steps to determine where it is failing before asking for help**:
 
-1) The motion wasn't triggered. You can view if there are motion events in the camera `Events` section (a small icon button next to the `Console` button`. If no motion event was delivered to Scrypted this may be for several reasons which may depend on the camera type, including:
+1) The motion wasn't triggered. You can view if there are motion events in the camera `Events` section (a small icon button next to the `Console` button. If no motion event was delivered to Scrypted this may be for several reasons which may depend on the camera type, including:
   * Local cameras:
     * Motion detection is disabled in the camera. Enable in the camera manufacturer admin app/webpage.
     * There are no motion zone configured on the camera, and there is no default zone. Configure in the camera manufacturer admin app/webpage.
