@@ -4,6 +4,10 @@ import ImagePopup from '../../src/ImagePopup.vue';
 
 # Mac Storage
 
+::: danger
+When creating a NVR Recordings folder on macOS, the folder name must end with `.noindex`. This prevents macOS Spotlight from indexing the folder. Spotlight's indexing of NVR Recordings will cause system instability and crashes. For example, one could use: `/Volumes/MyRecordingsDrive/video.noindex`.
+:::
+
 1. The storage disk must be formatted as `APFS`.
 <!--@include: ./nvr-plugin-storage-settings.md-->
 
