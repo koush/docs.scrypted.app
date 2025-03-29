@@ -22,7 +22,7 @@ After selecting and completing installation, return to the docs to continue with
 <!--@include: ./parts/proxmox-tip.md-->
 
 ::: danger
-Scrypted will function in Docker Desktop for Mac or Windows do to the unavailability of host networking via the `--network host` flag.
+Scrypted will not work in Docker Desktop for Mac or Windows do to the unavailability of host networking via the `--network host` flag.
 :::
 
 - [Linux](/install/linux-docker)
