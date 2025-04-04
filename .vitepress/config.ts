@@ -90,6 +90,7 @@ export default withMermaid({
               { text: 'Windows', link: '/scrypted-nvr/storage/windows' },
               { text: 'macOS', link: '/scrypted-nvr/storage/mac' },
               { text: 'Docker', link: '/scrypted-nvr/storage/docker' },
+              { text: 'Unraid', link: '/scrypted-nvr/storage/unraid' },
             ]
           },
           { text: 'Record Cameras', link: '/scrypted-nvr/camera-recording' },
