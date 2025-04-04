@@ -5,7 +5,7 @@ import ImagePopup from '../../src/ImagePopup.vue';
 
 # Unraid Storage
 
-1. Configure a Recordings storage path within Unraid. The `Host Path` is the path to the storage on the Unraid host. The provided `Container Path` (which can be any path in the container like `/nvr` or `/recordings`) will be used for the recordings storage directory.
+1. Configure a Recordings storage path within Unraid. The `Host Path` is the path to the storage on the Unraid host. The provided `Container Path` (a chosen path in the container like `/nvr` or `/recordings`) will be used for the recordings storage directory.
 <!--@include: ./nvr-plugin-storage-settings.md-->
 
 
