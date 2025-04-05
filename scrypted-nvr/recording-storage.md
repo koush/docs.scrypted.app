@@ -26,6 +26,7 @@ To configure storage, select the server installation platform below:
 * [Windows](/scrypted-nvr/storage/windows.md)
 * [Mac](/scrypted-nvr/storage/mac.md)
 * [Docker](/scrypted-nvr/storage/docker.md)
+* [Unraid](/scrypted-nvr/storage/unraid.md)
 
 After configuring storage, continue on to [Enable Camera Recording](/scrypted-nvr/camera-recording).
 
