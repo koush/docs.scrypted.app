@@ -1,6 +1,6 @@
 # Google Home
 
-Cameras imported into Scrypted can be streamed to the Google Home devices such as Chromecast, Android TV, and the Nest Hub. Streaming to the Google Home app is currently not supported because the app does not support the WebRTC protocol.
+Cameras imported into Scrypted can be streamed to the Google Home devices such as Chromecast, Android TV, and the Nest Hub. Camera streaming is not supported by Google Home in the Google Home iOS app.
 
 <!--@include: ./parts/camera-preparation.md-->
 
