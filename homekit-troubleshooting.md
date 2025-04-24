@@ -59,7 +59,7 @@ If recordings dont work, it's generally because of a few reasons, **follow the s
 
 1) The motion wasn't triggered. You can view if there are motion events in the camera `Events` section (a small icon button next to the `Console` button. If no motion event was delivered to Scrypted this may be for several reasons which may depend on the camera type, including:
   * Local cameras:
-    * Motion detection is disabled in the camera. Enable in the camera manufacturer admin app/webpage.
+    * Motion detection is disabled in the camera. Enable in the camera manufacturer admin app/webpage. Unifi cameras must have motion recordings/events enabled in Protect.
     * There are no motion zone configured on the camera, and there is no default zone. Configure in the camera manufacturer admin app/webpage.
     * The camera may not support motion detection via that plugin (ie, an ONVIF camera not supporting the ONVIF-T profile). Using another delivery mechanism such as mail (SMTP) or webhook is an alernative and reliable option.
   * Cloud cameras:
