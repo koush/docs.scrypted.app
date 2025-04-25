@@ -37,7 +37,7 @@ Multiple Recording Storage directories can be added to Scrypted NVR (`Large Disk
 Scrypted NVR setups recording to Network Attached Storage (NAS) will result in reduced performance due to network latency as well as an increased surface area for recording failure. This configuration is not recommended. To mitigate the performance issues, Scrypted NVR can utilize a direct attach disk (as a `Fast` disk) in addition to the NAS disk. The NAS (`Large`) disk will store the main stream while `Fast` disk will store remote and low resolution (scrubbing, event lookup).
 
 ::: danger
-Do not use `Fast` storage unless the Scrypted NVR server is primarily recording to a NAS.
+Do not use `Fast` storage unless the Scrypted NVR server is primarily recording to a NAS; it will not improve performance at all.
 
 The `Fast` disk must be a direct attached disk (SATA or USB) and at least 1TB in size. The ideal ratio for `Fast` and `Large` disks is **1 to 6**. 
 
