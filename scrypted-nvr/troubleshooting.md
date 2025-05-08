@@ -184,4 +184,6 @@ If notifications are working, but there are no images in notifications, this is 
 
 This should resolve most notification image failures.
 
-If the issue persists, and the server is behind a custom domain. The error is probably due to improper SSL termination or reverse proxy. To diagnose, delete and reinstall the Scrypted Cloud plugin to verify notification image delivery works on the Default settings.
+If the server is using a Cloudflare domain, ensure hotlink protection protection is disabled in Cloudflare.
+
+If the server is using self hosted SSL termination or port forwarding, the error may be due to to improper SSL termination or reverse proxy. To diagnose, delete and reinstall the Scrypted Cloud plugin to verify notification image delivery works on the Default settings.
