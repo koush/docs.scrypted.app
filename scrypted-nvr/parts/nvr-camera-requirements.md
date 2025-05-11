@@ -4,4 +4,5 @@ Only local RTSP Cameras are officially supported by Scrypted NVR. This is typica
 Unsupported hardware (which may work to varying degrees) includes:
   * Cloud cameras like Ring, Google/Nest, and Arlo.
   * Non-native RTSP Cameras like Wyze.
+  * Non manufacturer provided custom firmware like Thingino.
   * Battery powered cameras.
