@@ -6,7 +6,7 @@ import ImagePopup from '../src/ImagePopup.vue';
 # Desktop App
 
 The recommended installation method for Mac and Windows is the [Desktop App](/desktop-application). The app provides hardware accelerated 
-features unavailable to the background service inside a self contained, easily installable, package. The app can also serve as a viewer for an existing Scrypted server installation.
+features unavailable to the background service inside a self contained, easily installable, package. The app can also serve as a viewer for an existing Scrypted server installation. The desktop app requires a paid license. 
 
 ## Ubuntu/Debian Repository
 
