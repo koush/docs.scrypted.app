@@ -39,6 +39,10 @@ A Cluster client will perform video decoding and detection.
 
 When adding a client, install Scrypted as usual. Account creation is not necessary. Once the server is running, create and edit Scrypted `.env` configuration file:
 
+::: tip
+When using the Scrypted Desktop App as a Cluster Client, it must be started in Server Mode. The startup mode can be changed in the app's system menu via `Reset Startup Settings`.
+:::
+
 <!--@include: ../parts/cluster-setup-env.md-->
 
 ```sh
