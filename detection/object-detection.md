@@ -14,7 +14,7 @@ Available on all platforms. Can use Intel CPU, GPU, and NPU for hardware acceler
 
 ## ONNX
 
-Available on all platforms. Can use NVIDIA and AMD GPU for hardware acceleration. NVIDIA requires CUDA to be installed on the host. The `Console` will show the available hardware.
+Available on all platforms. Can use NVIDIA and AMD GPU for hardware acceleration. NVIDIA requires CUDA drivers to be installed on the host. Windows users must also install cuDNN. The `Console` will show the available hardware.
 
 ## Tensorflow Lite
 
