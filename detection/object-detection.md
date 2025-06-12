@@ -10,11 +10,11 @@ Uses the [Neural Engine](https://www.makeuseof.com/what-is-a-neural-engine-how-d
 
 ## OpenVINO
 
-Available on all platforms. Can use Intel CPU, GPU, and NPU for hardware acceleration. The `Console` will show the available hardware.
+Can use Intel CPU, GPU, and NPU for hardware acceleration. The `Console` will show the available hardware. Recommended for AMD and Intel systems.
 
 ## ONNX
 
-Available on all platforms. Can use NVIDIA and AMD GPU for hardware acceleration. NVIDIA requires CUDA to be installed on the host. The `Console` will show the available hardware.
+Available for Proxmox/Docker (using the `nvidia` image tag) or Windows. Can use NVIDIA GPU for hardware acceleration. ONNX requires CUDA drivers to be installed on the host. Windows users must also install cuDNN. The `Console` will show the available hardware. Recommended for use on NVIDIA GPUs.
 
 ## Tensorflow Lite
 
