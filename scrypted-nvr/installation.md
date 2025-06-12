@@ -1,4 +1,9 @@
-# Install Scrypted NVR
+<script setup lang="ts"> 
+import { onMounted } from 'vue';
+import ImagePopup from '../src/ImagePopup.vue';
+</script>
+
+# Scrypted NVR Setup
 
 Install Scrypted using the one of the [installation options](/installation).
 
@@ -21,3 +26,25 @@ Scrypted NVR contains improved motion sensor and video decoder components. The f
 * Python Codecs
 * OpenCV
 * PAM-Diff
+
+## Configure Object Detection
+
+::: warning
+Most systems require no further configuration. Changing defaults is not recommended.
+:::
+
+For common hardware setups found in the buyer's guide, like Intel iGPU or Apple Silicon, no further configuration is necessary. However, uncommon hardware configurations will need additional setup:
+
+* Windows + NVIDIA
+  * [ONNX dependencies](/detection/object-detection.md#onnx) must be installed.
+  * Set the Scrypted NVR Default Object Detector to ONNX. 
+* Proxmox/Docker + NVIDIA
+  * Installation must use the `nvidia` docker [tag](/detection/object-detection.md#onnx).
+* Coral EdgeTPU 
+  * EdgeTPU drivers [must be installed](/detection//object-detection.md#tensorflow-lite).
+  * Set the Scrypted NVR Default Object Detector to Tensorflow Lite.
+
+<div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+Scrypted NVR Object Detector Setting
+<ImagePopup src="/img/scrypted-nvr/detector.png" width="400" ></ImagePopup>
+</div>

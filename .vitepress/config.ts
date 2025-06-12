@@ -1,7 +1,17 @@
 import { withMermaid } from "vitepress-plugin-mermaid";
+import llmstxt from 'vitepress-plugin-llms'
 
 // https://vitepress.dev/reference/site-config
 export default withMermaid({
+  vite: {
+    plugins: [
+      llmstxt({
+        generateLLMsFullTxt: true,
+        ignoreFiles: ['sponsors/*'],
+        title: 'Scrypted Documentation LLM Tool',
+      })
+    ]
+  },
   title: 'Scrypted Docs',
   head: [
     ['link', { rel: 'icon', href: '/img/icons/apple-icon-180.png' }],
@@ -80,7 +90,7 @@ export default withMermaid({
         items: [
           { text: 'What is Scrypted NVR?', link: '/scrypted-nvr/' },
           { text: 'Features', link: '/scrypted-nvr/features' },
-          { text: 'Install Scrypted NVR', link: '/scrypted-nvr/installation' },
+          { text: 'Scrypted NVR Setup', link: '/scrypted-nvr/installation' },
           {
             text: 'Storage Setup',
             link: '/scrypted-nvr/recording-storage',
