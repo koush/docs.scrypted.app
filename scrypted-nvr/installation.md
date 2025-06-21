@@ -11,7 +11,7 @@ After installation, the Scrypted NVR can be installed from the `Plugins` section
 
 ## Purchase and Manage Subscription
 
-This Scrypted NVR Plugin is in a *paid* public beta. A [live demo server](https://demo.scrypted.app/#/demo) and free trial is available to test the product.
+This Scrypted NVR Plugin is in a *paid* plugin. A [live demo server](https://demo.scrypted.app/#/demo) and free trial is available to test the product.
 
 1. Visit to the [billing portal](https://billing.scrypted.app) and login to purchase a subscription. Return to the billing portal at any time to upgrade or cancel the subscription.
 2. Login to the Scrypted NVR Plugin using the *same login account* from the billing potral. The plugin's `Login` button can be found at the top of the Scrypted NVR plugin page within the Scrypted Management Console.
