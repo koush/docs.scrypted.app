@@ -41,7 +41,7 @@ For common hardware setups found in the buyer's guide, like Intel iGPU or Apple 
 * Proxmox/Docker + NVIDIA
   * Installation must use the `nvidia` docker [tag](/detection/object-detection.md#onnx).
 * Coral EdgeTPU 
-  * EdgeTPU drivers [must be installed](/detection//object-detection.md#tensorflow-lite).
+  * EdgeTPU drivers [must be installed](/detection/object-detection.md#tensorflow-lite).
   * Set the Scrypted NVR Default Object Detector to Tensorflow Lite.
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
