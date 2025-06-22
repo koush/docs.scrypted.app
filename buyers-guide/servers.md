@@ -36,8 +36,10 @@ While a TPU/NPU can improve performance, a capable GPU can also fill the gap.
 
 ## Object Detection Comparison
 
-::: warning
+::: danger
 Coral EdgeTPU devices are not recommended. While these TPUs were fast on initial release in 2020, they are now outclassed by both modern Intel and Apple Silicon chips. Furthermore, the aging chips have not seen a single hardware or software refresh. The software (Tensorflow) is no longer in use at Google. For all intents and purposes, the Coral EdgeTPU is now Google abandonware.
+
+Coral EdgeTPU does not support only supports basic object detection with Scrypted NVR. It does not support face recognition, license plate recognition, or enhanced search.
 :::
 
 ::: tip
