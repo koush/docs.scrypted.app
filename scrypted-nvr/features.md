@@ -85,8 +85,3 @@ Scrypted NVR supports object detection on NVIDIA GPUs via the `ONNX Plugin`. NVI
 ### Google Coral EdgeTPU
 
 Scrypted NVR supports object detection using the [Google Coral.ai](https://coral.ai) accelerators via the `Tensorflow-Lite Plugin`. The PCI and USB models are both supported.
-
-::: danger
-The Coral EdgeTPU does not support only supports basic object detection with Scrypted NVR. It does not support face recognition, license plate recognition, or enhanced search.
-:::
-
