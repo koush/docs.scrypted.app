@@ -46,15 +46,15 @@ Coral EdgeTPU only supports basic object detection with Scrypted NVR. It does no
 The [Object Detection Benchmark](https://scripts.scrypted.app/object-detection-benchmark.html#reference-times) script has collected results from many common systems.
 :::
 
-|Name|Rating|Notes|
-|-|-|-|
-|NPU: Apple Mac Mini M1/M2|🥇|Low power consumption, fast, and expensive. Can easily handle a large number of cameras.|
-|NPU: Intel Core Ultra 125H|🥇|The GPU on the H series Intel chips have 2-3x the typical number of cores. The Core Ultra series includes Intel's new NPU. Low power consumption, fast, and moderately priced. Can easily handle a large number of cameras.|
-|GPU: Intel 12600H|🥈|The GPU on the H series Intel chips have 2-3x the typical number of cores. They are blazing fast at low power. Highly recommended.|
-|GPU: Intel N100|🥉|Fantastic Object Detection Performance in a tiny package. Highly recommended.|
-|GPU: NVIDIA|🥇|The NVIDIA 3000 and 4000 series has incredible decode and detect performance but at a high price and power consumption. Generally not recommended for purchase, great if on hand.|
-|TPU: M.2/PCI Coral|🥉|The M.2 dual TPU model is is not supported by many systems. **Google Abandonware. Do not buy if purchasing new hardware**.|
-|TPU: USB Coral|🥉|High latency and crash prone. Google Abandonware. **Google Abandonware. Do not buy if purchasing new hardware**.|
+|Type|Name|Rating|Notes|
+|-|-|-|-|
+|NPU|Apple Mac Mini M1/M2|🥇|Low power consumption, fast, and expensive. Can easily handle a large number of cameras.|
+|NPU|Intel Core Ultra 125H|🥇|The GPU on the H series Intel chips have 2-3x the typical number of cores. The Core Ultra series includes Intel's new NPU. Low power consumption, fast, and moderately priced. Can easily handle a large number of cameras.|
+|GPU|Intel 12600H|🥈|The GPU on the H series Intel chips have 2-3x the typical number of cores. They are blazing fast at low power. Highly recommended.|
+|GPU|Intel N100|🥉|Fantastic Object Detection Performance in a tiny package. Highly recommended.|
+|GPU|NVIDIA|🥇|The NVIDIA 3000 and 4000 series has incredible decode and detect performance but at a high price and power consumption. Generally not recommended for purchase, great if on hand.|
+|TPU|M.2/PCI Coral|🥉|The M.2 dual TPU model is is not supported by many systems. **Google Abandonware. Do not buy if purchasing new hardware**.|
+|TPU|USB Coral|🥉|High latency and crash prone. Google Abandonware. **Google Abandonware. Do not buy if purchasing new hardware**.|
 
 # Server Recommendations
 
