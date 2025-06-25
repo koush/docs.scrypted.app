@@ -26,7 +26,7 @@ While a TPU/NPU can improve performance, a capable GPU can also fill the gap.
 
 |Name|General Compute|Video Decode|Object Detection|Cameras|
 |-|-|-|-|-|
-|Apple Mac Mini M1/M2|🥇|🥇|🥇|30+|
+|Apple Mac Mini|🥇|🥇|🥇|30+|
 |Intel Core Ultra 125H|🥇|🥇|🥇|30+|
 |NVIDIA 4XXX|❌|🥇|🥇|30+|
 |Intel 12600H|🥈|🥈|🥈|20+|
@@ -48,7 +48,7 @@ The [Object Detection Benchmark](https://scripts.scrypted.app/object-detection-b
 
 |Type|Name|Rating|Notes|
 |-|-|-|-|
-|NPU|Apple Mac Mini M1/M2|🥇|Low power consumption, fast, and expensive. Can easily handle a large number of cameras.|
+|NPU|Apple Mac Mini|🥇|Low power consumption, fast, and expensive. Can easily handle a large number of cameras.|
 |NPU|Intel Core Ultra 125H|🥇|The GPU on the H series Intel chips have 2-3x the typical number of cores. The Core Ultra series includes Intel's new NPU. Low power consumption, fast, and moderately priced. Can easily handle a large number of cameras.|
 |GPU|Intel 12600H|🥈|The GPU on the H series Intel chips have 2-3x the typical number of cores. They are blazing fast at low power. Highly recommended.|
 |GPU|Intel N100|🥉|Fantastic Object Detection Performance in a tiny package. Highly recommended.|
@@ -62,7 +62,7 @@ All servers are recommended to have at least 8GB of RAM, 16GB preferred.
 
 <!--@include: ../parts/proxmox-tip.md-->
 
-## Apple Mac Mini M1/M2
+## Apple Mac Mini
 
 This system contains a CPU, GPU, and a TPU (neural cores).
 
