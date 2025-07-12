@@ -16,6 +16,7 @@
 * Ensure the Docker installation (if applicable) is using host networking. This configuration is the default if the official Scrypted Docker compose install script was used.
 * Try switching the mDNS advertiser used in the HomeKit plugin settings.
 * Try disabling IGMP Snooping on your router.
+* Use the `Reset Pairing` option in the camera's HomeKit settings to start fresh.
 
 ### mDNS Advertiser Options
 
