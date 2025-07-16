@@ -5,14 +5,6 @@ import ImagePopup from '../src/ImagePopup.vue';
 
 # Features
 
-## Adaptive Bitrate
-
-Scrypted NVR leverages all the camera substreams and transcoding to provide bulletproof streams, regardless of downstream network conditions.
-
-::: tip
-Adaptive Bitrate is a [Platform](/platforms) level feature, and **also** improves streaming to HomeKit, Google Home, Alexa, and Home Assistant.
-:::
-
 ## Smart Detections
 
 ### Timeline and Events
@@ -57,6 +49,22 @@ Rich Notifications are delivered instantly to iOS, Android, and Web apps with a 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
 <ImagePopup src="/img/scrypted-nvr/notification.png" width="200"></ImagePopup>
 </div>
+
+## AI Search
+
+Search across the history of all cameras using natural language.
+
+<div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+<ImagePopup src="/img/scrypted-nvr/search.png" width="400"></ImagePopup>
+</div>
+
+## Adaptive Bitrate
+
+Scrypted NVR leverages all the camera substreams and transcoding to provide bulletproof streams, regardless of downstream network conditions.
+
+::: tip
+Adaptive Bitrate is a [Platform](/platforms) level feature, and **also** improves streaming to HomeKit, Google Home, Alexa, and Home Assistant.
+:::
 
 ## Hardware Accelerated AI
 
