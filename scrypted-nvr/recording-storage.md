@@ -4,6 +4,7 @@ Scrypted NVR requires a disk that can store at least 3 days of video for the cam
 
 ::: warning
 * All storage disks must be 1TB minimum in size.
+* External hard drives must use an enclosure that provides power. USB powered enclosures will result in data loss.
 * Scrypted NVR will not work with filesystem quota features. Use a separate filesystem partition to restrict how much space is available.
 :::
 
