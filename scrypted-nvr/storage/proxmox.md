@@ -50,7 +50,7 @@ Continue on to [Enable Camera Recording](/scrypted-nvr/camera-recording).
 <br/>
 
 ::: info
-Reference: [Proxmox VE Disk Setup Notes](#disk-setup-notes) has information about the script, including utilizing multiple disks or utilizing arbitrary host paths disks.
+Reference: [Proxmox VE Disk Setup Notes](#disk-setup-notes) has information about the script, including using multiple disks or arbitrary host paths disks.
 
 Reference: [Proxmove VE Mount Point](#mount-point) has information about using standard Proxmox Mount points, which are not recommended due to issues with backup and snapshots.
 :::
