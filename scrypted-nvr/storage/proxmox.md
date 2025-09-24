@@ -50,7 +50,7 @@ Continue on to [Enable Camera Recording](/scrypted-nvr/camera-recording).
 <br/>
 
 ::: info
-Reference: [Proxmox VE Disk Setup Notes](#disk-setup-notes) has information about the script.
+Reference: [Proxmox VE Disk Setup Notes](#disk-setup-notes) has information about the script, including utilizing multiple disks or utilizing arbitrary host paths disks.
 
 Reference: [Proxmove VE Mount Point](#mount-point) has information about using standard Proxmox Mount points, which are not recommended due to issues with backup and snapshots.
 :::
@@ -92,4 +92,10 @@ A `Fast Disk` can be added by setting the `FAST_DISK=true` environment variable:
 
 ```sh
 FAST_DISK=true bash setup-scrypted-nvr-volume.sh fast-nvr-storage
+```
+
+The script also supports mounting a host path as a volume within the Scrypted LXC. For example, if you have an existing zfs array at `/my-raid-device`, you can create a directory for NVR recordings at `/my-raid-device/scrypted-nvr/` and then use the script as follows:
+
+```sh
+bash setup-scrypted-nvr-volume.sh nvr-storage /my-raid-device/scrypted-nvr/
 ```
