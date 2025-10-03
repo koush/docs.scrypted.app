@@ -53,8 +53,8 @@ dpkg -i ../gasket-dkms_1.0-18_all.deb
 The Proxmox VE host can use the USB driver provided by Google. Run the following on the Proxmox VE host to install the USB driver:
 
 ```sh
-echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main" | tee /etc/apt/sources.list.d/coral-edgetpu.list
-curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+curl -fsSL https://packages.cloud.google.com/apt/doc/apt-key.gpg | gpg --dearmor -o /usr/share/keyrings/coral-edgetpu-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/coral-edgetpu-archive-keyring.gpg] https://packages.cloud.google.com/apt coral-edgetpu-stable main" | tee /etc/apt/sources.list.d/coral-edgetpu.list
 apt-get -y update
 apt-get -y install libedgetpu1-max
 ```
