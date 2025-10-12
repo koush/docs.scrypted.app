@@ -4,6 +4,8 @@
 
 Cameras that have good motion sensors, plugin support, and the necessary codecs dramatically reduce the server requirements: Scrypted will have no problem streaming to the various supported [Platforms](/platforms) on low power hardware like a Raspberry Pi 4 or Synology NAS.
 
+**The latest server hardware is NOT always the best.** Newer hardware may not have full/stable hardware acceleration support in kernel/drivers/software. Being 2 generations behind the latest release is generally recommended for hassle free setup and compatibility.
+
 ::: warning Raspberry Pi 4
 From a current price to performance standpoint, the Raspberry Pi 4b is a poor choice compared to similarly priced Intel thin clients and NUCs. A used Dell Wyse 5070 can be found on eBay for half the price of a Raspberry Pi 4b.
 :::
