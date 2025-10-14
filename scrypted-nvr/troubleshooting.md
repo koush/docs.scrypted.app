@@ -166,6 +166,8 @@ There may be multiple cameras listed in this seciton if the high cpu usage is pe
 
 ## Notification Delivery Failures
 
+When troubleshooting notification delivery failures, first ensure that object detection is working by navigating to the camera timeline in the NVR app and ensuring that people, vehicles, and animals are being detected and recorded. If there are no events there, the use the [Object Detection](object-detection) troubleshooting.
+
 ### Complete Notification Failure
 
 If notifications are not being delivered at all, this is likely due to an issue with the device itself. Perform the following steps:
