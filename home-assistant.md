@@ -286,7 +286,7 @@ The Event Reel card has additional parameters that can be used to used to custom
 |cols|`Responsive`|The number of columns in the event reel.|
 |count|`cols`|The total number of items to show in an event reel page. Can be combined with `cols` to create a reel with multiple rows.
 |aspectRatio|`1/1`|The aspect ratio of a detection thumbnail.|
-|click|`ha`|The app that will be opened when clicked. Valid values include `ha` (Home Assistant) and `app` (Scrypted NVR App)|
+|click|`ha`|The app that will be opened when clicked. Valid values include `ha` (Home Assistant), `app` (Scrypted NVR App), or `none` (do nothing).|
 
 For example, for a 4x1 grid of events:
 
