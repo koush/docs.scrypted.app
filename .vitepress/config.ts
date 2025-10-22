@@ -1,5 +1,5 @@
+import llmstxt from 'vitepress-plugin-llms';
 import { withMermaid } from "vitepress-plugin-mermaid";
-import llmstxt from 'vitepress-plugin-llms'
 
 // https://vitepress.dev/reference/site-config
 export default withMermaid({
@@ -82,7 +82,13 @@ export default withMermaid({
           },
           { text: 'Google Home', link: '/google-home' },
           { text: 'Alexa', link: '/alexa' },
-          { text: 'Home Assistant', link: '/home-assistant' },
+          {
+            text: 'Home Assistant', link: '/home-assistant',
+            collapsed: true,
+            items: [
+              { text: 'Legacy Cards', link: '/home-assistant-legacy-cards' },
+            ]
+          },
         ]
       },
       {
