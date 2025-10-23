@@ -143,7 +143,8 @@ The parameter `imageClick` can be used to customize how click events are handled
 
 |Value|Description|
 |-|-|
-|`ha`|Open the Home Assistant companion app when clicked.|
+|`ha`|Navigate to the camera inside Scrypted within the Home Assistant companion app when clicked.|
+|`popup`|View the camera in a popup.|
 |`app`|Open the Scrypted NVR app when clicked.|
 |`none`|Do nothing when clicked.|
 
