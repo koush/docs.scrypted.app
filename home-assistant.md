@@ -163,7 +163,8 @@ The parameter `videoClick` can be used to customize how click events are handled
 
 |Value|Description|
 |-|-|
-|`ha`|Open the Home Assistant companion app when clicked.|
+|`ha`|Navigate to the camera inside Scrypted within the Home Assistant companion app when clicked.|
+|`popup`|View the camera in a popup.|
 |`app`|Open the Scrypted NVR app when clicked.|
 |`none`|Do nothing when clicked.|
 
@@ -173,6 +174,21 @@ Example: Open Scrypted NVR Timeline in Home Assistant when the playing video is 
 type: custom:scrypted-nvr-camera
 id: 42
 videoClick: ha
+```
+
+### Theme
+
+The parameter `theme` can be used to customize the light or dark theme of the `popup` window.
+
+|Value|Description|
+|-|-|
+|`light`|Light theme.|
+|`dark`|Dark theme.|
+
+```yaml[Video Click]
+type: custom:scrypted-nvr-camera
+id: 42
+theme: dark
 ```
 
 ### Resolution
