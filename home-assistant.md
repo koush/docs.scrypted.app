@@ -81,7 +81,7 @@ There are two types of cards available:
 The Custom Card Installation step only needs to be done one time to make the Custom Cards available for usage. Do not add the Resources to Home Assistant twice.
 :::
 
-To begin using the Scrypted NVR Cards, you must first register the Custom Card javascript and css Resources in Home Assistant. Prepare the following paths by replacing `<token>` as appropriate with the same value from the Custom Component setup.
+To begin using the Scrypted NVR Cards, you must first register the Custom Card javascript and css `Resources` in Home Assistant. Prepare the following paths by replacing `<token>` as appropriate with the same value from the Custom Component setup.
 
 JavaScript Resource:
 ```
