@@ -279,8 +279,17 @@ grid_options:
   columns: full
 ```
 
-
 Note that the `grid_options` configuration contains the standard [Sections view sizing parameters](https://developers.home-assistant.io/docs/frontend/custom-ui/custom-card#sizing-in-sections-view).
+
+## Styling Cards
+
+Styles can be applied to cards using standard css styles. For example, applying a rounded border to the camera card:
+
+```yaml
+type: custom:scrypted-nvr-camera
+id: 42
+style: "border-radius: 16px; overflow: hidden;"
+```
 
 ## Notifications
 
