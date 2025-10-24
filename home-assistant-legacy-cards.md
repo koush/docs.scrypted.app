@@ -5,7 +5,9 @@ import ImagePopup from './src/ImagePopup.vue';
 
 # Home Assistant Legacy Cards
 
+::: warning
 The documentation on this page is for the legacy Home Assistant Scrypted NVR cards that used the Webpage (iframe) card. Users are encouraged to use the [new cards](/home-assistant#card-setup) instead for improved performance and customization.
+:::
 
 ## Card Setup
 
