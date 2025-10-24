@@ -251,6 +251,18 @@ hiddenDetections:
   - Vehicle
 ```
 
+Another example with all detections (unclassified Motion is filtered by default) but filtering events to specific cameras:
+
+```yaml
+type: custom:scrypted-nvr-events-carousel
+click: ha
+count: 10
+cols: 5
+ids:
+  - 42
+  - 43
+```
+
 ## Sizing Cards
 
 Sizing cards in Sections view can be done using `grid_options`. For exampe, to make the Event Reel Card above full width:
