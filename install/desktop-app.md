@@ -26,7 +26,7 @@ Install the Desktop App from the above instructions. The management console can 
 
 <!--@include: ../server-port.md-->
 
-## Older Releases
+## Releases Repository
 
-Older versions of the desktop apps can be found in the [Releases](https://github.com/koush/nvr.scrypted.app/releases) page on Github.
+The latest and legacy releases of the desktop apps can be found in the [Releases Repository](https://github.com/koush/nvr.scrypted.app/releases) page on Github.
 
