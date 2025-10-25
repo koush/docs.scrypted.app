@@ -189,3 +189,7 @@ This should resolve most notification image failures.
 If the server is using a Cloudflare domain, ensure hotlink protection protection is disabled in Cloudflare.
 
 If the server is using self hosted SSL termination or port forwarding, the error may be due to to improper SSL termination or reverse proxy. To diagnose, delete and reinstall the Scrypted Cloud plugin to verify notification image delivery works on the Default settings.
+
+## Recordings Lost After Restart
+
+If restarting the Proxmox LXC or Docker container results in all recordings being lost, this is because the storage was not correctly passed into the container and the container is recreated on reboot. First remove any existing configuration for the recording storage. Then follow the [Storage Setup](/scrypted-nvr/recording-storage) guide to correctly configure the NVR Recordings Directory. 
