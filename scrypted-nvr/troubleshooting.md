@@ -192,4 +192,4 @@ If the server is using self hosted SSL termination or port forwarding, the error
 
 ## Recordings Lost After Restart
 
-If restarting the Proxmox LXC or Docker container results in all recordings being lost, this is because the storage was not correctly passed into the container and the container is recreated on reboot. First remove any existing configuration for the recording storage. Then follow the [Storage Setup](/scrypted-nvr/recording-storage) guide to correctly configure the NVR Recordings Directory. 
+If restarting the Proxmox LXC or Docker container results in all recordings being lost, this is because the storage mount was not correctly passed into the container. The recordings are being written into the container rather than the drive, and the container is being reset (including the recordings) on restart. First remove any existing configuration for the recording storage. Then follow the [Storage Setup](/scrypted-nvr/recording-storage) guide to correctly configure the NVR Recordings Directory. 
