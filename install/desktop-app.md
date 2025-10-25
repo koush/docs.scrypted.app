@@ -25,3 +25,8 @@ sudo apt install scrypted-electron
 Install the Desktop App from the above instructions. The management console can be accessed via the app.
 
 <!--@include: ../server-port.md-->
+
+## Older Releases
+
+Older versions of the desktop apps can be found in the [Releases](https://github.com/koush/nvr.scrypted.app/releases) page on Github.
+
