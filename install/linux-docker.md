@@ -29,3 +29,8 @@ The [docker-compose.yml](https://github.com/koush/scrypted/blob/main/install/doc
 |-|-|
 |`ghcr.io/koush/scrypted`|The default image.|
 |`ghcr.io/koush/scrypted:nvidia`|Image that includes full NVIDIA CUDA support for hardware accelerated transcoding and detection. The host must have CUDA, cuDNN, and NVIDIA container runtime installed. Then [modify the docker-compose.yml](https://github.com/koush/scrypted/blob/9a8034eb4ce35cff08201698110335a8fbafb0fc/install/docker/docker-compose.yml#L41) with the necessary changes for NVIDIA.|
+|`ghcr.io/koush/scrypted:nvidia-legacy`|Image that includes full NVIDIA CUDA support for hardware accelerated transcoding and detection. The host must have CUDA, cuDNN, and NVIDIA container runtime installed. Then [modify the docker-compose.yml](https://github.com/koush/scrypted/blob/9a8034eb4ce35cff08201698110335a8fbafb0fc/install/docker/docker-compose.yml#L41) with the necessary changes for NVIDIA.|
+
+::: tip
+NVIDIA devices older than the Turing Series, ie, the 10 series and older, should use the `nvidia-legacy` image.
+:::
