@@ -72,10 +72,16 @@ INTEL_FW_NPU=true bash install-intel-npu.sh
 ## Proxmox VE Container Reset
 
 ::: tip
-Older Proxmox VE Scrypted installations ran as a systemd service in the container. The new installation process moves the service into a docker container inside the LXC. Legacy installations must update the LXC by using the reset script.
+Older Proxmox VE Scrypted installations ran as a systemd service in the container. The new installation process moves the service into a docker container inside the LXC. Legacy installations must update the LXC by using the [Host Reset](#host-reset) script.
 :::
 
-Modifying the Proxmox VE Container can lead to unexpected behavior. The container can be reset by running the installation script with the `SCRYPTED_RESTORE=true` environment variable. All data (and NVR recordings if applicable) will be preserved, but creating a backup from within Scrypted is highly recommended.
+Modifying the Proxmox VE Container can lead to unexpected behavior. The container can be reset using either the [LXC reset](#lxc-reset) (in container reinstall) or the [Host Reset](#host-reset) (total reinstall).
+
+All data (and NVR recordings if applicable) will be preserved, but creating a backup from within Scrypted is highly recommended.
+
+### Host Reset
+
+The container can be reset on the host by running the installation script with the `SCRYPTED_RESTORE=true` environment variable.
 
 ::: warning
 This script must be run in the Proxmox VE Host `Shell`, not the Scrypted LXC Console/Terminal.
@@ -85,4 +91,17 @@ This script must be run in the Proxmox VE Host `Shell`, not the Scrypted LXC Con
 cd /tmp
 curl -s https://raw.githubusercontent.com/koush/scrypted/main/install/proxmox/install-scrypted-proxmox.sh > install-scrypted-proxmox.sh
 SCRYPTED_RESTORE=true bash install-scrypted-proxmox.sh
+```
+
+### LXC Reset
+
+The Scrypted service within the container can be reset by running the docker installation script with `SCRYPTED_LXC=true` environment variable.
+
+::: warning
+This script must be run in the Scrypted LXC (usually container id 10443) `Console`, not the Proxmox Host Shell/Terminal.
+:::
+
+```sh
+curl -s https://raw.githubusercontent.com/koush/scrypted/main/install/docker/install-scrypted-docker-compose.sh > ~/install-scrypted-docker-compose.sh 
+SCRYPTED_LXC=true bash ~/install-scrypted-docker-compose.sh
 ```
