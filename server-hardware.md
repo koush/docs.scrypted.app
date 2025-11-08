@@ -6,7 +6,7 @@ Scrypted can run on Mac, Windows, Proxmox VE, and Linux (via Docker).
 
 <!--@include: ./parts/proxmox-tip.md-->
 
-Linux + Docker installations should use `Ubuntu Server 64bit 24.04 LTS Jammy` as the host, including Raspberry Pi.
+Linux + Docker installations should use `Ubuntu Server 64bit 24.04 LTS Noble` as the host, including Raspberry Pi.
 
 ## Base System Requirements
 
