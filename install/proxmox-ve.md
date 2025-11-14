@@ -79,6 +79,19 @@ Modifying the Proxmox VE Container can lead to unexpected behavior. The containe
 
 All data (and NVR recordings if applicable) will be preserved, but creating a backup from within Scrypted is highly recommended.
 
+### LXC Reset
+
+The Scrypted service within the container can be reset by running the docker installation script with `SCRYPTED_LXC=true` environment variable.
+
+::: warning
+This script must be run in the Scrypted LXC (usually container id 10443) `Console`, not the Proxmox Host Shell/Terminal.
+:::
+
+```sh
+curl -s https://raw.githubusercontent.com/koush/scrypted/main/install/docker/install-scrypted-docker-compose.sh > ~/install-scrypted-docker-compose.sh 
+SCRYPTED_LXC=true bash ~/install-scrypted-docker-compose.sh
+```
+
 ### Host Reset
 
 The container can be reset on the host by running the installation script with the `SCRYPTED_RESTORE=true` environment variable.
@@ -91,17 +104,4 @@ This script must be run in the Proxmox VE Host `Shell`, not the Scrypted LXC Con
 cd /tmp
 curl -s https://raw.githubusercontent.com/koush/scrypted/main/install/proxmox/install-scrypted-proxmox.sh > install-scrypted-proxmox.sh
 SCRYPTED_RESTORE=true bash install-scrypted-proxmox.sh
-```
-
-### LXC Reset
-
-The Scrypted service within the container can be reset by running the docker installation script with `SCRYPTED_LXC=true` environment variable.
-
-::: warning
-This script must be run in the Scrypted LXC (usually container id 10443) `Console`, not the Proxmox Host Shell/Terminal.
-:::
-
-```sh
-curl -s https://raw.githubusercontent.com/koush/scrypted/main/install/docker/install-scrypted-docker-compose.sh > ~/install-scrypted-docker-compose.sh 
-SCRYPTED_LXC=true bash ~/install-scrypted-docker-compose.sh
 ```
