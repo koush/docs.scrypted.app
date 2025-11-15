@@ -193,3 +193,7 @@ If the server is using self hosted SSL termination or port forwarding, the error
 ## Recordings Lost After Restart
 
 If restarting the Proxmox LXC or Docker container results in all recordings being lost, this is because the storage mount was not correctly passed into the container. The recordings are being written into the container rather than the drive, and the container is being reset (including the recordings) on restart. First remove any existing configuration for the recording storage. Then follow the [Storage Setup](/scrypted-nvr/recording-storage) guide to correctly configure the NVR Recordings Directory. 
+
+## Management Console Repeatedly Disconnecting
+
+On November 12th, an update to docker caused Watchtower in Proxmox LXCs to fail. This failure causes Scrypted's Proxmox LXC to continually restart. The symptom is the management console disconnecting and reconnecting every few seconds. Use the [Proxmox LXC Reset](/install//proxmox-ve.md#lxc-reset) to resolve this issue.
