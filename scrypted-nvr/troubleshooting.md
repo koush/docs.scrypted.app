@@ -168,15 +168,6 @@ There may be multiple cameras listed in this seciton if the high cpu usage is pe
 
 When troubleshooting notification delivery failures, first ensure that object detection is working by navigating to the camera timeline in the NVR app and ensuring that people, vehicles, and animals are being detected and recorded. If there are no events there, the use the [Object Detection](#object-detection) troubleshooting.
 
-### Complete Notification Failure
-
-If notifications are not being delivered at all, this is likely due to an issue with the device itself. Perform the following steps:
-
-1. If the device is Android or iOS, **reboot the device**.
-2. Completely quit (swipe close, close tray, etc) and reopen the Scrypted NVR app to trigger a device reregistration.
-3. Search for the notification device in `Scrypted Management Console` and send it a test notification.
-4. Observe any errors in the `Console`.
-
 ### No Images in Notifications
 
 If notifications are working, but there are no images in notifications, this is likely due to a `Scrypted Cloud` plugin misconfiguration. Perform the following steps:
@@ -190,10 +181,30 @@ If the server is using a Cloudflare domain, ensure hotlink protection protection
 
 If the server is using self hosted SSL termination or port forwarding, the error may be due to to improper SSL termination or reverse proxy. To diagnose, delete and reinstall the Scrypted Cloud plugin to verify notification image delivery works on the Default settings.
 
+## Notification Testing
+
+1. In the Scrypted NVR app, go to Settings -> Notifications.
+2. Click Send Test Notification. If no notification is received, continue on to [Complete Notification Failure](#complete-notification-failure).
+
+When the detection is visible in the camera timeline and test notifications are being delivered to the the phone, the issue is most likely to be a notification filter in the app.
+
+1. In the Scrypted NVR app, view the camera.
+2. Click Settings -> AI, Zones, and Schedules
+3. Delete all filters.
+
+### Complete Notification Failure
+
+If notifications are not being delivered at all, this is likely due to an issue with the device itself. Perform the following steps:
+
+1. If the device is Android or iOS, **reboot the device**.
+2. Completely quit (swipe close, close tray, etc) and reopen the Scrypted NVR app to trigger a device reregistration.
+3. Search for the notification device in `Scrypted Management Console` and send it a test notification.
+4. Observe any errors in the `Console`.
+
 ## Recordings Lost After Restart
 
 If restarting the Proxmox LXC or Docker container results in all recordings being lost, this is because the storage mount was not correctly passed into the container. The recordings are being written into the container rather than the drive, and the container is being reset (including the recordings) on restart. First remove any existing configuration for the recording storage. Then follow the [Storage Setup](/scrypted-nvr/recording-storage) guide to correctly configure the NVR Recordings Directory. 
 
 ## Management Console Persistently Disconnecting
 
-On November 12th, an update to docker caused Scrypted's Proxmox LXC to continually restart. The symptom is the management console disconnecting and reconnecting, or the service going offline and online, every few seconds. Use the [Proxmox LXC Reset](/install/proxmox-ve.md#lxc-reset) to resolve this issue.
+On November 12th, an update to docker caused Watchtower in Proxmox LXCs to fail. This failure causes Scrypted's Proxmox LXC to continually restart. The symptom is the management console disconnecting and reconnecting every few seconds. Use the [Proxmox LXC Reset](/install//proxmox-ve.md#lxc-reset) to resolve this issue.
