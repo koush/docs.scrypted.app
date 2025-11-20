@@ -207,4 +207,4 @@ If restarting the Proxmox LXC or Docker container results in all recordings bein
 
 ## Management Console Persistently Disconnecting
 
-On November 12th, an update to docker caused Watchtower in Proxmox LXCs to fail. This failure causes Scrypted's Proxmox LXC to continually restart. The symptom is the management console disconnecting and reconnecting every few seconds. Use the [Proxmox LXC Reset](/install//proxmox-ve.md#lxc-reset) to resolve this issue.
+On November 12th, an update to docker caused Watchtower in Proxmox LXCs to fail. This failure causes Scrypted's Proxmox LXC to continually restart. The symptom is the management console disconnecting and reconnecting every few seconds. Use the [Proxmox LXC Reset](/install/proxmox-ve.md#lxc-reset) to resolve this issue.
