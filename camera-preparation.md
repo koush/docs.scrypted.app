@@ -44,7 +44,7 @@ If there are multiple substreams, check the substreams in the dropdown or list t
 <div style="width: 100%; display: flex; flex-direction: row;">
 
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
-Amcrest
+Amcrest (Dahua)
 <ImagePopup src="/img/amcrest-streams.png" width="200"></ImagePopup>
 </div>
 
@@ -52,6 +52,11 @@ Amcrest
 <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
 Hikvision
 <ImagePopup src="/img/hikvision-streams.png" width="200" ></ImagePopup>
+</div>
+
+<div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+Reolink
+<ImagePopup src="/img/reolink-streams.png" width="200" ></ImagePopup>
 </div>
 
 </div>
