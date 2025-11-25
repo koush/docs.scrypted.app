@@ -197,9 +197,10 @@ When the detection is visible in the camera timeline and test notifications are 
 If notifications are not being delivered at all, this is likely due to an issue with the device itself. Perform the following steps:
 
 1. If the device is Android or iOS, **reboot the device**.
-2. Completely quit (swipe close, close tray, etc) and reopen the Scrypted NVR app to trigger a device reregistration.
-3. Search for the notification device in `Scrypted Management Console` and send it a test notification.
-4. Observe any errors in the `Console`.
+2. Search for the notification device in `Scrypted Management Console` and send it a test notification.
+3. Observe any errors in the `Console`.
+
+If no notification was received, and the `Console` indicates there were no errors, then the notification was delivered successfully to the Apple/Google backend notification service. If it was not delivered, the issue may be with their service's ability to deliver to your device. On iOS this can sometimes be resolved by **uninstalling and reinstalling the iOS app**.
 
 ## Recordings Lost After Restart
 
