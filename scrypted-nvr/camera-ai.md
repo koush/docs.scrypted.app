@@ -4,6 +4,7 @@ Some camera hardware provides onboard AI that detects people, animals, and vehic
 
 * The camera provided detections do not provide bounding boxes around the object. As a result, notifications and thumbnails will be full frame images, unlike the rich notifications provided by `Scrypted NVR Object Detection`.
 * Enabling the camera's AI features [may disable some substreams](/camera-preparation.md#stream-setup). This would reduce the available streams from 3 to 2, resulting in degraded timelapse and streaming performance.
-* The camera provided detections are not searchable in the Scrypted NVR app.
+* Detections are not searchable in the Scrypted NVR app.
+* AI and Zone filtering can not be used.
 
 With those limitations in mind, the Onboard Camera AI can be utilized by disabling the `Scrypted NVR Object Detection` extension on the camera.
