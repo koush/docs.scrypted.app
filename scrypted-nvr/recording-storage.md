@@ -63,5 +63,5 @@ For best performance, provide an entire disk or partition to Scrypted NVR. Volum
 ::: warning
 * When the storage device is a NAS Share, ensure that the NAS `Recycle Bin` feature is disabled, or the old recordings can not be properly deleted by Scrypted NVR and the disk will fill up.
 * Storing video on a NAS is a reasonable option if one is available, however timelapse scrubbing may suffer from poor performance over the network.
-* NAS must be dedicate a drive to Scrypted NVR. Using a NAS path that is mostly full with data from orher applications will not work.
+* NAS must be dedicate a drive to Scrypted NVR. Using a NAS path that is mostly full with data from other applications will not work.
 :::
