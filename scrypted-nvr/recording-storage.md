@@ -52,9 +52,9 @@ RAID disks can be assigned to Recording Storage as a storage directory for serve
 
 ## Storage Utilization
 
-Scrypted NVR will delete recordings and potentially stop recording if the disk reaches 10% free space or only has 10GB free space remaining. This is to ensure there is sufficient space available for OS updates and optimal filesystem performance (defragmentation/reallocation). Disk performance decreases as the utilization approaches 90%. The system may become unresponsive if disk is filled completely, potentially by other programs writing to the disk.
+Scrypted NVR will begin deleting recordings when the disk reaches 15% free space and potentially stop recording if the disk reaches 10% free space or only has 10GB free space remaining. This is to ensure there is sufficient space available for OS updates and optimal filesystem performance (defragmentation/reallocation). Disk performance decreases as the utilization approaches 90%. The system may become unresponsive if disk is filled completely, potentially by other programs writing to the disk. Approaching these limits will show as alerts.
 
-For best performance, provide an entire disk or partition to Scrypted NVR. Volumes that share disk space other is not recommended as it may cause issues with recording retention periods.
+For best performance, provide an entire disk or partition to Scrypted NVR. Volumes that share disk space with others is not recommended as it may cause issues with recording retention periods. A constant work load consisting of writes requires a decent overhead on free space to ensure inode availability - regardless of volume size. Refer to this link for more information: [Why filling a volume is bad](https://chatgpt.com/share/6855f16d-068c-800c-b109-3f0e716e1b6a)
 
 ## NAS
 
