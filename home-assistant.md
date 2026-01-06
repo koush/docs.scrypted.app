@@ -288,7 +288,7 @@ Styles can be applied to cards using standard css styles. For example, applying 
 ```yaml
 type: custom:scrypted-nvr-camera
 id: 42
-style: "border-radius: 16px; overflow: hidden;"
+style: "border-radius: 16px; overflow: hidden; aspect-ratio: 16/9;"
 ```
 
 ## Notifications
