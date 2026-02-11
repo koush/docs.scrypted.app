@@ -145,6 +145,7 @@ The parameter `imageClick` can be used to customize how click events are handled
 |-|-|
 |`ha`|Navigate to the camera inside Scrypted within the Home Assistant companion app when clicked.|
 |`popup`|View the camera in a popup.|
+|`popup-no-timeline`|View the camera in a popup with no recording playback timeline.|
 |`app`|Open the Scrypted NVR app when clicked.|
 |`none`|Do nothing when clicked.|
 
@@ -165,6 +166,7 @@ The parameter `videoClick` can be used to customize how click events are handled
 |-|-|
 |`ha`|Navigate to the camera inside Scrypted within the Home Assistant companion app when clicked.|
 |`popup`|View the camera in a popup.|
+|`popup-no-timeline`|View the camera in a popup with no recording playback timeline.|
 |`app`|Open the Scrypted NVR app when clicked.|
 |`none`|Do nothing when clicked.|
 
