@@ -1,12 +1,5 @@
 # HomeKit Troubleshooting
 
-## Common Issues
-
-* [HomeKit Discovery and Pairing](#homekit-discovery-and-pairing-issues)
-* [HomeKit Secure Video Not Recording](#homekit-secure-video-not-recording)
-* [HomeKit Live Streaming Timeout](#homekit-live-streaming-timeout-recordings-may-be-working)
-* [HomeKit Remote Streaming Failure](#homekit-remote-streaming-failure)
-
 ## Discovery and Pairing Issues
 
 * Ensure all your Apple TV and Home Pods are online and updated. Power cycling them is recommended in case one is stuck.
@@ -86,6 +79,12 @@ This is always a issue with the network setup.
   * Flatten your network topology. If your camera/server/iOS are on a separate VLANs, try disabling VLANs to determine if that is the issue.
   * You wifi network is saturated, resulting in heavy packet loss. Enabling Transcode Debug Mode in the HomeKit settings for that camera may fix this for testing purposes, but long term usage is not recommended as it reduces quality and increases CPU load.
   * This is *may* be a codec issue (but as mentioned earlier, is usually a network issue). Try enabling Transcoding on both Live and Remote streams.
+
+## Live Streaming stops after a few seconds on macOS
+
+Live streaming may stop after 5-6 seconds in the macOS Home app if the Mac does not have a microphone input configured/available, even if you're viewing a camera without two-way audio. (This is most likely a macOS bug).
+
+In the macOS "Sound" settings under the "Input" tab, ensure a working input option is selected.
 
 ## Remote Streaming Failure
 
