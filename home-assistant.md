@@ -145,6 +145,7 @@ The parameter `imageClick` can be used to customize how click events are handled
 |-|-|
 |`ha`|Navigate to the camera inside Scrypted within the Home Assistant companion app when clicked.|
 |`popup`|View the camera in a popup.|
+|`popup-no-timeline`|View the camera in a popup with no recording playback timeline.|
 |`app`|Open the Scrypted NVR app when clicked.|
 |`none`|Do nothing when clicked.|
 
@@ -165,6 +166,7 @@ The parameter `videoClick` can be used to customize how click events are handled
 |-|-|
 |`ha`|Navigate to the camera inside Scrypted within the Home Assistant companion app when clicked.|
 |`popup`|View the camera in a popup.|
+|`popup-no-timeline`|View the camera in a popup with no recording playback timeline.|
 |`app`|Open the Scrypted NVR app when clicked.|
 |`none`|Do nothing when clicked.|
 
@@ -288,7 +290,7 @@ Styles can be applied to cards using standard css styles. For example, applying 
 ```yaml
 type: custom:scrypted-nvr-camera
 id: 42
-style: "border-radius: 16px; overflow: hidden;"
+style: "border-radius: 16px; overflow: hidden; aspect-ratio: 16/9;"
 ```
 
 ## Notifications
