@@ -26,7 +26,7 @@ Ollama and LM Studio do not provide fully compliant OpenAI endpoints and may not
 
 Local models will require capable hardware:
 
-* Apple Silicon (16GB RAM)
+* Mac (16GB RAM, Apple Silicon)
 * NVIDIA GPU (12GB RAM)
 * AMD GPU (12GB RAM)
 * AMD AI MAX
