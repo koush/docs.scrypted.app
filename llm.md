@@ -4,7 +4,7 @@ Scrypted supports integrating with large language models running in the cloud or
 
 ## LLM Plugin
 
-Install the LLM plugin in Scrypted to get started. then click `Add New` to add a cloud or llama.cpp (local) large language model.
+Install the LLM plugin in Scrypted to get started. then click `Add New` to add a cloud or local large language model.
 
 ## Cloud Provider
 
@@ -19,6 +19,10 @@ The following models are recommended for price and performance considerations:
 | Gemini | `gemini-1.5-flash` |
 
 ## Local Model
+
+::: warning
+Ollama and LM Studio do not provide fully compliant OpenAI endpoints and may not work correctly. Using the LLM Plugin hosted llama.cpp is preferred.
+:::
 
 Local models will require capable hardware:
 
