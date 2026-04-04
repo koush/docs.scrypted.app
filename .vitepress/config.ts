@@ -134,9 +134,10 @@ export default withMermaid({
         ]
       },
       {
-        text: 'Detection Plugins',
+        text: 'Vision and AI Plugins',
         collapsed: true,
         items: [
+          { text: 'Large Language Models', link: '/llm' },
           { text: 'Dummy Detection', link: '/detection/dummy-detection' },
           { text: 'Motion Detection', link: '/detection/motion-detection' },
           { text: 'Object Detection', link: '/detection/object-detection' },
