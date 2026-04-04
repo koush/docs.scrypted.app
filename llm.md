@@ -21,7 +21,7 @@ The following models are recommended for price and performance considerations:
 ## Local Model
 
 ::: warning
-Ollama and LM Studio do not provide fully compliant OpenAI endpoints and may not work correctly. Using the LLM Plugin hosted llama.cpp is preferred.
+Ollama and LM Studio do not provide fully compliant OpenAI endpoints and may not work correctly. Using the LLM Plugin hosted llama.cpp is preferred. vLLM and SGLang are also recommended.
 :::
 
 Local models will require capable hardware:
