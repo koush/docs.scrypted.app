@@ -44,3 +44,9 @@ The model the server can run is dependent on how much VRAM is available on the s
 | Gemma 4 26B-A4B | 21 GB | `unsloth/gemma-4-26B-A4B-it-GGUF` |
 | Gemma 4 31B | 24 GB | `unsloth/gemma-4-31B-it-GGUF` |
 | Qwen3.5-35B-A3B | 26 GB | `unsloth/Qwen3.5-35B-A3B-GGUF` |
+
+Larger models generally provide better results, but have diminishing returns.
+
+::: warning
+Selecting a model that is too large for the available memory will cause system instability.
+:::
