@@ -29,7 +29,7 @@ A two way audio camera can be combined with a smart button to create a doorbell 
 
   * One Way Audio
     * [Amcrest IP8M-T2669EW-AI](https://www.amazon.com/s?k=amcrest+8mp+ai&crid=2Z8QPKLQ68WCF&sprefix=amcrest+8mp+ai%2Caps%2C143&ref=nb_sb_noss_1): This has 3 streams, and a great price. Solid 4K choice on a budget.
-    * Hivkision models with 3 streams such as DS-2CD2086G2-IU are highly recommended, but 2 streams is totally fine too. More expensive but has better image quality in both day and night.
+    * Hikvision models with 3 streams such as DS-2CD2086G2-IU are highly recommended, but 2 streams is totally fine too. More expensive but has better image quality in both day and night.
   * Two Way Audio
     * [Hikvision DS-2CD2386G2-ISU/SL](https://www.amazon.com/Hikvision-DS-2CD2386G2-ISU-SL-AcuSense-Original/dp/B09JJWYQJ5/ref=sr_1_1_sspa?crid=GV0C06DJSRXA&keywords=DS-2CD2386G2-ISU%2FSL&qid=1689003265&sprefix=ds-2cd2386g2-isu%2Fsl%2Caps%2C192&sr=8-1-spons&ufe=app_do%3Aamzn1.fos.18ed3cb5-28d5-4975-8bc7-93deae8f9840&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1): Stunning picture quality.
   * Night Color + Two Way Audio
