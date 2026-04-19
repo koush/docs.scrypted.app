@@ -195,7 +195,7 @@ theme: dark
 
 ### Resolution
 
-By default the Card live stream will dynamically assign a stream based on card size.  However, in most cases it's reccomended to use the `low-resolution` stream: it loads fast, uses minimal resources, is thus best suited for a small frame. The resolution can be changed with the `destination` parameter. Supported destination values include `low-resolution`, `remote`, and `local`.
+By default the Card live stream will dynamically assign a stream based on card size.  However, in most cases it's recommended to use the `low-resolution` stream: it loads fast, uses minimal resources, is thus best suited for a small frame. The resolution can be changed with the `destination` parameter. Supported destination values include `low-resolution`, `remote`, and `local`.
 
 :::warning
 Using the high resolution stream (`local`) for a Cards is not recommended, as it can cause the Home Assistant Dashboard to become sluggish with multiple cards. 
