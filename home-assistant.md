@@ -265,6 +265,18 @@ ids:
   - 43
 ```
 
+### Click
+
+The parameter `click` can be used to customize how click events are handled when the event reel is clicked.
+
+|Value|Description|
+|-|-|
+|`ha`|Navigate to the camera inside Scrypted within the Home Assistant companion app when clicked.|
+|`popup`|View the camera in a popup.|
+|`popup-no-timeline`|View the camera in a popup with no recording playback timeline.|
+|`app`|Open the Scrypted NVR app when clicked.|
+|`none`|Do nothing when clicked.|
+
 ## Sizing Cards
 
 Sizing cards in Sections view can be done using `grid_options`. For exampe, to make the Event Reel Card above full width:
