@@ -239,7 +239,7 @@ The Event Reel shows the recent highlighted events in a scrollable reel. The Eve
 |cols|`Responsive`|The number of columns in the event reel.|
 |count|`cols`|The total number of items to show in an event reel page. Can be combined with `cols` to create a reel with multiple rows.|
 |aspectRatio|`1/1`|The aspect ratio of a detection thumbnail.|
-|click|`ha`|The app that will be opened when clicked. Valid values include `ha` (Home Assistant), `app` (Scrypted NVR App), or `none` (do nothing).|
+|click|`ha`|The app that will be opened when clicked. Valid values include `ha` (Home Assistant), `popup` (Home Assistant Popup), `app` (Scrypted NVR App), or `none` (do nothing).|
 
 For example, for a 5x2 grid of events that only shows Person and Animal detections:
 
