@@ -265,6 +265,29 @@ ids:
   - 43
 ```
 
+## Summary Reel Card
+
+::: warning
+This card is only available in the Scrypted NVR Beta plugin.
+:::
+
+<div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+<ImagePopup src="/img/ha-summary-reel.png" width="400"></ImagePopup>
+</div>
+
+The Summary Reel shows the recent camera summaries in a scrollable reel. The Summary Reel card has its own parameters that can be used to used to customize the cameras and summaries shown:
+
+|Name|Default Value|Description|
+|-|-|-|
+|id|N/A|The primary camera `id` shown in the reel. Other cameras that were summarized alongside this camera will also be shown in the smaller thumbnails. The Scrypted NVR Card id.|
+|click|`ha`|The app that will be opened when clicked. Valid values include `ha` (Home Assistant), `app` (Scrypted NVR App), or `none` (do nothing).|
+
+
+```yaml
+type: custom:scrypted-nvr-summary-carousel
+click: ha
+```
+
 ## Sizing Cards
 
 Sizing cards in Sections view can be done using `grid_options`. For exampe, to make the Event Reel Card above full width:
