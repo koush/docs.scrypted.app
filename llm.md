@@ -16,7 +16,7 @@ The following models are recommended for price and performance considerations:
 |----------|-------|
 | OpenAI | `gpt-5.4-nano` |
 | Anthropic | `claude-haiku-4-5` |
-| Gemini | `gemini-3.1-flash-lite-preview` |
+| Gemini | `gemini-3.1-flash-lite` |
 
 ## Local Model
 
