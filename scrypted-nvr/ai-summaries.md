@@ -21,7 +21,7 @@ Scrypted NVR can use AI to automatically generate natural-language descriptions 
 
 ## Setup
 
-AI Summaries are configured in the `Scrypted Management Console`, under the `Recording` settings for the NVR plugin. Set the `AI Provider` to one of the following:
+AI Summaries are configured in the `Scrypted Management Console`, under the `AI Summary` settings for the NVR plugin. Set the `AI Provider` to one of the following:
 
 * **Cloud**: Uses a cloud-based AI provider (OpenAI, Anthropic, or Gemini). An API key is required.
 * **Local**: Uses a local AI model running on your Scrypted server. Requires the `LLM Plugin` and can use llama.cpp or connect to any OpenAI compatible endpoint.
