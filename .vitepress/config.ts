@@ -110,13 +110,13 @@ export default withMermaid({
               { text: 'Synology', link: '/scrypted-nvr/storage/synology' },
             ]
           },
+          { text: 'AI Summary Setup', link: '/scrypted-nvr/ai-summaries' },
           { text: 'Record Cameras', link: '/scrypted-nvr/camera-recording' },
           { text: 'Apps and Remote Access', link: '/scrypted-nvr/apps' },
           {
             text: 'More Features',
             collapsed: true,
             items: [
-              { text: 'AI Summaries', link: '/scrypted-nvr/ai-summaries' },
               { text: 'Nearby Devices', link: '/scrypted-nvr/nearby-devices' },
               { text: 'Onboard Camera AI', link: '/scrypted-nvr/camera-ai' },
             ]
