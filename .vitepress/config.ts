@@ -116,6 +116,7 @@ export default withMermaid({
             text: 'More Features',
             collapsed: true,
             items: [
+              { text: 'AI Summaries', link: '/scrypted-nvr/ai-summaries' },
               { text: 'Nearby Devices', link: '/scrypted-nvr/nearby-devices' },
               { text: 'Onboard Camera AI', link: '/scrypted-nvr/camera-ai' },
             ]
