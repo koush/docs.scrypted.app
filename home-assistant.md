@@ -297,6 +297,7 @@ The Summary Reel shows the recent camera summaries in a scrollable reel. The Sum
 
 ```yaml
 type: custom:scrypted-nvr-summary-carousel
+id: 42
 click: ha
 ```
 
