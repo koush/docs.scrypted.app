@@ -58,6 +58,22 @@ Search across the history of all cameras using natural language.
 <ImagePopup src="/img/scrypted-nvr/search.png" width="400"></ImagePopup>
 </div>
 
+## AI Summaries
+
+Scrypted NVR can use AI to automatically generate natural-language descriptions of camera events. When detections occur, the AI produces a short summary and title that is delivered as a push notification and displayed in the NVR app's **Stories** tab. [Setup guide](/scrypted-nvr/ai-summaries).
+
+<div style="width: 100%; display: flex; flex-direction: row;">
+
+<div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+<ImagePopup src="/img/scrypted-nvr/nvr-summary.png" width="200" ></ImagePopup>
+</div>
+
+<div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+<ImagePopup src="/img/scrypted-nvr/nvr-summary-app.png" width="200" ></ImagePopup>
+</div>
+
+</div>
+
 ## Adaptive Bitrate
 
 Scrypted NVR leverages all the camera substreams and transcoding to provide bulletproof streams, regardless of downstream network conditions.
