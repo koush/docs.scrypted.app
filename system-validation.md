@@ -48,7 +48,7 @@ IPv6 on the network and Scrypted server is recommended for optimal performance w
 
 ### Scrypted Server Address
 
-Specifying the `Scrypted Server Address` will affect how Scrypted advertises devices via the `HomeKit` plugin and how it communicates with other devices on th local network. Selecting a pair of wired ethernet addresses (one IPv4 and one IPv6) is recommended.
+Specifying the `Scrypted Server Address` will affect how Scrypted advertises devices via the `HomeKit` plugin and how it communicates with other devices on the local network. Selecting a pair of wired ethernet addresses (one IPv4 and one IPv6) is recommended.
 
 ### GPU Passthrough and GPU Decode
 
