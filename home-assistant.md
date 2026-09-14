@@ -52,19 +52,33 @@ https://github.com/koush/ha_scrypted
 ```
 2. In the HACS panel, select `Scrypted` from the repository list and select the `INSTALL` button.
 3. Go to `Settings > Devices & Services > Add Integration` and select `Scrypted`.
-4. Enter the host, username, and password for your Scrypted server, as well as a name and icon for the side panel link in the Home Assistant menu.
+4. Enter the host, username, and password for your Scrypted server, as well as a name and icon for the side panel link in the Home Assistant menu. The host must be the Scrypted HTTPS port.
 
 |Setting|Sample Configuration|
 |-|-|
 |Host|192.168.2.124:10443|
 |Username|admin|
 |Password|swordfish!|
+|Replace Scrypted Management Console sidebar with Scrypted NVR sidebar|Enable to open Scrypted NVR from the side panel instead of the Management Console. Requires Scrypted NVR.|
+|Automatically register Lovelace resources for the Scrypted NVR cards|Enable to skip the manual [Custom Card Installation](#custom-card-installation) step. Requires Scrypted NVR.|
 
 ::: tip
 If Scrypted was installed as a Home Assistant Addon, there is no default login. A dedicated admin account will need to be created for the custom component. The `Host` will be `127.0.0.1:10443`.
 :::
 
+::: warning
+Each Scrypted server can only be added to Home Assistant once.
+:::
+
 Scrypted can now be accessed in the Home Assistant side panel.
+
+### Scrypted Token
+
+The integration generates a token that is used in the card resource paths and when linking notifications. The token is shown as the state of the `Scrypted token: <host>` sensor entity, found under `Settings > Devices & Services > Scrypted`.
+
+### Integration Options
+
+The sidebar and card resource settings, as well as the [Device Entities](#device-entities) settings, can be changed later by selecting `Configure` on the Scrypted integration in `Settings > Devices & Services`.
 
 ## Card Setup
 
@@ -77,11 +91,15 @@ There are two types of cards available:
 
 ### Custom Card Installation
 
+::: tip
+If `Automatically register Lovelace resources for the Scrypted NVR cards` was enabled during setup or in the [Integration Options](#integration-options), the resources are already registered and this step can be skipped. Resources managed via YAML can't be registered automatically; the paths to add are logged instead.
+:::
+
 ::: warning
 The Custom Card Installation step only needs to be done one time to make the Custom Cards available for usage. Do not add the Resources to Home Assistant twice.
 :::
 
-To begin using the Scrypted NVR Cards, you must first register the Custom Card javascript and css `Resources` in Home Assistant. Prepare the following paths by replacing `<token>` as appropriate with the same value from the Custom Component setup.
+To begin using the Scrypted NVR Cards, you must first register the Custom Card javascript and css `Resources` in Home Assistant. Prepare the following paths by replacing `<token>` with the [Scrypted Token](#scrypted-token).
 
 JavaScript Resource:
 ```
@@ -345,7 +363,7 @@ Scrypted NVR Notifications can be delivered to the Home Assistant Companion app.
   * Enable the `Scrypted NVR Users` extension.
 6. Configure the following settings within the `mobile_app_iphonex` device.
   * Assign a `Scrypted User`.
-  * Paste the `Scrypted Token` used by the Home Assistant Custom Component.
+  * Paste the [Scrypted Token](#scrypted-token) used by the Home Assistant Custom Component.
   * **Click Save**.
 7. After the settings have been saved, click the Link Companion App button. A notification will be sent to the companion app.
 8. Click the notification to complete linking and allow customization of notifications from the companion app.
@@ -365,3 +383,30 @@ Scrypted NVR Notifications can be delivered to the Home Assistant Companion app.
 </div>
 
 </div>
+
+## Device Entities
+
+The Custom Component also creates Home Assistant entities for Scrypted devices, which can be used in dashboards and automations. Device entities are enabled by default, and only `Camera` and `Doorbell` devices are included. Additional Scrypted device types, or turning off device entities entirely, can be configured in the [Integration Options](#integration-options).
+
+|Entity|Description|
+|-|-|
+|Camera|Snapshots for Scrypted cameras.|
+|Binary Sensor|Motion, doorbell button, sound, occupancy, flood, entry, power, connectivity, tamper, charging, and sleeping.|
+|Event|Object detections (`person`, `car`, etc., from the classes reported by the detector) and doorbell presses, for use as automation triggers.|
+|Sensor|Temperature, humidity, battery, illuminance, UV, CO2, PM2.5, PM10, VOC, NOx, and air quality.|
+|Media Player|Intercom capable devices, such as doorbells and cameras with two way audio, become speaker entities. Use `media_player.play_media`, text to speech, or announcements to talk through the camera speaker.|
+|Switch, Lock, Cover, Light, Fan, Vacuum, Climate|Controllable Scrypted devices of those types, once their device types are enabled in the [Integration Options](#integration-options).|
+
+::: tip
+Camera entities provide snapshots only. Live video is only supported using the [Scrypted NVR Cards](#card-setup).
+:::
+
+State updates are pushed from Scrypted without polling, and entities reconnect automatically if the Scrypted server restarts.
+
+### Media Browser
+
+Scrypted NVR detection clips are available in the Home Assistant `Media` panel. Browse by camera, then day, then clip, and clips play back through Home Assistant.
+
+::: warning
+Clips are streamed as HLS, which plays in Safari, the Home Assistant Companion apps, and on Chromecast, but may not play inline in Chrome.
+:::
