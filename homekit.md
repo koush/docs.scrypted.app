@@ -46,9 +46,9 @@ HKSV3 was released in September 2026. The primary feature is H265 codec support 
 
 ### Recommendation
 
-* If your camera is H265 only and the codec can not be changed, consider using HKSV3.
-* If your camera supports H264 only on all streams, stay on Legacy HKSV.
-* Otherwise, if your camera codecs can't be changed to a single uniform codec, stay on Legacy HKSV.
+* If your camera supports H264 only on all streams, stay on Legacy HKSV for better performance.
+* If your camera is H265 only and the codec can not be changed, migrate to HKSV3 to avoid transcoding.
+* Otherwise, if your camera codecs can't be changed to a single uniform codec (such as Reolink cameras that use H265 main and H264 substream), stay on Legacy HKSV.
 
 ### Choosing HKSV Version
 
