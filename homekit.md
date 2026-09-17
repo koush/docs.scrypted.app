@@ -50,7 +50,7 @@ HKSV3 was released in September 2026. The primary feature is H265 codec support 
 | HKSV3         | Multitier RTP H265| WebRTC H265 *[4]*| H264/H265 *[2][3]* |
 
 1. HKSV Legacy Recrodings were updated with H265 support with the release of HKSV3. They both share the same transport, and when HKSV3 was implemented, H265 came with it.
-2. HKSV3 Recordings have reliability issues that were discovered after exhustive testing. Uploads may fail from one home hub (Apple TV), and succeed from another home hub, depending on which one was assigned the camera detection session. Strangely, uploads from one home hub may not be visible when a different home hub becomes the selected hub.
+2. HKSV3 Recordings have reliability issues that were discovered after exhustive testing. Uploads may fail from one home hub (Apple TV), and succeed from another home hub, depending on which one was assigned the camera detection session. Strangely, uploads from one home hub may not be visible when a different home hub becomes the selected hub. This behavior is not present with legacy HKSV.
 3. The new CMAF transport is not fully implemented or documented yet.
 4. iOS WebRTC implementation is slower to connect than the legacy RTP transport.
 
