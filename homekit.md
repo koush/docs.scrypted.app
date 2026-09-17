@@ -54,4 +54,4 @@ HKSV3 was released in September 2026. The primary feature is H265 codec support 
 3. The new CMAF transport is not fully implemented or documented yet.
 4. iOS WebRTC implementation is slower to connect than the legacy RTP transport.
 
-The choice in HKSV version to use is dependent on the codecs on your cameras. If your camera is H265 only, use HKSV3. **Otherwise using H264 is still the better choice**.
+The choice in HKSV version to use is dependent on the codecs on your cameras. If your camera is H265 only, use HKSV3. **Otherwise using H264 and the legacy HKSV version is still the better choice**.
