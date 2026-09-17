@@ -44,6 +44,10 @@ This is a architectural limitation in HomeKit that will likely never be resolved
 
 HKSV3 was released in September 2026. The primary feature is H265 codec support via new transports.
 
+::: warning
+Ensure all your Home Hubs are also updated to tvOS 27.
+:::
+
 ### Recommendation
 
 * If your camera supports H264 only on all streams, stay on Legacy HKSV for better performance.
