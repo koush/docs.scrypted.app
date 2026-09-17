@@ -89,3 +89,20 @@
   --docsearch-primary-color: var(--vp-c-brand) !important;
 }
 
+/**
+ * Component: HKSV Tables
+ * -------------------------------------------------------------------------- */
+
+/* Render markdown tables as real tables with fixed layout so
+ * multiple tables in the same container share identical column widths. */
+.hksv-tables table {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  margin: 8px 0 20px;
+}
+
+.hksv-tables > p {
+  margin: 24px 0 0;
+}
+

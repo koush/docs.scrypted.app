@@ -44,14 +44,38 @@ This is a architectural limitation in HomeKit that will likely never be resolved
 
 HKSV3 was released in September 2026. The primary feature is H265 codec support via new transports.
 
-|               | Local Streaming   | Remote Streaming | Recording       |
-| ------------- | ----------------- | ---------------- | --------------- |
-| HKSV (Legacy) | RTP H264          | RTP H264         | H264/H265 *[1]* |
-| HKSV3         | Multitier RTP H264/H265| WebRTC H265 *[4]*| H264/H265 *[2][3]* |
+### Recommendation
+
+* If your camera is H265 only and the codec can not be changed, consider using HKSV3.
+* If your camera supports H264 only on all streams, stay on Legacy HKSV.
+* Otherwise, if your camera codecs can't be changed to a single uniform codec, stay on Legacy HKSV.
+
+### Choosing HKSV Version
+
+<div class="hksv-tables">
+
+**HKSV (Legacy)**
+
+|                  | H264 | H265     | Transport |
+| ---------------- | ---- | -------- | --------- |
+| Local Streaming  | ✅   | ❌       | RTP       |
+| Remote Streaming | ✅   | ❌       | RTP       |
+| Recording        | ✅   | ✅ *[1]* | HDS       |
+
+**HKSV3**
+
+|                  | H264 | H265 | Transport      |
+| ---------------- | ---- | ---- | -------------- |
+| Local Streaming  | ✅   | ✅   | Multitier RTP  |
+| Remote Streaming | ❌[5]| ✅   | WebRTC *[4]*   |
+| Recording *[2]*  | ✅   | ✅   | HDS+CMAF *[3]* |
+
+</div>
 
 1. HKSV Legacy Recordings were updated with H265 support with the release of HKSV3. They both share the same transport, and when HKSV3 was implemented, H265 came with it.
 2. HKSV3 Recordings have reliability issues that were discovered after exhaustive testing. Uploads may fail from one home hub (Apple TV), and succeed from another home hub, depending on which one was assigned the camera detection session. Strangely, uploads from one home hub may not be visible when a different home hub becomes the selected hub. This behavior is not present with legacy HKSV.
 3. The new CMAF transport is not fully implemented or documented yet.
 4. iOS WebRTC implementation is slower to connect than the legacy RTP transport.
+5. HomeKit's WebRTC implementation currently does not support H264 due. Notably Safari does support it, so this may be an oversight.
 
 The choice in HKSV version to use is dependent on the codecs on your cameras. If your camera is H265 only, use HKSV3. **Otherwise, using H264 and the legacy HKSV version is still the better choice**. Notably, the legacy HKSV option supports using reliable H264 streaming while also providing a high quality H265 stream for recording.
