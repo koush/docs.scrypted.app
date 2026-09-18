@@ -50,7 +50,7 @@ Ensure all your Home Hubs are also updated to tvOS 27.
 
 ### Recommendation
 
-* If your camera supports H264 only on all streams, stay on Legacy HKSV for better performance.
+* If your camera supports H264 on all streams, stay on Legacy HKSV for better performance.
 * If your camera is H265 only and the codec can not be changed, migrate to HKSV3 to avoid transcoding.
 * Otherwise, if your camera codecs can't be changed to a single uniform codec (such as Reolink cameras that use H265 main and H264 substream), stay on Legacy HKSV.
 
